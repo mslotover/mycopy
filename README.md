@@ -1,8 +1,10 @@
-# My Project
+# MyCopy
 
-Landing page for My Project, hosted on GitHub Pages.
+Homepage, privacy policy and terms of service for MyCopy by Meret, hosted on GitHub Pages.
 
-- `index.html` — page content (search for "My Project" and the placeholder text to edit)
-- `style.css` — colours and layout (change `--accent` in `:root` to rebrand)
+- `index.html`: homepage
+- `privacy.html`: privacy policy
+- `terms.html`: terms of service
+- `style.css`: colours and layout (change `--accent` in `:root` to rebrand)
 
 Push to `main` and GitHub Pages redeploys automatically.

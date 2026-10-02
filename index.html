@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Project</title>
-  <meta name="description" content="My Project — a one-line description of what it does.">
+  <title>MyCopy – copy and sync your Google Drive files</title>
+  <meta name="description" content="MyCopy is a tool that runs on your own computer to copy, back up and sync files between Google Drive and your local storage.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,12 +13,12 @@
 <body>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="logo" href="#">◆ My Project</a>
+      <a class="logo" href="./">◆ MyCopy</a>
       <nav>
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
+        <a href="#what">What it does</a>
+        <a href="#google-data">Google data</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-small" href="#get-started">Get started</a>
+        <a class="btn btn-small" href="mailto:info@meret.uk">Contact</a>
       </nav>
     </div>
   </header>
@@ -26,34 +26,34 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">Now available</p>
-        <h1>The simplest way to do the thing you care about.</h1>
-        <p class="lede">Replace this with one or two sentences explaining what My Project does, who it's for, and why it's better than the alternatives.</p>
+        <p class="eyebrow">MyCopy by Meret</p>
+        <h1>Copy, back up and sync your Google Drive files.</h1>
+        <p class="lede">MyCopy is a tool that runs on your own computer. It copies files between your Google Drive and your local storage, so you can keep backups and move files in bulk. It talks to Google directly and never sends your files to anyone else.</p>
         <div class="cta-row">
-          <a class="btn" href="#get-started">Get started</a>
-          <a class="btn btn-ghost" href="#features">Learn more</a>
+          <a class="btn" href="#what">How it works</a>
+          <a class="btn btn-ghost" href="privacy.html">Privacy Policy</a>
         </div>
       </div>
     </section>
 
-    <section id="features" class="section">
+    <section id="what" class="section">
       <div class="wrap">
-        <h2>Why My Project</h2>
+        <h2>What MyCopy does</h2>
         <div class="grid">
           <article class="card">
-            <div class="icon">⚡</div>
-            <h3>Fast</h3>
-            <p>Describe the first key benefit here. Keep it short and concrete.</p>
+            <div class="icon">⬇️</div>
+            <h3>Back up Drive</h3>
+            <p>Download a copy of your Google Drive files and folders to your computer or an external disk.</p>
           </article>
           <article class="card">
-            <div class="icon">🔒</div>
-            <h3>Reliable</h3>
-            <p>Describe the second key benefit. What problem does it remove?</p>
+            <div class="icon">⬆️</div>
+            <h3>Upload in bulk</h3>
+            <p>Copy large folders from your computer into Google Drive in one step, keeping the folder structure.</p>
           </article>
           <article class="card">
-            <div class="icon">✨</div>
-            <h3>Simple</h3>
-            <p>Describe the third key benefit. Why will people enjoy using it?</p>
+            <div class="icon">🔄</div>
+            <h3>Keep in sync</h3>
+            <p>Update only the files that changed, so your local copy and your Drive stay matched.</p>
           </article>
         </div>
       </div>
@@ -63,33 +63,39 @@
       <div class="wrap">
         <h2>How it works</h2>
         <ol class="steps">
-          <li><span>1</span><div><h3>Sign up</h3><p>Explain the first step a new user takes.</p></div></li>
-          <li><span>2</span><div><h3>Set it up</h3><p>Explain what they configure or connect.</p></div></li>
-          <li><span>3</span><div><h3>Get results</h3><p>Explain the outcome they get.</p></div></li>
+          <li><span>1</span><div><h3>Sign in with Google</h3><p>You sign in with Google and grant MyCopy permission to access your Google Drive.</p></div></li>
+          <li><span>2</span><div><h3>Choose what to copy</h3><p>Pick the Drive folders and local folders you want to copy or sync between.</p></div></li>
+          <li><span>3</span><div><h3>MyCopy does the transfer</h3><p>Files move directly between your computer and Google Drive over an encrypted connection.</p></div></li>
         </ol>
       </div>
     </section>
 
-    <section id="faq" class="section">
-      <div class="wrap narrow">
-        <h2>Questions</h2>
-        <details><summary>Who is My Project for?</summary><p>Answer here.</p></details>
-        <details><summary>How much does it cost?</summary><p>Answer here.</p></details>
-        <details><summary>How do I get in touch?</summary><p>Email <a href="mailto:hello@example.com">hello@example.com</a>.</p></details>
+    <section id="google-data" class="section">
+      <div class="wrap narrow legal">
+        <h2>How MyCopy uses your Google data</h2>
+        <p>MyCopy requests access to your <strong>Google Drive</strong> so it can list, read, create and update the files you choose to copy or sync. That access is used only to carry out the transfers you ask for.</p>
+        <ul>
+          <li>Everything runs on your own computer. Your files and access tokens are not sent to or stored on any Meret server.</li>
+          <li>Your data is not sold, shared, used for advertising or used to train AI models.</li>
+          <li>You can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+        </ul>
+        <p>MyCopy's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
       </div>
     </section>
 
-    <section id="get-started" class="section cta">
-      <div class="wrap narrow center">
-        <h2>Ready to try it?</h2>
-        <p>One sentence nudging people to take the next step.</p>
-        <a class="btn" href="mailto:hello@example.com">Get in touch</a>
+    <section id="faq" class="section alt">
+      <div class="wrap narrow">
+        <h2>Questions</h2>
+        <details><summary>Who is MyCopy for?</summary><p>Anyone who wants a reliable way to back up their Google Drive, or to move a lot of files in or out of it.</p></details>
+        <details><summary>Does Meret see my files?</summary><p>No. MyCopy connects straight from your computer to Google. Your files never pass through Meret.</p></details>
+        <details><summary>How do I stop MyCopy accessing my Drive?</summary><p>Remove it at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, then delete it from your computer.</p></details>
+        <details><summary>How do I get in touch?</summary><p>Email <a href="mailto:info@meret.uk">info@meret.uk</a>.</p></details>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">© <span id="year"></span> My Project · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div>
+    <div class="wrap">© <span id="year"></span> Meret · MyCopy · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
