@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Project</title>
+  <meta name="description" content="My Project — a one-line description of what it does.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#">◆ My Project</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#get-started">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Now available</p>
+        <h1>The simplest way to do the thing you care about.</h1>
+        <p class="lede">Replace this with one or two sentences explaining what My Project does, who it's for, and why it's better than the alternatives.</p>
+        <div class="cta-row">
+          <a class="btn" href="#get-started">Get started</a>
+          <a class="btn btn-ghost" href="#features">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <h2>Why My Project</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>Fast</h3>
+            <p>Describe the first key benefit here. Keep it short and concrete.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔒</div>
+            <h3>Reliable</h3>
+            <p>Describe the second key benefit. What problem does it remove?</p>
+          </article>
+          <article class="card">
+            <div class="icon">✨</div>
+            <h3>Simple</h3>
+            <p>Describe the third key benefit. Why will people enjoy using it?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section alt">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><span>1</span><div><h3>Sign up</h3><p>Explain the first step a new user takes.</p></div></li>
+          <li><span>2</span><div><h3>Set it up</h3><p>Explain what they configure or connect.</p></div></li>
+          <li><span>3</span><div><h3>Get results</h3><p>Explain the outcome they get.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="wrap narrow">
+        <h2>Questions</h2>
+        <details><summary>Who is My Project for?</summary><p>Answer here.</p></details>
+        <details><summary>How much does it cost?</summary><p>Answer here.</p></details>
+        <details><summary>How do I get in touch?</summary><p>Email <a href="mailto:hello@example.com">hello@example.com</a>.</p></details>
+      </div>
+    </section>
+
+    <section id="get-started" class="section cta">
+      <div class="wrap narrow center">
+        <h2>Ready to try it?</h2>
+        <p>One sentence nudging people to take the next step.</p>
+        <a class="btn" href="mailto:hello@example.com">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> My Project · <a href="privacy.html">Privacy Policy</a></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
