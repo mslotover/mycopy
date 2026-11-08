@@ -1,0 +1,1912 @@
+# @alexis_guttridge — video transcripts
+
+199 posts with video. Status counts: {'transcribed': 117, 'no_speech': 68, 'failed': 14}.
+Newest first. "no_speech" = music-only reel (caption shown instead). "failed" = audio could not be downloaded.
+
+## 2026-11-07 — Turns out, I found my people all over again. And I couldn’t be more grateful for every sin
+
+https://www.instagram.com/p/Dfc89DFy08b/ · Video · plays: 851 · likes: 64 · status: transcribed
+
+When I started talking about hospitality on Instagram, I genuinely didn't think anyone was going to listen. I mean, who wants to hear someone go on and on about restaurant service and the little things that make people feel special? Apparently, quite a few of you. And I don't think you realize how much that means to me. Growing up, I moved between different homes and I never really felt like I fit in anywhere. I didn't have the stability of a lifelong friendship or a community I felt like I belonged to. But when I found the restaurant industry, something changed. I found my people. And for almost 25 years, no matter where I've lived or traveled in the world, hospitality has given me that same sense of belonging. I've made lifelong friends through this industry. I had complete strangers turn a horrible day into an amazing one just through the way they treated me And I seen firsthand how much of a difference hospitality can make in someone life And now over the last six months, more than 12,000 of you have joined me here. And the messages, the conversations, the stories you share with me, I don't think you realize how much they mean. When a restaurant owner tells me something I shared helped them see their business differently. Or someone working in hospitality tells me one of my videos reminded them why they love this industry. It genuinely brings tears to my eyes. Because I believe so much in this industry. And I believe in the people who make it what it is. So whether you've been here for years, you just found me yesterday, or you've never commented on a single thing, thank you for making this feel like a community. and for reminding me once again how damn special hospitality people really are.
+
+## 2026-11-06 — Some of the best hospitality improvements I’ve seen haven’t cost a restaurant a single dol
+
+https://www.instagram.com/p/DfaVwoahgNe/ · Video · plays: 2033 · likes: 30 · status: no_speech
+
+*(no_speech)* Caption: Some of the best hospitality improvements I’ve seen haven’t cost a restaurant a single dollar.
+
+And this is something I talk about A LOT when I’m working with hospitality teams.
+
+We often assume that improving the guest experience means investing in something new. New systems, more staff, better technology or another training program.
+
+But sometimes the biggest opportunity is simply becoming more 
+
+## 2026-11-03 — The downside of spending 20+ years in hospitality? You can’t switch that part of your brai
+
+https://www.instagram.com/p/DfSsSPyTzFt/ · Video · plays: 4496 · likes: 139 · status: transcribed
+
+Here are five things I notice in restaurants that most guests probably don't. After 20 years in hospitality, I genuinely cannot help myself. One, how the staff communicate without speaking. A little nod across the room. Eye contact with the bartender. Someone stepping in before they've even asked. That's a team working together. there. Two, what happens when the manager walks onto the floor? Does everyone suddenly tense up or are they genuinely happy to see them? This tells me so much. Three, what happens when something goes wrong? Because let's face it, something always goes wrong. Do they start pointing fingers or does someone quietly step in and just fix it? Four, who's paying attention to the whole room, not just their own tables. I love watching someone notice another section, needs help, and jump in without being asked. And five, how the staff treat each other. You can put on a great performance for guests, but how people treat each other when nobody's watching. That tells me more about a restaurant than almost anything else. And once you start noticing these things, it's pretty hard to stop.
+
+## 2026-11-02 — A good pre-shift can completely change the energy of a restaurant before the doors even op
+
+https://www.instagram.com/p/DfQGrqET7UC/ · Video · plays: 4999 · likes: 230 · status: transcribed
+
+If your pre-shift meetings are just about the specials, you're missing the point. A great pre-shift should do more than tell your team what's happening tonight. It should actually prepare them for it. Here are three things I'd love to see more restaurants doing. First, get your team talking. Instead of standing there giving everyone a rundown, ask a question. What's one thing we could do better than yesterday? What's something a guest asked you recently that you didn't know the answer to? Get people contributing because if you're the only one talking for 15 minutes, I'm not sure how much anybody's actually taking in. Second, practice something. It doesn't have to be some big formal training session. Have someone describe a dish they're excited about. Practice how to respond when a guest doesn't like their wine. Let someone who's brilliant at selling desserts share how they do it. Five minutes of actually doing something can be worth a hell of a lot more than 15 minutes of listening. And third, give the team something to focus on together. Not just, let's have a great service tonight. Something specific. Maybe it's making sure every guest celebrating something feels genuinely acknowledged. Maybe it's improving how the team communicates when the restaurant gets slammed. Then here's the important part. Talk about it again tomorrow. Did it work? What did we learn? What could we do differently? Because a pre-shift shouldn't be something you do just because you've always done it. It's an opportunity to make your team a little bit better every single day. And that's a pretty valuable 15 minutes.
+
+## 2026-10-31 — Someone asked me a brilliant question recently: How do you know if someone has a natural g
+
+https://www.instagram.com/p/DfK7_gQz2dc/ · Video · plays: 44650 · likes: 1450 · status: transcribed
+
+Here are three questions I'd ask in a restaurant interview that have absolutely nothing to do with restaurant experience. Because you can teach someone how to carry plates, open wine, or use a POS system. But I want to know who they are as a person. One, tell me about a time you made someone's day better. It doesn't have to be at work. I'm interested in whether they naturally notice opportunities to do something thoughtful for someone else. Two, what's something you're really proud of that has nothing to do with work? I love this question because people light up when they talk about something that genuinely matters to them. And three, tell me about a time you changed your mind about something. I'm looking for curiosity, self-awareness, and whether they're open to seeing things differently. And here's something just as important as the questions themselves. Don't rush to fill the awkward silence. Give people time to think. Sometimes the most interesting answers come after the pause. Because I'm not just hiring someone to do a job. I'm looking for someone who genuinely cares about people.
+
+## 2026-10-30 — I’ve spent more than 20 years in hospitality, and sitting at a bar is still one of my favo
+
+https://www.instagram.com/p/DfIZo3vz7FK/ · Video · plays: 42782 · likes: 267 · status: no_speech
+
+*(no_speech)* Caption: I’ve spent more than 20 years in hospitality, and sitting at a bar is still one of my favourite places to watch great hospitality happen.
+
+Here are 7 things I notice almost immediately:
+
+1. The acknowledgement. 
+Even when they’re slammed, does someone make eye contact or give me a quick nod?
+
+2. How they treat newcomers. 
+Are the regulars getting all the attention, or does everyone feel welcome?
+
+
+
+## 2026-10-29 — Good food gets people through the door. How you make them FEEL brings them back. 
+
+https://www.instagram.com/p/DfFzGNLTSEq/ · Video · plays: 3812 · likes: 97 · status: transcribed
+
+A restaurant can do everything right and still lose a guest. The food can be fantastic. The service can be friendly. The restaurant can look beautiful. And that guest might never come back. Because sometimes it's not about anything going wrong. It's about nothing making them feel particularly special. Think about the last restaurant you went to where everything was perfectly fine. You enjoyed your meal, you paid your bill, you left. But can you remember anything about the experience? Now think about a restaurant you absolutely love going back to. I bet there's something about the way they make you feel. Maybe someone remembers your name. Maybe they know how you like your coffee. Maybe there's a little moment of genuine connection. And here's what I want more restaurant leaders to understand. You don't always need to change your menu, renovate your space, or spend more money to give people a reason to return. Sometimes you just need to give them something worth remembering.
+
+## 2026-10-29 — I went there hoping to inspire a room full of hospitality people. I left feeling pretty da
+
+https://www.instagram.com/p/DfEuXDGlBGh/ · Sidecar · plays: n/a · likes: 60 · status: no_speech
+
+*(no_speech)* Caption: I went there hoping to inspire a room full of hospitality people. I left feeling pretty damn inspired myself🧡
+
+Last week, I had the privilege of speaking at Balancing Plates in McLaren Vale. An event created by people in hospitality, FOR people in hospitality. And it sold out weeks before the night even arrived.
+
+Whenever I speak, my goal is pretty simple. I want people to walk away with something
+
+## 2026-10-28 — Not every cost in a restaurant comes with an invoice.
+
+https://www.instagram.com/p/DfDNkDnTWt5/ · Video · plays: 14441 · likes: 56 · status: no_speech
+
+*(no_speech)* Caption: Not every cost in a restaurant comes with an invoice.
+
+Losing a great employee means losing their knowledge, their relationships with guests, and everything you’ve invested in developing them.
+
+A manager who’s constantly putting out fires isn’t spending that time leading their team.
+
+Poor communication means mistakes, frustration, and the same conversations happening over and over again.
+
+And when
+
+## 2026-10-27 — Would I open another restaurant knowing everything I know today? That’s a VERY interesting
+
+https://www.instagram.com/p/DfAq4f9zdJz/ · Video · plays: 4836 · likes: 166 · status: transcribed
+
+Here are five things I wish I'd known before opening my restaurant. I'd spent years working in restaurants before opening up my own, but ownership, it teaches you a whole different set of lessons. One, surround yourself with people who are better at things than you are. I might understand P&L's cash flow and forecasting, but that doesn't mean I'm the best person to handle all of them. One of the smartest things you can do is surround yourself with people who bring different skills and expertise to the table. Two, you cannot be everyone's favorite person. This one was very hard for me. When you've spent your career making people happy, having uncomfortable conversations, and making unpopular decisions doesn't always come naturally. But that's part of being an owner. 3 Just because you can do everything doesn mean you should When you worked your way through restaurants you know how to jump into just about every position But if you constantly doing everybody else job who's actually running the business? Four, your restaurant will never be finished. There will always be something to improve, fix, or change. And if you're waiting for everything to be perfect before you can relax. Good fucking luck with that. Learn to enjoy what you've built while you're still building it. And five, build a life outside your restaurant. When it's your name, your money, and your reputation on the line, it's so easy for the restaurant to become your entire identity. That's not sustainable. Looking back, I wouldn't trade owning a restaurant for anything, but there are definitely things I do differently today and maybe that's one of the greatest gifts of ownership you learn things about yourself you probably wouldn't have learned any other way
+
+## 2026-10-26 — Great food AND great hospitality? That’s the kind of restaurant I fucking love coming back
+
+https://www.instagram.com/p/De-E4E3zw8I/ · Video · plays: 96872 · likes: 827 · status: no_speech
+
+*(no_speech)* Caption: Great food AND great hospitality? That’s the kind of restaurant I fucking love coming back to 🧡
+
+## 2026-10-25 — So you’ve found someone with a natural gift for hospitality. Now what?
+
+https://www.instagram.com/p/De7eLvJz27U/ · Video · plays: 129265 · likes: 6466 · status: transcribed
+
+You can always tell when someone was made for hospitality. And I'm not necessarily talking about the person who knows everything about wine or can carry six plates or has worked in restaurants for 20 years. I'm talking about the person who just has that something. They can make a complete stranger feel like they've known them for years. They can walk up to a table, read the room in about three seconds, and know exactly what kind of experience those guests want. They know when to have a laugh, when to have a conversation, and when to leave people the hell alone. And here's something I absolutely love about these people. They don't necessarily have the biggest personalities in the room. Some of the most naturally gifted hospitality people I've ever worked with have been quiet, thoughtful, and incredibly observant. They just genuinely give a shit about how other people feel. Now, does that mean they don't need training? Of course not. Being naturally good with people doesn't automatically make you great at running a restaurant floor. But when you take someone who has the natural instinct for hospitality and you give them the training, confidence, and opportunity, develop it. Oh my God. Those are the people who make this industry so fucking special. And if you've ever worked alongside someone like that, you know exactly who I'm talking about.
+
+## 2026-10-24 — Some of my favourite people in the world are people I met working in restaurants.
+
+https://www.instagram.com/p/De46j_XzjZo/ · Video · plays: 6107 · likes: 59 · status: transcribed
+
+Check it out. What's it all about? Work it out.
+
+## 2026-10-21 — I’ve worked in restaurants long enough to know that SOMETHING is going to go wrong 🤷‍♀️
+
+https://www.instagram.com/p/DexOI5MTfKw/ · Video · plays: 7194 · likes: 246 · status: transcribed
+
+Show me how a restaurant handles a mistake, and I'll tell you a hell of a lot about how the restaurant is run. Because mistakes happen in every restaurant. The wrong dish goes to a table. A steak comes out overcooked. Someone forgot a drink. Shit happens. But here's what I'm watching. Does someone actually take ownership? Or do we get the whole, well, the kitchen messed up, or your server forgot to put that through? The guest doesn't need to know whose fault it was. They just want to know what's being done to make it right. And does the team know what they're allowed to do? Can their server replace the dish, offer another drink, or make a decision without disappearing for 10 minutes to find a manager? And here's a big one. Does anybody check back after they've fixed it? This one drives me fucking crazy. You replace the dish, great. but did anybody come back to make sure the guest is actually happy now? And what happens between the team when something goes wrong? Does everyone start pointing fingers or do they quietly work together to make it right? Because you can learn a lot about a restaurant by watching how the team treats each other when things don't go to plan. And finally, does anybody actually learn from it? Because if the same mistake keeps happening every Saturday night, it's probably not just somebody having a bad day. It's something in the system that needs fixing. And here's what I always say. A mistake doesn't have to ruin someone's experience. Sometimes the way you handle it is the very thing that makes them want to come back.
+
+## 2026-10-20 — One of the biggest mistakes I see in restaurants? Trying to fix the problem you can see wi
+
+https://www.instagram.com/p/DeupTFazHhV/ · Video · plays: 11251 · likes: 66 · status: transcribed
+
+Look at this look Look at this look
+
+## 2026-10-19 — Want more regulars? Give people a reason to feel like they’re YOUR regulars before they’ve
+
+https://www.instagram.com/p/DesDZLvTKkl/ · Video · plays: 12970 · likes: 401 · status: transcribed
+
+Here are five things great restaurants do to turn first-time guests into regulars. One, they don't let the relationship end when the guests walk out. Maybe it's a personal message the next day, thanking someone for coming in, not some automated email asking for a fucking Google review, something that makes them feel like their visit actually mattered. Two, they make the second visit feel different from the first. That first, hey, welcome back, can mean more than you think. Suddenly, you're not just another reservation. Three, they remember something that has nothing to do with the order. Maybe it's the trip you were planning, the new job you mentioned, or the anniversary you were celebrating. People remember when you remember them. Four, they understand that regulars don't all want the same experience. Some want to sit at the bar and chat for an hour. Others want their favorite table, a glass of wine, and to be left the fuck alone, knowing the difference is hospitality. Five, they make people feel like they belong before they've earned the title of regular. They don't wait until somebody's been in 10 times to make them feel important. They treat that first visit like the beginning of a relationship. Because here's what I learned after years of running restaurant floors. You don't create regulars by making people feel like customers. You create them by making people feel like they belong.
+
+## 2026-10-18 — Oh, the CHARACTERS I’ve met over the years working in restaurants😂
+
+https://www.instagram.com/p/Depd-_CSb8o/ · Video · plays: 4871 · likes: 182 · status: transcribed
+
+You can always tell when a restaurant has really good regulars. And I'm not just talking about the people who come in every Friday night and order the exact same thing. I'm talking about the ones who become part of the fucking furniture. They know everybody's names. They notice when someone new starts. They ask how your holiday was, how your kids are doing, or whatever happened with that thing you told them about three weeks ago. They're the ones who bring their friends, their family, their out-of-town guests because they want everybody to experience this place they love. And sometimes they know more about what's going on in the restaurant than half the staff do. Here's what I really love about great regulars. They don't just show up when everything's going well. They're there on the quiet Tuesday nights. They're there when you change the menu. They're there when you're trying something new. And somewhere along the way, they stop feeling like customers and start feeling like friends. In all my years of running Restaurant Floor, some of the people I met along the way are still part of my life today. And I think that's one of the most beautiful things about this industry. Some of my favorite people I've ever met started out as guests. And tomorrow, I'm going to share five things great restaurants do to turn first-time guests into regulars.
+
+## 2026-10-17 — You can learn a hell of a lot about a restaurant before the first plate ever hits the tabl
+
+https://www.instagram.com/p/Dem5ScwyqhW/ · Video · plays: 3895 · likes: 38 · status: transcribed
+
+© BF-WATCH TV 2021
+
+## 2026-10-15 — Let’s be real, we’ve ALL worked a Saturday night where we wanted to fucking kill each othe
+
+https://www.instagram.com/p/Dehvv_cyUzE/ · Video · plays: 13922 · likes: 609 · status: transcribed
+
+Here are five things I notice in restaurants where the staff genuinely love coming to work. Number one, the energy doesn't change when the manager walks into the room. People are still laughing, talking, doing their jobs. Nobody suddenly looks like they've been caught doing something wrong. Two, people ask for help before they're completely drowning. There's no shame in saying, hey, I'm getting slammed over here and somebody actually comes to help. Three, mistakes aren't some big fucking secret. People own them, talk about them, fix them, and move on. They're not spending half their shift terrified or getting in trouble. Four, people genuinely celebrate each other's wins. Somebody gets a great review, sells an amazing bottle of wine, or handles a really difficult table beautifully. And the rest of the team is genuinely happy for them. Five, people are allowed to have a personality. They're not all expected to sound the same, act the same, or be some robotic version of hospitality. And here's what I love about restaurants like this. They have standards. They work incredibly hard. They take their job seriously, But they don't have to take themselves so fucking seriously. And you can feel that the minute you walk through the door.
+
+## 2026-10-14 — I’m a sucker for a restaurant that knows how to make you feel fucking special without maki
+
+https://www.instagram.com/p/DefI1uQBxEW/ · Video · plays: 10771 · likes: 99 · status: transcribed
+
+We'll see you next time.
+
+## 2026-10-11 — These are MY PEOPLE!!! 😆🧡
+
+https://www.instagram.com/p/DeXeBybzPEI/ · Video · plays: 58595 · likes: 2733 · status: transcribed
+
+You can always tell when someone genuinely loves working in hospitality. And I'm not talking about the person who's smiling every second of their shift or has the most outgoing personality. I'm talking about the people who actually get a kick out of making someone else's day. They're the ones who get genuinely excited when you order their favorite thing on the menu. And they'll tell you exactly why you made the right decision. They remember the couple who came in six months ago, what they were celebrating, and somehow managed to pick up the conversation like they saw them yesterday. They notice when somebody at another table is having a bit of a shit night, and they find some tiny way to make it better. And one of my favorite things, they get just as excited about somebody else's great service as they do their own. They'll come back into the kitchen and tell everyone about the table they just had. Or the guest who absolutely loves something. And you know what else? They're usually the people who make everybody else around them a little bit better at their jobs. Because that kind of enthusiasm, it's fucking contagious. And I think sometimes we forget that there are people who genuinely love this industry. Not because every shift is amazing. not because the hours are easy or the guests are always lovely but because they love people and they love making people feel good and I think those are some of my most favorite people in the world
+
+## 2026-10-08 — Sometimes you don’t need another person telling you how to run your restaurant.
+
+https://www.instagram.com/p/DePuD_szONH/ · Video · plays: 2042 · likes: 54 · status: transcribed
+
+My clients called our last session restaurant therapy. And honestly, I kind of fucking love that. Now, these are restaurant owners who've been doing this for more than 20 years. They know how to run restaurants. They don't need me telling them how to write a schedule or run a pre-shift. But when you own the business, who do you actually talk to about the stuff you're trying to figure out? Sometimes you need somebody outside of it who understands restaurants well enough that you don't have to explain how the fucking industry works before you get to the actual problem. We talk about their leadership team, decisions they've been sitting on, staff issues that they can't quite get their head around. Sometimes I'm saying, yep, I think you're absolutely right. And other times it's, I actually think you might be the problem here. And I think there's a lot of value in having someone who can do both. Someone with no agenda inside your business who can ask the questions maybe nobody else is asking you. So yeah, apparently part of what I do now is restaurant therapy. And I'm pretty fucking good with that.
+
+## 2026-10-07 — It’s usually the little things you remember most — and the little things that keep you com
+
+https://www.instagram.com/p/DeNLBwJTCXs/ · Video · plays: 194570 · likes: 983 · status: no_speech
+
+*(no_speech)* Caption: It’s usually the little things you remember most — and the little things that keep you coming back.
+
+1. Somewhere to put the thing you’re awkwardly holding.
+
+A bag, coat, umbrella, flowers, shopping. They notice you trying to solve the problem before you end up putting it on the floor or balancing it on the back of your chair.
+
+2. A minute to actually settle in.
+
+You’ve just walked in, taken off y
+
+## 2026-10-07 — I think restaurants deserve more than someone walking in with a clipboard and a list of ev
+
+https://www.instagram.com/p/DeL9m91poag/ · Video · plays: 2670 · likes: 59 · status: transcribed
+
+Before I give a restaurant any advice, there's actually quite a lot I do that they probably don't even know I'm doing. First, I research the shit out of them. Their website, their socials, their reviews. I'll look at the entire booking process. I want to know what a guest sees before they ever walk through the door. And one of the things I'm looking for is, does the story they're telling me online match what I experienced when I actually walk through the door. Because sometimes it does. And sometimes there's a massive disconnect. Wherever I can, I'll actually go and eat there, not as a consultant, as an actual guest. And usually I'll bring someone with me who isn't from hospitality because I want to know what they notice too. And obviously I can't always do that. I work with restaurants remotely too. And you'd be amazed what I can learn just by talking to an owner, their managers, and their team. Whether I'm there in person or working with them remotely, I'm trying to piece together the same thing. What is actually happening in their restaurant? If I'm there, I'm watching everything. How are we greeted? Where are the managers? How does the team communicate? What happens when somebody needs help? What happens when something goes wrong? I'm looking for all those tiny things that explain why people love this restaurant and where something might be getting lost. Because I never want to walk into somebody's business and immediately start telling them what I think they should change. I want to understand the restaurant. They're actually running first. then we can talk about what I would do.
+
+## 2026-10-05 — I don’t regret how much I cared. I regret thinking that caring meant the restaurant always
+
+https://www.instagram.com/p/DeIC-oJT5V-/ · Video · plays: 3799 · likes: 135 · status: transcribed
+
+For years, I thought being good at a restaurant meant giving them everything. And I mean fucking everything. This started long before I owned a restaurant. When I worked for other people, I was the same way. I wanted the accolades. I wanted to be great at what I did. I was obsessed with training, getting better, making sure the restaurant had everything it needed. I missed friends' weddings, family's birthdays, pretty much every fucking thing for years, because if the restaurant was open, I felt guilty not being there. And I wasn't always great to the people around me either. Some people got the best of me. Some absolutely got the frustrated, overwhelmed version. But the one person I consistently didn't take care of was myself. I drank pretty much every night never at work, but after absolutely I'm not saying restaurant people need to stop drinking I still have a drink here and there but back then I think it was One of the only ways I knew how to switch my brain off There was the restaurant and then there was recovering from the restaurant. So I could go back to the restaurant There wasn't much else and that's what I understand differently now You need something that's yours. The gym, your family, a hobby, fucking knitting. I don't care. Something that reminds you there's a whole person outside of this industry. I spent years thinking giving restaurants everything I had was why I was successful. Now, I think not having anything left for myself was probably one of my biggest mistakes.
+
+## 2026-10-04 — I think owning a restaurant can really fuck with your sense of what being a good owner is 
+
+https://www.instagram.com/p/DeFbVq6zx7W/ · Video · plays: 5957 · likes: 48 · status: transcribed
+
+I'm grateful for my people, my tribe, my circle For the ones who show up, who care, who stay
+
+## 2026-10-03 — I fucking love watching a restaurant when it gets to that last one.
+
+https://www.instagram.com/p/DeC5o3CTqU-/ · Video · plays: 21024 · likes: 830 · status: transcribed
+
+Show me your team on a slammed Saturday night. And I can usually tell you quite a lot about where that restaurant is at. At one end, you've got survival mode. Everyone's working really fucking hard, but mostly working alone. Your strongest people are carrying the shift. Managers are putting out fires. And somehow you get through the service, but barely. Then you start to see structure. People know their roles. There are systems. Communication is better, but the managers are still holding a lot of it together. Then you get to trust. People step in without being asked. They make decisions. They notice when someone else is getting buried. Manager is still there, but they don't have to be the answer to every fucking question. And then there's my favorite one, flow. The restaurant is absolutely slammed. There are millions of things happening at once, but somehow it still feels calm. And everyone wants to get to that point, but you can't skip what gets you there. You need the structure before you get the trust and the trust before a team can really move like that together.
+
+## 2026-10-01 — I watch the managers.
+
+https://www.instagram.com/p/Dd8mxV3J3w_/ · Video · plays: 8306 · likes: 74 · status: no_speech
+
+*(no_speech)* Caption: I watch the managers.
+
+Not just how they talk to the team.
+I watch what happens when the restaurant gets busy.
+Who notices a server getting buried?
+
+Who makes the call when something goes wrong?
+Who does the team look at when they don’t know what to do?
+
+Can managers make decisions without everything working its way back to the owner?
+
+And what happens when the strongest manager isn’t there?
+This 
+
+## 2026-09-29 — This is probably the part of my job I love most.
+
+https://www.instagram.com/p/Dd3gRkgJpT2/ · Video · plays: 5268 · likes: 106 · status: transcribed
+
+Okay, so your restaurant has all three of these problems. Staff keep leaving, your managers are burnt out, and your guests aren't returning. But you can only focus on one first. Which one are you choosing? Guests not returning? Would you start here? I wouldn't. Obviously, I want to know why guests aren't coming back. but I think there's something I need to understand first. What about staff leaving? This is a massive problem, but I still wouldn't start here, which leaves me with managers burnt out. This is where I'd start because I want to know why they're burnt out. Are they actually managing or are they spending every shift firefighting? Do they have authority to make decisions? Are they constantly covering holes in the schedule? Are they getting any actual support or development? Because if your managers are barely keeping their head above water, your team is going to feel it. And eventually, your guests are going to feel it too. So before I start trying to fix three different problems, I want to know if they're actually three different problems.
+
+## 2026-09-28 — I know. Slightly strange thing for a consultant to say.
+
+https://www.instagram.com/p/Dd06ddIJfi9/ · Video · plays: 6946 · likes: 37 · status: transcribed
+
+嗯。
+
+## 2026-09-27 — What’s one thing that instantly tells you a restaurant team is really strong?
+
+https://www.instagram.com/p/DdyRZeEpLCt/ · Video · plays: 78118 · likes: 4267 · status: transcribed
+
+Here are five things that I notice in restaurants with really strong teams. One, they help each other without being asked. Someone's getting buried and another person just starts running their drinks, clearing their table, whatever needs to fucking happen. Two, they say please and thank you to each other. I know that sounds ridiculously small, but I notice it every single time. Number three, nobody suddenly starts working harder because the manager just happens to walk past. They're doing the same job whether somebody's watching them or not. Four, when something goes wrong, they fix the problem before they start worrying about whose fault it was. There's time to figure out what happened later. Right now, we've got a restaurant to run. And five, the newest person on the team can ask a question without being made to feel like an idiot. That one, it tells me a lot. Because a strong restaurant team isn't necessarily one where everybody's best friends. It's one where everybody actually feels like they're on the same side.
+
+## 2026-09-25 — If I saw #1 happen in my restaurant, I’d want to talk about it just as much as I’d want to
+
+https://www.instagram.com/p/DduYUkZzArg/ · Video · plays: 39860 · likes: 161 · status: no_speech
+
+*(no_speech)* Caption: If I saw #1 happen in my restaurant, I’d want to talk about it just as much as I’d want to talk about #2.
+
+Because watching your restaurant isn’t just about finding what needs fixing.
+
+It’s about noticing what’s already working — and making sure your team knows you noticed.
+
+Someone goes out of their way to look after a guest? Name it.
+
+Someone sees a teammate getting buried and steps in without b
+
+## 2026-09-24 — The thing someone complains about isn’t always the thing I’d fix first.
+
+https://www.instagram.com/p/DdqnFSZpPYz/ · Video · plays: 3826 · likes: 97 · status: transcribed
+
+If you told me these things about your restaurant, here's where I would look first. We're busy, but we're not making enough money. Before I start trying to get more people through the door, I'm looking at what's happening with the people already there. Are we turning tables? Are we maximizing the seats we already have? Are there obvious opportunities we're missing during service? We have great reviews, but not many regulars. This one I'm looking at the guest experience, because people liking your restaurant and people wanting to make it their restaurant are two very different things. We keep losing really good staff. I'm looking at management, not automatically blaming management, but I want to understand what it actually feels like to work there every day. Guests keep complaining that service is slow. I'm looking at service flow, because slow service doesn't automatically mean you have a slow server. The restaurant only really runs well when the owner is there. I'm looking at leadership, because somewhere along the way, too much knowledge, authority, or decision making is probably living with one person. And if you told me, our food is fucking great, but somehow we're still forgettable, I'm looking right at hospitality, because great food can make someone enjoy dinner. It doesn't necessarily make them remember how you made them feel.
+
+## 2026-09-23 — The guest should never have to see the work.
+
+https://www.instagram.com/p/DdoFC6uxcWj/ · Video · plays: 4647 · likes: 129 · status: transcribed
+
+The best restaurants make something really fucking difficult look incredibly easy. Because as a guest, you're just sitting there having dinner. But there are about a hundred things happening around you that you're hopefully never even aware of. Someone noticed a table was going to turn late and adjusted before it became a problem. A server realized another server was getting buried and quietly picked something up for them. Someone remembered the allergy you mentioned 20 minutes ago. How about a manager saw something starting to go sideways and dealt with it before it ever reached your table? Something probably went wrong somewhere during your dinner and you never even knew about it. And I think that's one of my favorite things to watch in a really great restaurant. It doesn't feel frantic. You don't see all the little decisions being made. You don't feel how fucking hard everyone is working to make the whole thing happen. It just feels easy. And great hospitality can look effortless. But there is usually a fuckload of effort happening that the guest never sees.
+
+## 2026-09-21 — One of the hardest things I had to learn in restaurants was not to let one person take up 
+
+https://www.instagram.com/p/Ddi5bSwJSgS/ · Video · plays: 15051 · likes: 276 · status: no_speech
+
+*(no_speech)* Caption: One of the hardest things I had to learn in restaurants was not to let one person take up more space in my head than they deserved.
+
+Because they will.
+
+Someone will be rude. Someone will make a completely unreasonable complaint. Someone will talk to you like you’re an idiot when you’ve spent the last six hours handling absolute chaos without blinking.
+
+Sometimes they’re just an asshole. But somet
+
+## 2026-09-20 — Maybe that’s why I still love this industry so fucking much.
+
+https://www.instagram.com/p/DdgVfCapkXh/ · Video · plays: 21707 · likes: 892 · status: transcribed
+
+One of the best things owning a restaurant taught me had absolutely nothing to do with restaurants. It taught me a hell of a lot about people because when you own a restaurant long enough, you get to see people in all these tiny moments of their lives. First dates, breakups, birthdays, people getting engaged, regulars who come in every single week, staff who start working for you when they're basically kids and somehow grow up in front of you, you see people on some of the best days of their lives and you see people when they're having a really fucking hard time. And after 20 plus years in hospitality, I think the thing that stuck with me the most is how little it sometimes takes to make somebody feel looked after. Remember their name. Notice they're having a shit day. Give a fuck about something they told you three weeks ago. Make them feel like you're actually happy they walked through the door. I used to think hospitality was about being really fucking good at running restaurants. Now I think it's mostly about being really good at making people feel like they matter. And honestly, I think this applies to a hell of a lot more than just restaurants.
+
+## 2026-09-18 — Here’s the question I’d be asking if I owned a restaurant right now:
+
+https://www.instagram.com/p/DdcatYlzPkw/ · Video · plays: 171018 · likes: 7119 · status: transcribed
+
+You can always tell when a restaurant has a really good manager. And weirdly, it's usually not because they're the loudest person in the room. They're actually looking up when someone walks through the door. They notice when a server is starting to get buried before the server has to ask for help. They can communicate with another manager from across the room without saying a fucking word. That was actually something I love teaching my managers. Learn how to read each other's eyes. Sometimes one look needs to say, I see it. I've got it. They can correct someone without making them feel like an idiot. Their team comes to them with problems. But you know what? They're also comfortable making decisions without them. And when shit starts going sideways, somehow the whole room gets calmer instead of more chaotic. But one of my biggest tells, their team actually wants them there. And after 20 plus years in hospitality, that's probably one of the biggest things I noticed. Because great restaurant managers don't just manage the shift, they change how it feels to work one.
+
+## 2026-09-17 — None of this requires a bigger budget.
+
+https://www.instagram.com/p/DdYiNeLh823/ · Video · plays: 314404 · likes: 12757 · status: transcribed
+
+Here are five things that instantly tell me a restaurant actually understands hospitality. One, they acknowledge you even when they can't help you yet. They might be fucking slammed, but someone makes eye contact and lets you know. I see you. I'll be with you. Two, they notice you looking around for the bathroom before you have to ask. That tells me they're not just completing tasks. They're actually paying attention to people. Three, they don't make hospitality feel scripted. They talk to you like a human being. Not like they're working their way through the five things they were told to say they have to say to every table. Four, when something goes wrong, they don't make you feel like you're the problem. Great restaurants fuck things up too. It's what happens next that tells me everything. And number five, they know how to say goodbye. This one gets missed all the damn time. You can have a brilliant meal and then pay your bill and basically disappear out the door without anyone noticing. Great hospitality doesn't end when the credit card goes through. It ends with how you make someone feel when they leave.
+
+## 2026-09-15 — I don’t start with what needs fixing. I start with what I can learn.
+
+https://www.instagram.com/p/DdUuNnJyolc/ · Video · plays: 14779 · likes: 127 · status: no_speech
+
+*(no_speech)* Caption: I don’t start with what needs fixing. I start with what I can learn.
+
+Before I give a restaurant any advice, I want to understand as much as I can before I influence what I’m seeing.
+
+1. I try to experience everything a guest does before they arrive. I call the restaurant. I try the booking system. I check Google, the website, Instagram. Does anyone answer the phone? Can I actually find the inform
+
+## 2026-09-14 — This wasn’t because I didn’t have great managers. I did.
+
+https://www.instagram.com/p/DdSExQPz8Q9/ · Video · plays: 5435 · likes: 170 · status: transcribed
+
+If I opened another restaurant tomorrow, there's one thing I would do very differently. I'd spend a lot less time trying to be needed. When I was younger, I thought being a great restaurant owner meant knowing everything that was happening. Someone called out, I knew, a table was unhappy, I knew, something went wrong in the kitchen, I knew. A manager needed to make a decision. Somehow it still found its way to me. And if I could solve it, even better. Because being needed made me feel like I was doing my job really fucking well. Now, I'd be so much more interested in what happens when I'm not there. Can the manager make the call without me? Can the team solve the problem? Does the restaurant still feel like the restaurant we wanted to create? Because eventually I learned that owning a restaurant that needs you for everything does not give you more control. It gives the restaurant control over you. And if I ever opened another one, I'd start building it to work without me a hell of a lot earlier.
+
+## 2026-09-13 — There are tiny things that tell me almost immediately I’m in a restaurant that knows what 
+
+https://www.instagram.com/p/DdPhrUxyCi5/ · Video · plays: 820045 · likes: 6605 · status: transcribed
+
+Woo!
+
+## 2026-09-10 — The goal isn’t to make yourself indispensable.
+
+https://www.instagram.com/p/DdGedhXpELz/ · Video · plays: 11026 · likes: 434 · status: transcribed
+
+We praise restaurant managers for the wrong things. And I know, because I used to do a lot of them, the manager who's fucking everywhere, running food, clearing tables, jumping behind the bar, fixing every problem. We look at them and think, fuck, they're good. But if you are doing everybody else's job, who's actually managing the restaurant? Or how about the manager everyone comes to with every single problem? Sure, it feels good to be the person with all the answers. But eventually you've built a team that can't make a decision without you. I want my team coming to me saying, here's what happened. Here's what I think we should do. Then we can talk about whether I agree. Because that's how you build people who can eventually make that decision when you're not there. And then there's the manager who's always there. First in, last out, never takes a night off. Hospitality has glorified that shit for years. But your restaurant needing you every second it's open, isn't necessarily proof you're a great operator. It might be proof you haven't built a restaurant that can operate without you yet. Great management isn't being needed for everything. It's building a team that doesn't need you for everything.
+
+## 2026-09-09 — Want to know what else you might not be seeing?
+
+https://www.instagram.com/p/DdD8AngJtul/ · Video · plays: 32431 · likes: 349 · status: no_speech
+
+*(no_speech)* Caption: Want to know what else you might not be seeing?
+
+I turned 25 of the things I look at when assessing hospitality businesses into a free tool you can use on your own restaurant.
+
+Rate yourself. Get your score. See where I’d start looking first.
+
+👀Comment LOOK and I’ll send it to you.
+
+## 2026-09-06 — Comment LOOK and I’ll send you my free restaurant assessment tool👇
+
+https://www.instagram.com/p/Dc8LzUHBisq/ · Video · plays: 2091 · likes: 35 · status: transcribed
+
+Let's be honest, you probably do not need to fix your entire restaurant. You might just need to figure out where the biggest gaps are. Because when you own or run the place, everything starts to feel important. The team, service, reviews, reservations, the way the place feels, what the guests are experiencing and eventually you're so effing close to it that it's really hard to know what actually needs your attention first. That's why I made this. I took the things that I look at when I'm assessing a hospitality business and turned them into a really simple tool you can use on your own venue. There are 25 areas to rate yourself on, honestly. And when you're done, your score helps you see where the biggest gaps and opportunities might be. Things like, does what you're promising online actually match what people experience when they arrive? Would your team recommend working here to a friend? Would a new employee understand pretty quickly, this is how we do things here. You rate it, you get your score and you get a clearer idea of where I'd start looking first. Because you probably don't need another 47 things on your to-do list. You need to know where to look first. I made it completely free. All you got to do is comment, look down below and I'll send it right to you.
+
+## 2026-09-03 — WHAT’S LEFT⁉️
+
+https://www.instagram.com/p/Dc1rZY9zo7i/ · Video · plays: 5084 · likes: 47 · status: transcribed
+
+Let's see what's next on the menu
+
+## 2026-09-03 — Okay Alexis, but what the f*ck am I supposed to change?
+
+https://www.instagram.com/p/Dc0ePyQh66C/ · Video · plays: 2549 · likes: 63 · status: transcribed
+
+So I got this comment on one of my recent posts. And I think a lot more people in hospitality are feeling exactly the same way. So let's talk about it. People aren't going out as much because of the economy. And I don't disagree. People are going out less. They're more conscious of what they spend. And some of the patterns we relied on three years ago simply aren't there anymore. But if I owned a restaurant right now, I wouldn't let that become my excuse. Because you can't control the economy. What you can control is whether you're still running your restaurant like it's three years ago. If Friday is full, but Tuesday is dead, what could Tuesday become? If people can't afford to eat with you every week, is there another reason for them to come through the door? Are you actually talking to your regulars and asking what they want? Are you watching what other restaurants are doing that's actually working? And is there an idea sitting in the back of your mind that you've been, let's be honest, too freaking busy to try? Because I don't think this is a time to keep doing the same thing and hope people start going out again. It's the time to get curious about how people want to go out now.
+
+## 2026-09-02 — Want to know where the gaps are in your restaurant?
+
+https://www.instagram.com/p/Dcx5XR4hcJI/ · Video · plays: 154600 · likes: 780 · status: no_speech
+
+*(no_speech)* Caption: Want to know where the gaps are in your restaurant?
+
+I created a simple tool to help you step back, see what you might be missing and figure out where to focus first.
+
+Comment LOOK and I’ll send it to you.
+
+## 2026-09-01 — Okay, so you picked TEAM. Now what?
+
+https://www.instagram.com/p/DcvWinfhYAE/ · Video · plays: 3593 · likes: 93 · status: transcribed
+
+Your restaurant is struggling with all three of the following. So which one are you fixing first? The team? The systems? Or is it the guest experience? I'm starting with the team. And probably not for the reason you think. By team, I do not mean firing everybody and finding better people. I'm looking at leadership. Do people actually know what's expected of them? Does somebody own the floor? Does the team know what good looks like in this restaurant? Because if they don't, I can give you all the new service standards and systems in the world. And they're probably not going to stick. Then I'm looking at the systems. What's making it unnecessarily hard for good people to do their jobs well? And then I'm looking at what all of that is creating for the guest. Because your guest experience doesn't start with the guest. It starts with the people and the environment you've created behind the scenes. So that's my order. Team, systems, guest experience. What's yours?
+
+## 2026-08-30 — If you’ve worked in hospitality long enough, you’ve probably quit at least 400 times in yo
+
+https://www.instagram.com/p/DcqOBU_B33U/ · Video · plays: 10113 · likes: 230 · status: transcribed
+
+Will you come again to get myself to kill me?
+
+## 2026-08-27 — Okay, so how did I actually get better at running pre-shift?
+
+https://www.instagram.com/p/DciaUQvBQBd/ · Video · plays: 3510 · likes: 112 · status: transcribed
+
+Something most people probably don't know about me. I used to hate running pre-shift. I was young, sometimes I was managing people much older than me. And I remember standing there thinking, what the hell am I going to say that's actually useful to these people? I didn't actually have the confidence yet to trust what I knew. And honestly, nobody had really taught me how to run a great pre-shift. Eventually I realized something. Running a good lineup is a skill. You learn how to build people's attention, how to give feedback without making the whole thing negative, how to actually teach something. I remember one manager even taught me to drop a swear word somewhere amongst the boring stuff because suddenly everyone looks up at you. And over time I got better, which is why I think we are doing managers a massive disservice when we hand them a team and expect them to magically know how to lead a great pre-shift. Whether yours is 10 minutes or 30, that little window before service can completely change the energy of your team. So if you're a manager and operator who still feels awkward standing in front of your staff at lineup, good. Keep practicing. You're not supposed to magically know how to do it. It is a skill and skills can be learned.
+
+## 2026-08-26 — Apparently, we have a lot of feelings about restaurant regulars.
+
+https://www.instagram.com/p/Dcf21e-JWSk/ · Video · plays: 15182 · likes: 171 · status: no_speech
+
+*(no_speech)* Caption: Apparently, we have a lot of feelings about restaurant regulars.
+
+My first list about them became one of my most watched reels ever, so here are 17 more things I notice when regulars walk in…
+
+1. Someone usually spots them before they’ve even made it through the door.
+
+2. Their drink sometimes starts being made before they’ve ordered it.
+
+3. They have a favourite seat, and somehow everyone knows w
+
+## 2026-08-25 — The longer you’ve owned it, the harder it can be to actually SEE it.
+
+https://www.instagram.com/p/DcdT2cXpoYB/ · Video · plays: 4275 · likes: 64 · status: transcribed
+
+There's a weird thing that happens when you've owned a restaurant for a really long time. You stop seeing it and it's not because you don't care, because you've walked through that front door thousands of times. You know the table that wobbles. You know the manager that always saves the day. You even know why that weird system exists. So eventually, you stop questioning any of it. I've worked with owners who've been doing this for 20 years plus and are incredibly good at what they do. Sometimes they don't need someone to tell them how to run a restaurant. They need a way to see their restaurant differently again. And no, that doesn't necessarily mean hiring a consultant. If this is hitting a little too close to home, I've put a few really simple ways to get a fresh set of eyes on your business in the caption below. Let me know how you go.
+
+## 2026-08-23 — I spent years watching couples across restaurant tables…
+
+https://www.instagram.com/p/DcZdx7rTj4f/ · Video · plays: 6130 · likes: 28 · status: transcribed
+
+They say why
+
+## 2026-08-23 — Before you fix the complaint, trace it backwards.
+
+https://www.instagram.com/p/DcYLoKghGwc/ · Video · plays: 2713 · likes: 52 · status: transcribed
+
+The problem with your restaurant might not be the thing your guests are complaining about. Let's say you keep hearing, service was really slow. It's really easy to think, okay, we need faster servers. Maybe? But what if the real problem is that the sections don't make sense? Or the team isn't communicating? Or your manager is spending the entire service putting out fires instead of actually managing? The complaint is what the guest experienced. It doesn't necessarily tell you what caused it. So the next time a complaint comes in, before you jump straight to fixing it, ask what had to happen behind the scenes for the guest to experience that? Because if you only fix the complaint, you might completely miss the problem.
+
+## 2026-08-19 — Some people just really fCking love restaurants.
+
+https://www.instagram.com/p/DcN47SZhnAE/ · Video · plays: 134216 · likes: 923 · status: no_speech
+
+*(no_speech)* Caption: Some people just really fCking love restaurants.
+
+The anticipation. The room. The people. The food. The whole damn experience.
+
+After 20+ years of owning and operating restaurants, I can usually spot them pretty quickly.
+
+1. They’ve already looked at the menu before they arrive… and still read the whole thing again.
+
+2. They’ll plan an entire holiday around one dinner reservation.
+
+3. Something la
+
+## 2026-08-16 — 21 things later… here’s what it really comes down to for me.
+
+https://www.instagram.com/p/DcGRR5WpUpw/ · Video · plays: 2198 · likes: 59 · status: transcribed
+
+We're down to the final three of my client audit. And number 21 might be the simplest question I ask, but it tells me a hell of a lot. Number 19, the regular. How do you treat the people who already love you? You can't know every returning guest, but when someone comes in every week, do they feel like you know them? Because loyalty should feel like something. Number 20, the reason to return. Before I leave, have you given me any reason to think about coming back? It could be as simple as if you love that, you have to try this next time. That's not selling. That's continuing the relationship. And number 21, the best friend. After everything I've looked at, I asked myself one really simple question. Would I send my best friend here? Would I trust this team to look after someone I care about? Because after 20 plus years in hospitality, that's still what it comes down to for me. Great hospitality is trust. And if you've been following this series, thinking about your own restaurant, and there's something about your guest experience, you want to go deeper on, comment experience below, and I will jump into your DMs. That's it, 21 down client audit complete.
+
+## 2026-08-15 — Okay, so how do you actually fix these?
+
+https://www.instagram.com/p/DcDrxSwJgTj/ · Video · plays: 2404 · likes: 70 · status: transcribed
+
+You'll learn a hell of a lot more about a restaurant when things don't go according to plan. We are up to number 16 on my client audit and these next three show me exactly that. Number 16, the mistake. Something goes wrong. A wrong dish, a forgotten drink, a long ticket time. So what happens next? I don't expect restaurants to be perfect. I never did when I owned one, but I care a lot more about what happens next. Does someone own it and fix it? Or does a guest have to fight to get it resolved? Number 17, the menu question. Can the person serving me actually talk about what they're selling, not just recite what's written on the menu? Ask something simple. What's your favorite thing on the menu? What's the difference between these two? If I only ordered one thing, what would you get? Whether it's a restaurant, cafe or cellar door, I want to know if your team can actually talk about what you are selling. Number 18, the handoff. Now I come from restaurants where ideally you looked after your table from beginning to end, but that's not how every hospitality business works. And sometimes shit just happens. So I'm watching what happens when a guest gets handed from one person to another. Does the information go with them? You know, the birthday, the allergy, the drink they already ordered, the problem they've already explained. A guest shouldn't have to tell their story three times. And if you've just found this series, go back to episode one, the order matters. I'm walking you guys through how I pull apart a restaurant when I'm looking for opportunities to make it better. That's 18 down, three to go. And if there's one of these that you want me to unpack even more, comment down below, mistake, menu or handoff and we'll go deeper. See you in the next one.
+
+## 2026-08-13 — Some of the things I look at aren’t complicated at all. And that’s kind of the point.
+
+https://www.instagram.com/p/Db-XjacJDPB/ · Video · plays: 2640 · likes: 83 · status: transcribed
+
+We've made it to number 13 on my client audit and these next three are things I physically look at every single time. And I promise you, yes, one of them is the bathroom. Number 13, the bathroom. If I walk into your bathroom halfway through a busy service, does it still reflect the standards of the rest of your restaurant? Is it clean? Is there toilet paper? Soap? Are the bins overflowing? Because you can have a beautiful dining room, an incredible service, and a disgusting bathroom can undo a lot of that very quickly. Number 14, the empty table. When a table leaves, how long does their mess sit there? Dirty plates, half full glasses, napkins on the floor? Your next guest might not be sitting at that table, but they're still looking at it. And number 15, the goodbye. What happens once the bill is paid? Does someone thank them? How about acknowledge them on the way out? Invite them back? Or does the hospitality basically stop once you've got their money? That last 30 seconds, it matters. Alright, so that's 15 down, 6 to go. And just like the last one I did, I've put a few really simple ways to tighten these up in the caption. Go have a read. See you soon.
+
+## 2026-08-12 — After 20+ years in restaurants, I’ve been the employee, worked my way up through managemen
+
+https://www.instagram.com/p/Db7yysdhl9t/ · Video · plays: 301854 · likes: 4006 · status: no_speech
+
+*(no_speech)* Caption: After 20+ years in restaurants, I’ve been the employee, worked my way up through management, and eventually became the owner hiring the managers.
+
+I got plenty wrong along the way. The more responsibility I had, the more I realised how much I still had to learn.
+
+And I think that might be the biggest thing I’ve noticed about the really great hospitality leaders: they never think they’ve got it all
+
+## 2026-08-11 — Okay, I promised you the fix. Here it is.
+
+https://www.instagram.com/p/Db5O7PbpPCO/ · Video · plays: 3391 · likes: 69 · status: transcribed
+
+Guess what? We're up to number 10 on my client on it. But this time, I'm giving you the fix too. Number 10. Same experience? Would I get the same experience on a quiet Tuesday lunch that I'd get on a busy Saturday night? Or does it completely depend on who's working? Consistency doesn't mean everything has to be perfect. It means the guests shouldn't have to get lucky. Number 11. Small details? Are your team noticing the little things before the guest has to ask? An empty water glass, a dirty table nearby, someone standing at the door who clearly is not sure where to go. Those little things, they add up really quickly. Number 12. Clear standards. Does your team actually know what great service looks like in your restaurant? Because telling people to give great service is not a standard. They need to know what that actually looks like. And if you've just found this series, go back and start at number one. The order matters. You're basically getting a look inside my brain and how I pull apart a restaurant to figure out what could make it better. That's 12 down, nine more to go. Save this one. I've put three simple ways to start fixing these in the caption. See you for the next one.
+
+## 2026-08-09 — Your guests are telling you things too… if you know what to look for.
+
+https://www.instagram.com/p/Db0EUnrJk5f/ · Video · plays: 2310 · likes: 88 · status: transcribed
+
+I probably shouldn't be giving this away. But here are the next three things I assess. What a restaurant hires me. And if you're too damn busy right now, hit save and come back to it later. Last time we looked at your teeth. This time we're looking at your guests. Number seven, remembered or served. Our guests remembered or simply served. I'll explain. It's the difference between how was everything and what did you think of the new steak dish? Specific questions tell guests they weren't just another table. Number eight, feeling something. People expect to leave full. What I'm looking for is whether they leave feeling something. Because that right there, that's the part they tell their friends about. Number nine, memorable moments. Is your team creating small moments that guests will actually remember? It doesn't have to be big. Sometimes it's remembering a name. Sometimes it's noticing a celebration. Sometimes it's simply making someone feel like they matter. Next time you go out for dinner, friends by yourself, pay attention to these three things. I'm curious which one matters most to you as a guest. That's nine down. We've got 12 more to go. See you in the next one.
+
+## 2026-08-07 — Your team is telling me things before I ever speak to you.
+
+https://www.instagram.com/p/DbvDttHBIj3/ · Video · plays: 1492 · likes: 46 · status: transcribed
+
+Three things I assess when a restaurant hires me. And if you're too damn busy right now, hit save and come back to it later. Last time we looked at first impressions. This time we're looking at your team. So coming in hot with number four is team recommendation. If I asked one of your team members whether they'd recommend working here to a friend, what would they say? Because that answer tells me a lot about the culture guests never see. Number five, coaching versus correcting. Do your managers spend more time coaching or fixing mistakes? The best leaders spend more time helping people grow than putting out fires. And number six for today, what makes you different? Could every member of your team explain what makes your business different? And if everyone gives me a different answer, your guests are getting a different experience every visit. Next time you're in your own venue, pay attention to these three things. Then come back and tell me what you noticed because my DMs, they're always open.
+
+## 2026-08-06 — Regulars don’t just walk into a restaurant.
+
+https://www.instagram.com/p/Dbsbat2hzVH/ · Video · plays: 10224 · likes: 113 · status: no_speech
+
+*(no_speech)* Caption: Regulars don’t just walk into a restaurant.
+
+They walk into a relationship that’s been built over dozens of visits, hundreds of conversations and thousands of tiny moments.
+
+After more than 20 years of owning and operating restaurants, here are 12 things I notice that most guests never see…
+
+1. Someone spots them before they’ve even reached the door.
+
+2. The smile they get is different. You can’t 
+
+## 2026-08-05 — These aren’t random questions. They’re part of the audit process I use when I start workin
+
+https://www.instagram.com/p/DbpzEzWhcpQ/ · Video · plays: 2988 · likes: 90 · status: transcribed
+
+Can I show you something? I really want to show you the first three things I audit when a restaurant hires me. And let's be honest, if you're too damn busy to watch this right now, it's safe and come back to it later. Number one, does the experience you're promising online actually match what guests walk into? If your social media feels polished and premium, but your venue's warm, casual, community focused, there's a disconnect. You might be attracting the wrong guests before they even arrive. Number two, if I called your restaurant right now, would I get excited about coming in? That first interaction tells me a lot about your standards, your training and the experience you're creating before a guest even walks through the door. Number three, within the first minute of arriving, do I know exactly how this place wants me to feel? Because the best hospitality businesses don't leave that to chance. Guests feel it almost immediately. There are another 18 things on my mental checklist that I've never publicly shared. Should I keep going? Let me know below if you want all of them.
+
+## 2026-08-04 — People assume restaurant managers eat cold meals because they’re too busy.
+
+https://www.instagram.com/p/DbnOPkApmg_/ · Video · plays: 8019 · likes: 83 · status: no_speech
+
+*(no_speech)* Caption: People assume restaurant managers eat cold meals because they’re too busy.
+
+Sometimes that’s true. But more often, it’s because their attention is somewhere else.
+
+They finally sit down for a bite and a server has a question. They notice a guest has left half a glass of the new Shiraz. They remember table 12 ordered the chicken and genuinely want to know what they thought of the new sauce. Then th
+
+## 2026-08-02 — Most people think pre-shifts are about passing on information.
+
+https://www.instagram.com/p/DbiEf3CpEPj/ · Video · plays: 4174 · likes: 97 · status: transcribed
+
+I changed one thing and the whole restaurant felt different. I was working with a client recently when we decided to try something different. It wasn't the menu and it wasn't hiring more staff. It wasn't a renovation. It was something that happened for just 10 minutes every day. At first I didn't think that was the problem either but after watching a few services it became obvious. Every day the team was getting information but they weren't getting inspired. They knew the specials, they knew what was booked, they knew what had run out. But nobody was talking about the guest experience. Nobody was recognizing great work from yesterday. Nobody was reminding the team why their role mattered. So we changed one thing. Not the length of the pre-shift, the purpose of it. It wasn't about changing the meeting. It was about changing what the team walked into service thinking about.
+
+## 2026-07-30 — The response to my first bar reel was unreal.
+
+https://www.instagram.com/p/DbaTlx6pYjU/ · Video · plays: 379995 · likes: 4755 · status: no_speech
+
+*(no_speech)* Caption: The response to my first bar reel was unreal.
+
+So here’s Part 2.
+
+After 20+ years of owning and operating restaurants, here are **17 more things I notice from the best seat in the house…
+
+1. Bar people somehow always make room for you. One person scoots over, then another, and suddenly there are two seats where there definitely weren’t two seats before.
+
+2. Couples who sit at the bar usually enjoy
+
+## 2026-07-29 — How did you end up in hospitality?
+
+https://www.instagram.com/p/DbXxCHZpnkY/ · Video · plays: 3160 · likes: 80 · status: transcribed
+
+I thought I was just taking a restaurant job. I had no idea it was about to change my entire life. At the time, I don't know if I was looking for a career. I definitely wasn't looking for where I belonged, but somewhere between the long shifts, the late nights, the chaos, and the laughter, something changed. For the first time, I felt like I found my people. Creative people, big personalities, hard workers, the slightly unconventional ones, the people who cared deeply. I realized I hadn't just found a job, I'd found a community. Looking back, I don't think I fell in love with restaurants first. I fell in love with belonging. And I think that's why all these years later, I'm still so deeply passionate about hospitality.
+
+## 2026-07-28 — I’ve always believed you can learn a lot about a restaurant after the last guest leaves.
+
+https://www.instagram.com/p/DbU_bswh14s/ · Video · plays: 6049 · likes: 103 · status: no_speech
+
+*(no_speech)* Caption: I’ve always believed you can learn a lot about a restaurant after the last guest leaves.
+
+Not from the numbers.
+
+Not from the food.
+
+From the way the team treats each other.
+
+Do people disappear the second they’re cut? Or do they stop to say goodnight to the kitchen? Thank the dishwasher. Check in with the bartender before heading home.
+
+Those little moments tell me more about the culture of a res
+
+## 2026-07-26 — You can tell a lot about a restaurant within five minutes.
+
+https://www.instagram.com/p/DbP7Pz2pPtG/ · Video · plays: 4313 · likes: 107 · status: transcribed
+
+You can tell within five minutes if the staff actually enjoy working together. Most guests are watching how the staff treat them. I'm watching how the staff treat each other. After more than 20 plus years in hospitality, it's one of the first things I notice. Does someone jump in to help a teammate without being asked? Do they smile at each other when they walk past? Are they communicating or trying to survive the shift? Because here's what I've learned. The way a team treats each other is almost always the way they'll eventually treat their guests. Guests feel culture even if they never see it.
+
+## 2026-07-25 — I wish I could tell you I just go out for dinner.
+
+https://www.instagram.com/p/DbNWx2aRInP/ · Video · plays: 311847 · likes: 1222 · status: no_speech
+
+*(no_speech)* Caption: I wish I could tell you I just go out for dinner.
+
+I really do.
+
+But somewhere between ordering a drink and paying the bill, my brain starts asking questions nobody else at the table is thinking about.
+
+Why does that section still look so quiet?
+
+Something’s changed… what happened in the kitchen?
+
+Why does this service feel so effortless tonight?
+
+What did they say in pre-shift that’s got every se
+
+## 2026-07-23 — For a long time, I thought growth meant getting bigger.
+
+https://www.instagram.com/p/DbIRIGsh2pb/ · Video · plays: 2392 · likes: 49 · status: transcribed
+
+Something that I don't talk about enough. When I was 29, I thought bigger meant better. Stay with me. A bigger restaurant, a bigger team, more seats, more success. So when I built Westbridge, I went big. Looking back now, I confused growth with success. The restaurant was successful, but I took on more than one person should have. These days, I don't believe bigger is better. I believe better is better. Better leaders, better training, better systems, better experiences. I choose that over bigger every single time.
+
+## 2026-07-22 — One of the biggest misconceptions about consulting is that people hire me because somethin
+
+https://www.instagram.com/p/DbFpqWSh4vZ/ · Video · plays: 22372 · likes: 125 · status: no_speech
+
+*(no_speech)* Caption: One of the biggest misconceptions about consulting is that people hire me because something is going wrong.
+
+Honestly…
+
+Some of my favourite clients are already running great restaurants.
+
+They’re just too close to see everything anymore.
+
+That’s completely normal.
+
+Here are 12 blind spots I find over and over again…
+
+1. The greeting feels different depending on who’s working.
+
+2. Managers spend m
+
+## 2026-07-20 — Maybe I’m completely wrong.
+
+https://www.instagram.com/p/Da_tDknhzNj/ · Video · plays: 3659 · likes: 128 · status: transcribed
+
+I believe that the next decade belongs to hospitality, not because people are suddenly going to eat out more, but because we're entering a world where almost anything can be automated, except how someone makes you feel. AI can do a lot of incredible things, but it can't genuinely welcome you when you walk through the door. It can't make you laugh. It can't read the room. It can't make someone feel like they truly belong. I think the restaurants, the wineries and hotels that invest in their people, that train their teams, that develop great leaders, that obsess over how every guest feels, not just what they eat, are going to be the ones people keep coming back to, because genuine human connection is becoming harder to find. And I don't think we've ever needed great hospitality more than we do right now. Maybe I'm wrong, but I think the businesses that make people feel something are going to win.
+
+## 2026-07-17 — I notice great servers almost immediately.
+
+https://www.instagram.com/p/Da42A6Ch5iF/ · Video · plays: 10580 · likes: 120 · status: failed
+
+*(failed)* Caption: I notice great servers almost immediately.
+
+Not because they can carry four plates.
+
+Not because they know the menu by heart.
+
+It’s the little things. The things most guests probably don’t even realise they’re noticing.
+
+Here are 12 things I can’t help watching…
+
+1. Before they even speak, you can usually tell whether they genuinely enjoy looking after people. It’s hard to explain, but you can fee
+
+## 2026-07-16 — One of the most interesting parts of consulting is this…
+
+https://www.instagram.com/p/Da2PS0yBKuY/ · Video · plays: 5487 · likes: 52 · status: no_speech
+
+*(no_speech)* Caption: One of the most interesting parts of consulting is this…
+
+Restaurant owners usually know something doesn’t feel right. They just don’t always know what’s causing it.
+
+They bring me in to fix one thing… but after a few hours on the floor, we’re often talking about something completely different.
+
+Here are seven conversations I have all the time…
+
+1. “I think it’s a staffing problem.” Most of the ti
+
+## 2026-07-15 — I’ve always said restaurant eyes are a blessing and a curse.
+
+https://www.instagram.com/p/DazoVXTBD52/ · Video · plays: 1720 · likes: 79 · status: transcribed
+
+The weird thing about career hospitality people, you can take us out of the restaurant, but you can never take the restaurant out of us. We're still watching the host, great guests. We're still noticing the empty tables. We're still timing courses without even realizing we're doing it. We're still listening to how managers talk to their team. It's not because we're judging. It's because somewhere along the way hospitality stopped being just what we do. It became part of who we are. If you've been in this industry long enough, I have a feeling you know exactly what I mean.
+
+## 2026-07-14 — Every now and then it’s nice to simply be the guest.
+
+https://www.instagram.com/p/Daw1M2FAbOn/ · Sidecar · plays: n/a · likes: 56 · status: failed
+
+*(failed)* Caption: Every now and then it’s nice to simply be the guest.
+Thanks for a beautiful Sunday afternoon, @maxwellwines 🍷
+
+## 2026-07-13 — Ask anyone who’s spent long enough on a restaurant floor…
+
+https://www.instagram.com/p/DaueCochMJQ/ · Video · plays: 17995 · likes: 114 · status: no_speech
+
+*(no_speech)* Caption: Ask anyone who’s spent long enough on a restaurant floor…
+
+Those first few moments tell you almost everything.
+
+Here are 17 things I never stop noticing…
+
+1. Within seconds, you can usually tell who’s been there before.
+
+2. Before they’ve even sat down, most guests are already comparing what they saw online to what they’re seeing in real life.
+
+3. You can actually see people’s shoulders drop after
+
+## 2026-07-12 — Every now and then, you work for someone who changes the way you lead forever.
+
+https://www.instagram.com/p/Dar39zMBi1k/ · Video · plays: 3690 · likes: 73 · status: transcribed
+
+I want you to send this to the best manager you've ever worked for. You know the one. The one who jumped on the floor, the second the restaurant got slammed, the one who ran food without ever being asked, the one who walked through the restaurant every morning just to say, good morning to every single person, the one who believed in you before you believed in yourself, the one who made you want to be better, not because you were scared of them but because you respected them. I've been lucky enough to work for a few people like that and they changed the way I lead forever. If someone came to mind while you were watching this, send it to them.
+
+## 2026-07-10 — One thing I’ve never managed to switch off after more than 20 years in restaurants…
+
+https://www.instagram.com/p/Dam29HOJ_v8/ · Video · plays: 7475 · likes: 40 · status: no_speech
+
+*(no_speech)* Caption: One thing I’ve never managed to switch off after more than 20 years in restaurants…
+
+The experience starts long before I walk through the front door.
+
+Before I’ve looked at a menu…
+Before I’ve met a staff member…
+Before I’ve ordered a drink…
+
+I’m already paying attention.
+
+Here are seven things I can’t help noticing…
+
+1. Does the outside match what they promised online?
+
+2. Is it immediately obvio
+
+## 2026-07-09 — Which one would you choose?
+
+https://www.instagram.com/p/DakTE-gB8ce/ · Video · plays: 2386 · likes: 84 · status: transcribed
+
+This is probably going to make some people mad. But hear me out. I think we put way too much emphasis on experience when hiring restaurant staff. After more than 20 years in hospitality, I'd rather hire someone who genuinely gives a shit than someone who's worked in restaurants for 10 years. I can teach someone how to carry three plates. I can teach someone how to open a bottle of wine. I can teach someone our service standards. But I can't teach someone to genuinely care about people. Some of my greatest success stories came from people who walked through the door with absolutely zero restaurant experience. If I have to choose, I'll back attitude over experience every single time. What do you think?
+
+## 2026-07-07 — I’ve worked with some incredible hospitality leaders over the last 20+ years.
+
+https://www.instagram.com/p/DafCd7IBqNW/ · Video · plays: 18522 · likes: 898 · status: transcribed
+
+Five things that instantly tell me you are a great hospitality leader I have worked with a lot of leaders over the years the ones I respect the most all seem to do these Five things number one they walk the venue every day and say hello to everyone not because they have to Because they genuinely want to number two they train all the time They don't wait until something goes wrong before coaching their team number three they spend time on The floor you cannot lead hospitality from behind a laptop number four They notice the little things a guest who's been waiting a team member who's struggling the details Everyone else walks past and number five They never act like they've got it all figured out the best leaders I've ever met are still learning What would you add to the list?
+
+## 2026-07-06 — After more than 20 years owning and operating restaurants…
+
+https://www.instagram.com/p/Dacg9dXhqzq/ · Video · plays: 112851 · likes: 990 · status: no_speech
+
+*(no_speech)* Caption: After more than 20 years owning and operating restaurants…
+
+I’ve become convinced unforgettable hospitality isn’t built on one big thing.
+
+It’s built on hundreds of tiny moments.
+
+Here are 17 I never stop noticing…
+
+1. Someone looks up and smiles before they ever look at the booking screen.
+
+2. The welcome feels like they’re genuinely happy you’re there.
+
+3. A server thanks the person who ran thei
+
+## 2026-07-05 — This one felt a little vulnerable to post.
+
+https://www.instagram.com/p/DaZxiMMBXyi/ · Video · plays: 3688 · likes: 126 · status: transcribed
+
+I don't think I've been completely honest with all of you. Over the last few months, you've probably noticed I've been talking more and more about restaurants and hospitality. And I don't think I've ever really explained why. The truth is, hospitality isn't just something I've done for over 20 years. It's part of who I am. The more I've started talking about it on here, the more I've realized I genuinely can't separate myself from it. Because restaurants were the first place I ever felt like I truly belonged. I found my people there. The creatives, the weirdos, the people who worked Christmas without thinking twice, the bartenders, the dishwashers, the managers trying to hold everything together in front of the house teams. I care so damn much about this industry. Probably more than I've even realized. And I think that's why these videos have changed. I'm not talking about hospitality because it's a strategy. I'm talking about it because it's home. And if you decided to come along for that journey, I'm so damn glad you're here.
+
+## 2026-07-02 — Every first date, catch-up, business meeting and family dinner starts with someone waiting
+
+https://www.instagram.com/p/DaSQ_WSh8jh/ · Video · plays: 6150 · likes: 50 · status: no_speech
+
+*(no_speech)* Caption: Every first date, catch-up, business meeting and family dinner starts with someone waiting.
+
+Here’s what I’ve noticed over the years…
+
+1. They look at the door far more than they look at their phone. Even when they pretend not to.
+
+2. If they order a drink before the other person arrives, they’re usually comfortable in their own company.
+
+3. They straighten the table without even realising it. The
+
+## 2026-06-30 — I used to think 5:30 dinner reservations were for old people.
+
+https://www.instagram.com/p/DaNBmJxJUEz/ · Video · plays: 12293 · likes: 93 · status: no_speech
+
+*(no_speech)* Caption: I used to think 5:30 dinner reservations were for old people.
+
+Turns out I just hadn’t turned 46 yet.
+
+Here’s what else changed…
+
+• I’ll take the 5:30 reservation over the 8:30 one every single time.
+
+• Give me a long lunch at a winery over a late dinner.
+
+• I’ve stopped pretending I’m too full for dessert.
+
+• If there’s a wine list, I’m reading that before I even look at the menu.
+
+• If I’m still
+
+## 2026-06-28 — Every regular was a first-time guest once.
+
+https://www.instagram.com/p/DaH1rR9BXr1/ · Video · plays: 78574 · likes: 197 · status: no_speech
+
+*(no_speech)* Caption: Every regular was a first-time guest once.
+And those first few minutes matter more than most businesses realise.
+
+Here’s what I’ve noticed over the years…
+
+1. They pause at the entrance for just a second. Regulars walk in. First-time guests take a moment to take it all in.
+
+2. Their eyes scan the room before they ever look at a menu. They’re looking for clues. Did we choose the right place?
+
+3. Th
+
+## 2026-06-25 — I spent most of my adult life surrounded by incredible food, wine and celebrations.
+
+https://www.instagram.com/p/DaAKlTdh5yW/ · Video · plays: 2679 · likes: 31 · status: no_speech
+
+*(no_speech)* Caption: I spent most of my adult life surrounded by incredible food, wine and celebrations.
+
+And honestly?
+
+I wouldn’t change a thing.
+
+But nobody tells you that the same body that handled it all at 29 has some thoughts at 46. 😂
+
+So now I lift weights.
+Not because I love the gym.
+Because I love the life I’ve built.
+
+And I’d like to enjoy it for a very long time. 🥃🧡
+
+## 2026-06-24 — I spent most of my adult life obsessing over experiences.
+
+https://www.instagram.com/p/DZ9oV31Bzov/ · Video · plays: 18239 · likes: 65 · status: no_speech
+
+*(no_speech)* Caption: I spent most of my adult life obsessing over experiences.
+
+Which means I’m a very strange hotel guest.
+
+Here are 12 oddly specific things I notice when I check into a hotel.
+
+1. I know within about 30 seconds if the people at reception actually want to be there. You can tell by whether they greet you before they greet the computer.
+
+2. I always check if the lobby is somewhere I’d happily waste an 
+
+## 2026-06-21 — One of my favorite things about spending most of my life in restaurants?
+
+https://www.instagram.com/p/DZ14HfQhpqo/ · Video · plays: 944653 · likes: 7754 · status: no_speech
+
+*(no_speech)* Caption: One of my favorite things about spending most of my life in restaurants?
+
+Regulars.
+
+Not because they spend the most money.
+
+Not because they know the menu.
+
+Because over time, something really special happens.
+
+People stop being customers.
+
+And start becoming part of the story.
+
+Here’s what I’ve noticed.
+
+1. The best regulars aren’t usually the loudest.
+
+2. Great regulars know people’s names.
+
+3.
+
+## 2026-06-20 — People always act like it has to be one or the other.
+
+https://www.instagram.com/p/DZzSPmJBWTO/ · Video · plays: 3921 · likes: 36 · status: no_speech
+
+*(no_speech)* Caption: People always act like it has to be one or the other.
+
+Healthy or fun.
+
+Gym or restaurants.
+
+Discipline or enjoyment.
+
+Nah.
+
+I’ll take the workout.
+
+The steak.
+
+The bourbon.
+
+And yes, the dessert menu too.
+
+Feels like a pretty fair trade to me. 🥃🥩🧡
+
+## 2026-06-19 — One of my favorite things about spending most of my life in restaurants is getting a front
+
+https://www.instagram.com/p/DZwnxWVhKnM/ · Video · plays: 54621 · likes: 168 · status: no_speech
+
+*(no_speech)* Caption: One of my favorite things about spending most of my life in restaurants is getting a front-row seat to people.
+
+And first dates are still my favorite.
+
+The nerves.
+
+The awkward laughs.
+
+The excitement.
+
+The people who clearly never want the night to end.
+
+Here’s what I’ve noticed.
+
+1. If they forget to open the menu because they’re too busy talking, I know we’re off to a good start.
+
+2. If they or
+
+## 2026-06-18 — People definitely had opinions about this one😂
+
+https://www.instagram.com/p/DZuECdlBRKY/ · Video · plays: 2695 · likes: 36 · status: transcribed
+
+I'm in between meetings. I'm sipping on my coffee and I realize I have to share with you guys one of the most controversial things I did when I owned my restaurant Westbridge. Oh my god people were in arms about this hold on sip They couldn't believe that I was gonna do this. Are you ready? And we're talking even the guys that did the build out of the restaurant were like no you can't do that And I was like I can Because how I want people to leave my restaurant is with an epic Experience and this one thing can ruin the whole fucking experience. I want to know what that is. It's coffee Mm-hmm coffee. We didn't make lattes or cappuccinos. Look, it's America. They don't have the epic coffee culture They do in Australia. That's a whole other conversation But we chose to only serve drip coffee because I wanted the very last experience To be epic and to be something I could control and at this point in my operation I didn't feel that I could control the quality of coffee. We were making people were Enraged but they got used to it. Amazing experience. Cheers
+
+## 2026-06-17 — Apparently you’re supposed to think about protein after the gym.
+
+https://www.instagram.com/p/DZrhYBKBbkQ/ · Video · plays: 2414 · likes: 33 · status: no_speech
+
+*(no_speech)* Caption: Apparently you’re supposed to think about protein after the gym.
+
+I think about where we’re eating next.
+
+Different goals, I guess. 😂☕🥩🍷
+
+## 2026-06-16 — I have a soft spot for people sitting alone.
+
+https://www.instagram.com/p/DZo_YCHBvhu/ · Video · plays: 153584 · likes: 1256 · status: no_speech
+
+*(no_speech)* Caption: I have a soft spot for people sitting alone.
+
+Always have.
+
+Maybe it’s because I’ve spent most of my life in restaurants.
+
+Maybe it’s because I genuinely enjoy my own company.
+
+Or maybe it’s because some of the most interesting conversations I’ve ever had started with a table for one.
+
+Here’s what I’ve noticed.
+
+1. Some of the happiest people in the room came alone. After all these years, I’ve lea
+
+## 2026-06-14 — People always act like you have to choose.
+
+https://www.instagram.com/p/DZj0_n1BOPS/ · Video · plays: 4813 · likes: 50 · status: no_speech
+
+*(no_speech)* Caption: People always act like you have to choose.
+
+The gym or the restaurant.
+
+Healthy or fun.
+
+Discipline or enjoyment.
+
+Nah.
+
+I’ll take the workout.
+
+The bourbon.
+
+The medium-rare scotch fillet.
+
+And the dessert menu while we’re at it.
+
+Turns out balance is a lot more fun than extremes. 🥃🥩
+
+And while we’re asking important questions…
+
+Team medium-rare or well done? 😂
+
+## 2026-06-13 — If you’ve spent enough years in hospitality, eventually you realize the bar is the best se
+
+https://www.instagram.com/p/DZhPxiuhWvI/ · Video · plays: 1347002 · likes: 9734 · status: failed
+
+*(failed)* Caption: If you’ve spent enough years in hospitality, eventually you realize the bar is the best seat in the house.
+
+And after 20+ years of owning and operating restaurants, here are 17 things I’ve noticed from a seat at the bar.
+
+1. Hospitality people almost always prefer sitting at the bar. We don’t want the best table in the house. The bar is the best seat in the house.
+
+2. People who sit at the bar ten
+
+## 2026-06-11 — One of the best things I’ve ever done was…
+
+https://www.instagram.com/p/DZcJP1wBsZc/ · Video · plays: 1418 · likes: 33 · status: transcribed
+
+There was a year from like the last few months of Selling my restaurant to then taking time up taking time off and doing my whole eat-gray love journey that I stopped drinking and so What's interesting to me is that I always wanted to find my way to be able to drink again But I had such an unhealthy relationship with it that I just stopped But even when I was going to psychiatrists back in the States. I said someday. I'd love to drink again I love sitting down and enjoying glass of wine and learning about the vineyard I genuinely love that and so when I found my way back to a healthy relationship with alcohol I was actually really scared to talk about it on here And I think it's one of the reasons I've kind of hid a lot of my hospitality side and now saying this out loud I noticed some people it might sound crazy, but you know, we can just be so fearful of judgment So now I have the occasional glass of wine and I'm so damn happy and I'm proud of myself Fuck everyone else
+
+## 2026-06-10 — I’m no friendship expert.
+
+https://www.instagram.com/p/DZZmci1hcLO/ · Video · plays: 520446 · likes: 4194 · status: transcribed
+
+Ain't it fun?
+
+## 2026-06-09 — One thing Jed and I have always been good at?
+
+https://www.instagram.com/p/DZW-l0bhBgZ/ · Video · plays: 2283 · likes: 36 · status: no_speech
+
+*(no_speech)* Caption: One thing Jed and I have always been good at?
+
+Making time for experiences.
+
+A fancy tasting menu.
+Buffalo wings and whiskey.
+A winery.
+A quick lunch.
+
+We don’t really care what it is.
+
+We just like doing life together.
+
+Tag your favourite dinner date. 🥂
+
+## 2026-06-07 — If you’ve ever worked in hospitality, you’ll know exactly what I’m talking about.
+
+https://www.instagram.com/p/DZRrEtmhhwI/ · Video · plays: 392364 · likes: 3934 · status: transcribed
+
+Stop it!
+
+## 2026-06-05 — I’m not training for a marathon.
+
+https://www.instagram.com/p/DZMtitchDoH/ · Video · plays: 1657 · likes: 28 · status: no_speech
+
+*(no_speech)* Caption: I’m not training for a marathon.
+
+I’m training for date nights, dessert menus and a very long list of restaurants I still want to try.
+
+Tag the one you’re having dessert with at 70. 🍰🥂
+
+## 2026-06-03 — Most people walk into a room looking for people they know.
+
+https://www.instagram.com/p/DZHk_1AB678/ · Video · plays: 15866 · likes: 58 · status: no_speech
+
+*(no_speech)* Caption: Most people walk into a room looking for people they know.
+
+I don’t.
+
+After 20+ years of owning and operating restaurants, I notice different things.
+
+Here’s what people reveal before they ever say a word:
+
+1. Who’s performing.
+
+Louder than necessary. Very aware of who’s watching. They want to be seen more than they want to be present.
+
+2. Who’s uncomfortable.
+
+They over-explain, fidget, laugh a b
+
+## 2026-05-31 — This week has caught me a little off guard.
+
+https://www.instagram.com/p/DY_y6XShe23/ · Video · plays: 2009 · likes: 39 · status: transcribed
+
+Holy s*** it, have I been so emotional this week. Who would have thought going viral on social media could make this gal so emotional? And I know why. It's brought up a lot for me because for the first time, probably ever publicly, I'm sharing this whole other side of my life, my world. You know, when I sold my business back in the States 10 years ago, it was one of the hardest decisions in my life. I had to get my head on straight. I was a f***ing mess. But just because I was a mess didn't mean I didn't absolutely love that industry. It is something that I am not only extremely good at and that is not arrogance, that is truth, but I love it. And that's why now I get to do consulting with it. But there was something always holding me back from talking about it publicly. Maybe something I need to grow into, but oh my God, the adhears have been flowing.
+
+## 2026-05-29 — This isn’t just restaurants.
+
+https://www.instagram.com/p/DY6rpvDBfJX/ · Video · plays: 144787 · likes: 1041 · status: no_speech
+
+*(no_speech)* Caption: This isn’t just restaurants.
+
+It’s Hotels. Wineries. Bars.
+
+Once you’ve spent enough years creating experiences, you stop walking into spaces the way everyone else does.
+
+You notice things.
+
+Here are 12 things I notice before I’ve even looked at the menu ↓
+
+1. The room.
+
+Before I sit down, I’m taking in the entire space.
+The bar.The kitchen.The lighting.The flow.
+I’m trying to figure out what stor
+
+## 2026-05-27 — One of the biggest lies the restaurant industry ever sold people is that “serious” food pe
+
+https://www.instagram.com/p/DY1dS1hBA9h/ · Video · plays: 7985 · likes: 26 · status: no_speech
+
+*(no_speech)* Caption: One of the biggest lies the restaurant industry ever sold people is that “serious” food people only want fancy food ↓
+
+Absolutely not.
+
+Some of the biggest food and wine people I’ve ever known finish service and crave things like:
+
+* perfect hot chips / french fries 😜
+* cold martinis
+* soft scrambled eggs
+* oysters
+* roast chicken
+* really good bread and butter
+* a simple bowl of pasta
+* a perfect
+
+## 2026-05-26 — I spent years watching couples across restaurant tables…
+
+https://www.instagram.com/p/DYy8EEdhV06/ · Video · plays: 381827 · likes: 380 · status: transcribed
+
+They say why
+
+## 2026-05-25 — I spent years thinking everything had to be all or nothing.
+
+https://www.instagram.com/p/DYwb_mcBfQ6/ · Video · plays: 4314 · likes: 112 · status: transcribed
+
+girl girl girl
+
+## 2026-05-24 — If you’ve ever worked in hospitality…
+
+https://www.instagram.com/p/DYtniRwBPyq/ · Video · plays: 71632 · likes: 359 · status: no_speech
+
+*(no_speech)* Caption: If you’ve ever worked in hospitality…
+
+you’re about to feel violently seen 👇
+
+1. People stopping directly in the doorway like the restaurant is a family meeting point
+
+2. Someone saying “we’re ready” and then opening the menu for the first time
+
+3. Guests continuing a full conversation while the server is standing there waiting to speak
+
+4. People snapping fingers for attention like it’s 1987
+
+5. 
+
+## 2026-05-23 — Eating and drinking our way through life together 🍷
+
+https://www.instagram.com/p/DYrI5cihBW9/ · Video · plays: 1879 · likes: 40 · status: transcribed
+
+Whenever you're here, just stay here
+
+## 2026-05-22 — Do you have a favourite restaurant…
+
+https://www.instagram.com/p/DYojCcDBy4B/ · Video · plays: 4445 · likes: 39 · status: no_speech
+
+*(no_speech)* Caption: Do you have a favourite restaurant…
+
+…but deep down you know something feels off?
+
+As a former Boston restaurateur, these are usually the first signs I notice that a restaurant is struggling operationally long before the food becomes the issue.
+
+1. Staff look scared to make decisions without approval. You’ll see them checking with management over tiny things they should already feel confident hand
+
+## 2026-05-21 — We did it all and we did nothing. 
+
+https://www.instagram.com/p/DYl8vY5ASEe/ · Sidecar · plays: n/a · likes: 110 · status: failed
+
+*(failed)* Caption: We did it all and we did nothing. 
+
+We ate (extra spicy). 
+We drank (Bintang’s and spicy blood Mary’s). 
+
+We met up with friends who just happen to be in Indo. 
+We saw epic businesses our friends are building (check out the pink magic pic). 
+
+We patted all the pups we could (this one’s always a tough one for me). 
+We had epic conversations with complete strangers (one my favorite parts of travelin
+
+## 2026-05-20 — If you want restaurant staff to instantly like you…
+
+https://www.instagram.com/p/DYjbtaRBXvn/ · Video · plays: 4380 · likes: 47 · status: no_speech
+
+*(no_speech)* Caption: If you want restaurant staff to instantly like you…
+
+do these 7 things first:
+
+1. Acknowledge whoever greets you at the door instead of walking in like you own the building
+
+2. Don’t make the server stand at the table while four people continue a completely unrelated conversation
+
+3. Get off your goddamn phone when the server comes to the table
+
+4. If you loved something, say exactly what it was. 
+
+## 2026-05-12 — 🛟Save this. You’ll use it more than you think.
+
+https://www.instagram.com/p/DYPFZ9ZhTa4/ · Video · plays: 1290 · likes: 23 · status: no_speech
+
+*(no_speech)* Caption: 🛟Save this. You’ll use it more than you think.
+
+Here’s what I look for the second I walk in:
+
+1. Who’s performing. Louder than necessary, very aware of who’s watching. They want to be seen more than they want to be present.
+
+2. Who’s uncomfortable. They over-explain, fidget, laugh a beat too late. Something’s off for them tonight.
+
+3. Who’s actually in charge. Not who’s talking the most. Watch who
+
+## 2026-05-10 — I honestly don’t know if people want more of this side of me…
+
+https://www.instagram.com/p/DYJal6KJy-p/ · Video · plays: 2594 · likes: 44 · status: no_speech
+
+*(no_speech)* Caption: I honestly don’t know if people want more of this side of me…
+
+…but after years of owning and operating restaurants in Boston, I’ve realized the industry permanently changed the way I see people.
+
+7 confessions from an ex-restaurateur:
+
+1. I can usually tell within 30 seconds if your first date is going badly by the direction your knees are pointing
+
+2. I still notice every uncleared table in a re
+
+## 2026-04-30 — 10 years today since our very first date. 
+
+https://www.instagram.com/p/DXvTbfXhsP5/ · Video · plays: 1337 · likes: 63 · status: transcribed
+
+What's your favorite place? I don't have a favorite place. I have my favorite people. And whenever I'm with my favorite people, that place becomes my favorite.
+
+## 2026-04-20 — The best part about date days at a winery you ask? 
+
+https://www.instagram.com/p/DXWMLQYBj--/ · Video · plays: 1179 · likes: 41 · status: no_speech
+
+*(no_speech)* Caption: The best part about date days at a winery you ask? 
+
+You will never find either of us on our phones 😉🥂
+
+## 2026-04-11 — When all your husbands dreams come true😆
+
+https://www.instagram.com/p/DW-3Eq3Aalp/ · Sidecar · plays: n/a · likes: 59 · status: failed
+
+*(failed)* Caption: When all your husbands dreams come true😆
+I am just glad he came home with me. 
+Massive shout out to @coopersbrewery for a fantastic day 🍻
+
+## 2026-03-23 — 🪩Went to this party solo.
+
+https://www.instagram.com/p/DWN0R77lBs0/ · Sidecar · plays: n/a · likes: 69 · status: failed
+
+*(failed)* Caption: 🪩Went to this party solo.
+Didn’t know a single person.
+Didn’t really know the brand beyond what I’d seen on Instagram.
+
+And then I learned what it’s actually built on.
+
+Mental health.
+Self-doubt.
+Choosing to back yourself anyway.
+
+🖤A husband and wife team @sabbi_thestore who took all of that…
+the messy, the hard, the real…
+and turned it into something people can feel the second they walk in.
+
+“Sta
+
+## 2026-03-15 — Well… @adlfringe, you absolutely blew us away. 🪩
+
+https://www.instagram.com/p/DV5NhuqAclu/ · Sidecar · plays: n/a · likes: 48 · status: transcribed
+
+[Video 1] Fuzzy with a big red bowing Mouth some bitch, gonna teach you like a whole You're a classic honey kisser I can love it, I can get a princess
+
+## 2026-03-01 — 24 hours in the Barossa.
+
+https://www.instagram.com/p/DVU0hkagao0/ · Sidecar · plays: n/a · likes: 53 · status: failed
+
+*(failed)* Caption: 24 hours in the Barossa.
+
+Wine tastings that lift the spirit.
+A few more tears than glasses, if I’m honest.
+Only dog-friendly stops because Axl is living his best spoiled life.
+
+We’re choosing playfulness on purpose.
+Because a life without happiness just isn’t one we’re interested in living. 🍷🐾
+
+## 2026-02-11 — RIP Baby Girl 🤍 Harley 🥜Our little Peanut 
+
+https://www.instagram.com/p/DUm-3gyElYr/ · Sidecar · plays: n/a · likes: 85 · status: failed
+
+*(failed)* Caption: RIP Baby Girl 🤍 Harley 🥜Our little Peanut 
+
+✨Massive thanks to @stevensdaniel for nailing the brief and truly getting it @progressiontattoo
+
+## 2026-02-04 — January, you were brutal and beautiful. A bastard and breathtaking all at once.
+
+https://www.instagram.com/p/DUWWNkvE0so/ · Sidecar · plays: n/a · likes: 110 · status: failed
+
+*(failed)* Caption: January, you were brutal and beautiful. A bastard and breathtaking all at once.
+
+The last 12 hours of the month broke me. Truly. But I’m trying to hold on to everything that came before them. The laughter. The travel. The ordinary moments that didn’t feel ordinary at the time.
+
+We said goodbye to our baby girl Harley. Only four years old. Still feels impossible to write that.
+
+She filled this hous
+
+## 2025-11-29 — 👯‍♀️Tag the person who could show up tomorrow and it would feel like no time passed.
+
+https://www.instagram.com/p/DRn9_WLAd5E/ · Video · plays: 2239 · likes: 36 · status: no_speech
+
+*(no_speech)* Caption: 👯‍♀️Tag the person who could show up tomorrow and it would feel like no time passed.
+
+## 2025-10-30 — A little different today.
+
+https://www.instagram.com/p/DQcw4gkk-6S/ · Sidecar · plays: n/a · likes: -1 · status: transcribed
+
+1930 and I'll be 94 next Thursday on the 31st. And he wasn't a good dancer and that's what I didn't like because I love dancing. And then we come back to Denoni. I had good memories. They called it Pregnant Valley. If he wasn't pregnant when you were in, you were pregnant when you come out. We used to fight over stupid things, mostly it was money, you know, those days. Because he worked in the bush and if you got a wet month, you only got paid once a month. It was tough days. Well, there was no help. There was nothing. There was no sunblock those days. Yeah, I was going to be my next question. I'm like, I don't even know when sunblock came into the world. No, because when we were young, we put everything, all the oil and stuff on us to cook us. And if you got sunburned, you cut it to murdering.
+
+## 2025-10-26 — I really hope someone at Aldi laughed as hard as I did…
+
+https://www.instagram.com/p/DQQ57V1kkNi/ · Sidecar · plays: n/a · likes: 66 · status: failed
+
+*(failed)* Caption: I really hope someone at Aldi laughed as hard as I did…
+
+🪴Ok but in all seriousness, I haven’t felt this grounded in months. The first few weeks in SA are going really fcking good.
+
+From exploring our new hood in Glenelg to grabbing a last-minute ticket to a sold-out networking event.
+
+🥘 Cooking in our new home for our first visitor — and in the same week, saying goodbye to our caravan.
+
+And somew
+
+## 2025-10-15 — It’s over. 
+
+https://www.instagram.com/p/DPz43gxgQii/ · Video · plays: 1111 · likes: 48 · status: transcribed
+
+Okay, I think I did this right. Thank you for joining me. It's over and everything I learned. I know this is the part of Instagram where you do a live and they try to tell everybody that you're here, but I also know that a lot of you are gonna watch recording. So I'm gonna dive right into, it's over, nine months and it's over and everything I learned. Oh, thank you guys for saying hi. I love not talking just into the abyss and the people actually acknowledging me. It's very lonely in this online world. Oh, even Joby's joining, how nice of him. He is pretty supportive. So today is called It's Over and everything I've learned. And while we let everyone joining us get their snacks and their six beverages, you know, come join me, six beverages and any other distractions you might need. Let me remind you why the F you are here today. Hi, Jessie. My name's Alessa Scutridge and if you're new to here or you have maybe forgotten why you follow me in the first place, because that happens from time to time, I'm an New Yorker living in Australia with the love of my life. I've been running my own businesses since I was 29 years old and I've evolved into an architect of a damn good life. And now I get to help other women do the same thing and be the architects of their damn good lives. Let's see, what else do you guys need to know? This is me kind of getting you guys ready and up. Don't forget to get your snacks and juice and just give them people a moment. I'm 45 years old. My favorite word is still the F word. Anyone else with me? I love it. I'm sorry, I've been yelled at my whole life for it. And for the last nine months, I have been traveling around Australia in a 21 and a half foot caravan with my husband, our two labs, and my business has funded the entire trip, my online business, while my husband has taken over a year off from work. Actually, I think we figured out it was 13 months today or this month. So today is a really big deal for me and you guys get to learn a lot from it as well because I always knew at the end of this trip I was gonna go live and I was gonna talk about the lessons learned but I had no idea what that was gonna look like but it was also gonna mark kind of the next chapter for me and I've taken a big break from social media the longest I've taken in ages so that I could fully step into this new chapter as the best version of myself. And I am so pumped for today. Just had my meditation set out in the sun. So today I'm gonna walk you through why we are both, both. And I did run some of this by Jed. He's not gonna join us or else this would not be brief cause we would just go off on tangents. But why we're both truly glad that this adventure is over and I'm not gonna sugarcoat it because what I'm sharing today in my opinion is the stuff that nobody shared with me before I went off on this big adventure. What I'm gonna cover today. Here you go, here are your bullet points. The business side of things. What it's really like to work from the road. The money side of things because obviously that would be very important for all of us. The relationship, yes we are still married, happily in love, still my soulmate. Only wanted to kill each other a few times. And the breakthroughs, the aha moments that we had and there were not a ton but the ones that did happen for each of us were massive. Hold on, sip a tea. So here we go. I thought it would be really fun to start with how we thought this would go. And this involves some of our aha moments. Oh thank you Bronti for closing my sippy cup. An amazing client got it for me. How we thought it would go. When we set out on this trip even in the very beginning we thought we would become obsessed with van life. We were like, we're minimalist. This is gonna be awesome. Even the first few weeks, months, we're like, this is so good. Yeah, we love living on the road. Woohoo. We only fight every other day about the setup or the breakdown. We thought we would absolutely love it because we're minimalist. We thought that this would give Jed the time to step away from work and think about doing something else. He works really hard and he's always loved his job but he felt burned out. And we thought maybe it come up with something new to do. Or he might come and work in my business. So that's how we thought this was gonna go. That was where our head was at, being totally honest with you guys. That's not where it went. In fact, it went in a completely different direction and we were both really okay with the different direction but we never saw it coming. So stay tuned. I'm gonna break it down, don't worry. One of the first big aha's for us was we are so glad that we did not do this in our 60s or our 70s. Oh hello, Paul. Now, look, I'm not from here so please don't hate on me because growing up in New York and Boston this was not a thing going in caravans. I know it's become more popular but the majority of people we saw yes, they were young families in homeschooling but we saw a lot of oldies in their 60s and their 70s even in their 80s. What's going on the road is work. It can be stressful at times and we would watch them and be like and we would immediately look at each other and be like, no, I don't wanna be doing that in my 60s or 70s. In my 60s and 70s, I wanna be sitting in Europe sitting Vino. So it was a very clear, quick, kind of immediate thought we both had right away, early on. Like so glad we're doing this now in our 40s because we don't wanna do in our 60s or 70s. So take note if you're thinking about doing the whole caravan thing. I don't know, I just think it's a lot of work. I can think of more restful things to do in my 60s and 70s. But had we not done it and had we kept putting it off we may have never known that. Next little aha. The trip definitely didn't need to be nine months. Nine months in a caravan with your husband and two dogs. In all fairness, it wasn't the husband or the two dogs. It was just nine months was unnecessary. And look, we are both like go big or go home people. So we're so grateful that we have this freedom and flexibility with both of our jobs, businesses that we could take up to a year off or Jed could take the time off. I was still working from the road. But I don't think it was necessary. I think we could have done it for three months and had an epic time. And it'd been perfect just at that point. And the reason I chose three months was I thought back on all the travel we have done because we have taken big chunks of time off since we've been together. But they've always teeter-totted around three, four months and we never felt this way at the end. At the end of this trip, we were really ready to be done. If I'm honest, at about six months we were ready to be done. We went to Thailand for three months once and we still talk about that trip to this day about doing it again. So we think for us, three months is a sweet spot. And I think one of the reasons three months is a sweet spot for us was because we really miss the structure that comes from day to day lives. I know. Some of you would be like, what the fuck? You're living your best life. But we missed it. We missed the structure we get from our work. We missed the structure we get from like signing up to a workout class. There's just natural structure that comes into your life that makes you more motivated, pushes you to do other things that we didn't have on the road. Okay. Now, for those of you that are new to my world, I try to keep any sort of live or Instagram short and sweet. So I am trying to keep this at under, let's say 25 minutes. We'll see how I go. If I'm talking too fast, I'm apologizing in advance. Drop it in the comments here. Let me know. Say, Alexa, slow the F down. You're in Australia. You can move a little slower mate. Let's talk about money. So about six to eight months prior to the trip, I launched a new program, a new structure to an existing program, I should say. And the whole idea of the program was that it would fund our trip. I'm gonna take a beat there for a second. Imagine launching something that funds your entire trip. Now, I had never done anything like this before. Nobody whispered in my ear and said, this is what you need to do. I wanted that security. Having the business background I have, I was like, well, there's gotta be a way to do this for over a year. And the year prior was a bit of testing. And then six months, six or eight months prior, I started kind of launching into a lot of my regular clients this idea, which created consistent revenue for us on the road. Well, I'm happy to say that it was wildly successful. Funding our trip to the point where for the last four months of the trip, I didn't actually take on any new clients. Not because I didn't want to, but because I was trying to be more present for the trip. And I found this to be one of the hard things about traveling on the road. I actually found it really hard to work from the road and be present for all the adventures and feel the obligation to bring in money. I felt torn, to be honest. And I also felt obligated to do my best, to bring in the most. I don't like to half-ass anything. And I found that dance really hard. But I am proud to say that it worked. The launch was successful and the entire trip was funded. Boom. I think it's really important, whatever your business is or whatever your lifestyle that you're creating, that you have this baseline of revenue. Wherever that comes from, it could come from investments, it could come from property, but that you know there's a secure baseline that is coming in every week into your bank account, that you're not just pulling from your savings, but that money's coming in. I think when you become the architect of your own life and your own business, you start to realize just how important that is so that you feel comfortable, you feel safe, you feel secure, and you wanna keep doing different things. What else do I need to tell you guys? I do have notes here because I'm trying to be on it. I think one of the big things I really missed was the blend of what I created in my business. So great. I had this launch, it was super successful, it supported the adventure for the whole year, but what I really missed was the blend of in-person and online. And I thought in my head, again, just like all those things we thought in the beginning of the trip, that I could do that while I was on the road. I could plan ahead a few months, do in-person, that did not happen. Because we were trying to kind of live in the moment. So how do you live in the moment, not plan three months in advance, because that's what we do in our day-to-day lives, and still do in-person events, it just didn't work. And I really, really, really, really missed it. So much so that I've already signed up for an event where we're living now, just to go and attend, because I'm just like, I miss that energy, I thrive from that energy. I was pumped to come on here today, you know? But yeah, missing the blend of in-person and online. And again, look, you go online, you go for a long, or you go on the road, you go for a long period of time, you have all these ideas of how it's gonna work. But the truth of the matter is if you kind of wanna do fly by the seat, which we did, we did zero planning, which maybe you should do a bit more planning, but I'm really glad we didn't. It's kind of hard to then structure in-person events for your business. So a little food for thought there. So that's what I missed about work, but what I felt was really hard about work from the road was I felt like I never had a break. I have so much more appreciation now for the weekend away and turning off. And it was actually one of the big things that came up for Jed and I is that, you know, when we come back, we have to do things differently. Like we thought we always lived a pretty awesome life and went away when we wanted to, but I think it's about making more of an effort to have them kind of spread out and sprinkled out throughout your life so that you have those break moments where you close the computer, where you put Instagram away, where you forget about everything. When we were on the road, I couldn't stop. Like, well, if I was sitting there and we were sitting outside and enjoying a beautiful view, I'd be like, oh, I could be writing an email to my clients. I could be doing newsletter. I could be putting a post on Instagram. I felt this obligation as a sole provider to provide for my family, but that wasn't really fair to me either. And this was no pressure from Jed. Like, Jed would have been like, don't do any of it, take a break. The truth of the matter is, we didn't need my business to do this trip. We had money. We had money coming in. We have investments. We sat down with our financial advisor. I could have not worked this whole trip, but again, I felt obligation that I was the one that he supported while I was building this online business, online, right? We build online business so we have freedom and we can go anywhere. And Instagram shows us we can work from Bali and we can work, you know what I'm getting at, right? But what I think a lot of people don't talk about is that's a really hard balancing act, like full-time traveling and running your business. It's not for me. It's just not. Like, I love being like, okay, these are my work days. I'm giving it my all. And then on the weekends, I'm gonna play and shut it down. Yeah, for a few months, no problem. For nine months, it was hard. So that's that. Okay, where am I at? Have I rambled on? Watch, okay, I'm doing good, 11.15. Some of you are still here with me, so that's fantastic. If you haven't gotten your snacks in your water, please make sure you do. Anything to distract us if you're like me with your ADHD. Sip. Let's talk about aha moments. I feel like Jed probably had the biggest aha moments. He definitely did his own self-work on this trip, and it's not my place to share his journey there. We did, in all transparency, we actually had a conversation before I did this live and kind of what he was willing for me to open up about and what he wasn't. And I think when you're public in your lifestyle, especially in your partners involved with it, I think it's really important that you run things by him. Sometimes I run things by him and he looks at me like I have 12 heads. I don't fucking care. Sorry, Instagram. Try to say F, because I feel like Instagram hates when I say the full word, but anywho. I digress and lost my train of thought, see real time shit. We have a conversation before I talk about anything. And I just think it's important to have that transparency if you're going to be this transparent online. His aha moments were really about the pride he has behind what he does for a living. I just want to read this person's question. Do you think you could have not worked while being on the road? Like, Jesse remind me of that, I'll come back to that. He missed work. Like he actually genuinely did. I'd say again, it was around that six month marker. Now, he was more than happy with these 13 months off, but what he realized is how proud he is of the work he does. How much it contributes to our family, the pride it gives him, the structure it gives him. Not everybody is an entrepreneur. Not everybody does this. Not everybody wants to come live on Instagram from their half furnished home and spill the beans. Some people are really good at what they do for other people. He creates things. He's a part of these massive projects all over the world. It allows us the opportunity to live in other places. So what we came to realize for us was that his job actually was a big part of the freedom we had, we want in life. And so he definitely wanted to come back to a new project, but he wanted to do it differently. And doing it differently meant taking weekends away, taking more time for himself, right? Like going and working out after a long shift or whatever it might be. But him having this aha moment was a big deal for me too because I had to be okay with it, right? Remember going back, if you didn't watch me in this live, I'll recap. We had this whole idea that he was probably gonna leave what he was doing and that we were gonna spend more time together and maybe he'd work on my business with me. Which I doesn't even like opening up a computer. I don't know why I thought that was even possible. Like, so he had this clarity, he had this aha, was I on board? Was I okay with it? And the answer, I don't know how to do the drum roll. I was, I really was because I never wanted to be that partner in life that try, you see so many relationships and people try to force something of their partner, right? Part of having a supportive partner and allowing you to grow is allowing them to have their own evolution and his aha and his clarity to me is his own evolution. So I am completely supportive of it. I'm completely supportive and I'm also more transparent with him about what I need if we're gonna do it this time. Because for those of you that don't know, for the last five years, Jed and I lived apart. We had an apartment in the city and we had a house in Phillip Island. Only saw him on his days off. So this turn, we're moving back in together. And so he's gonna be working like crazy and I'm gonna be working for myself. And we've gotta find a way to make it work. So we've had lots of conversations about that. Even the place we're renting for now, because we chose not to buy a second home, which I am gonna talk about. We chose a place that has a layout that will work due to our hectic schedules. So there was a lot more intention and a lot more discussion, but I'm really proud of him for his a-ha. I feel like he really owns it. And I am proud of what he does. And he is already on board, or sorry, he is in the process right now of getting on board to an amazing new project that I'm super pumped for him. So that's his a-ha. My a-ha was, I'm okay with this. I'm shockingly okay with this. And if I'm being totally honest, cause I've seen a few people join in here that have worked with me in the past, it's probably not a good idea if he works with me in my business. I can be kind of a bitch. I'm much better nowadays, but like I don't need to blend those two worlds. Jed also had an a-ha about me. And it wasn't something he actually even knew was gonna be so jarring for me to hear. But it has been a massive eye-opener. He was having a conversation with a family member about me. And he made a comment in his moment of honesty and vulnerability, he said, like, you know, Lexus really struggles to let people in. And when you spend nine months on the road with somebody, they understand you at a level that's different than everything else you've had in nine years of being together. And hearing my husband say that was the most powerful statement I have heard in years from him because I felt like he truly saw me. Now some people might hear that and go, well that's shit, Lexus, that you struggle to let people in. Well that's who I am. Maybe it's from my upbringing, maybe it's from all the bad relationships. Who knows? I'm not gonna sit here and analyze my life with you guys, trust me, I'm spent enough money in therapy. But it was like, he sees me for all of me and he understands me. And look, I know Jed understands me, I know he loves me, but when you hear it so straightforward, so honest, she struggles to let people in. She struggles to let people love her. My best friend would say that all the time before I met Jed, you deserve to be loved. Hearing that truth from him was an aha for me, that he's right. And maybe it's something I need to continue working on. But hearing it was almost reaffirming that I'm not crazy, I still have things to work on and he sees me. And sometimes being seen is so powerful. Okay, I swore I wasn't gonna cry, so I'm gonna keep moving on. So those were some of the ahas. What else did I want to talk about? Oh, renting versus owning. I've gotten questions about this in the past kind of. So I built this business for a few reasons. One, I owned a restaurant business and I worked 80 hours a week and had no life and was drunk and slept around and was extremely unhappy. And I was like, there's gotta be a better way to do life. There just has to be. So that was one of the main purposes for building this business. The other one was that I wanted more flexibility and freedom, not just for myself, but for my husband's job. So he had a job that doesn't give him structure and flexibility. And if I stuck with the world I had been in, there's no way this marriage would have worked. So there is a massive part that I created this so that I could have a healthy relationship with him and that I could take care of myself. So when I look at all that, yeah, the big thing is that we just, we wanted flexibility. And I think we wanted freedom. But I really, I'm disliking that word lately. I feel like it's just one of these hot words that's thrown around, like when wellness was the hot word. Now it's freedom. And I'm like, but what does freedom mean? Maybe it's not freedom, maybe it's flexibility. So I'm full circling here back to renting and owning. So we own a home in Phillip Island. And since we've owned that, we've rented before based on his projects. And we talked about where we've landed now and for those of you that don't know, we had landed in Adelaide. We've talked about buying, but we didn't really want to buy two properties. We weren't really sure. And what we came to the decision was, was that renting A gave us tons more flexibility, right? You know, a year you could be like, eh, eff it, I'm out of here. Or you could be like, a year, I love it, let's start looking. So it just gives us these options. Here's the other really big plus about renting. I still believe that having one home that we own, that's our security, that's our foundation. I think it's amazing and I love that we have it. And we save a shit ton on taxes because by renting and owning, we're only one primary home. So you pay different taxes. Renting, little, little tip. Rent in an area that you probably can't afford to buy is one of the best things ever because you get to experience that, you get to see what it's like and maybe you find another suburb that's won over, but it gives you, again, that flexibility. So I feel like I'm erasing the word freedom from my vocabulary and I'm going with flexibility. That's enough about that. I could talk about that for ages, but I won't. Let's talk about some wins that we had during it. An epic win on the home front was that we had turned our home on Phillip Island into, I guess a phrase you guys would mostly know is Airbnb, but we don't use Airbnb, we use Ripperide, which I strongly recommend, especially if you're a dog family. And we're smashing it, like smashing it. And look, I'm gonna toot my own horn right now. It's purely because of the business and lifestyle skills that's helped me maximize our return on that house. From the photos and the photographer we hired to how we priced it and the market research I did on it, we're constantly tweaking and playing with it. And I love it. I actually really, really love it. So that's a massive win that we weren't really sure about, but again, keeping it as a holiday rental instead of a full-time rental gives us flexibility. God, I love that word flexibility. Who doesn't want flexibility? I'd like a bit more flexibility in my body, that's for sure. Ha, ha, ha, hold on, sip. Another epic win on the financial side was I hired a new bookkeeping team before we left on this trip. I don't recommend hiring a new bookkeeping team as you're about to journey around Australia, maybe do it like three months prior. I literally did it like the month leading up and I didn't have all my ducks in a row as a mad rush, but we did pull it off, they were amazing. And what it did for me on the trip while I couldn't let go of certain aspects of work was that I could breathe when it came to my bass statement, when it came to taxes. And they did such an amazing job that come tax time, I was paying everything quarterly throughout the trip, you know, they just would send me an email, I'd make the payment, that come tax time, I didn't owe $1. In fact, I got a bit of money back. Now that is a good bookkeeper and a good accountant. And it was a massive win for us to not, I mean imagine being on the road come tax time and getting hit with a $10,000, a $20,000 tax bill because you weren't on top of your shit. So to me, these were the things that were really important to have set up if you're running your own business from the road because it's nothing like worse than getting caught with your pants down and owing the tax man money. Okay, I'm gonna start to wrap it up because I said I would try to keep it under, under half hour, but we're getting there. Thank you for those of you that are staying put for the rest of you, I hope you watch the rest later. Here are some questions that have come through that I really wanted to answer and then I will wrap things up. If anything you want that I touched on, I know I just briefly touched on things, please DM me, I'd love to talk more about it but I don't wanna overwhelm you guys. Would you do it again? Great question that got sent through the other day. So the quick answer is yes, but shorter, short getaways like rent a caravan, go to a music festival. I wouldn't own something so big again. It was massive, we are like hardcore minimalists. Like if you, like we just don't have a lot of stuff. We didn't even fill the caravan. We got a big one because of the two big dogs and us and nine months, but I would never have anything that big again. Simple, like we were even like, maybe we do a rooftop tent just to go camping. But yeah, nine months, not necessary, a few weeks go around Tasmania, perfect. What's been the biggest mindset shift for you individually and as a couple? I thought this was a really good question. There wasn't a mindset shift, if I'm being totally honest. There was clarity and I think there's a big difference. You know, look, I've done so much personal work over the last 10, 15 years of my life that I feel really strong in my mindset, but I'm always finding new levels of clarity. If that makes sense, hopefully it does. Jed found his clarity and I think he will continue to. I found an appreciation and a respect for what he does and how much it fulfills him. I found respect and clarity on what I do. And I also got clarity on how I wanna do things differently. The market is oversaturated and I need to stop giving an F what other people think of me and just be me. I know that goes without saying, but we all need that reminder from time to time. But there was no big crazy mindset shifts. There was just a lot of clarity of what we want, the type of life we wanna live and how we can continue to have a flexible life. Not so much freedom, but flexibility. I think that's it. It's 1130. I could talk about this for hours and hours. I'm serious, DME, if you want me to go into any of this more. It was amazing, but I'm really pumped to explore a new city, to recognize that Jed's job gives us that opportunity to now live in a new city and don't worry, we're literally, I can see the ocean at the end of our driveway. We're still near water. Yeah, clarity came from nine months on the road. I love you guys so much. Thank you so much for being here today and I promise to start showing up a bit more. If you'd like to see more lives like this where I shoot the shit and get real, let me know. I love you guys a lot and I appreciate you and all your love. Bye guys.
+
+## 2025-10-13 — 📌 Save the f*cking date.
+
+https://www.instagram.com/p/DPveBdski8L/ · Video · plays: 1133 · likes: 46 · status: transcribed
+
+After nine months on the road, we're calling it. Not because it didn't work, but because it changed us. Traveling, working, and building a life together, it's been freeing, confronting, and everything in between. The truth, freedom looks different now. So I'm going live this Wednesday, 11 a.m. Adelaide time, to share with you what I learned about business, money, and relationships.
+
+## 2025-09-28 — While the world may feel a little darker today as you leave us behind,
+
+https://www.instagram.com/p/DPI1C16gbwP/ · Sidecar · plays: n/a · likes: 94 · status: transcribed
+
+1930 and I'll be 94 next Thursday on the 31st. And he wasn't a good dancer and that's what I didn't like because I love dancing. And then we come back to Denoni. I had good memories. They called it Pregnant Valley. If he wasn't pregnant when you were in, you were pregnant when you come out. We used to fight over stupid things, mostly it was money, you know, those days. Because he worked in the bush and if you got a wet month, you only got paid once a month. It was tough days. Well, there was no help. There was nothing. There was no sunblock those days. Yeah, I was going to be my next question. I'm like, I don't even know when sunblock came into the world. No, because when we were young, we put everything, all the oil and stuff on us to cook us. And if you got sunburned, you cut it to murdering.
+
+## 2025-09-20 — Let’s be real: your inner circle might love you…
+
+https://www.instagram.com/p/DO0SoglEsCJ/ · Video · plays: 734 · likes: 24 · status: transcribed
+
+The truth of the matter is what most of you are doing, there you probably have a family member or two or a friend or two that's either thinks you're crazy or doubts your ability, maybe because they want it. And I'm not, this is not a knock on family or friends, this is just a reality. You were choosing a different path than a lot of other people that came before you. So look outside your circle because a lot of your friends, they're not gonna get it. Start small. And if that seems like too scary, then just start by going to a public class, like a yoga class, like a Pilates class, like a running club and start talking to those people.
+
+## 2025-09-10 — Stop overthinking and just live your life 🦋
+
+https://www.instagram.com/p/DOaccXZAQPr/ · Video · plays: 679 · likes: 21 · status: no_speech
+
+*(no_speech)* Caption: Stop overthinking and just live your life 🦋
+
+## 2025-09-08 — Nobody tells you that building your dream can feel lonely as hell.
+
+https://www.instagram.com/p/DOVXKBNEm1-/ · Sidecar · plays: n/a · likes: 18 · status: transcribed
+
+Because here's the truth. Building your own business can feel lonely as BAK. People see the highlight reel, the wins, the milestones, but what they don't see are the quiet moments. When it's just you, your thoughts, and the weight of carrying something so big on your shoulders.
+
+## 2025-09-07 — ✨ Season 2 Finale ✨
+
+https://www.instagram.com/p/DOSsa01knH9/ · Video · plays: 432 · likes: 14 · status: transcribed
+
+Because here's the truth. Building your own business can feel lonely as fuck. Having structure and having a plan actually gives you freedom. That's why I think we need more than one lifeline because they're not always all available at all times. If you're scared, just like setting that intention, knowing what you want, and then doing the hard stuff to get there, because no one else is gonna do it for you except you. Feel anxiety, I feel stress, I feel excitement. And I know that on the other side of that is my next level, is mining growth.
+
+## 2025-08-09 — Send this to your other half 🧡
+
+https://www.instagram.com/p/DNIVC1kzAJQ/ · Video · plays: 1614 · likes: 37 · status: no_speech
+
+*(no_speech)* Caption: Send this to your other half 🧡
+
+## 2025-08-08 — Your family might not understand your path, and that’s okay.
+
+https://www.instagram.com/p/DNFuxYwyvwp/ · Video · plays: 497 · likes: 16 · status: transcribed
+
+your parents are proud, but it's like they don't fully understand. And, you know, I'm a bit older than you. But I feel like my family doesn't still doesn't understand what I do. And I have this tendency to wonder to think about part of their disconnect from it is exactly what you just said. They were raised in generations and generations before them where they didn't have the freedom, the flexibility, the options or the bandwidth to even see what was possible. Yeah, we only understand what we know, right? And sometimes even talking to people in more mainstream jobs with quotation marks, like talking to people in corporate, unlike to you, unlike to them, I don't even understand what it is that you do, because I'm not in their world.
+
+## 2025-07-08 — My circle isn’t big.
+
+https://www.instagram.com/p/DL3U4KHTGKa/ · Video · plays: 1095 · likes: 21 · status: transcribed
+
+Happy Australian birthday to you! Do you! Australian birthday! Australian birthday! To you! Happy birthday! Do you! We love you! We miss you! It's your birthday here so we're celebrating you. I'm celebrating you by going for a run, sweating my tits off. You get it twice because it's happening here and then we'll call you tomorrow. Love you very much. Miss you heaps, Jed. Love you too!
+
+## 2025-07-05 — You and me doing it our way. 🌎
+
+https://www.instagram.com/p/DLt-Y_yTNPH/ · Video · plays: 3006 · likes: 73 · status: transcribed
+
+Calling you the same
+
+## 2025-07-02 — If your partner has a big vision, don’t just say “yeah yeah yeah” to everything.
+
+https://www.instagram.com/p/DLmRO90y7HI/ · Video · plays: 680 · likes: 15 · status: transcribed
+
+Any advice you'd give to any other blokes who want to support? Let's say that they've got a partner who's got a big dream. Oh, the truth. Don't just be like, yeah, yeah, yeah. Like have an opinion. Like, you know what I mean? Like have an opinion. Have a, have a, same with mine with what's going on. She, if you do something that I think's weird or wacky or I'm like, what do you do that for? And I ask the question and you come up with an answer or you're like, oh yeah, that is weird. Why am I doing that? But yeah, support your wife. Love your wife. I'm not saying that our relationships. I don't know. Our relationships just 99.9% of the time is easy.
+
+## 2025-07-01 — June 🧡 
+
+https://www.instagram.com/p/DLi9LYzzW9r/ · Sidecar · plays: n/a · likes: 78 · status: failed
+
+*(failed)* Caption: June 🧡 
+
+(And most importantly you need to see & vote on Jed’s new profile picture at the end 😂)
+
+Here’s our highlight:
+1.  @dalywaterspub is like stepping back in time. 
+
+2. @dalywaterspub 🐴 + 🫏 seems to roam the streets every afternoon.
+
+3. Got to hang with some caravan friends at Corella Dam and finally get a family picture 🧡
+
+4. Mary Kathleen - holy shit! Abandoned uranium mine
+
+5. The tunnel 
+
+## 2025-06-28 — Burned out from work. Grieving a friend. Questioning everything.
+
+https://www.instagram.com/p/DLb_PPIAljQ/ · Video · plays: 1063 · likes: 20 · status: transcribed
+
+Do you remember when all that was happening and you were burned out work and and flu he had passed and you just kept saying to me I don't know if you remember this you just kept saying don't let me back out of this. Yeah. Yeah. Don't let me not do it Yeah, that we said yeah, and I just remember like he just was saying it all the time and I thought to myself man Like it's this how hard it is for people to like step back to stop to Change the course of their life like he's constantly I mean like we're seeing it all the time like don't let me back down from this and I was just like Okay, like it was interesting to hear him say it all the time
+
+## 2025-06-23 — We met on Tinder.
+
+https://www.instagram.com/p/DLPPnylAWDt/ · Video · plays: 1986 · likes: 57 · status: transcribed
+
+So we met on Tinder for those of you that don't know. What was it like for you finding me on there? And did you actually think it was gonna go anywhere? Oh, yeah, like when we first started talking on Tinder, I don't think I was like, oh, I'm gonna marry this chick. But I do know like after we met, then the first night we spent together, I was like, I'm all in on this. This is life. And I remember Adam Lewis saying to me, like be careful, man. She's just like traveling around and she lives on the other side of the world. And I was just like, yeah, I was like, there's something going on here.
+
+## 2025-06-08 — Because what if the “one day” you’re working so hard for never comes?
+
+https://www.instagram.com/p/DKoKp40zaWe/ · Sidecar · plays: n/a · likes: 50 · status: no_speech
+
+*(no_speech)* Caption: Because what if the “one day” you’re working so hard for never comes?
+
+What if you spent your whole life chasing success—
+only to realize you never gave yourself permission to actually live?
+
+This kind of life used to feel like something you had to earn in your 60s.
+After the grind.
+After the burnout.
+After you’d finally “made it.”
+
+But I didn’t want to wait that long.
+
+So we flipped the script.
+
+
+
+## 2025-06-07 — 💥I blew up everything they told me success should be.
+
+https://www.instagram.com/p/DKlaxfATLgD/ · Video · plays: 1005 · likes: 24 · status: no_speech
+
+*(no_speech)* Caption: 💥I blew up everything they told me success should be.
+Walked away from a 7-figure business at 29.
+Not because I failed—
+But because I knew I wanted more than burnout and bullshit accolades.
+
+🎯So I changed the rules.
+
+I built a business that funds my freedom.
+That gives me space to breathe, create, and actually enjoy my damn life.
+And now?
+I teach other women how to do the same.
+
+💃🏼DO THE DAMN THIN
+
+## 2025-06-06 — ⌛️Because when you stop chasing what everyone else is doing,
+
+https://www.instagram.com/p/DKjSuksTDtw/ · Video · plays: 873 · likes: 24 · status: no_speech
+
+*(no_speech)* Caption: ⌛️Because when you stop chasing what everyone else is doing,
+you finally have space to build what you actually want.
+
+The wildest dreams?
+They’re possible.
+But only if you’re brave enough to back yourself.
+
+💬 DM me “BUILD” if you’re done playing small and ready to build something that lasts.
+
+## 2025-06-05 — 🙌Here’s what I do when I’m tested:
+
+https://www.instagram.com/p/DKgIVLYzE9B/ · Video · plays: 578 · likes: 27 · status: transcribed
+
+Here is the non-glamorous not so fancy it people do not talk about when it comes to going off on your own you Including me are going to be tested. You're gonna be tested by family friends the universe Universe source whatever you want to call it you are going to be tested. I'm telling you this happened to me time and time again You're going to be tested because the path you are choosing it is somewhat harder It is gonna be lonely at times and there are easier ways But will you be happy? Will you have freedom? Will you have flexibility? We know the answer So you have been warned you are going to be tested opportunities might show up in the industry You used to be in new job opportunities with a stable steady paycheck and you my friend will be tested How badly do you want this?
+
+## 2025-05-25 — This deserves a square on my grid of life.
+
+https://www.instagram.com/p/DKEDwaNT1QP/ · Sidecar · plays: n/a · likes: 87 · status: failed
+
+*(failed)* Caption: This deserves a square on my grid of life.
+
+It wasn’t just the beach.
+It was Phil.
+70 years old.
+Walking the shoreline at sunrise like he had nowhere else to be.
+
+And somehow—neither did I.
+
+We talked about fear.
+Responsibility.
+Regret.
+Freedom.
+
+He reminded me that the risks I’ve taken aren’t just worth it—they’re the whole point.
+
+You want to grow a business?
+Start by talking to strangers.
+Chall
+
+## 2025-05-23 — This was meant to be our someday life.
+
+https://www.instagram.com/p/DJ_U621zY9o/ · Video · plays: 1053 · likes: 29 · status: no_speech
+
+*(no_speech)* Caption: This was meant to be our someday life.
+But we didn’t wait.
+
+We built it now—while we’re still in it, laughing, moving, living.
+
+The Black Book is every tool, platform, and shortcut I used to make that possible.
+
+👇 Comment BLACKBOOK and I’ll send it to you for free.
+
+## 2025-05-16 — Drop “BLACKBOOK” below 👇 and I’ll send you the exact tools I used to build a business that
+
+https://www.instagram.com/p/DJusSUXTqB2/ · Video · plays: 1018 · likes: 27 · status: no_speech
+
+*(no_speech)* Caption: Drop “BLACKBOOK” below 👇 and I’ll send you the exact tools I used to build a business that funds our freedom.
+(No fluff. Just what works.)
+
+I didn’t follow the rules.
+I sold my first biz.
+Moved across the world.
+Started over with a laptop and a vision.
+
+Now we travel full-time.
+Jed doesn’t work.
+And the same people who doubted me?
+Still stuck in jobs they hate.
+
+I built this life my way.
+The Black
+
+## 2025-05-12 — “I held on so tightly, I broke it.” When you're building something you care deeply about, 
+
+https://www.instagram.com/p/DJjKoe2gnEL/ · Video · plays: 497 · likes: 15 · status: transcribed
+
+when I was building my restaurant company, I'd say one of my downfalls and that led to my burnout was I couldn't let go of the control. Part of that was age and it was my baby. Everyone around me was having babies and getting married and I literally was building this. I had 60 employees, they were all my babies. And I can look back now and say, wow, that is exactly one of the biggest parts of the downfall was I didn't ask for help. I thought it was a sign of weakness. And I felt like I just was holding onto it so tight that it was like I was, in some regards broke it myself because I was just holding on so tight to every little piece of it. It's exactly what I did with my previous business. Exactly. And no, it's like no one's going to get it like I get it, but they don't have to. They don't have to get it like you get it. That's the beauty of it. You can continue to be that the founder and the, you know, holistically seeing this whole thing, but you need people underneath you that do their role. They don't have to be you, you know.
+
+## 2025-05-10 — This life isn’t an accident.
+
+https://www.instagram.com/p/DJdjjYRT8DK/ · Video · plays: 567 · likes: 19 · status: transcribed
+
+Find a way to fly Find a way to fly Just shoot for the sun Till I can find me run Find a way to fly
+
+## 2025-05-05 — You asked how I built this life—
+
+https://www.instagram.com/p/DJSbqa6zZEr/ · Video · plays: 343 · likes: 13 · status: transcribed
+
+Stacking opportunities creates freedom. If you've worked with me before you've heard me talk about this nonstop, but I am all about layers. Some might call it stacking, some might call it layer, some might call it revenue streams, call it whatever the fuck you want, but it is the game changer. People who grow the most are the ones who stack opportunities. They don't just take one step, they keep stepping. I watched it happen in real time. Someone in that room pitched themselves and ended up walking away with a new client. Another finally named their next revenue stream and sent me a message hours later saying they had their first sale.
+
+## 2025-05-03 — From “it’s just…” to “this is who I am.”
+
+https://www.instagram.com/p/DJMAEHFAe68/ · Video · plays: 396 · likes: 14 · status: transcribed
+
+I had people in that room pitch themselves, many for the first time ever, and some stumbled, some second guessed themselves, some started with it's just or I kind of... This is really common. We're not challenged. We're not asked every day to step up, step into our authority and own what we do. But by the end, they fucking owned it. And here's the thing. This isn't just about business. This is about how you introduce yourself. How you ask for what you want. How you take up space in a world without shrinking. If you can't say what you do or what you want without apologizing for it, how can anyone else believe in it?
+
+## 2025-05-03 — I stopped waiting for permission.
+
+https://www.instagram.com/p/DJL01fMT-Fg/ · Video · plays: 1474 · likes: 80 · status: transcribed
+
+I think I've seen this film before And I didn't like the ending I'm not sure a problem anymore So who am I fending now? You are my crown Now I'm in exile seeing you out I think I've seen this film before So I won't even not decide though
+
+## 2025-04-29 — 🎯Bribery gets shit done.
+
+https://www.instagram.com/p/DJA-mE8T31y/ · Video · plays: 903 · likes: 27 · status: no_speech
+
+*(no_speech)* Caption: 🎯Bribery gets shit done.
+Ask my dogs.
+Ask your boss.
+You’ve been bribed for years — steady paycheck, fake titles, the “you’re such a team player” compliments.
+
+🫣Here’s the truth:
+You’re the asset.
+You don’t owe them another year of your life.
+Use the leverage you’ve earned.
+Plot your exit like a badass.
+Because loyalty doesn’t pay the bills — ownership does.
+
+Done playing nice?
+Drop “EXIT” in the 
+
+## 2025-04-28 — one person who saw something in me. 
+
+https://www.instagram.com/p/DI-fx3xyynP/ · Video · plays: 2464 · likes: 55 · status: no_speech
+
+*(no_speech)* Caption: one person who saw something in me. 
+one decision to show up even though i was scared.
+one life i never thought i’d get to live. 
+and it all started with five minutes i almost ignored. 🦋
+
+@alexis_guttridge 🧡 
+ 
+ 
+ 
+ 
+ 
+ #madebybronte 
+ 
+ 
+ 
+ 
+ 
+ #butterflyeffect #businessmentor #smallbusiness #meditation #creative #artist
+
+## 2025-04-27 — New Episode Drops tomorrow at 6AM AEST: “Make the Damn Move: This is How Shit Shifts” 🚨
+
+https://www.instagram.com/p/DI8YFMfAbvh/ · Video · plays: 559 · likes: 16 · status: transcribed
+
+This is how you stop hiding. I just want you to hear you claim it You're not just selling a service. You're selling a fucking vision If you can't say what you do or what you want without apologizing for it How can anyone else believe in it? But by the end they fucking owned it Confidence in your voice equals confidence in your life So you can stop waiting and start stepping into the opportunities that are waiting for you This is where it gets powerful
+
+## 2025-04-23 — We bought a 21-foot caravan and had no idea how to use it.
+
+https://www.instagram.com/p/DIxetA4zRSv/ · Video · plays: 1276 · likes: 86 · status: transcribed
+
+Three months ago we left home with zero caravan experience. To chase simplicity, space, and more time together, we bought a 21 foot caravan, turned the bunk into a doggy knapstick and rented our house out and hit the road. Jed took a year and a half off to fish, cook, and just be. I had no idea how work would look, but deep down I knew I'd make it work. And I'd have more growth in my business than I've ever seen, working just three days a week. The rest of the time we explore new towns, eat too many pies, and swim with the dogs. We slow down, we plan week to week, and I've completely fallen in love with this life.
+
+## 2025-04-21 — You don’t need a new idea.
+
+https://www.instagram.com/p/DIsnjetTuQM/ · Video · plays: 783 · likes: 35 · status: transcribed
+
+You are sitting on extra income and you don't even know it yet. A revenue stream, okay? Is just another way your business makes money. And the easiest way to add one, you ready for this? Ask yourself what people, what have people been asking you for? What's the thing you keep hearing again and again? That is your next layer. You don't need to create something new, just deliver what you already know in a new way. What I have seen as the most successful revenue streams are hiding in plain sight. So add the damn layer. And if you're stuck, DM me the word layer and I'll help you find it. Yes, I will really help you find it.
+
+## 2025-04-03 — Some moments don’t need words.
+
+https://www.instagram.com/p/DH96xIqzDsA/ · Sidecar · plays: n/a · likes: 67 · status: failed
+
+*(failed)* Caption: Some moments don’t need words.
+(But scroll to the last photo anyway—because that one still gets me 🌅)
+
+Jed had me laughing at absolute nonsense this week 😂
+Pretty essential when you’re living in the car half the time.
+Red Rocks was magic—he went back to fish, I went back just to take it all in again.
+
+We’ve started writing down our adventures 📝
+Wild how fast you forget things when you move every 5
+
+## 2025-03-31 — He worked his ass off for years. 
+
+https://www.instagram.com/p/DH2_B0HTtUn/ · Video · plays: 1178 · likes: 24 · status: transcribed
+
+All that work and what did it get me?
+
+## 2025-03-29 — They say you have to hustle harder.
+
+https://www.instagram.com/p/DHxWHaGzm1x/ · Video · plays: 919 · likes: 26 · status: no_speech
+
+*(no_speech)* Caption: They say you have to hustle harder.
+Work more. Burn out to level up.
+
+I call bullshit.
+
+This is my March — record sales, dream clients, 3-day work weeks, and a business that actually feels good.
+
+And my clients?
+They’re booking out, raising prices, and finally growing something that lasts.
+
+You want results? I only help the crazies get them. 
+
+🔥 The Creative Growth Lab is open.
+DM the word ‘LAB’ a
+
+## 2025-03-27 — Two months on the road.
+
+https://www.instagram.com/p/DHsbmzgzxCh/ · Video · plays: 1023 · likes: 57 · status: transcribed
+
+Nothing that made
+
+## 2025-03-21 — And honestly…
+
+https://www.instagram.com/p/DHeXjdBz9HA/ · Video · plays: 1541 · likes: 35 · status: failed
+
+*(failed)* Caption: And honestly…
+
+It’s better than I ever imagined.
+
+💡 You want to make more, but you’re still undercharging? Let’s fix that.
+
+Here are 4 things you’re probably NOT considering when it comes to pricing:
+
+1️⃣ Your time isn’t just the work you do—it’s everything else.
+🔹 You’re pricing for the product/service but not for the emails, the prep, the expertise, the energy. Charge for the FULL value of what 
+
+## 2025-03-15 — 💡 Who said you have to follow the rules?
+
+https://www.instagram.com/p/DHM8kx8z3L4/ · Video · plays: 6935 · likes: 40 · status: transcribed
+
+mhm, mhm, mhm
+
+## 2025-03-07 — Life lately… ✨ And damn, I hope I’m still doing THIS when I’m 94. Scroll to the last slide
+
+https://www.instagram.com/p/DG5JnhgzAun/ · Sidecar · plays: n/a · likes: 140 · status: transcribed
+
+[Video 1] Just travel and get a bit of experience. So, play best time.
+
+## 2025-02-23 — You feel it. I know you do.
+
+https://www.instagram.com/p/DGZYwI8ydBL/ · Video · plays: 754 · likes: 19 · status: transcribed
+
+You don't need to know exactly where you are going. You just need to know the feeling you are chasing. When I was 22, I took my first job in TV. My supposed dream job at CBS in Manhattan. On paper, it was everything I thought I wanted, but something felt off. The second I stepped into that corporate environment with the suits and the meetings and the rules about how I dressed, I felt trapped. My gut told me this isn't it. But did I immediately know what it was? Hell no. All I knew was that I wanted to feel alive. I wanted freedom. I wanted something that felt like me. That was my compass. Even when I didn't have a full roadmap yet.
+
+## 2025-02-09 — 75 businesses. 75 bold moves. 🚀
+
+https://www.instagram.com/p/DF1wEA7z2fb/ · Video · plays: 1264 · likes: 48 · status: no_speech
+
+*(no_speech)* Caption: 75 businesses. 75 bold moves. 🚀
+
+This week, 75 incredible business owners stepped into the uncomfortable. They pitched themselves to strangers. 
+
+💸They uncovered hidden revenue streams. They owned their worth—maybe for the first time.
+
+And the biggest takeaway? They wanted more. Longer sessions. Bigger breakthroughs. More time to step into the next level of their business.
+
+Because from action com
+
+## 2025-02-05 — Tag the friend who’s basically your built-in algorithm—because let’s be real, their DMs ar
+
+https://www.instagram.com/p/DFrjzHgTmXy/ · Video · plays: 3385 · likes: 22 · status: transcribed
+
+I really want
+
+## 2025-01-26 — 🎂You are seriously not going to believe what I want you all to have on my birthday.
+
+https://www.instagram.com/p/DFTQIJHz19_/ · Sidecar · plays: n/a · likes: 54 · status: transcribed
+
+I get a bit emotional. I'll never forget there was a night we were supposed to meet up with some dude and go at a bar, obviously. And they said to myself, you know, tonight I'm not gonna go. You can do this, Alexis. Like you can have one night off of drinking in 15 years. And I didn't. I couldn't. And I knew in that moment that there was a problem. And that's where I'm so grateful for determination because determination shows its head in so many different forms. It's not just about success. It's about having that courage to be like, wow, this isn't right. I'm not meant to live this way. I'm not meant to throw my body around to people. And yeah, so the next day I call,
+
+## 2025-01-26 — 🚨 TOMORROW: My Story. Unfiltered. No Holding Back. 🚨
+
+https://www.instagram.com/p/DFSFgPBSJqb/ · Video · plays: 1562 · likes: 25 · status: transcribed
+
+I am so excited about today's guests. This is going to be a really fucking cool episode, guys. Cause it's me. I am being interviewed today by my lifelong best friend, Jocelyn Vasos. I have known Jocelyn for, yet probably 30 years. It's crazy. It's a long time. And I thought that it was time I shared my story with all of you. My story of determination. My story of constantly doing the damn thing no matter what anybody else said to me. But to share my story, to get someone else to ask me questions, it really had to be somebody I would trust. Somebody that it would be a real honest conversation with. And I can't think of anyone better than this amazing woman sitting in front of me in this camera right now. Jocelyn, welcome to Determined as Faw. Thank you.
+
+## 2024-12-16 — Imagine building something so good, so true, that nothing could ever compare. 
+
+https://www.instagram.com/p/DDptjIqyN_8/ · Video · plays: 3206 · likes: 41 · status: transcribed
+
+When Pop passed away, 10 years ago now, did you ever think about going on a date with anyone else? No, no, no, no, I didn't. Yeah? I thought, oh, at my age, why would I get somebody else? Yeah. No, I couldn't think of anything worse. Yeah. Well, I had the best, so why would I settle for second best? There you go, there it is, ladies and gents.
+
+## 2024-12-06 — 94 years of wisdom, grit, and determination—are you ready to learn from a true living lege
+
+https://www.instagram.com/p/DDOLYf1NgXK/ · Video · plays: 2143 · likes: 20 · status: transcribed
+
+So would you think that there's more pressure now on the younger generations? Well, yeah. I'd hate to be a teenager or anything like that now. Why is that? Because they've got all this pressure. They've got no fun. All they've got to do is worry about mortgages and making a living and things like that. Yeah. And nowadays, okay, you knew what you had and what you could afford. So you just went along with it. Life before slice bread right now. Yeah. But you literally had life before slice bread, right? Do you remember when slice bread kind of? Oh, it was the best thing because I hated cutting the bread. I used to cut it too thick. And was that considered a waste because you cut it too thick? Yeah, and I didn't like thick bread. But it's so funny. I remember the very first time we had this conversation and I said something about slice bread and you were like, I remember. And I was like, no, no, I'm just using the frieze. I've never had somebody call me out and say, life before slice bread. What are some other like, like their slice bread? What are some other things that you've seen in your lifetime that you're like, I'll remember when that happened?
+
+## 2024-09-22 — Sneak Peek 🫣 
+
+https://www.instagram.com/p/DANrF13ytOh/ · Video · plays: 1879 · likes: 35 · status: transcribed
+
+It was like Westbridge had, like your restaurant had. It was a combination of luck, timing, people, product, and most importantly, a community that was ready to embrace it. And it really was just a moment in time. I get a little misty talking about it, but it's just such a huge part of my life.
+
+## 2024-09-15 — Today, 14 incredible women took the first step into the next level of their businesses—and
+
+https://www.instagram.com/p/C_7pBvLST5S/ · Video · plays: 3973 · likes: 75 · status: no_speech
+
+*(no_speech)* Caption: Today, 14 incredible women took the first step into the next level of their businesses—and it was nothing short of transformative! ✨
+
+The uncomfortable challenges they faced, the breakthroughs they made, and the friendships that were formed… THIS is what growth looks like!!
+
+From discovering new revenue streams to pushing beyond their limits, these women chose to lean in and do the work. I couldn’
+
+## 2024-09-14 — Sneak Peek 🫣 
+
+https://www.instagram.com/p/C_6WTTaAFQh/ · Video · plays: 1515 · likes: 31 · status: transcribed
+
+I'm a bit specialist at the moment because I'm curious to ask you this question. How old were you when you asked your mom those questions? I was five. What? What the f***? Yeah. You are... that's an amazing five-year-old. Yeah, I was very, very comfortable with my body and very... I was so used to using my feet.
+
+## 2024-09-08 — 🚀EPISODE 2 is out NOW🚀
+
+https://www.instagram.com/p/C_q5g8BAGVJ/ · Video · plays: 1687 · likes: 27 · status: transcribed
+
+Should they be waiting for the perfect moment Crystal Bailey? No. Thank God, thank God she gave me the right answer. No way, no way, no way, no. Because there is never a perfect moment, there is never a right time, there is never going to be the right amount of money in your bank to start a business or is never going to be like the right moment in between jobs or this, you just have to go in and launch it and start it.
+
+## 2024-09-01 — 🚨 It’s Here! 🚨
+
+https://www.instagram.com/p/C_Yx6XayiAd/ · Video · plays: 2082 · likes: 82 · status: transcribed
+
+How did you motivate yourself? There had to have been moments where you're by yourself. Yeah. How did you, was there something you said to yourself? Did you talk to your son? Did you, what do you do in those moments when you're in the middle of nowhere? Cried, I cried heaps, man. I cried so much and like tears of joy, tears of absolute agony, pain.
+
+## 2024-07-18 — Shoutout to the real MVPs who listen to our endless ideas and still cheer us on! 🙌
+
+https://www.instagram.com/p/C9jpWEVIKMC/ · Video · plays: 2349 · likes: 35 · status: no_speech
+
+*(no_speech)* Caption: Shoutout to the real MVPs who listen to our endless ideas and still cheer us on! 🙌
+
+Tag your supportive partner!🧡
+
+#creativejourney #bizlife #marriagesupport
+
+## 2024-07-05 — MY HEART HURTS!! 
+
+https://www.instagram.com/p/C9CCIbZSaZs/ · Video · plays: 6163 · likes: 124 · status: no_speech
+
+*(no_speech)* Caption: MY HEART HURTS!! 
+
+Today marks the end of my 6 month mentorship with my mentor @alexis_guttridge , It has been the most wild six months ever, so many ups and downs. 
+
+The one thing that was always consistent was Alexis. 🍑
+
+Alexis has not only helped me grow my business to heights i didn’t even know were possible but she’s pushed me to grow as a person in almost every single way. 
+
+I owe her so muc
+
+## 2024-05-29 — Why Alexis chooses to work with women…
+
+https://www.instagram.com/p/C7kERCiyBBJ/ · Video · plays: 1163 · likes: 32 · status: transcribed
+
+I choose to work only with women because, and I'm sorry ladies, I'm just gonna say this because it's the truth and I don't sugarcoat anything. So if you're looking for that, I'm probably not the one you wanna listen to. Women often run their lives from an emotional standpoint. And while I think that makes us really strong, impactful, unstoppable, determined as fuck, it also makes us not see the business side. It's like we can't separate the emotion and the business. And I love being able to do that with women. I love being able to say, yes, you're really good at this and this side, but let's get really freaking boring and structure this out and create those layers and figure out why you don't have momentum and address your ADHD and whatever else is going on. Let's look at the whole picture and let's rearrange the pieces so that you can actually do what you want and stop getting in your own way and have confidence. Yes. The Bren and Betta podcast brought to you by Hey Owl Productions.
+
+## 2024-05-27 — Thank you so much to Alexis for sharing her incredible story with us on this week’s episod
+
+https://www.instagram.com/p/C7e6VodS86v/ · Video · plays: 1065 · likes: 27 · status: transcribed
+
+I just kept building it up and building it up. We were in like the Boston Globe, Food and Wine magazine. They put him on the cover. He was considered one of the best chefs in America. Wow. And I was miserable. I was lonely, I was sad. You know, when they say that phrase, it's very lonely at the top. Well, it was very lonely at the top for me. And that's the big story, that defining moment in my life where I sat down with my financial advisor and I broke down. I just wanted to do right by everybody, except the only person I wasn't doing right by was myself. I thought that money and success would bring me happiness. But what I realized is I had no clarity on why I was doing this, why I was building it. And it wasn't really aligned with me. The Brennan Better podcast brought to you by Hey Owl Productions.
+
+## 2024-05-26 — Tomorrow on B+B: ‘Stop Waiting For The Red Carpet And Just Go For It - With Alexis Guttrig
+
+https://www.instagram.com/p/C7a3Q8Vx6u_/ · Video · plays: 1117 · likes: 21 · status: transcribed
+
+Yeah. Start the social media account. Create a lead magnet for free with MailChimp. Like there is so much you can do for such little money to get off the ground. And as soon as you start to get a little bit of momentum, one inquiry, one sale, then you'll start to go. But you've got to start and you've got to stop waiting for this like red carpet to be rolled out. Like especially my mom is in the world. I work with every single one of my clients except for one is a mom. And I know it's a shit storm juggling children. I mean, Alex, I don't know how you do it. Three? Like, but is there going to be a perfect time? You know, like everyone's like, well, they'll get older and they'll, and I'm like, yeah, and then there'll be something else and then there'll be something else and then you'll be like, what's my identity? Because I work with two streams. I work with younger moms. And then I have a lot of moms who are clients who are like in their 50s. And their children have left and they're like, I didn't do it. Now I want to do it. Yeah. The Brennan better podcast. Brought to you by Hayale Productions.
+
+## 2024-02-16 — In between power outages and epic R+D calls this week is a thing called life♥️. This is in
+
+https://www.instagram.com/p/C3a_5m6Aib3/ · Sidecar · plays: n/a · likes: 49 · status: no_speech
+
+*(no_speech)* Caption: In between power outages and epic R+D calls this week is a thing called life♥️. This is intentional living at its finest. So grateful for having the courage to go for it all 🚀
+
+Make your job work for you. Not the other way around.
+
+## 2024-02-09 — Here’s what I realized yesterday 💎
+
+https://www.instagram.com/p/C3G4abVvFZP/ · Sidecar · plays: n/a · likes: 76 · status: no_speech
+
+*(no_speech)* Caption: Here’s what I realized yesterday 💎
+
+Teaching woman how to create a life on their own terms is actual my dreams coming true. 
+
+Watching you ask for what you want brings tears to my eyes. 
+
+Having confidence in yourself and your abilities to go all in on your passion has me smiling for days. 
+
+Yesterday I got to witness my beautiful client get married to the love of her life. With her two little boy
+
+## 2023-12-08 — There was so much I missed. 
+
+https://www.instagram.com/p/C0kqdhXP884/ · Video · plays: 1112 · likes: 46 · status: transcribed
+
+It's time to
+
+## 2023-12-03 — 🤍 Sundays at home 🤍
+
+https://www.instagram.com/p/C0YltYvrrcw/ · Video · plays: 1230 · likes: 47 · status: transcribed
+
+I'll follow you into the park, through the jungle, through the dark Gonna never love one like you Bones and bones and waterfalls, alleyways and painful calls I'll be here never wrong We'll laugh until we think we'll die Barefoot on a summer night, nothing new is sweet to learn with you Down in the street we run afreely, like it's only you and me Jeez, you're something to see
+
+## 2023-11-14 — Podcast Episode #9 available on all major listening apps NOW!! ⁣
+
+https://www.instagram.com/p/CznKfr5JmJ-/ · Video · plays: 2875 · likes: 43 · status: transcribed
+
+I knew any of this. The restaurant kept running. But I was started seeing help immediately, seeking help, and I was actually seeing her three times a week. And it was brutal. It was... She was holding up the biggest marriage. I would just keep hiding. Be like, I don't remember, I don't remember. And she just kept forcing and she was older and she was wiser. And I was like, oh my fucking god. But I will forever be grateful for that woman. The best three months, hardest three months of my life. But it got me to where I am now. So you're addicted to alcohol and would you say you're addicted to sex at this point? Back then, yeah. Oh, like I could argue you probably sex more than alcohol. So that was overriding it. Wow, okay. Can you take... We need to unpack this. When is that turning point that all that moment when it turns into it just being okay? Like it's okay. You can sleep with people and you can do it to an addiction.
+
+## 2023-11-03 — Let’s talk about some Real Success: Embracing the Joy Along the Journey🌟Grateful for the m
+
+https://www.instagram.com/p/CzKljoHtEGY/ · Sidecar · plays: n/a · likes: 28 · status: no_speech
+
+*(no_speech)* Caption: Let’s talk about some Real Success: Embracing the Joy Along the Journey🌟Grateful for the man behind the laughter…
+
+The one who keeps life colorful and my ambitions grounded. He's not just my partner in silliness but the anchor in my sea of possibilities.
+
+Here's to the reminder that success isn't just about achievements, but about savoring each moment along the path. He's the voice that whispers, 
+
+## 2023-10-09 — Ladies this is why you say 💃🏼YES!
+
+https://www.instagram.com/p/CyKaU3bPvua/ · Sidecar · plays: n/a · likes: 90 · status: no_speech
+
+*(no_speech)* Caption: Ladies this is why you say 💃🏼YES!
+
+What an amazing weekend. In a city I have never been in before. With women I have never met before. 
+
+I will speak to anyone willing to listen when it comes to what I do. Even if I am a bit nervous. The more I put myself out there the greater my impact. 
+The more women I can connect with. 
+
+And in turn my business grows. 
+But you have to say YES. Especially in th
+
+## 2023-09-24 — A weekend of pure LOVE 🖤
+
+https://www.instagram.com/p/CxjhL-gPqo0/ · Sidecar · plays: n/a · likes: 149 · status: no_speech
+
+*(no_speech)* Caption: A weekend of pure LOVE 🖤
+
+## 2023-08-16 — Here’s my truth when it comes to DOUBT…
+
+https://www.instagram.com/p/Cv_38Z2AeWJ/ · Video · plays: 609 · likes: 21 · status: transcribed
+
+Can I let you guys in on a little secret? I have doubt just like you do. I was talking with a girlfriend today and you know, there's just this perception of Instagram versus real life and how we think someone's life is and look I love Instagram. It's I've created my business I've connected with all of you. I love it But there are two sides and I feel like often we don't talk about the two sides. So today I want to talk about doubt You might see all these coaches out there or whatever like they could be celebrities whoever you're watching I want to tell you everybody has fucking doubt the difference between the people that have doubt and it Doesn't allow them to move forward and those of us that have doubt and know how to Move forward. Those are the two people Those of us that have doubt that we feel like we're frozen in time and we just can't put one foot in for the other And then those of us have doubt and we can literally feel it in our body. We acknowledge it But yet we still move forward Understanding where your doubt stems from understanding why it shows up Believe they're not your doubt your doubt is most likely deep-seated from something ages ago So we all have doubt, but it's how we work with it. That's what allows us to grow and evolve and change I love you all so much. Bye You
+
+## 2023-08-13 — The wedding that truly brought people together from all over the world 🌍 
+
+https://www.instagram.com/p/Cv36dTDgFnJ/ · Video · plays: 991 · likes: 42 · status: transcribed
+
+And this is when moment
+
+## 2023-08-10 — When I found the missing piece to my puzzle 🧩…
+
+https://www.instagram.com/p/Cvwf_JegtB7/ · Video · plays: 643 · likes: 33 · status: transcribed
+
+You. You were the missing piece to my puzzle. While my life fell into place with every step I took and every risk I took, there was love missing. And then I met you. I changed, I grew, and I discovered love.
+
+## 2023-08-04 — Who is with me on this?! 💃🏼
+
+https://www.instagram.com/p/CvhFUxLgBpw/ · Video · plays: 3223 · likes: 90 · status: transcribed
+
+I love this version of me. Our apartment in the city had an evacuation and it was raining. And I could have stood out there and I could have bitched and whined and complained. Instead I danced and yes my husband watched and giggled and so did the dogs. I danced instead of getting pissed off at the world and I laughed.
+
+## 2023-04-30 — 7 years ago on this day… I SWIPED RIGHT. 
+
+https://www.instagram.com/p/CrpylnxAPsQ/ · Video · plays: 945 · likes: 89 · status: no_speech
+
+*(no_speech)* Caption: 7 years ago on this day… I SWIPED RIGHT. 
+Seriously that is how Jed and I met. It’s just a tinder date. It’s not like I am going to marry the guy 🤣
+
+On this day 7 years ago I went on my first date with him. 
+
+Not a nervous bone in my body. 
+
+I live in America. 
+
+This will be a story to tell my girlfriend when I get home. 
+
+I was personally in the best space I had ever been in. 
+
+The last thing I w
+
+## 2023-04-19 — HUMP DAY SPAM. You’re welcome 🤣
+
+https://www.instagram.com/p/CrNiQVCAJbc/ · Video · plays: 861 · likes: 44 · status: transcribed
+
+The cheese tax! The cheese tax! You gotta pay the cheese tax! Every time you're cooking when the cheese comes out This puppy comes looking The rules are the rules and the facts are the facts And when the cheese drawer opens You gotta pay the tax! The cheese tax! The cheese tax! Hand it over!
+
+## 2023-02-24 — Nothing in life was handed to me…
+
+https://www.instagram.com/p/CpCRRxkA9sH/ · Video · plays: 909 · likes: 42 · status: transcribed
+
+Your dream doesn't have an expiration date. Take a deep breath and try again.
+
+## 2023-01-22 — The love I dreamed of…
+
+https://www.instagram.com/p/CntY1zXIrbm/ · Video · plays: 1223 · likes: 78 · status: transcribed
+
+I've been traveling all around Waiting for you to come through Someone like me

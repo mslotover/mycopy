@@ -1,0 +1,3239 @@
+[{
+  "status": "no_audio_stream",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "this video stream carries no audio track (a DASH video-only fragment). If your scraper exports an audioUrl field, pass it — the audio lives there.",
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQNctjvTCvsLcfkZXjVszL07I7jfD46C8HurYMtLV7tyQprpXumJtQBdFu_zBXLgJixBanOuVH5WEnZfQFtb716JEgleG1SJqYPUKUk.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=QmVnVifFmVYQ7kNvwF8w5pS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0FST1VTRUxfSVRFTS5DMy41MzYuZGFzaF9iYXNlbGluZV8xX3YxIiwieHB2X2Fzc2V0X2lkIjoxODQxNzgxMjA1OTA4NDU0OSwiYXNzZXRfYWdlX2RheXMiOjEwLCJ2aV91c2VjYXNlX2lkIjoxMDE0NiwiZHVyYXRpb25fcyI6NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=5eeb8d2aca8f99af&_nc_vs=HBkcFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC81ODNFRkZBMkYzM0I0MjUwOEIwMzc3NDIyRUNBQzU5RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmitySleG5t0EVAigCQzMsF0AS7peNT987GBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXuB2XEngEA&_nc_gid=D4AZqh4Oe1m370FejURuGg&_nc_ss=7c689&_nc_zt=28&oh=00_AQRvIQlxOmxwVIltbnMQ8uunhqP-E5uIWbba1x9MYdjCjA&oe=6AF25498",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:17:44.000Z",
+  "shortCode": "DfEuXDGlBGh",
+  "postUrl": "https://www.instagram.com/reel/DfEuXDGlBGh/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": null,
+  "segments": null,
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:07.355Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 0
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQMucdqFN-bSGV1Z5zLX8g5TGWe6TEw8sy_A07O9FXAffqQXp1YXLZxYL1MXYEGTw8SVCZXoFZeAFqAvpJG-tSJ91H5M4NuUe_H3Hrg.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=_2MCFZ2cW6YQ7kNvwF2R-zX&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDU4OTkzNTQ5Nzg4NzI5OSwiYXNzZXRfYWdlX2RheXMiOjExLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTI0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=9df47e5a7ca65d75&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC84MzQzQzAyRDZEMzc0MTI1OTlBNjdDN0YzOEEyMDlBQ192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzFENTYzMTc3REVDMTQ5Mjk5MjdDMDIyRTdCM0Q4OEExX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaG-aWutKGnEBUCKAJDMywXQF8MzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=RcErAjxkO6t3pQAS4RhjBQ&_nc_ss=7c689&_nc_zt=28&oh=00_AQRtJU9mfGyF676i3UimLzkKVatBye_ymQTpP_jY6cNRIw&oe=6AF25E5F",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:59:27.000Z",
+  "shortCode": "DfAq4f9zdJz",
+  "postUrl": "https://www.instagram.com/reel/DfAq4f9zdJz/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Here are five things I wish I'd known before opening my restaurant. I'd spent years working in restaurants before opening up my own, but ownership, it teaches you a whole different set of lessons. One, surround yourself with people who are better at things than you are. I might understand P&L's cash flow and forecasting, but that doesn't mean I'm the best person to handle all of them. One of the smartest things you can do is surround yourself with people who bring different skills and expertise to the table. Two, you cannot be everyone's favorite person. This one was very hard for me. When you've spent your career making people happy, having uncomfortable conversations, and making unpopular decisions doesn't always come naturally. But that's part of being an owner. 3 Just because you can do everything doesn mean you should When you worked your way through restaurants you know how to jump into just about every position But if you constantly doing everybody else job who's actually running the business? Four, your restaurant will never be finished. There will always be something to improve, fix, or change. And if you're waiting for everything to be perfect before you can relax. Good fucking luck with that. Learn to enjoy what you've built while you're still building it. And five, build a life outside your restaurant. When it's your name, your money, and your reputation on the line, it's so easy for the restaurant to become your entire identity. That's not sustainable. Looking back, I wouldn't trade owning a restaurant for anything, but there are definitely things I do differently today and maybe that's one of the greatest gifts of ownership you learn things about yourself you probably wouldn't have learned any other way",
+  "onScreenText": null,
+  "hook3s": "Here are five things I wish I'd known before opening my restaurant.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 124.204971662,
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.66,
+      "text": " Here are five things I wish I'd known before opening my restaurant."
+    },
+    {
+      "start": 4.98,
+      "end": 8.059999,
+      "text": " I'd spent years working in restaurants before opening up my own,"
+    },
+    {
+      "start": 8.48,
+      "end": 12.08,
+      "text": " but ownership, it teaches you a whole different set of lessons."
+    },
+    {
+      "start": 12.94,
+      "end": 18.1,
+      "text": " One, surround yourself with people who are better at things than you are."
+    },
+    {
+      "start": 18.58,
+      "end": 21.9,
+      "text": " I might understand P&L's cash flow and forecasting,"
+    },
+    {
+      "start": 21.9,
+      "end": 26.08,
+      "text": " but that doesn't mean I'm the best person to handle all of them."
+    },
+    {
+      "start": 26.08,
+      "end": 35.5,
+      "text": " One of the smartest things you can do is surround yourself with people who bring different skills and expertise to the table."
+    },
+    {
+      "start": 35.76,
+      "end": 39.02,
+      "text": " Two, you cannot be everyone's favorite person."
+    },
+    {
+      "start": 39.76,
+      "end": 41.98,
+      "text": " This one was very hard for me."
+    },
+    {
+      "start": 42.38,
+      "end": 51.76,
+      "text": " When you've spent your career making people happy, having uncomfortable conversations, and making unpopular decisions doesn't always come naturally."
+    },
+    {
+      "start": 52.16,
+      "end": 53.6,
+      "text": " But that's part of being an owner."
+    },
+    {
+      "start": 53.6,
+      "end": 69.80247,
+      "text": " 3 Just because you can do everything doesn mean you should When you worked your way through restaurants you know how to jump into just about every position But if you constantly doing everybody else job"
+    },
+    {
+      "start": 70.26247,
+      "end": 78.06247,
+      "text": " who's actually running the business? Four, your restaurant will never be finished. There will"
+    },
+    {
+      "start": 78.06247,
+      "end": 84.06247,
+      "text": " always be something to improve, fix, or change. And if you're waiting for everything to be perfect"
+    },
+    {
+      "start": 84.06247,
+      "end": 93.00247,
+      "text": " before you can relax. Good fucking luck with that. Learn to enjoy what you've built while you're"
+    },
+    {
+      "start": 93.00247,
+      "end": 101.02247,
+      "text": " still building it. And five, build a life outside your restaurant. When it's your name, your money,"
+    },
+    {
+      "start": 101.16247,
+      "end": 106.942474,
+      "text": " and your reputation on the line, it's so easy for the restaurant to become your entire identity."
+    },
+    {
+      "start": 107.36247,
+      "end": 113.10247,
+      "text": " That's not sustainable. Looking back, I wouldn't trade owning a restaurant for anything, but there"
+    },
+    {
+      "start": 113.10247,
+      "end": 116.942474,
+      "text": " are definitely things I do differently today and maybe that's one of the"
+    },
+    {
+      "start": 116.942474,
+      "end": 121.26247,
+      "text": " greatest gifts of ownership you learn things about yourself you probably"
+    },
+    {
+      "start": 121.26247,
+      "end": 125.66247,
+      "text": " wouldn't have learned any other way"
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:11.634Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 1
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQP1xm1MXBOmLGSEdcZztQfnRsqA6_kIiK-ybUnXboC70Dk1qT4695vkV29gGnZurqSpmVodR7m6siEtoOC7AbGe3UOEghVxy6jSpqQ.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=aQEwCMlFuh8Q7kNvwGaJG_A&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAzMjQwNTkxNjUzOTEwNiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoxMjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f560742e3a26f024&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9GNkE3REZGM0NCMTE0QUMwOTJGNEJDN0FEODIwREFBOV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzJERkVCOEFFQTcxRTQyQjM4RkMzNkQ1M0VENDQ4RUQzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbE49q-973VAxUCKAJDMywXQF65mZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=GGrjVk00rp-LiVCR3EFG_Q&_nc_ss=7c689&_nc_zt=28&oh=00_AQRWmr1Un-brw0WViW3Jw5qBsYvGs4_dFiyaqboDC8lF1w&oe=6AF26D4C",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T01:03:08.000Z",
+  "shortCode": "Dfc89DFy08b",
+  "postUrl": "https://www.instagram.com/reel/Dfc89DFy08b/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "When I started talking about hospitality on Instagram, I genuinely didn't think anyone was going to listen. I mean, who wants to hear someone go on and on about restaurant service and the little things that make people feel special? Apparently, quite a few of you. And I don't think you realize how much that means to me. Growing up, I moved between different homes and I never really felt like I fit in anywhere. I didn't have the stability of a lifelong friendship or a community I felt like I belonged to. But when I found the restaurant industry, something changed. I found my people. And for almost 25 years, no matter where I've lived or traveled in the world, hospitality has given me that same sense of belonging. I've made lifelong friends through this industry. I had complete strangers turn a horrible day into an amazing one just through the way they treated me And I seen firsthand how much of a difference hospitality can make in someone life And now over the last six months, more than 12,000 of you have joined me here. And the messages, the conversations, the stories you share with me, I don't think you realize how much they mean. When a restaurant owner tells me something I shared helped them see their business differently. Or someone working in hospitality tells me one of my videos reminded them why they love this industry. It genuinely brings tears to my eyes. Because I believe so much in this industry. And I believe in the people who make it what it is. So whether you've been here for years, you just found me yesterday, or you've never commented on a single thing, thank you for making this feel like a community. and for reminding me once again how damn special hospitality people really are.",
+  "onScreenText": null,
+  "hook3s": "When I started talking about hospitality on Instagram, I genuinely didn't think anyone was going to listen.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 122.906968654,
+  "segments": [
+    {
+      "start": 0,
+      "end": 7.7799997,
+      "text": " When I started talking about hospitality on Instagram, I genuinely didn't think anyone was going to listen."
+    },
+    {
+      "start": 7.7799997,
+      "end": 16.9,
+      "text": " I mean, who wants to hear someone go on and on about restaurant service and the little things that make people feel special?"
+    },
+    {
+      "start": 17.279999,
+      "end": 19.32,
+      "text": " Apparently, quite a few of you."
+    },
+    {
+      "start": 19.56,
+      "end": 23.64,
+      "text": " And I don't think you realize how much that means to me."
+    },
+    {
+      "start": 23.96,
+      "end": 29.38,
+      "text": " Growing up, I moved between different homes and I never really felt like I fit in anywhere."
+    },
+    {
+      "start": 30,
+      "end": 34.88,
+      "text": " I didn't have the stability of a lifelong friendship or a community I felt like I belonged to."
+    },
+    {
+      "start": 34.96,
+      "end": 39.44,
+      "text": " But when I found the restaurant industry, something changed."
+    },
+    {
+      "start": 39.74,
+      "end": 41.52,
+      "text": " I found my people."
+    },
+    {
+      "start": 41.52,
+      "end": 46.7,
+      "text": " And for almost 25 years, no matter where I've lived or traveled in the world,"
+    },
+    {
+      "start": 46.92,
+      "end": 51.48,
+      "text": " hospitality has given me that same sense of belonging."
+    },
+    {
+      "start": 51.96,
+      "end": 54.26,
+      "text": " I've made lifelong friends through this industry."
+    },
+    {
+      "start": 54.86,
+      "end": 68.85347,
+      "text": " I had complete strangers turn a horrible day into an amazing one just through the way they treated me And I seen firsthand how much of a difference hospitality can make in someone life"
+    },
+    {
+      "start": 69.23347,
+      "end": 70.89347,
+      "text": " And now over the last six months,"
+    },
+    {
+      "start": 71.013466,
+      "end": 74.29347,
+      "text": " more than 12,000 of you have joined me here."
+    },
+    {
+      "start": 74.513466,
+      "end": 76.31347,
+      "text": " And the messages, the conversations,"
+    },
+    {
+      "start": 76.55347,
+      "end": 78.87347,
+      "text": " the stories you share with me,"
+    },
+    {
+      "start": 78.99347,
+      "end": 80.81347,
+      "text": " I don't think you realize how much they mean."
+    },
+    {
+      "start": 81.153465,
+      "end": 84.013466,
+      "text": " When a restaurant owner tells me something I shared"
+    },
+    {
+      "start": 84.013466,
+      "end": 86.21347,
+      "text": " helped them see their business differently."
+    },
+    {
+      "start": 86.45347,
+      "end": 93.35347,
+      "text": " Or someone working in hospitality tells me one of my videos reminded them why they love this industry."
+    },
+    {
+      "start": 93.59347,
+      "end": 95.75346,
+      "text": " It genuinely brings tears to my eyes."
+    },
+    {
+      "start": 96.21347,
+      "end": 98.87347,
+      "text": " Because I believe so much in this industry."
+    },
+    {
+      "start": 99.613464,
+      "end": 103.113464,
+      "text": " And I believe in the people who make it what it is."
+    },
+    {
+      "start": 103.113464,
+      "end": 111.013466,
+      "text": " So whether you've been here for years, you just found me yesterday, or you've never commented on a single thing,"
+    },
+    {
+      "start": 111.37347,
+      "end": 115.27347,
+      "text": " thank you for making this feel like a community."
+    },
+    {
+      "start": 115.27347,
+      "end": 122.63347,
+      "text": " and for reminding me once again how damn special hospitality people really are."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:11.911Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 2
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQN6E-_UDeHLLULydSeC9L2cJ4-EzMp4OGNJcIGq4PUDGU8KjyflNG-j7369TukSEa3QX8MqlVHiwVFIWIrPvqny29kntM88uCyvn9A.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=fzH2pIOGrNUQ7kNvwGiwwvH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTQ0MDU3NzIwMTYwNTk0MCwiYXNzZXRfYWdlX2RheXMiOjksInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo3MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=9d398e60600fc7&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC85MUM0Qzk0QkQ3RDM0NkVFOTU4RjdGMzQ2NjRDRjI0NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzEwQUVDMkFGRUQxMjQ0QjlBNURCNTU2NkQ2NzY3QzM3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbotPzF0IyPBRUCKAJDMywXQFIZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=phGHP6r__wFHKLu-S1-HKA&_nc_ss=7c689&_nc_zt=28&oh=00_AQR7sDg-EO7JXSxTP9aCeXoABYT-Q7ck1fxfsQCX9djLuA&oe=6AF256A6",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:26:30.000Z",
+  "shortCode": "DfFzGNLTSEq",
+  "postUrl": "https://www.instagram.com/reel/DfFzGNLTSEq/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "A restaurant can do everything right and still lose a guest. The food can be fantastic. The service can be friendly. The restaurant can look beautiful. And that guest might never come back. Because sometimes it's not about anything going wrong. It's about nothing making them feel particularly special. Think about the last restaurant you went to where everything was perfectly fine. You enjoyed your meal, you paid your bill, you left. But can you remember anything about the experience? Now think about a restaurant you absolutely love going back to. I bet there's something about the way they make you feel. Maybe someone remembers your name. Maybe they know how you like your coffee. Maybe there's a little moment of genuine connection. And here's what I want more restaurant leaders to understand. You don't always need to change your menu, renovate your space, or spend more money to give people a reason to return. Sometimes you just need to give them something worth remembering.",
+  "onScreenText": null,
+  "hook3s": "A restaurant can do everything right and still lose a guest.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 72.424439808,
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.56,
+      "text": " A restaurant can do everything right and still lose a guest."
+    },
+    {
+      "start": 5.68,
+      "end": 7.64,
+      "text": " The food can be fantastic."
+    },
+    {
+      "start": 8.08,
+      "end": 9.78,
+      "text": " The service can be friendly."
+    },
+    {
+      "start": 10.0199995,
+      "end": 11.96,
+      "text": " The restaurant can look beautiful."
+    },
+    {
+      "start": 12.5,
+      "end": 15.339999,
+      "text": " And that guest might never come back."
+    },
+    {
+      "start": 15.339999,
+      "end": 19.039999,
+      "text": " Because sometimes it's not about anything going wrong."
+    },
+    {
+      "start": 19.3,
+      "end": 23.279999,
+      "text": " It's about nothing making them feel particularly special."
+    },
+    {
+      "start": 23.72,
+      "end": 28.5,
+      "text": " Think about the last restaurant you went to where everything was perfectly fine."
+    },
+    {
+      "start": 28.5,
+      "end": 32.34,
+      "text": " You enjoyed your meal, you paid your bill, you left."
+    },
+    {
+      "start": 32.96,
+      "end": 37.68,
+      "text": " But can you remember anything about the experience?"
+    },
+    {
+      "start": 38.38,
+      "end": 43.22,
+      "text": " Now think about a restaurant you absolutely love going back to."
+    },
+    {
+      "start": 43.36,
+      "end": 47.06,
+      "text": " I bet there's something about the way they make you feel."
+    },
+    {
+      "start": 47.34,
+      "end": 48.78,
+      "text": " Maybe someone remembers your name."
+    },
+    {
+      "start": 49.44,
+      "end": 51.18,
+      "text": " Maybe they know how you like your coffee."
+    },
+    {
+      "start": 52.02,
+      "end": 55.34,
+      "text": " Maybe there's a little moment of genuine connection."
+    },
+    {
+      "start": 55.34,
+      "end": 59.14,
+      "text": " And here's what I want more restaurant leaders to understand."
+    },
+    {
+      "start": 59.6,
+      "end": 63.4,
+      "text": " You don't always need to change your menu, renovate your space,"
+    },
+    {
+      "start": 63.58,
+      "end": 67.5,
+      "text": " or spend more money to give people a reason to return."
+    },
+    {
+      "start": 67.82,
+      "end": 72.08,
+      "text": " Sometimes you just need to give them something worth remembering."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:12.171Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 3
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQPVOZe5wHSyRNOwJ5kKp4WreQfGB6KTo6Jz7vwQkfLXZYBzQkPA04JX9lfBLplMZUXb3g1X8ppuOlvNg6uVElU37lQfKMvRHjusqFI.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=5vIHNm9hYsUQ7kNvwE07vHy&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA4NDMxOTkzNDQ2OTQ5NSwiYXNzZXRfYWdlX2RheXMiOjIwLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6OTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=acbb3c6d69661081&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9BMkU3QTQ2MjEwNkI0NEU3OTAwQTZEMTFDNTgzNzJDMF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Q2OThFQ0I4Rjc5RjQwOUZCMENFQTQ4OEUzREY2NDEwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbu1aKI3YvtAxUCKAJDMywXQFhGZmZmZmYYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=6CgjfCZzUAvV4SF1GVvBPA&_nc_ss=7c689&_nc_zt=28&oh=00_AQTeenB11gK8lZwOYiwzVoF12mvSFqH58QRgI_K8m6GGgA&oe=6AF248CC",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:27:24.000Z",
+  "shortCode": "Depd-_CSb8o",
+  "postUrl": "https://www.instagram.com/reel/Depd-_CSb8o/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "You can always tell when a restaurant has really good regulars. And I'm not just talking about the people who come in every Friday night and order the exact same thing. I'm talking about the ones who become part of the fucking furniture. They know everybody's names. They notice when someone new starts. They ask how your holiday was, how your kids are doing, or whatever happened with that thing you told them about three weeks ago. They're the ones who bring their friends, their family, their out-of-town guests because they want everybody to experience this place they love. And sometimes they know more about what's going on in the restaurant than half the staff do. Here's what I really love about great regulars. They don't just show up when everything's going well. They're there on the quiet Tuesday nights. They're there when you change the menu. They're there when you're trying something new. And somewhere along the way, they stop feeling like customers and start feeling like friends. In all my years of running Restaurant Floor, some of the people I met along the way are still part of my life today. And I think that's one of the most beautiful things about this industry. Some of my favorite people I've ever met started out as guests. And tomorrow, I'm going to share five things great restaurants do to turn first-time guests into regulars.",
+  "onScreenText": null,
+  "hook3s": "You can always tell when a restaurant has really good regulars.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 97.130938368,
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.2,
+      "text": " You can always tell when a restaurant has really good regulars."
+    },
+    {
+      "start": 4.38,
+      "end": 10.76,
+      "text": " And I'm not just talking about the people who come in every Friday night and order the exact same thing."
+    },
+    {
+      "start": 11.099999,
+      "end": 15.059999,
+      "text": " I'm talking about the ones who become part of the fucking furniture."
+    },
+    {
+      "start": 15.46,
+      "end": 16.779999,
+      "text": " They know everybody's names."
+    },
+    {
+      "start": 17.6,
+      "end": 19.68,
+      "text": " They notice when someone new starts."
+    },
+    {
+      "start": 19.68,
+      "end": 29.119999,
+      "text": " They ask how your holiday was, how your kids are doing, or whatever happened with that thing you told them about three weeks ago."
+    },
+    {
+      "start": 29.119999,
+      "end": 39.82,
+      "text": " They're the ones who bring their friends, their family, their out-of-town guests because they want everybody to experience this place they love."
+    },
+    {
+      "start": 40.239998,
+      "end": 45.62,
+      "text": " And sometimes they know more about what's going on in the restaurant than half the staff do."
+    },
+    {
+      "start": 45.859997,
+      "end": 50.019997,
+      "text": " Here's what I really love about great regulars."
+    },
+    {
+      "start": 50.34,
+      "end": 53.239998,
+      "text": " They don't just show up when everything's going well."
+    },
+    {
+      "start": 53.62,
+      "end": 56.1,
+      "text": " They're there on the quiet Tuesday nights."
+    },
+    {
+      "start": 56.379997,
+      "end": 58.859997,
+      "text": " They're there when you change the menu."
+    },
+    {
+      "start": 59.12,
+      "end": 62.48,
+      "text": " They're there when you're trying something new."
+    },
+    {
+      "start": 62.48,
+      "end": 70.24,
+      "text": " And somewhere along the way, they stop feeling like customers and start feeling like friends."
+    },
+    {
+      "start": 70.64,
+      "end": 78.119995,
+      "text": " In all my years of running Restaurant Floor, some of the people I met along the way are still part of my life today."
+    },
+    {
+      "start": 78.52,
+      "end": 82.6,
+      "text": " And I think that's one of the most beautiful things about this industry."
+    },
+    {
+      "start": 83.08,
+      "end": 87.54,
+      "text": " Some of my favorite people I've ever met started out as guests."
+    },
+    {
+      "start": 87.54,
+      "end": 96.880005,
+      "text": " And tomorrow, I'm going to share five things great restaurants do to turn first-time guests into regulars."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:12.415Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 4
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-hel3-1.cdninstagram.com/o1/v/t16/f2/m84/AQMwUyCFP1dELhOSDLf_ty3iIV21p8Y1Sjkquz2ZbSxE7ZzWUvFf4L8g3hKzlGsvW2dCxzn1NgNsW568KA6gcCUjFjYmCMsRNbRxWGI.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_ohc=YwrG3c3jmDAQ7kNvwH_rkSk&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTYxMzUzOTY0MDQyODM5OSwiYXNzZXRfYWdlX2RheXMiOjI0LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=626ded2592e8a783&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC84OUQ4NUJFNTZENDI0RUNEQTU4OUNERjFEODQzQzZFMF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzVBN0JEODI3MkY4NjREMTI4QTZBNDQ3N0NGOEQ1NDVGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbencqRr-DdBRUCKAJDMywXQBZmZmZmZmYYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=f1HrIIMUKB2sR1WyhBZBrQ&_nc_ss=723ba&_nc_zt=28&oh=00_AQTy__2UJfttZXy6B72zPw1B66T4n4mfp2WoTSTf717pxQ&oe=6AF24990",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:30:40.000Z",
+  "shortCode": "DefI1uQBxEW",
+  "postUrl": "https://www.instagram.com/reel/DefI1uQBxEW/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "I’m a sucker for a restaurant that knows how to make you feel fucking special without making a big production out of it.👏\n\nHere are 7 oddly specific things that win me over.\n\n1. When the bartender gives you THAT look.\n\nYour glass is nearly empty, they catch your eye, give you a little nod, and another cocktail is on its way. No waving your arms around like you’re directing traffic.\n\n2. When a server tells you NOT to order something.\n\n“I think you’ve ordered enough food.”\n\nYou’re telling me you care more about my experience than squeezing another $28 out of me? Marry me.\n\n3. When the staff have just the right amount of cheek.\n\nA perfectly timed sarcastic comment that has the whole table losing it? I fucking LOVE those people. Give me personality over a rehearsed script any day.\n\n4. When someone is borderline OBSESSED with something on the menu.\n\nNot “Everything’s really good.” I want the server who practically grabs my arm because I haven’t ordered their favourite wine. THAT energy.\n\n5. When someone acknowledges a celebration without making it weird.\n\nA quiet congratulations. A little surprise from the kitchen. Not six staff members clapping while I contemplate crawling under the table.\n\n6. When the outdoor tables aren’t treated like forgotten children.\n\nI’m enjoying a cocktail, not participating in a survival challenge. I shouldn’t need to send a search party inside to order another drink. 😂\n\n7. When someone remembers something random from my last visit.\n\nNot my drink order. The holiday I was planning. The dog I mentioned three weeks ago. That shit gets me EVERY time.\n\nIt’s people paying attention, having a personality, and genuinely enjoying making someone else’s day better.\n\nThose are the restaurants I fall in love with🧡\n\nNow tell me yours. What’s one oddly specific thing a restaurant does that wins you over?",
+  "transcript": "We'll see you next time.",
+  "onScreenText": null,
+  "hook3s": "We'll see you next time.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 5.59743744,
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.58,
+      "text": " We'll see you next time."
+    }
+  ],
+  "takenAt": "2026-10-14T19:31:00.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 99,
+  "comments": 12,
+  "plays": 10771,
+  "thumbnailUrl": "https://scontent-hel3-1.cdninstagram.com/v/t51.71878-15/849098138_1145661974632738_8007889636404915839_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=NDAwNzk2MTA2OTU0ODQwOTExMDE2MTM1NDAyMTcwOTUwMDg%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=6TNhhmqhU3QQ7kNvwE-koH_&_nc_oc=Adq5ap3v7IY0wi7aJVkF6jZBH0F94cjGxoCpDgIVdZTlaX9lOchClOtYt7hUFCpYXXw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_gid=f1HrIIMUKB2sR1WyhBZBrQ&_nc_ss=723ba&oh=00_AQQidEU1Xc4MV7vwikdTeWXcoH8gBZ9TRnTebjHJ6mAIJQ&oe=6AF6416D",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:18.332Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 5
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-lax3-1.cdninstagram.com/o1/v/t16/f2/m84/AQMh2x4HJM1h4WoFxYKSMXo7jLx7jtvK63tTgw5ZY0eVtakJ7DHzWL7Ip2rLFcm4Y6z6UcZ-o6zSHn01DlsaNomCTAuHmoQcSdZEAho.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_ohc=oUJcroy6IqcQ7kNvwF5G8PT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAyOTEyODUzNjg2ODYyOSwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=16960ebe5f015d7d&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wNjhCMkQxNzVCNzk0OUE0QjJBQzRGRkVFQ0QxRjZDQ192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzBDQ0VCRkFCMDA4QjRGOTk5NDcwRkEwOEU3MTQ5MDdFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaqnPKNlf_TAxUCKAJDMywXQB7ul41P3zsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=SBgyBrw2ex7La4A5hbAi5Q&_nc_ss=723ba&_nc_zt=28&oh=00_AQTW2CdeV2tzq6IEHhWimpRqHPBalZ0oE9JTkivl_pU7Cg&oe=6AF27460",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T01:33:20.000Z",
+  "shortCode": "De-E4E3zw8I",
+  "postUrl": "https://www.instagram.com/reel/De-E4E3zw8I/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "Great food AND great hospitality? That’s the kind of restaurant I fucking love coming back to 🧡",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 7.780125184,
+  "segments": null,
+  "takenAt": "2026-10-26T19:52:37.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 827,
+  "comments": 25,
+  "plays": 96872,
+  "thumbnailUrl": "https://scontent-lax3-2.cdninstagram.com/v/t15.5256-10/869768451_1804147340830113_6976175597449554179_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=NDAxNjY2OTM2MzM2OTA4NjcyOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=NPnPHez_WIMQ7kNvwGyu42b&_nc_oc=AdqVu8W5Zhz4xz2QAndh0J6LfQ-rLsEGqa8eWOcIHiyvhGE0GX_tgdxRnE5hQRww0FY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_gid=SBgyBrw2ex7La4A5hbAi5Q&_nc_ss=723ba&oh=00_AQSpo3qDDOuBoLNOMtNJPuyygjAGPyoMzhx8M736GaY7Gw&oe=6AF6350F",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:18.570Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 6
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-lax3-2.cdninstagram.com/o1/v/t16/f2/m84/AQPv1l17JcjxD4iZMIuP6M7PUzl8EyU11e3JhdIr9rzzwGC6HfjuMnmrS34mkLfGNVGvZxSfl63kz-XgXSwv-4m9IF5NZQ0yNbjCREE.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ohc=EG_5jko6Z_AQ7kNvwGGdJF6&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTY0MDQyMTEwNzczNDUyMSwiYXNzZXRfYWdlX2RheXMiOjE0LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=e241432e72390eb&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9FNkI1MjE0MzEzQjk0NDY2QTY5NEMxNEY5OUUyMkU1RV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Y5QjY2MkQ0MzdEQjRBRDI4OTI3N0UwODQ5NjI2OTkzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACby38TWif3pBRUCKAJDMywXQBjul41P3zsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=9K_ZveB8XLrM_RYbl87wcg&_nc_ss=723ba&_nc_zt=28&oh=00_AQRfcqc7sn3cE1S1j09XqrpaO0bozA1ySxcacRlIdhE67Q&oe=6AF265CD",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:31:09.000Z",
+  "shortCode": "De46j_XzjZo",
+  "postUrl": "https://www.instagram.com/reel/De46j_XzjZo/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "Some of my favourite people in the world are people I met working in restaurants.\n\nWe’ve survived some absolute shitshows together, seen each other at our worst, and somehow STILL want to hang out with each other. 😂\n\nAnd all these years later, we’re still getting up to no good.\n\nThat’s one of the things I love most about this industry🧡",
+  "transcript": "Check it out. What's it all about? Work it out.",
+  "onScreenText": null,
+  "hook3s": "Check it out. What's it all about?",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 6.24756224,
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.9,
+      "text": " Check it out."
+    },
+    {
+      "start": 2.76,
+      "end": 3.9199998,
+      "text": " What's it all about?"
+    },
+    {
+      "start": 5.12,
+      "end": 6,
+      "text": " Work it out."
+    }
+  ],
+  "takenAt": "2026-10-24T19:46:23.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 59,
+  "comments": 11,
+  "plays": 6107,
+  "thumbnailUrl": "https://scontent-lax3-2.cdninstagram.com/v/t15.5256-10/864793938_1477710467557434_2473779225314971197_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=NDAxNTIxNjYyNzcyNTI1MjIwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=CIZWmYPPRTMQ7kNvwHwepkk&_nc_oc=AdrD-253Bzs5Z7p8-YlayI2XX1DL6Bef4uOk-75Estx8RwcqHtwkFsRW276Q_TGYZ2U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_gid=9K_ZveB8XLrM_RYbl87wcg&_nc_ss=723ba&oh=00_AQQGCIrX9PoybQ82lj2ZKt8uihuT3RngsP_NlKwniahe8w&oe=6AF66695",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:18.839Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 7
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-xxc1-1.cdninstagram.com/o1/v/t16/f2/m84/AQM6eEU82YlMNxEqqDJlWx1g6-bwjLwmF85jmozABzFrr1KgmPY0DUDN5vHZwSfI6G2s38u9qsl02dHn4fpchKjPUlG2l9GDpDdZ7RY.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-xxc1-1.cdninstagram.com&_nc_ohc=gSFsT74dGlgQ7kNvwGxDOZZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjIwNTkzNDc2MzI5NzEyNSwiYXNzZXRfYWdlX2RheXMiOjgsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=6fce557aecefb460&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9BMzE0NTA0Q0RCMUM0NUJCQjE5Mzg4N0IwN0JFN0VGRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzNBNEQ2ODEyMjA0NzQ1Q0NBN0Q1M0JFQjI5OTA4MzAzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbKpbbfppLrBxUCKAJDMywXQBkzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=oXp_0MdKvu4rC-dAfJQ9RA&_nc_ss=723ba&_nc_zt=28&oh=00_AQSrE_ZUPT6PbmSfiyFnan0DEYyojwguE3XuQ09D87XCFQ&oe=6AF2444E",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:08:14.000Z",
+  "shortCode": "DfIZo3vz7FK",
+  "postUrl": "https://www.instagram.com/reel/DfIZo3vz7FK/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "I’ve spent more than 20 years in hospitality, and sitting at a bar is still one of my favourite places to watch great hospitality happen.\n\nHere are 7 things I notice almost immediately:\n\n1. The acknowledgement. \nEven when they’re slammed, does someone make eye contact or give me a quick nod?\n\n2. How they treat newcomers. \nAre the regulars getting all the attention, or does everyone feel welcome?\n\n3. The menu. \nIs someone offering one, or am I left hunting for it?\n\n4. Their awareness. \nAre they watching the entire bar, or just focused on making drinks?\n\n5. Their recommendations. \nDo they ask what I enjoy before suggesting something?\n\n6. The solo guest. \nDoes someone sitting alone feel just as welcome as a group of six?\n\n7. The goodbye. \nDoes anyone notice when a guest leaves?\n\nNone of these things requires a fancy cocktail menu or an expensive fit-out.\nJust people who genuinely understand hospitality.\n\n🥃Bartenders, what would YOU add?",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 6.340437504,
+  "segments": null,
+  "takenAt": "2026-10-30T20:07:14.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 267,
+  "comments": 29,
+  "plays": 42782,
+  "thumbnailUrl": "https://scontent-xxc1-1.cdninstagram.com/v/t51.71878-15/874466879_1165463082718857_7563603617228278103_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=NDAxOTU3NTQyNzIyNzk1NTUzMDIyMDU5MzU2MDk5NjM3MDc%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=NqhbWPmFhkcQ7kNvwF2IZFK&_nc_oc=AdpYenxNgnOxLGLEDI1UJmWJQpIXtBS_w5U_z1tcTFgiyH51e6muk8jP0xgBT6zna28&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-xxc1-1.cdninstagram.com&_nc_gid=oXp_0MdKvu4rC-dAfJQ9RA&_nc_ss=723ba&oh=00_AQTmX22YIgn77hnfgEQcfoC19kQKJuMA4vPwymKFC07EEA&oe=6AF63A95",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:19.110Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 8
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-2.cdninstagram.com/o1/v/t16/f2/m84/AQP5jqJ62uhjF9kBYNDBGpoe_S2uZP7bDMfvFDh93Yec8BYLd1OBC-JjDWz2KROwUANrUWExiuu5xWFuKuDz9QMj3Zlq4oUc0-LrMJM.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_ohc=XnY0184KIfwQ7kNvwGSwicW&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTQ3MzM4MTczMTMzODMyMCwiYXNzZXRfYWdlX2RheXMiOjE4LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a0071c32c637dbb8&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wOTRFQjYyREFFOEQ0NDNDQUM3Rjc4MzFCOEExOEZEMV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA4MjU0MUFCMkYzRTRFMDU5N0U4ODRDMjc4RkRENEZDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACagobirjYKeBRUCKAJDMywXQBXdLxqfvncYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=LvvxiFDywYpITp_0y9booA&_nc_ss=723ba&_nc_zt=28&oh=00_AQTvb4l1In76kQ26mu8u7STaRkjjiJ4CXQBLLcPkf9nARg&oe=6AF27199",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T01:21:29.000Z",
+  "shortCode": "DeupTFazHhV",
+  "postUrl": "https://www.instagram.com/reel/DeupTFazHhV/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "One of the biggest mistakes I see in restaurants? Trying to fix the problem you can see without understanding what’s causing it.\n\nHere are a few examples of where I’d look first.\n\n1. Staff keep leaving.\nBefore blaming the hiring market, I’d want to know who they’re working for, how they’re being managed, and what their first 30 days actually look like.\n\n2. Service is inconsistent.\nBefore scheduling another training session, I’d look at what happens before the doors open. Are expectations clear? Is there a proper pre-shift? Does anyone follow up on what was taught yesterday?\n\n3. Managers are burning out.\nBefore telling them to delegate more, I’d want to know what decisions they’re actually allowed to make. Are they empowered to lead, or does everything still have to go through the owner?\n\n4. Guests aren’t coming back.\nBefore changing the menu or offering discounts, I’d look at the entire guest experience. What happens when they arrive? How do they feel when they leave? And does anyone follow up after their visit?\n\n5. The owner can’t step away.\nBefore hiring another manager, I’d want to understand why the restaurant still depends on one person to make every decision.\n\nHere’s the thing.\n\nSometimes the problem everyone is talking about isn’t actually the problem.\n\nIt’s just the symptom.\n\nAnd if you keep fixing symptoms, you’re going to keep having the same fucking conversations six months from now 🤷‍♀️",
+  "transcript": "Look at this look Look at this look",
+  "onScreenText": null,
+  "hook3s": "Look at this look Look at this look",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 5.504562176,
+  "segments": [
+    {
+      "start": 0,
+      "end": 2.1,
+      "text": " Look at this look"
+    },
+    {
+      "start": 2.1,
+      "end": 4.74,
+      "text": " Look at this look"
+    }
+  ],
+  "takenAt": "2026-10-20T20:03:06.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 66,
+  "comments": 7,
+  "plays": 11251,
+  "thumbnailUrl": "https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/861063719_1371904852676262_7476773895857989602_n.jpg?stp=dst-jpegr_e15_tt6&_nc_cat=101&ig_cache_key=NDAxMjMyNTk0OTQyOTAyMDc1NzE0NzMzODIyMDgwMDQ5Mzk%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5oZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=YVIfrRdO_oQQ7kNvwGZQvMu&_nc_oc=Adoi1ITy0N_fMNpsDwLwh3BOAVW63ETQn4gcbEqHBbwbWSuiADRUTGWcZ_6MSk1KFSY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&se=-1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_gid=LvvxiFDywYpITp_0y9booA&_nc_ss=723ba&oh=00_AQTpPvU1zXOou-OC33LFxXz-xopnqUxZXZMukk2DuGsOYQ&oe=6AF65E7E",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:21.557Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 9
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQPx33RWPuYTealH_ALekeCel9s-ctGhQzklYsmo9RRBCNAn1T1tKAhgohlo8_QymK_4dgzfsiLB2B-tuXcNWfRNZygW-wbogXX8t1Q.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=m1bXmNQSOR8Q7kNvwGWZ0yF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTExNjEwMTkxMTE4MzcyMywiYXNzZXRfYWdlX2RheXMiOjUsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoxMTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=79c0fbca68a17eec&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC81OTE0QTFFRDdBRTc0QjEyOTAwN0JBOTA3NkQyRTBBM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzMxOURGNkM0RjJERTRBNDI4N0MyRDY5OTM1NjQ5MTBEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbWhZif18X7AxUCKAJDMywXQF2O6XjU_fQYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=z3HWF6d2Ix3jPL_wpcFoyw&_nc_ss=7c689&_nc_zt=28&oh=00_AQTTkMtoE5gcxwKkTV7QdmpUJrOe6IHyFKbJIwKgSmItGA&oe=6AF240A1",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T21:52:33.000Z",
+  "shortCode": "DfQGrqET7UC",
+  "postUrl": "https://www.instagram.com/reel/DfQGrqET7UC/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "If your pre-shift meetings are just about the specials, you're missing the point. A great pre-shift should do more than tell your team what's happening tonight. It should actually prepare them for it. Here are three things I'd love to see more restaurants doing. First, get your team talking. Instead of standing there giving everyone a rundown, ask a question. What's one thing we could do better than yesterday? What's something a guest asked you recently that you didn't know the answer to? Get people contributing because if you're the only one talking for 15 minutes, I'm not sure how much anybody's actually taking in. Second, practice something. It doesn't have to be some big formal training session. Have someone describe a dish they're excited about. Practice how to respond when a guest doesn't like their wine. Let someone who's brilliant at selling desserts share how they do it. Five minutes of actually doing something can be worth a hell of a lot more than 15 minutes of listening. And third, give the team something to focus on together. Not just, let's have a great service tonight. Something specific. Maybe it's making sure every guest celebrating something feels genuinely acknowledged. Maybe it's improving how the team communicates when the restaurant gets slammed. Then here's the important part. Talk about it again tomorrow. Did it work? What did we learn? What could we do differently? Because a pre-shift shouldn't be something you do just because you've always done it. It's an opportunity to make your team a little bit better every single day. And that's a pretty valuable 15 minutes.",
+  "onScreenText": null,
+  "hook3s": "If your pre-shift meetings are just about the specials, you're missing the point.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 118.262939648,
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.7,
+      "text": " If your pre-shift meetings are just about the specials, you're missing the point."
+    },
+    {
+      "start": 6.1,
+      "end": 10.639999,
+      "text": " A great pre-shift should do more than tell your team what's happening tonight."
+    },
+    {
+      "start": 11.2,
+      "end": 13.96,
+      "text": " It should actually prepare them for it."
+    },
+    {
+      "start": 14.059999,
+      "end": 18.64,
+      "text": " Here are three things I'd love to see more restaurants doing."
+    },
+    {
+      "start": 18.84,
+      "end": 21.619999,
+      "text": " First, get your team talking."
+    },
+    {
+      "start": 21.859999,
+      "end": 27.039999,
+      "text": " Instead of standing there giving everyone a rundown, ask a question."
+    },
+    {
+      "start": 27.039999,
+      "end": 29.84,
+      "text": " What's one thing we could do better than yesterday?"
+    },
+    {
+      "start": 30.6,
+      "end": 34.92,
+      "text": " What's something a guest asked you recently that you didn't know the answer to?"
+    },
+    {
+      "start": 35.02,
+      "end": 40.84,
+      "text": " Get people contributing because if you're the only one talking for 15 minutes,"
+    },
+    {
+      "start": 41.079998,
+      "end": 45.4,
+      "text": " I'm not sure how much anybody's actually taking in."
+    },
+    {
+      "start": 45.4,
+      "end": 47.46,
+      "text": " Second, practice something."
+    },
+    {
+      "start": 48.14,
+      "end": 51.68,
+      "text": " It doesn't have to be some big formal training session."
+    },
+    {
+      "start": 51.88,
+      "end": 54.44,
+      "text": " Have someone describe a dish they're excited about."
+    },
+    {
+      "start": 54.88,
+      "end": 58.14,
+      "text": " Practice how to respond when a guest doesn't like their wine."
+    },
+    {
+      "start": 58.14,
+      "end": 63,
+      "text": " Let someone who's brilliant at selling desserts share how they do it."
+    },
+    {
+      "start": 63.28,
+      "end": 70.56,
+      "text": " Five minutes of actually doing something can be worth a hell of a lot more than 15 minutes of listening."
+    },
+    {
+      "start": 71.02,
+      "end": 75.74,
+      "text": " And third, give the team something to focus on together."
+    },
+    {
+      "start": 76.22,
+      "end": 79.28,
+      "text": " Not just, let's have a great service tonight."
+    },
+    {
+      "start": 79.6,
+      "end": 80.72,
+      "text": " Something specific."
+    },
+    {
+      "start": 81.44,
+      "end": 86,
+      "text": " Maybe it's making sure every guest celebrating something feels genuinely acknowledged."
+    },
+    {
+      "start": 86,
+      "end": 91.02,
+      "text": " Maybe it's improving how the team communicates when the restaurant gets slammed."
+    },
+    {
+      "start": 91.44,
+      "end": 93.46,
+      "text": " Then here's the important part."
+    },
+    {
+      "start": 93.68,
+      "end": 96.8,
+      "text": " Talk about it again tomorrow."
+    },
+    {
+      "start": 97.08,
+      "end": 97.8,
+      "text": " Did it work?"
+    },
+    {
+      "start": 98.44,
+      "end": 99.56,
+      "text": " What did we learn?"
+    },
+    {
+      "start": 100.12,
+      "end": 101.32,
+      "text": " What could we do differently?"
+    },
+    {
+      "start": 101.88,
+      "end": 108.1,
+      "text": " Because a pre-shift shouldn't be something you do just because you've always done it."
+    },
+    {
+      "start": 108.38,
+      "end": 114.56,
+      "text": " It's an opportunity to make your team a little bit better every single day."
+    },
+    {
+      "start": 114.56,
+      "end": 118.24,
+      "text": " And that's a pretty valuable 15 minutes."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:33.599Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 10
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQOYyK8JJ_EE0biTVwYsSkecyLoV76e0alsLIjucxz-RSqhQhY_SMn-Y4pkA8EbKRwWj_bpuKTFpDyFyseh7tMohCTmi_x5S_FmFKMA.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=wUwYdYjgkJkQ7kNvwETEtWz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDQwMjgyNzY2MzMwMzA5NiwiYXNzZXRfYWdlX2RheXMiOjcsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo4MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f1ed348860fe3076&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wMjBFRTdCMzgzNzE0QkNDQTEwM0QzNjg4MDk0MjY5Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0U2MDdDNjQ1RDNBRjRDMkE5NUU1ODQxMkE0N0ZGRUZDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbwhoeuppbSDxUCKAJDMywXQFR1T987ZFoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=5PenWVXO5qW40ZRp3CVz5w&_nc_ss=7c689&_nc_zt=28&oh=00_AQRjHb8uS3W00_mUwK-smWuRpyP4KcagKxbzwTzB1arfFQ&oe=6AF25B0F",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:45:19.000Z",
+  "shortCode": "DfK7_gQz2dc",
+  "postUrl": "https://www.instagram.com/reel/DfK7_gQz2dc/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Here are three questions I'd ask in a restaurant interview that have absolutely nothing to do with restaurant experience. Because you can teach someone how to carry plates, open wine, or use a POS system. But I want to know who they are as a person. One, tell me about a time you made someone's day better. It doesn't have to be at work. I'm interested in whether they naturally notice opportunities to do something thoughtful for someone else. Two, what's something you're really proud of that has nothing to do with work? I love this question because people light up when they talk about something that genuinely matters to them. And three, tell me about a time you changed your mind about something. I'm looking for curiosity, self-awareness, and whether they're open to seeing things differently. And here's something just as important as the questions themselves. Don't rush to fill the awkward silence. Give people time to think. Sometimes the most interesting answers come after the pause. Because I'm not just hiring someone to do a job. I'm looking for someone who genuinely cares about people.",
+  "onScreenText": null,
+  "hook3s": "Here are three questions I'd ask in a restaurant interview that have absolutely nothing to do with restaurant experience.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 81.851752448,
+  "segments": [
+    {
+      "start": 0,
+      "end": 10.4,
+      "text": " Here are three questions I'd ask in a restaurant interview that have absolutely nothing to do with restaurant experience."
+    },
+    {
+      "start": 10.5199995,
+      "end": 15.98,
+      "text": " Because you can teach someone how to carry plates, open wine, or use a POS system."
+    },
+    {
+      "start": 16.199999,
+      "end": 19.199999,
+      "text": " But I want to know who they are as a person."
+    },
+    {
+      "start": 19.74,
+      "end": 23.72,
+      "text": " One, tell me about a time you made someone's day better."
+    },
+    {
+      "start": 23.72,
+      "end": 25.279999,
+      "text": " It doesn't have to be at work."
+    },
+    {
+      "start": 25.279999,
+      "end": 32.98,
+      "text": " I'm interested in whether they naturally notice opportunities to do something thoughtful for someone else."
+    },
+    {
+      "start": 33.64,
+      "end": 39.579998,
+      "text": " Two, what's something you're really proud of that has nothing to do with work?"
+    },
+    {
+      "start": 39.739998,
+      "end": 46.98,
+      "text": " I love this question because people light up when they talk about something that genuinely matters to them."
+    },
+    {
+      "start": 47.46,
+      "end": 52.079998,
+      "text": " And three, tell me about a time you changed your mind about something."
+    },
+    {
+      "start": 52.079998,
+      "end": 59.62,
+      "text": " I'm looking for curiosity, self-awareness, and whether they're open to seeing things differently."
+    },
+    {
+      "start": 60.199997,
+      "end": 63.3,
+      "text": " And here's something just as important as the questions themselves."
+    },
+    {
+      "start": 63.699997,
+      "end": 66.22,
+      "text": " Don't rush to fill the awkward silence."
+    },
+    {
+      "start": 66.479996,
+      "end": 68.159996,
+      "text": " Give people time to think."
+    },
+    {
+      "start": 68.46,
+      "end": 73.119995,
+      "text": " Sometimes the most interesting answers come after the pause."
+    },
+    {
+      "start": 73.34,
+      "end": 76.32,
+      "text": " Because I'm not just hiring someone to do a job."
+    },
+    {
+      "start": 76.32,
+      "end": 81.439995,
+      "text": " I'm looking for someone who genuinely cares about people."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:33.927Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 11
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-lax3-2.cdninstagram.com/o1/v/t16/f2/m84/AQN_y5ccPHrojeT_zzjJITAkpTjgPlI-_fOMluqjs5FFlTlvYFfbGMVetV6AV9jiJ-0w1Y7Xcw1ZZ5AE3z053M_YwuYnzzCTBn5pl3I.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ohc=4WvBHR-MWgwQ7kNvwHsVohM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjA2MDYxODUxNzk5MDYwNiwiYXNzZXRfYWdlX2RheXMiOjEsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=1a58c9aea5daf783&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC84QzYwNjEyQUY4MzY0ODVBOEIwOENGNTE4OTQ1M0VBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0MzMDNBOUQ0NkExODQ3OUY5QjZGNkE3QjgzMDg2MzlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACacs8Ks5IepBxUCKAJDMywXQBPdLxqfvncYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=3RQ-BmQ9JXZD363-jl2Duw&_nc_ss=723ba&_nc_zt=28&oh=00_AQRUvj05jvrSgSb6CX3dn5mj95wInhGIADTncbIILSXK8w&oe=6AF25C3E",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:50:22.000Z",
+  "shortCode": "DfaVwoahgNe",
+  "postUrl": "https://www.instagram.com/reel/DfaVwoahgNe/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "Some of the best hospitality improvements I’ve seen haven’t cost a restaurant a single dollar.\n\nAnd this is something I talk about A LOT when I’m working with hospitality teams.\n\nWe often assume that improving the guest experience means investing in something new. New systems, more staff, better technology or another training program.\n\nBut sometimes the biggest opportunity is simply becoming more AWARE of what’s already happening around you.\n\nHere’s what I mean.\n\n1. Pay attention to your team’s natural strengths.\n\nYou’ve probably got someone on your team who’s brilliant at making nervous guests feel comfortable. Someone else who can read a room without saying a word. Or someone who has an incredible ability to make new staff feel welcome.\n\nAre you recognising those strengths? Are you helping those people develop them? Are you encouraging them to share what they do naturally with the rest of the team?\n\n2. Get specific about what great hospitality looks like.\n\nTelling your team to “give great service” isn’t training. Talk about the little moments. How you acknowledge someone when you’re busy. How you recognise when a guest needs help without waiting to be asked. How you make someone feel comfortable when they walk through the door.\n\nGive people something they can actually put into practice.\n\n3. Create opportunities for your team to contribute.\n\nSome of the best ideas come from the people doing the work every day. Ask questions, listen to their answers and give them the confidence to suggest a better way of doing something.\n\nBecause improving hospitality doesn’t always require a bigger budget. Sometimes it requires better awareness, more intentional leadership and recognising the potential that’s already sitting right in front of you.\n\nAnd THAT is where some pretty incredible things can happen😉",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 4.993687552,
+  "segments": null,
+  "takenAt": "2026-11-06T19:18:32.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 30,
+  "comments": 9,
+  "plays": 2033,
+  "thumbnailUrl": "https://scontent-lax3-2.cdninstagram.com/v/t51.71878-15/892545030_1788460452239934_6982710608289516576_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=NDAyNDYyNDkxNzkxNTIzOTI2MjIwNjA2MTg4NDc5OTA1NzM%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=SuVEgoMjAlgQ7kNvwE9Oz7I&_nc_oc=AdpJI8heZAFqY2MJIZ1l4M75Q4BjMWACybvbr7qOKaFKmUw8N-5p6Uly8JKSxXGErew&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_gid=3RQ-BmQ9JXZD363-jl2Duw&_nc_ss=723ba&oh=00_AQT6MuonvEyjez0N6YWQauggx-QJO_agq9rSzm93ZZSTPA&oe=6AF64DA0",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:34.137Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 12
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQMax2mr5wgz1tGZ1F8-0ZSVzoJUP_yXV26RsbpAvOYOsC2Nf73D8alSt13fnvVAaqxxHE8y34UIec2W81URTezVPKsXrlAnDqXtbzE.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=23oLhsAeqA4Q7kNvwEWBMBQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEzNjY2OTE1MjM0NDAxMywiYXNzZXRfYWdlX2RheXMiOjE5LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTA1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=2d6311dff3aaf90e&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8yREIxODMxQjQ3RTQ0MkY2ODkyQzNCMDUyMTBFOTI5QV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0U1Q0FEMEY3QjQ5RjQwNTdBRjNEQ0Y5QkEzNEQ4QjI0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaa3-uQ7fKEBBUCKAJDMywXQFpd0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=Z0Im_PbkCfNq2Hr2fR1syg&_nc_ss=7c689&_nc_zt=28&oh=00_AQS_qIWLFXkx0DXpNA9KSXYFURx1domzyNg4bI1KTCNwJA&oe=6AF266A2",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:34:42.000Z",
+  "shortCode": "DesDZLvTKkl",
+  "postUrl": "https://www.instagram.com/reel/DesDZLvTKkl/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Here are five things great restaurants do to turn first-time guests into regulars. One, they don't let the relationship end when the guests walk out. Maybe it's a personal message the next day, thanking someone for coming in, not some automated email asking for a fucking Google review, something that makes them feel like their visit actually mattered. Two, they make the second visit feel different from the first. That first, hey, welcome back, can mean more than you think. Suddenly, you're not just another reservation. Three, they remember something that has nothing to do with the order. Maybe it's the trip you were planning, the new job you mentioned, or the anniversary you were celebrating. People remember when you remember them. Four, they understand that regulars don't all want the same experience. Some want to sit at the bar and chat for an hour. Others want their favorite table, a glass of wine, and to be left the fuck alone, knowing the difference is hospitality. Five, they make people feel like they belong before they've earned the title of regular. They don't wait until somebody's been in 10 times to make them feel important. They treat that first visit like the beginning of a relationship. Because here's what I learned after years of running restaurant floors. You don't create regulars by making people feel like customers. You create them by making people feel like they belong.",
+  "onScreenText": null,
+  "hook3s": "Here are five things great restaurants do to turn first-time guests into regulars.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 105.489686528,
+  "segments": [
+    {
+      "start": 0,
+      "end": 8.04,
+      "text": " Here are five things great restaurants do to turn first-time guests into regulars."
+    },
+    {
+      "start": 8.24,
+      "end": 12.88,
+      "text": " One, they don't let the relationship end when the guests walk out."
+    },
+    {
+      "start": 13.059999,
+      "end": 17.38,
+      "text": " Maybe it's a personal message the next day, thanking someone for coming in,"
+    },
+    {
+      "start": 17.8,
+      "end": 21.8,
+      "text": " not some automated email asking for a fucking Google review,"
+    },
+    {
+      "start": 22.42,
+      "end": 26.76,
+      "text": " something that makes them feel like their visit actually mattered."
+    },
+    {
+      "start": 26.76,
+      "end": 32.26,
+      "text": " Two, they make the second visit feel different from the first."
+    },
+    {
+      "start": 32.84,
+      "end": 37.08,
+      "text": " That first, hey, welcome back, can mean more than you think."
+    },
+    {
+      "start": 37.72,
+      "end": 40.56,
+      "text": " Suddenly, you're not just another reservation."
+    },
+    {
+      "start": 40.96,
+      "end": 45.86,
+      "text": " Three, they remember something that has nothing to do with the order."
+    },
+    {
+      "start": 46.82,
+      "end": 52.96,
+      "text": " Maybe it's the trip you were planning, the new job you mentioned, or the anniversary you were celebrating."
+    },
+    {
+      "start": 52.96,
+      "end": 56.559998,
+      "text": " People remember when you remember them."
+    },
+    {
+      "start": 56.92,
+      "end": 62.98,
+      "text": " Four, they understand that regulars don't all want the same experience."
+    },
+    {
+      "start": 63.48,
+      "end": 65.96,
+      "text": " Some want to sit at the bar and chat for an hour."
+    },
+    {
+      "start": 66.22,
+      "end": 70.68,
+      "text": " Others want their favorite table, a glass of wine, and to be left the fuck alone,"
+    },
+    {
+      "start": 71.44,
+      "end": 73.86,
+      "text": " knowing the difference is hospitality."
+    },
+    {
+      "start": 74.18,
+      "end": 81.5,
+      "text": " Five, they make people feel like they belong before they've earned the title of regular."
+    },
+    {
+      "start": 81.5,
+      "end": 85.96,
+      "text": " They don't wait until somebody's been in 10 times to make them feel important."
+    },
+    {
+      "start": 86.46,
+      "end": 91.32,
+      "text": " They treat that first visit like the beginning of a relationship."
+    },
+    {
+      "start": 91.76,
+      "end": 95.32,
+      "text": " Because here's what I learned after years of running restaurant floors."
+    },
+    {
+      "start": 95.9,
+      "end": 100.08,
+      "text": " You don't create regulars by making people feel like customers."
+    },
+    {
+      "start": 100.659996,
+      "end": 105.1,
+      "text": " You create them by making people feel like they belong."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:34.417Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 13
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-dfw5-2.cdninstagram.com/o1/v/t16/f2/m84/AQNRy9LRXRkVFNEkeWuFm0sC0PssH43XPwdlBOyjO1qIGUrI1jtOT-w9cY4V3mQwR_VcPXsPR0M4EeR9qkY3vCEtXK-txf-lRjqQS1Q.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_ohc=b5JRck9CMAoQ7kNvwFaxnn8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEwNTYwMDc2NTY2NDA0MiwiYXNzZXRfYWdlX2RheXMiOjIxLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a9848a0069e617ba&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC83NkE4RTU0QTU2NEU0QzAzOEQzNUY2NjU5M0VEMTBFOV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0ZGQ0E1RTFCNTNCNjQyREE5MjA1OEE1MjBDREJFNjI3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbU7LTOt-L2AxUCKAJDMywXQBPdLxqfvncYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=O_8OBNitfbY4KlCaPi0fow&_nc_ss=723ba&_nc_zt=28&oh=00_AQTTxwGBNJQRvVIMUZQ9c5woa-XoU4ZYIk0RJAMUXxYLqQ&oe=6AF24BF0",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:40:48.000Z",
+  "shortCode": "Dem5ScwyqhW",
+  "postUrl": "https://www.instagram.com/reel/Dem5ScwyqhW/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "You can learn a hell of a lot about a restaurant before the first plate ever hits the table.\n\nHere are some of the things I notice…\n\n1. Does anyone actually answer the phone?\n\nAnd if they can’t, is there an easy way to get the information you need? I understand restaurants get busy, but trying to give someone your business shouldn’t feel like hard work.\n\n2. Does their Instagram match the restaurant you walk into?\n\nI’m not talking about whether the photos are beautiful. Does the personality, the atmosphere, the experience they’ve been showing you actually exist when you arrive? Or does it feel like you’ve walked into a completely different restaurant?\n\n3. What happens in the first 30 seconds?\n\nDoes somebody acknowledge you, even if they’re busy? Do you feel like they’re genuinely happy you’ve arrived, or like you’ve just interrupted something? That first interaction can set the tone for the entire night.\n\n4. How does the team interact with each other?\n\nI’m ALWAYS watching this. Are they smiling, communicating, helping each other? Or does everybody look like they’re just trying to survive the shift? You can feel the difference, and it tells me a lot about what’s happening behind the scenes.\n\n5. Does anyone seem genuinely excited about what’s happening in the restaurant?\n\nMaybe it’s a new dish, a wine they’re loving, or just the fact that it’s a busy Friday night. I love walking into a restaurant where the team actually seems proud of the place they work.\n\n6. What does the room feel like before you even sit down?\n\nIs there energy? Is the music right? Is the lighting comfortable? Does the restaurant feel like someone has actually thought about how it feels to be there, not just how it looks?\n\nAnd the funny thing is, I haven’t even ordered a fucking drink yet. 😂\n\nNone of these things can tell me whether the food will be good. But they tell me an awful lot about the people, the culture, and how much thought has gone into the guest experience.",
+  "transcript": "© BF-WATCH TV 2021",
+  "onScreenText": null,
+  "hook3s": "© BF-WATCH TV 2021",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 4.993687552,
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.96,
+      "text": " © BF-WATCH TV 2021"
+    }
+  ],
+  "takenAt": "2026-10-17T19:48:37.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 38,
+  "comments": 10,
+  "plays": 3895,
+  "thumbnailUrl": "https://scontent-dfw5-2.cdninstagram.com/v/t15.5256-10/852113029_1662367265623336_1100684756823939289_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=NDAxMDE0NDQ3NDcwNTA3ODM1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=6fJiWv8owAEQ7kNvwHilCoG&_nc_oc=Adohndfk9kUdvfIQG4Zfxig7ymGxAua53kmdY6gkuO4V9W41y44ANq1Kfsg6EUvf2kc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_gid=O_8OBNitfbY4KlCaPi0fow&_nc_ss=723ba&oh=00_AQTN-KQqK85B6fvwpnG8onWSZwePeE-xXTO8kGa_riQH7Q&oe=6AF634CC",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:51.331Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 14
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-2.cdninstagram.com/o1/v/t16/f2/m84/AQMGoEEiRlO2XnR9T7-FIdd-x8S5lU5oy6xVd3yZY3bpsBhn8D4oRLCBHSlXROsh_83yyS5UH4YbdQccToouoFW3l45F2tCqHQ6IV9A.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_ohc=mQ1tYmut7dMQ7kNvwEtUFl8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTE0ODQzOTc1MTMwMzc3MywiYXNzZXRfYWdlX2RheXMiOjEzLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTAxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=5cc22eeb6661702b&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9BODY5M0E3RDYzMzY0QTI1QjYyNkREODUzQzlFNDk3OF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0MxNzE4MjUzRDU0NTRDMjg5OTBDOUY2QUI3QUVBMUUyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa6ieH2_p-KBBUCKAJDMywXQFlVT987ZFoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=GQIy_nVDusbSZh5skNdolQ&_nc_ss=7c689&_nc_zt=28&oh=00_AQSdjWbYRxPRr5xQFZQzLKpPZaM5U7O20SDlpFX6lQQY9g&oe=6AF27215",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T01:23:33.000Z",
+  "shortCode": "De7eLvJz27U",
+  "postUrl": "https://www.instagram.com/reel/De7eLvJz27U/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "You can always tell when someone was made for hospitality. And I'm not necessarily talking about the person who knows everything about wine or can carry six plates or has worked in restaurants for 20 years. I'm talking about the person who just has that something. They can make a complete stranger feel like they've known them for years. They can walk up to a table, read the room in about three seconds, and know exactly what kind of experience those guests want. They know when to have a laugh, when to have a conversation, and when to leave people the hell alone. And here's something I absolutely love about these people. They don't necessarily have the biggest personalities in the room. Some of the most naturally gifted hospitality people I've ever worked with have been quiet, thoughtful, and incredibly observant. They just genuinely give a shit about how other people feel. Now, does that mean they don't need training? Of course not. Being naturally good with people doesn't automatically make you great at running a restaurant floor. But when you take someone who has the natural instinct for hospitality and you give them the training, confidence, and opportunity, develop it. Oh my God. Those are the people who make this industry so fucking special. And if you've ever worked alongside someone like that, you know exactly who I'm talking about.",
+  "onScreenText": null,
+  "hook3s": "You can always tell when someone was made for hospitality.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 101.356494848,
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.72,
+      "text": " You can always tell when someone was made for hospitality."
+    },
+    {
+      "start": 5.2599998,
+      "end": 9.92,
+      "text": " And I'm not necessarily talking about the person who knows everything about wine"
+    },
+    {
+      "start": 9.92,
+      "end": 13.88,
+      "text": " or can carry six plates or has worked in restaurants for 20 years."
+    },
+    {
+      "start": 14.5199995,
+      "end": 18.48,
+      "text": " I'm talking about the person who just has that something."
+    },
+    {
+      "start": 19.24,
+      "end": 23.96,
+      "text": " They can make a complete stranger feel like they've known them for years."
+    },
+    {
+      "start": 24.5,
+      "end": 29.34,
+      "text": " They can walk up to a table, read the room in about three seconds,"
+    },
+    {
+      "start": 29.34,
+      "end": 33.24,
+      "text": " and know exactly what kind of experience those guests want."
+    },
+    {
+      "start": 33.4,
+      "end": 36.74,
+      "text": " They know when to have a laugh, when to have a conversation,"
+    },
+    {
+      "start": 36.74,
+      "end": 39.88,
+      "text": " and when to leave people the hell alone."
+    },
+    {
+      "start": 40.8,
+      "end": 44,
+      "text": " And here's something I absolutely love about these people."
+    },
+    {
+      "start": 44.2,
+      "end": 48.06,
+      "text": " They don't necessarily have the biggest personalities in the room."
+    },
+    {
+      "start": 48.48,
+      "end": 53.28,
+      "text": " Some of the most naturally gifted hospitality people I've ever worked with"
+    },
+    {
+      "start": 53.28,
+      "end": 59.2,
+      "text": " have been quiet, thoughtful, and incredibly observant."
+    },
+    {
+      "start": 59.34,
+      "end": 63.5,
+      "text": " They just genuinely give a shit about how other people feel."
+    },
+    {
+      "start": 63.5,
+      "end": 66.2,
+      "text": " Now, does that mean they don't need training?"
+    },
+    {
+      "start": 66.54,
+      "end": 67.78,
+      "text": " Of course not."
+    },
+    {
+      "start": 68.06,
+      "end": 74.42,
+      "text": " Being naturally good with people doesn't automatically make you great at running a restaurant floor."
+    },
+    {
+      "start": 74.7,
+      "end": 79.52,
+      "text": " But when you take someone who has the natural instinct for hospitality"
+    },
+    {
+      "start": 79.52,
+      "end": 87.36,
+      "text": " and you give them the training, confidence, and opportunity, develop it."
+    },
+    {
+      "start": 87.68,
+      "end": 88.5,
+      "text": " Oh my God."
+    },
+    {
+      "start": 88.5,
+      "end": 94.58,
+      "text": " Those are the people who make this industry so fucking special."
+    },
+    {
+      "start": 95.3,
+      "end": 101.34,
+      "text": " And if you've ever worked alongside someone like that, you know exactly who I'm talking about."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:51.650Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 15
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQP3AUPZdTgNuJX1yzg2lE5r9AA_nbWBX25J3c2ZNabQbqeJUDrEf1pzZk_YbOK-HFV-Zt8-qT8zTxRzJXIjTFHCsQKE2HJ0rWIVYls.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=Klz5cCyDKEcQ7kNvwH-AUL3&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA0MjM4MzkwNTUxNDU5MiwiYXNzZXRfYWdlX2RheXMiOjI3LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTAwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=b6559ef5b0c4ace6&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8xN0U1QkNCRTIzRTk0NDU4QTU3NzNCRjIyMjc3QTc0OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzIxMjIxRDNENTMxNTQ5MEZBODUzMTQ5NUQ0QzUzQ0M3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbAkcOm3YLaAxUCKAJDMywXQFkiHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=iljoPeoORA2ICnjfixXSqg&_nc_ss=7c689&_nc_zt=28&oh=00_AQSPcktWAiRxkx8EiD82ZhFwfT3Jr_NizDmg4hTCjkpT1A&oe=6AF268D0",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:44:00.000Z",
+  "shortCode": "DeXeBybzPEI",
+  "postUrl": "https://www.instagram.com/reel/DeXeBybzPEI/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "You can always tell when someone genuinely loves working in hospitality. And I'm not talking about the person who's smiling every second of their shift or has the most outgoing personality. I'm talking about the people who actually get a kick out of making someone else's day. They're the ones who get genuinely excited when you order their favorite thing on the menu. And they'll tell you exactly why you made the right decision. They remember the couple who came in six months ago, what they were celebrating, and somehow managed to pick up the conversation like they saw them yesterday. They notice when somebody at another table is having a bit of a shit night, and they find some tiny way to make it better. And one of my favorite things, they get just as excited about somebody else's great service as they do their own. They'll come back into the kitchen and tell everyone about the table they just had. Or the guest who absolutely loves something. And you know what else? They're usually the people who make everybody else around them a little bit better at their jobs. Because that kind of enthusiasm, it's fucking contagious. And I think sometimes we forget that there are people who genuinely love this industry. Not because every shift is amazing. not because the hours are easy or the guests are always lovely but because they love people and they love making people feel good and I think those are some of my most favorite people in the world",
+  "onScreenText": null,
+  "hook3s": "You can always tell when someone genuinely loves working in hospitality.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 100.567064576,
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.62,
+      "text": " You can always tell when someone genuinely loves working in hospitality."
+    },
+    {
+      "start": 6.52,
+      "end": 13.719999,
+      "text": " And I'm not talking about the person who's smiling every second of their shift or has the most outgoing personality."
+    },
+    {
+      "start": 14.04,
+      "end": 19.64,
+      "text": " I'm talking about the people who actually get a kick out of making someone else's day."
+    },
+    {
+      "start": 20.119999,
+      "end": 24.82,
+      "text": " They're the ones who get genuinely excited when you order their favorite thing on the menu."
+    },
+    {
+      "start": 24.82,
+      "end": 27.76,
+      "text": " And they'll tell you exactly why you made the right decision."
+    },
+    {
+      "start": 27.76,
+      "end": 34.8,
+      "text": " They remember the couple who came in six months ago, what they were celebrating, and somehow"
+    },
+    {
+      "start": 34.8,
+      "end": 38.6,
+      "text": " managed to pick up the conversation like they saw them yesterday."
+    },
+    {
+      "start": 38.94,
+      "end": 44.52,
+      "text": " They notice when somebody at another table is having a bit of a shit night, and they"
+    },
+    {
+      "start": 44.52,
+      "end": 48.38,
+      "text": " find some tiny way to make it better."
+    },
+    {
+      "start": 48.52,
+      "end": 54.28,
+      "text": " And one of my favorite things, they get just as excited about somebody else's great service"
+    },
+    {
+      "start": 54.28,
+      "end": 57.04,
+      "text": " as they do their own."
+    },
+    {
+      "start": 57.04,
+      "end": 61.339996,
+      "text": " They'll come back into the kitchen and tell everyone about the table they just had."
+    },
+    {
+      "start": 61.619995,
+      "end": 64.659996,
+      "text": " Or the guest who absolutely loves something."
+    },
+    {
+      "start": 65.03999,
+      "end": 65.86,
+      "text": " And you know what else?"
+    },
+    {
+      "start": 66.24,
+      "end": 72.71999,
+      "text": " They're usually the people who make everybody else around them a little bit better at their jobs."
+    },
+    {
+      "start": 72.899994,
+      "end": 76.659996,
+      "text": " Because that kind of enthusiasm, it's fucking contagious."
+    },
+    {
+      "start": 77.18,
+      "end": 83.6,
+      "text": " And I think sometimes we forget that there are people who genuinely love this industry."
+    },
+    {
+      "start": 83.6,
+      "end": 85.84,
+      "text": " Not because every shift is amazing."
+    },
+    {
+      "start": 85.84,
+      "end": 92.14,
+      "text": " not because the hours are easy or the guests are always lovely but because they love people"
+    },
+    {
+      "start": 92.14,
+      "end": 99.979996,
+      "text": " and they love making people feel good and I think those are some of my most favorite people in the"
+    },
+    {
+      "start": 99.979996,
+      "end": 100.299995,
+      "text": " world"
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:51.959Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 16
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQO8nQUyZ-Tv_cb7Q96PFgUs59zKunXNXoLe5H6bmJOjrRJv0bcCTwWV-NCO0cs5wfqDO3BoRT5I0DrUkjV-CwfKYZYVL7377yaemTA.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=iIUcJjJWnvkQ7kNvwHYcgcJ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEyNDA5NjczMzUwNzExMywiYXNzZXRfYWdlX2RheXMiOjE3LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTEzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=ed88178d7d77bbe&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC81MjI5Q0NFN0JCRUQ0NzJCQTI5NzE2MzM4NUUyQThDQ192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0I2OThBRjNCRUVDQzRFRkVCMkI5OUE0MzVBMTU1MkZDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbSuPOnhZf_AxUCKAJDMywXQFxXbItDlYEYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=8PRSoTMLA_k5c1tGiuXdOw&_nc_ss=7c689&_nc_zt=28&oh=00_AQS6i1nkgT_nH9jgU7H-NwYLLFY8YUyhO1YitW2HwxAQ_w&oe=6AF24DFF",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:49:35.000Z",
+  "shortCode": "DexOI5MTfKw",
+  "postUrl": "https://www.instagram.com/reel/DexOI5MTfKw/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Show me how a restaurant handles a mistake, and I'll tell you a hell of a lot about how the restaurant is run. Because mistakes happen in every restaurant. The wrong dish goes to a table. A steak comes out overcooked. Someone forgot a drink. Shit happens. But here's what I'm watching. Does someone actually take ownership? Or do we get the whole, well, the kitchen messed up, or your server forgot to put that through? The guest doesn't need to know whose fault it was. They just want to know what's being done to make it right. And does the team know what they're allowed to do? Can their server replace the dish, offer another drink, or make a decision without disappearing for 10 minutes to find a manager? And here's a big one. Does anybody check back after they've fixed it? This one drives me fucking crazy. You replace the dish, great. but did anybody come back to make sure the guest is actually happy now? And what happens between the team when something goes wrong? Does everyone start pointing fingers or do they quietly work together to make it right? Because you can learn a lot about a restaurant by watching how the team treats each other when things don't go to plan. And finally, does anybody actually learn from it? Because if the same mistake keeps happening every Saturday night, it's probably not just somebody having a bad day. It's something in the system that needs fixing. And here's what I always say. A mistake doesn't have to ruin someone's experience. Sometimes the way you handle it is the very thing that makes them want to come back.",
+  "onScreenText": null,
+  "hook3s": "Show me how a restaurant handles a mistake, and I'll tell you a hell of a lot about how",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 113.384439808,
+  "segments": [
+    {
+      "start": 0,
+      "end": 6.64,
+      "text": " Show me how a restaurant handles a mistake, and I'll tell you a hell of a lot about how"
+    },
+    {
+      "start": 6.64,
+      "end": 8.54,
+      "text": " the restaurant is run."
+    },
+    {
+      "start": 8.86,
+      "end": 11.719999,
+      "text": " Because mistakes happen in every restaurant."
+    },
+    {
+      "start": 12.2,
+      "end": 13.92,
+      "text": " The wrong dish goes to a table."
+    },
+    {
+      "start": 14.139999,
+      "end": 15.7,
+      "text": " A steak comes out overcooked."
+    },
+    {
+      "start": 15.98,
+      "end": 17.3,
+      "text": " Someone forgot a drink."
+    },
+    {
+      "start": 17.94,
+      "end": 19.42,
+      "text": " Shit happens."
+    },
+    {
+      "start": 19.82,
+      "end": 21,
+      "text": " But here's what I'm watching."
+    },
+    {
+      "start": 21.56,
+      "end": 24.46,
+      "text": " Does someone actually take ownership?"
+    },
+    {
+      "start": 24.46,
+      "end": 29.82,
+      "text": " Or do we get the whole, well, the kitchen messed up, or your server forgot to put that through?"
+    },
+    {
+      "start": 30,
+      "end": 33.02,
+      "text": " The guest doesn't need to know whose fault it was."
+    },
+    {
+      "start": 33.2,
+      "end": 37.66,
+      "text": " They just want to know what's being done to make it right."
+    },
+    {
+      "start": 37.96,
+      "end": 40.46,
+      "text": " And does the team know what they're allowed to do?"
+    },
+    {
+      "start": 40.86,
+      "end": 44.36,
+      "text": " Can their server replace the dish, offer another drink,"
+    },
+    {
+      "start": 44.44,
+      "end": 48.86,
+      "text": " or make a decision without disappearing for 10 minutes to find a manager?"
+    },
+    {
+      "start": 49.12,
+      "end": 50.16,
+      "text": " And here's a big one."
+    },
+    {
+      "start": 50.46,
+      "end": 54.72,
+      "text": " Does anybody check back after they've fixed it?"
+    },
+    {
+      "start": 54.86,
+      "end": 57.239998,
+      "text": " This one drives me fucking crazy."
+    },
+    {
+      "start": 57.88,
+      "end": 59.579998,
+      "text": " You replace the dish, great."
+    },
+    {
+      "start": 59.579998,
+      "end": 66.439995,
+      "text": " but did anybody come back to make sure the guest is actually happy now? And what happens between the"
+    },
+    {
+      "start": 66.439995,
+      "end": 72.939995,
+      "text": " team when something goes wrong? Does everyone start pointing fingers or do they quietly work"
+    },
+    {
+      "start": 72.939995,
+      "end": 80.32,
+      "text": " together to make it right? Because you can learn a lot about a restaurant by watching how the team"
+    },
+    {
+      "start": 80.32,
+      "end": 88.079994,
+      "text": " treats each other when things don't go to plan. And finally, does anybody actually learn from it?"
+    },
+    {
+      "start": 88.08,
+      "end": 94.1,
+      "text": " Because if the same mistake keeps happening every Saturday night, it's probably not just"
+    },
+    {
+      "start": 94.1,
+      "end": 96.36,
+      "text": " somebody having a bad day."
+    },
+    {
+      "start": 96.62,
+      "end": 99.1,
+      "text": " It's something in the system that needs fixing."
+    },
+    {
+      "start": 99.64,
+      "end": 101.48,
+      "text": " And here's what I always say."
+    },
+    {
+      "start": 101.74,
+      "end": 105.16,
+      "text": " A mistake doesn't have to ruin someone's experience."
+    },
+    {
+      "start": 105.5,
+      "end": 113.380005,
+      "text": " Sometimes the way you handle it is the very thing that makes them want to come back."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:53.053Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 17
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQOHqrKXc8hpdrr-fkh0GH0kV1YDG5fDteQsDN8WpBg7_O-P2pF4EcInOYPKu5LL3tmjwxGm065wDRiQwGhd_xaQmIdtkWb_I9DFxhI.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=p5oq2-5bYG8Q7kNvwEYmnmk&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEyMDk5NTQ1MDI5NzAxNSwiYXNzZXRfYWdlX2RheXMiOjIzLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6OTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=edb4bf6ea927acad&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC80N0QzRTBFMzUyOTk0QTg4OEQ1NDgyRkRDRDE5M0Y3Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzhDOUFGMzhBQkEwQjRDNDFBMEZEQkJFM0QxRUM2OTlCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbu6uD5wuL9AxUCKAJDMywXQFbRBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=kO7zTO5NqXtrO496aSpzGw&_nc_ss=7c689&_nc_zt=28&oh=00_AQSHd5EhZ0iLKoH0R0skiyU4tXSsc6zg1LkWpMtEO8ZpBQ&oe=6AF25B2D",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:45:49.000Z",
+  "shortCode": "Dehvv_cyUzE",
+  "postUrl": "https://www.instagram.com/reel/Dehvv_cyUzE/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Here are five things I notice in restaurants where the staff genuinely love coming to work. Number one, the energy doesn't change when the manager walks into the room. People are still laughing, talking, doing their jobs. Nobody suddenly looks like they've been caught doing something wrong. Two, people ask for help before they're completely drowning. There's no shame in saying, hey, I'm getting slammed over here and somebody actually comes to help. Three, mistakes aren't some big fucking secret. People own them, talk about them, fix them, and move on. They're not spending half their shift terrified or getting in trouble. Four, people genuinely celebrate each other's wins. Somebody gets a great review, sells an amazing bottle of wine, or handles a really difficult table beautifully. And the rest of the team is genuinely happy for them. Five, people are allowed to have a personality. They're not all expected to sound the same, act the same, or be some robotic version of hospitality. And here's what I love about restaurants like this. They have standards. They work incredibly hard. They take their job seriously, But they don't have to take themselves so fucking seriously. And you can feel that the minute you walk through the door.",
+  "onScreenText": null,
+  "hook3s": "Here are five things I notice in restaurants where the staff genuinely love coming to work.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 91.279056896,
+  "segments": [
+    {
+      "start": 0,
+      "end": 7.24,
+      "text": " Here are five things I notice in restaurants where the staff genuinely love coming to work."
+    },
+    {
+      "start": 7.3999996,
+      "end": 12.32,
+      "text": " Number one, the energy doesn't change when the manager walks into the room."
+    },
+    {
+      "start": 12.98,
+      "end": 16.539999,
+      "text": " People are still laughing, talking, doing their jobs."
+    },
+    {
+      "start": 17.1,
+      "end": 21.4,
+      "text": " Nobody suddenly looks like they've been caught doing something wrong."
+    },
+    {
+      "start": 21.4,
+      "end": 26.72,
+      "text": " Two, people ask for help before they're completely drowning."
+    },
+    {
+      "start": 26.72,
+      "end": 32.96,
+      "text": " There's no shame in saying, hey, I'm getting slammed over here and somebody actually comes to help."
+    },
+    {
+      "start": 33.16,
+      "end": 36.8,
+      "text": " Three, mistakes aren't some big fucking secret."
+    },
+    {
+      "start": 37.04,
+      "end": 41.539997,
+      "text": " People own them, talk about them, fix them, and move on."
+    },
+    {
+      "start": 41.96,
+      "end": 46.219997,
+      "text": " They're not spending half their shift terrified or getting in trouble."
+    },
+    {
+      "start": 46.539997,
+      "end": 49.68,
+      "text": " Four, people genuinely celebrate each other's wins."
+    },
+    {
+      "start": 50.12,
+      "end": 53.68,
+      "text": " Somebody gets a great review, sells an amazing bottle of wine,"
+    },
+    {
+      "start": 53.68,
+      "end": 57.36,
+      "text": " or handles a really difficult table beautifully."
+    },
+    {
+      "start": 57.88,
+      "end": 61.24,
+      "text": " And the rest of the team is genuinely happy for them."
+    },
+    {
+      "start": 61.64,
+      "end": 64.88,
+      "text": " Five, people are allowed to have a personality."
+    },
+    {
+      "start": 65.4,
+      "end": 67.76,
+      "text": " They're not all expected to sound the same,"
+    },
+    {
+      "start": 68,
+      "end": 72.8,
+      "text": " act the same, or be some robotic version of hospitality."
+    },
+    {
+      "start": 73.18,
+      "end": 75.48,
+      "text": " And here's what I love about restaurants like this."
+    },
+    {
+      "start": 75.6,
+      "end": 76.52,
+      "text": " They have standards."
+    },
+    {
+      "start": 77.12,
+      "end": 79.36,
+      "text": " They work incredibly hard."
+    },
+    {
+      "start": 79.64,
+      "end": 81.22,
+      "text": " They take their job seriously,"
+    },
+    {
+      "start": 81.22,
+      "end": 86.22,
+      "text": " But they don't have to take themselves so fucking seriously."
+    },
+    {
+      "start": 86.22,
+      "end": 91.28,
+      "text": " And you can feel that the minute you walk through the door."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:59.052Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 18
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-dfw5-1.cdninstagram.com/o1/v/t16/f2/m84/AQPZZRuM70Divv-NGJcbb1K0iH71sr-UoNwONvVjB7VL-nOB6ucZR-YxKWULJxw_kgc0cnG3RbShbnhBbIUp2tuW1Teuq642UDUeHqA.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=NSKonf7mD-MQ7kNvwGYbIeD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjM3MjY2NjA5Njg4OTcyMiwiYXNzZXRfYWdlX2RheXMiOjEwLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=b42d536e25b13e07&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wOEEwQTIwMTk5OTE0NkU1QTc2NzlCQzRBQTZDQUY1Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzhGQUJBNEE2NkQyOTQzNzU5RTdERjVCNzVFNUZEMzYxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb0vYH-q_u2CBUCKAJDMywXQBghysCDEm8YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=aO7t8miNVlnjZtBdFr8ddg&_nc_ss=723ba&_nc_zt=28&oh=00_AQRUmAUGGWtjoPjc5kRQxiPQEHlh7BwKWtA0MGog6Bptzw&oe=6AF27381",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T01:29:37.000Z",
+  "shortCode": "DfDNkDnTWt5",
+  "postUrl": "https://www.instagram.com/reel/DfDNkDnTWt5/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "Not every cost in a restaurant comes with an invoice.\n\nLosing a great employee means losing their knowledge, their relationships with guests, and everything you’ve invested in developing them.\n\nA manager who’s constantly putting out fires isn’t spending that time leading their team.\n\nPoor communication means mistakes, frustration, and the same conversations happening over and over again.\n\nAnd when everything depends on the owner being there? That’s a pretty expensive way to run a business.\n\nThese things might not have their own line on your P&L, but they’re absolutely affecting your bottom line.\n\nAnd the longer you ignore them, the more expensive they become.\n\nSometimes it takes a fresh set of eyes to see what’s really going on in your restaurant. That’s where I come in.",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 6.061812224,
+  "segments": null,
+  "takenAt": "2026-10-28T19:44:35.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 56,
+  "comments": 17,
+  "plays": 14444,
+  "thumbnailUrl": "https://scontent-dfw6-2.cdninstagram.com/v/t51.71878-15/869528581_29072411772371445_3342796724805474342_n.jpg?stp=dst-jpegr_e15_tt6&_nc_cat=110&ig_cache_key=NDAxODExNDk0NDkzMTAzMTkyOTIzNzI2NjY4OTAyMjI5NzY%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5oZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=PDHVM7QWqU8Q7kNvwHksFpe&_nc_oc=AdqMYzD16lrq_d08ZIimW3OPNWS7_HpgsQEfIVzzoFPRWyd5BqKrGx33hDNrM6f46vU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&se=-1&_nc_ht=scontent-dfw6-2.cdninstagram.com&_nc_gid=aO7t8miNVlnjZtBdFr8ddg&_nc_ss=723ba&oh=00_AQTdOJv4jMT4073X5WnRNQXTO65wOnSKG0imwC1KNuN67A&oe=6AF640A5",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:39:59.671Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 19
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQNbOV7iZUaIn7nsZ6Y1H_BWFp7CvFt9NP7dujfN2KV-X2sjTgHfj3QwGEEWWXC694zz29oQ02TjEMRNlsC2UkZrCHiqOXYEqKG1_NQ.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=9p-TnbLGzzcQ7kNvwH2KGi0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA5NzM2NTYzMzEyODg2NywiYXNzZXRfYWdlX2RheXMiOjQsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo4MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=6b392c00c595b325&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9BNTM0NEE5RUI0RkQ0QkU3OUUwNkQ0RjM4NzQxQTQwRl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzQ4OTcxODczNjVCRDQyRDg4Mjg5ODY5QTQ3RUJBMDUzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbG5oKMi4PzAxUCKAJDMywXQFTAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=CCaDOAC-NLRNJoXp89HpdA&_nc_ss=7c689&_nc_zt=28&oh=00_AQQ8oAbXpAXAsgbXuofUBDHbIDZJhyUKnHXPL026JQ6gnA&oe=6AF242CC",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:01:48.000Z",
+  "shortCode": "DfSsSPyTzFt",
+  "postUrl": "https://www.instagram.com/reel/DfSsSPyTzFt/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Here are five things I notice in restaurants that most guests probably don't. After 20 years in hospitality, I genuinely cannot help myself. One, how the staff communicate without speaking. A little nod across the room. Eye contact with the bartender. Someone stepping in before they've even asked. That's a team working together. there. Two, what happens when the manager walks onto the floor? Does everyone suddenly tense up or are they genuinely happy to see them? This tells me so much. Three, what happens when something goes wrong? Because let's face it, something always goes wrong. Do they start pointing fingers or does someone quietly step in and just fix it? Four, who's paying attention to the whole room, not just their own tables. I love watching someone notice another section, needs help, and jump in without being asked. And five, how the staff treat each other. You can put on a great performance for guests, but how people treat each other when nobody's watching. That tells me more about a restaurant than almost anything else. And once you start noticing these things, it's pretty hard to stop.",
+  "onScreenText": null,
+  "hook3s": "Here are five things I notice in restaurants that most guests probably don't.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 83.012747264,
+  "segments": [
+    {
+      "start": 0,
+      "end": 6.3799996,
+      "text": " Here are five things I notice in restaurants that most guests probably don't."
+    },
+    {
+      "start": 6.74,
+      "end": 11.5199995,
+      "text": " After 20 years in hospitality, I genuinely cannot help myself."
+    },
+    {
+      "start": 12,
+      "end": 16.22,
+      "text": " One, how the staff communicate without speaking."
+    },
+    {
+      "start": 16.92,
+      "end": 18.9,
+      "text": " A little nod across the room."
+    },
+    {
+      "start": 19.539999,
+      "end": 21.3,
+      "text": " Eye contact with the bartender."
+    },
+    {
+      "start": 21.3,
+      "end": 23.779999,
+      "text": " Someone stepping in before they've even asked."
+    },
+    {
+      "start": 24.6,
+      "end": 27.26,
+      "text": " That's a team working together."
+    },
+    {
+      "start": 27.26,
+      "end": 33.26,
+      "text": " there. Two, what happens when the manager walks onto the floor? Does everyone suddenly tense up"
+    },
+    {
+      "start": 33.26,
+      "end": 40.84,
+      "text": " or are they genuinely happy to see them? This tells me so much. Three, what happens when something"
+    },
+    {
+      "start": 40.84,
+      "end": 46.36,
+      "text": " goes wrong? Because let's face it, something always goes wrong. Do they start pointing fingers"
+    },
+    {
+      "start": 46.36,
+      "end": 53.84,
+      "text": " or does someone quietly step in and just fix it? Four, who's paying attention to the whole room,"
+    },
+    {
+      "start": 53.84,
+      "end": 55.3,
+      "text": " not just their own tables."
+    },
+    {
+      "start": 55.3,
+      "end": 58.48,
+      "text": " I love watching someone notice another section,"
+    },
+    {
+      "start": 58.48,
+      "end": 62.82,
+      "text": " needs help, and jump in without being asked."
+    },
+    {
+      "start": 62.82,
+      "end": 67.06,
+      "text": " And five, how the staff treat each other."
+    },
+    {
+      "start": 67.06,
+      "end": 70.02,
+      "text": " You can put on a great performance for guests,"
+    },
+    {
+      "start": 70.02,
+      "end": 74.26,
+      "text": " but how people treat each other when nobody's watching."
+    },
+    {
+      "start": 74.26,
+      "end": 76.42,
+      "text": " That tells me more about a restaurant"
+    },
+    {
+      "start": 76.42,
+      "end": 79,
+      "text": " than almost anything else."
+    },
+    {
+      "start": 79,
+      "end": 81.46,
+      "text": " And once you start noticing these things,"
+    },
+    {
+      "start": 81.46,
+      "end": 83,
+      "text": " it's pretty hard to stop."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:01.161Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 20
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-lax3-2.cdninstagram.com/o1/v/t16/f2/m84/AQOq8Xkm6UWoWu5PYmIa2lEDu2bYwUzUBZ-gbw2yYMC2Yjee13mCmuD5-j819BlKqRZfKVOyUx7aILIO8BIGhR4sKIdhmsAqupLl2qM.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ohc=FRq4fCx8NCQQ7kNvwHMc8Ot&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4OTkwODI2MzMwNzQwNSwiYXNzZXRfYWdlX2RheXMiOjQxLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=4a01cdb278b24990&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8yMTRDODk5MjVDREZGMjc4QjFCNkUwNDg3REM5RTA4OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzU5NDJFMERDRURFNjNCMEEwQzU2RUZDQTIzNTg1MjgxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaaovDEp4f4BBUCKAJDMywXQBGZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=cYhZh1iyLJ2HawGiIA7bEA&_nc_ss=723ba&_nc_zt=28&oh=00_AQR9LIRHWQg_JF3ZZ9oF5rGZT5QXXHloWFlHg9OHxSBd5w&oe=6AF26601",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:32:01.000Z",
+  "shortCode": "Dd06ddIJfi9",
+  "postUrl": "https://www.instagram.com/reel/Dd06ddIJfi9/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "I know. Slightly strange thing for a consultant to say.\n\nBut when I first start working with a restaurant, I don’t want to walk in and immediately tell them what I’d change.\n\nI want to understand why things are the way they are.\n\nMaybe a manager is checking every decision with the owner. The host keeps disappearing from the door. One server seems to be doing three people’s jobs. Or every night at the exact same point in service, everything starts to unravel.\n\nI want to know why.\n\nBecause sometimes something that looks completely fucking ridiculous from the outside exists for a reason.\n\nAnd sometimes it doesn’t.\n\nBut I want to know the difference before I start changing anything.",
+  "transcript": "嗯。",
+  "onScreenText": null,
+  "hook3s": "嗯。",
+  "hookStartSeconds": 0.2,
+  "language": "Chinese",
+  "durationSeconds": 4.436,
+  "segments": [
+    {
+      "start": 0.1599999964237213,
+      "end": 0.23999999463558197,
+      "text": "嗯。"
+    }
+  ],
+  "takenAt": "2026-09-28T09:56:54.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 37,
+  "comments": 5,
+  "plays": 6946,
+  "thumbnailUrl": "https://scontent-lax3-2.cdninstagram.com/v/t51.82787-15/827470386_18413169796084549_8771564852101054408_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzk5NjA3NTg4MDIyMjE2MTA4NTE4NDEzMTY5NzkzMDg0NTQ5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=FNUsCaG4hDcQ7kNvwHDG-wz&_nc_oc=AdrtFcA7mxC9Kfw6PZr1_VOhRAaDj2IMbJZfe5UgXnXGQBviXx31CFXowzJOSdL5Nh8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_gid=cYhZh1iyLJ2HawGiIA7bEA&_nc_ss=723ba&oh=00_AQSEc3TTsXrp8dsQBLPDagzhvJfW3YYCbIiK7z0jol5g9Q&oe=6AF641F1",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:01.854Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 21
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQNtvKUMfDi9p7aeTwI4yl4CXpVLQv3zeS6jeDpLhfEW6_g_OmoqPSWge-Kodb7mIscRRoWsFmH6IeceyCqL0tkM9WgDlKo3u_aQpJc.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=PHJyCuPn94IQ7kNvwHMhSMg&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEyMzEyNzczNjk0MTE4NCwiYXNzZXRfYWdlX2RheXMiOjMzLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTA5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7eb8dd810e2647d3&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wMUJFQUQ5Qzc3Nzk0RTY4QjAxRkY5NEQ1RUY1MkRBNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Y4NUVEMEM3MzFGMTQxQjVBRDczQTYwMDI3NUUxQUREX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaA6uHc0d7-AxUCKAJDMywXQFtTMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=ZuPFiJrjg0TofinYBPwsHg&_nc_ss=7c689&_nc_zt=28&oh=00_AQTrct2RGeVGudaqiJmoja-TxJOY0QS1-6My9oOYctx9uQ&oe=6AF2555F",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:21:03.000Z",
+  "shortCode": "DeIC-oJT5V-",
+  "postUrl": "https://www.instagram.com/reel/DeIC-oJT5V-/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "For years, I thought being good at a restaurant meant giving them everything. And I mean fucking everything. This started long before I owned a restaurant. When I worked for other people, I was the same way. I wanted the accolades. I wanted to be great at what I did. I was obsessed with training, getting better, making sure the restaurant had everything it needed. I missed friends' weddings, family's birthdays, pretty much every fucking thing for years, because if the restaurant was open, I felt guilty not being there. And I wasn't always great to the people around me either. Some people got the best of me. Some absolutely got the frustrated, overwhelmed version. But the one person I consistently didn't take care of was myself. I drank pretty much every night never at work, but after absolutely I'm not saying restaurant people need to stop drinking I still have a drink here and there but back then I think it was One of the only ways I knew how to switch my brain off There was the restaurant and then there was recovering from the restaurant. So I could go back to the restaurant There wasn't much else and that's what I understand differently now You need something that's yours. The gym, your family, a hobby, fucking knitting. I don't care. Something that reminds you there's a whole person outside of this industry. I spent years thinking giving restaurants everything I had was why I was successful. Now, I think not having anything left for myself was probably one of my biggest mistakes.",
+  "onScreenText": null,
+  "hook3s": "For years, I thought being good at a restaurant meant giving them everything.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 109.344186368,
+  "segments": [
+    {
+      "start": 0,
+      "end": 6.64,
+      "text": " For years, I thought being good at a restaurant meant giving them everything."
+    },
+    {
+      "start": 6.8599997,
+      "end": 8.82,
+      "text": " And I mean fucking everything."
+    },
+    {
+      "start": 9.059999,
+      "end": 11.66,
+      "text": " This started long before I owned a restaurant."
+    },
+    {
+      "start": 12.12,
+      "end": 14.92,
+      "text": " When I worked for other people, I was the same way."
+    },
+    {
+      "start": 15.08,
+      "end": 16.699999,
+      "text": " I wanted the accolades."
+    },
+    {
+      "start": 16.859999,
+      "end": 19.6,
+      "text": " I wanted to be great at what I did."
+    },
+    {
+      "start": 19.6,
+      "end": 26.72,
+      "text": " I was obsessed with training, getting better, making sure the restaurant had everything it needed."
+    },
+    {
+      "start": 26.72,
+      "end": 32.14,
+      "text": " I missed friends' weddings, family's birthdays, pretty much every fucking thing for years,"
+    },
+    {
+      "start": 32.48,
+      "end": 36.14,
+      "text": " because if the restaurant was open, I felt guilty not being there."
+    },
+    {
+      "start": 36.3,
+      "end": 38.899998,
+      "text": " And I wasn't always great to the people around me either."
+    },
+    {
+      "start": 39,
+      "end": 40.52,
+      "text": " Some people got the best of me."
+    },
+    {
+      "start": 40.68,
+      "end": 44.6,
+      "text": " Some absolutely got the frustrated, overwhelmed version."
+    },
+    {
+      "start": 44.7,
+      "end": 50.52,
+      "text": " But the one person I consistently didn't take care of was myself."
+    },
+    {
+      "start": 50.52,
+      "end": 56.34,
+      "text": " I drank pretty much every night never at work, but after absolutely"
+    },
+    {
+      "start": 56.34,
+      "end": 59.46,
+      "text": " I'm not saying restaurant people need to stop drinking"
+    },
+    {
+      "start": 59.46,
+      "end": 64.7,
+      "text": " I still have a drink here and there but back then I think it was"
+    },
+    {
+      "start": 64.7,
+      "end": 68.6,
+      "text": " One of the only ways I knew how to switch my brain off"
+    },
+    {
+      "start": 68.6,
+      "end": 75.3,
+      "text": " There was the restaurant and then there was recovering from the restaurant. So I could go back to the restaurant"
+    },
+    {
+      "start": 75.3,
+      "end": 79.56,
+      "text": " There wasn't much else and that's what I understand differently now"
+    },
+    {
+      "start": 79.56,
+      "end": 82.36,
+      "text": " You need something that's yours."
+    },
+    {
+      "start": 83.119995,
+      "end": 87.21999,
+      "text": " The gym, your family, a hobby, fucking knitting."
+    },
+    {
+      "start": 87.71999,
+      "end": 88.74,
+      "text": " I don't care."
+    },
+    {
+      "start": 89.2,
+      "end": 94.68,
+      "text": " Something that reminds you there's a whole person outside of this industry."
+    },
+    {
+      "start": 95.38,
+      "end": 101.74,
+      "text": " I spent years thinking giving restaurants everything I had was why I was successful."
+    },
+    {
+      "start": 101.74,
+      "end": 109.18,
+      "text": " Now, I think not having anything left for myself was probably one of my biggest mistakes."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:07.452Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 22
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-lax3-2.cdninstagram.com/o1/v/t16/f2/m84/AQMzx5fRswpwPgX4Ckyut_-aWntcUnik6-uj1tno7gDFM5v_GvBtEMz46Hb8YawFOFGlOBQpI2a5YtPrw_TjjhLyeM1hA2JWppsNuP0.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ohc=tkPcbzcOVIEQ7kNvwFHt4M8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg5NjI4NDM2ODAyMDIyMCwiYXNzZXRfYWdlX2RheXMiOjM0LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=90bd23e508c3d490&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9BRURENkYxRDVEQTk0M0Y5ODM2RTVCOTczODgyQjhBQV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Y4NzdENDBBMDI5NDRFMjQ4QkFFNUE3NDEzODhCMzc0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb4i7HCo6reBhUCKAJDMywXQBu7ZFocrAgYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=399T1_BrbeNzo9FDQkA-jw&_nc_ss=723ba&_nc_zt=28&oh=00_AQSf9jySy6EKjbCzawCzwfQLsoiZznteHKPCRk9JB84inw&oe=6AF2650C",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:27:56.000Z",
+  "shortCode": "DeFbVq6zx7W",
+  "postUrl": "https://www.instagram.com/reel/DeFbVq6zx7W/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "I think owning a restaurant can really fuck with your sense of what being a good owner is supposed to look like.\n\nYou care more than anyone. You probably know more about the business than anyone. And when you’ve spent years being the person who fixes things, answers the questions and steps in when something goes wrong, it’s very easy to start believing that being needed is part of the job.\n\nI definitely did.\n\nBut some of the restaurant owners I respect most are still incredibly involved in their businesses. They haven’t stopped caring about the details or lowered their standards. They’ve just figured out where they’re actually needed and, maybe more importantly, where they’re not.\n\nThey hire good people and let them be good. They let managers make decisions. They can hear something they don’t agree with without immediately shutting it down. And when the same problem keeps happening, they’re willing to ask whether they might be contributing to it too.\n\nI think there’s a huge difference between building a restaurant around you and building a restaurant that can thrive because of what you built.\n\nThe second one is a hell of a lot harder. But it might also let you take a fucking day off.",
+  "transcript": "I'm grateful for my people, my tribe, my circle For the ones who show up, who care, who stay",
+  "onScreenText": null,
+  "hook3s": "I'm grateful for my people, my tribe, my circle",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 6.944187392,
+  "segments": [
+    {
+      "start": 0,
+      "end": 3.78,
+      "text": " I'm grateful for my people, my tribe, my circle"
+    },
+    {
+      "start": 3.78,
+      "end": 6.44,
+      "text": " For the ones who show up, who care, who stay"
+    }
+  ],
+  "takenAt": "2026-10-04T19:53:23.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 48,
+  "comments": 1,
+  "plays": 5957,
+  "thumbnailUrl": "https://scontent-lax3-2.cdninstagram.com/v/t15.5256-10/839208379_28701377322835406_3250049812762897231_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=NDAwMDcyNDA4MDQzNzE3Mzk3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=yBivcvAKXO4Q7kNvwHSefGj&_nc_oc=AdryIXvHJH2odyb_giVes9PciyJLvzp83fBBHsP7B50BcHehYg1dFuu447eZblwrfMA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_gid=399T1_BrbeNzo9FDQkA-jw&_nc_ss=723ba&oh=00_AQStA8PbOClzPlVrUOf7JmQ2yjgpk9z_oxNPZXgM_PR6wA&oe=6AF6544C",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:08.054Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 23
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQObOGY23SLkA91wlVxOB4JtsWaopIDn5v3GVLr6tCaYRLs7GRmICYOeoxvkouHeY98tVRMzfGiyFKLpRiqdECtV0ycu8M2X7h3jIiw.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=cXvhx5eFXBwQ7kNvwE7DSpV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA4MzUzOTExNzgxODg0MiwiYXNzZXRfYWdlX2RheXMiOjMyLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6MTE4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=551a129f0767d42e&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC83OEU3NEU4MUZERjk0OTVCOTc3NzQ4NDM2Rjg0QzgyMV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Q2RDM2ODY5QjgwQzRDNDQ5NEVFOEIzRTU3RTM2RDk3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa0j77Do97sAxUCKAJDMywXQF2szMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=ouxzBwae1-ugv-I1pn8vdw&_nc_ss=7c689&_nc_zt=28&oh=00_AQRP46V3Nyqna2XN9IX_eOc7HZQQ3btF8uOehcv9Oop6CQ&oe=6AF25932",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:37:22.000Z",
+  "shortCode": "DeL9m91poag",
+  "postUrl": "https://www.instagram.com/reel/DeL9m91poag/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Before I give a restaurant any advice, there's actually quite a lot I do that they probably don't even know I'm doing. First, I research the shit out of them. Their website, their socials, their reviews. I'll look at the entire booking process. I want to know what a guest sees before they ever walk through the door. And one of the things I'm looking for is, does the story they're telling me online match what I experienced when I actually walk through the door. Because sometimes it does. And sometimes there's a massive disconnect. Wherever I can, I'll actually go and eat there, not as a consultant, as an actual guest. And usually I'll bring someone with me who isn't from hospitality because I want to know what they notice too. And obviously I can't always do that. I work with restaurants remotely too. And you'd be amazed what I can learn just by talking to an owner, their managers, and their team. Whether I'm there in person or working with them remotely, I'm trying to piece together the same thing. What is actually happening in their restaurant? If I'm there, I'm watching everything. How are we greeted? Where are the managers? How does the team communicate? What happens when somebody needs help? What happens when something goes wrong? I'm looking for all those tiny things that explain why people love this restaurant and where something might be getting lost. Because I never want to walk into somebody's business and immediately start telling them what I think they should change. I want to understand the restaurant. They're actually running first. then we can talk about what I would do.",
+  "onScreenText": null,
+  "hook3s": "Before I give a restaurant any advice, there's actually quite a lot I do that they probably",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 118.72505856,
+  "segments": [
+    {
+      "start": 0,
+      "end": 6.7,
+      "text": " Before I give a restaurant any advice, there's actually quite a lot I do that they probably"
+    },
+    {
+      "start": 6.7,
+      "end": 14.9,
+      "text": " don't even know I'm doing. First, I research the shit out of them. Their website, their socials,"
+    },
+    {
+      "start": 15,
+      "end": 21.6,
+      "text": " their reviews. I'll look at the entire booking process. I want to know what a guest sees before"
+    },
+    {
+      "start": 21.6,
+      "end": 28.24,
+      "text": " they ever walk through the door. And one of the things I'm looking for is, does the story they're"
+    },
+    {
+      "start": 28.24,
+      "end": 34.98,
+      "text": " telling me online match what I experienced when I actually walk through the door. Because sometimes"
+    },
+    {
+      "start": 34.98,
+      "end": 43.079998,
+      "text": " it does. And sometimes there's a massive disconnect. Wherever I can, I'll actually go and eat there,"
+    },
+    {
+      "start": 43.079998,
+      "end": 50.12,
+      "text": " not as a consultant, as an actual guest. And usually I'll bring someone with me who isn't"
+    },
+    {
+      "start": 50.12,
+      "end": 57.66,
+      "text": " from hospitality because I want to know what they notice too. And obviously I can't always do that."
+    },
+    {
+      "start": 57.66,
+      "end": 59.82,
+      "text": " I work with restaurants remotely too."
+    },
+    {
+      "start": 60.12,
+      "end": 67.56,
+      "text": " And you'd be amazed what I can learn just by talking to an owner, their managers, and their team."
+    },
+    {
+      "start": 67.7,
+      "end": 74.44,
+      "text": " Whether I'm there in person or working with them remotely, I'm trying to piece together the same thing."
+    },
+    {
+      "start": 74.64,
+      "end": 77.38,
+      "text": " What is actually happening in their restaurant?"
+    },
+    {
+      "start": 77.9,
+      "end": 81.28,
+      "text": " If I'm there, I'm watching everything."
+    },
+    {
+      "start": 81.6,
+      "end": 82.62,
+      "text": " How are we greeted?"
+    },
+    {
+      "start": 82.979996,
+      "end": 84.18,
+      "text": " Where are the managers?"
+    },
+    {
+      "start": 84.6,
+      "end": 86.14,
+      "text": " How does the team communicate?"
+    },
+    {
+      "start": 86.14,
+      "end": 88.9,
+      "text": " What happens when somebody needs help?"
+    },
+    {
+      "start": 89.22,
+      "end": 91.2,
+      "text": " What happens when something goes wrong?"
+    },
+    {
+      "start": 91.7,
+      "end": 98.32,
+      "text": " I'm looking for all those tiny things that explain why people love this restaurant"
+    },
+    {
+      "start": 98.32,
+      "end": 101.62,
+      "text": " and where something might be getting lost."
+    },
+    {
+      "start": 102.14,
+      "end": 105.24,
+      "text": " Because I never want to walk into somebody's business"
+    },
+    {
+      "start": 105.24,
+      "end": 110.54,
+      "text": " and immediately start telling them what I think they should change."
+    },
+    {
+      "start": 110.72,
+      "end": 112.94,
+      "text": " I want to understand the restaurant."
+    },
+    {
+      "start": 112.94,
+      "end": 115.7,
+      "text": " They're actually running first."
+    },
+    {
+      "start": 115.7,
+      "end": 118.7,
+      "text": " then we can talk about what I would do."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:18.055Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 24
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQMFNwCMjEVOA4JPAreiBNH1MUXq-GMkq_hjrYA64uDXsuRZTJCRh3dnaWtTfxoEq2uDFZ8yiyvzPGp5gsCbBRPLL2wpoafuBIg9_YU.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=Gw2j5SJmTBkQ7kNvwG2zFy-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTU5NTE4NTU3ODc2Nzg5OCwiYXNzZXRfYWdlX2RheXMiOjQyLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NzksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=c21b28f816da8c2a&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9CNzQ4RjM0QTNDNTBEMDA2MTNDQjJBN0JFRkRFOTJCOV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzk0NDk4QzFGMEY0RDk1REE1RURGMzFDQTQzMEM2NEIyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa02K_cgrTVBRUCKAJDMywXQFP1T987ZFoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=__2oeuMGrD04Aqqlyozyiw&_nc_ss=7c689&_nc_zt=28&oh=00_AQStB_JGUGILYqrrwwC4rf2nFNOGxiW73BADOPQU0MFy_g&oe=6AF27136",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T01:19:50.000Z",
+  "shortCode": "DdyRZeEpLCt",
+  "postUrl": "https://www.instagram.com/reel/DdyRZeEpLCt/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Here are five things that I notice in restaurants with really strong teams. One, they help each other without being asked. Someone's getting buried and another person just starts running their drinks, clearing their table, whatever needs to fucking happen. Two, they say please and thank you to each other. I know that sounds ridiculously small, but I notice it every single time. Number three, nobody suddenly starts working harder because the manager just happens to walk past. They're doing the same job whether somebody's watching them or not. Four, when something goes wrong, they fix the problem before they start worrying about whose fault it was. There's time to figure out what happened later. Right now, we've got a restaurant to run. And five, the newest person on the team can ask a question without being made to feel like an idiot. That one, it tells me a lot. Because a strong restaurant team isn't necessarily one where everybody's best friends. It's one where everybody actually feels like they're on the same side.",
+  "onScreenText": null,
+  "hook3s": "Here are five things that I notice in restaurants with really strong teams.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 79.854813184,
+  "segments": [
+    {
+      "start": 0,
+      "end": 6.3599997,
+      "text": " Here are five things that I notice in restaurants with really strong teams."
+    },
+    {
+      "start": 6.72,
+      "end": 10.94,
+      "text": " One, they help each other without being asked."
+    },
+    {
+      "start": 10.94,
+      "end": 16.14,
+      "text": " Someone's getting buried and another person just starts running their drinks,"
+    },
+    {
+      "start": 16.32,
+      "end": 20.34,
+      "text": " clearing their table, whatever needs to fucking happen."
+    },
+    {
+      "start": 20.58,
+      "end": 24.64,
+      "text": " Two, they say please and thank you to each other."
+    },
+    {
+      "start": 24.64,
+      "end": 32.7,
+      "text": " I know that sounds ridiculously small, but I notice it every single time."
+    },
+    {
+      "start": 33.18,
+      "end": 40.18,
+      "text": " Number three, nobody suddenly starts working harder because the manager just happens to walk past."
+    },
+    {
+      "start": 40.34,
+      "end": 44.48,
+      "text": " They're doing the same job whether somebody's watching them or not."
+    },
+    {
+      "start": 45.219997,
+      "end": 53.3,
+      "text": " Four, when something goes wrong, they fix the problem before they start worrying about whose fault it was."
+    },
+    {
+      "start": 53.3,
+      "end": 55.559998,
+      "text": " There's time to figure out what happened later."
+    },
+    {
+      "start": 56.059998,
+      "end": 58.879997,
+      "text": " Right now, we've got a restaurant to run."
+    },
+    {
+      "start": 59.079998,
+      "end": 66.52,
+      "text": " And five, the newest person on the team can ask a question without being made to feel like an idiot."
+    },
+    {
+      "start": 66.84,
+      "end": 68.92,
+      "text": " That one, it tells me a lot."
+    },
+    {
+      "start": 69.34,
+      "end": 74.14,
+      "text": " Because a strong restaurant team isn't necessarily one where everybody's best friends."
+    },
+    {
+      "start": 74.479996,
+      "end": 79.58,
+      "text": " It's one where everybody actually feels like they're on the same side."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:18.719Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 25
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQPnS4_IG90TCyF5y7KSWgTtA3Ysv3xI-Dh5Fn1Ck3kQr6HUcOrFux2b1K5EVt5unVKZoHutL9Mq95AXC2hChV9RZWGtkART998nMWI.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=u1vsLGI5AJcQ7kNvwFtltGl&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA5NTk5NDEyOTcwMDUwOSwiYXNzZXRfYWdlX2RheXMiOjM1LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6ODMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=50c2669fb91fe626&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9DNzc5MDE2RDVFMEY0OTNCOUZBODc1QjFBNERBQkQyMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzAxMzFFMEY1NjQ0ODQ4ODRCRTBCNEMzRDk2NDJGMjY0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa62rbMoLPyAxUCKAJDMywXQFTzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=NAWcxTQqpUC_N4wmitl8IA&_nc_ss=7c689&_nc_zt=28&oh=00_AQQbcc5rFN1iDuei9t9QdK7Mg5G5v6UWdrN199RgHO-SCg&oe=6AF264FF",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:27:43.000Z",
+  "shortCode": "DeC5o3CTqU-",
+  "postUrl": "https://www.instagram.com/reel/DeC5o3CTqU-/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Show me your team on a slammed Saturday night. And I can usually tell you quite a lot about where that restaurant is at. At one end, you've got survival mode. Everyone's working really fucking hard, but mostly working alone. Your strongest people are carrying the shift. Managers are putting out fires. And somehow you get through the service, but barely. Then you start to see structure. People know their roles. There are systems. Communication is better, but the managers are still holding a lot of it together. Then you get to trust. People step in without being asked. They make decisions. They notice when someone else is getting buried. Manager is still there, but they don't have to be the answer to every fucking question. And then there's my favorite one, flow. The restaurant is absolutely slammed. There are millions of things happening at once, but somehow it still feels calm. And everyone wants to get to that point, but you can't skip what gets you there. You need the structure before you get the trust and the trust before a team can really move like that together.",
+  "onScreenText": null,
+  "hook3s": "Show me your team on a slammed Saturday night.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 83.84868352,
+  "segments": [
+    {
+      "start": 0,
+      "end": 3.52,
+      "text": " Show me your team on a slammed Saturday night."
+    },
+    {
+      "start": 3.6,
+      "end": 8.44,
+      "text": " And I can usually tell you quite a lot about where that restaurant is at."
+    },
+    {
+      "start": 8.82,
+      "end": 11.219999,
+      "text": " At one end, you've got survival mode."
+    },
+    {
+      "start": 11.44,
+      "end": 16.02,
+      "text": " Everyone's working really fucking hard, but mostly working alone."
+    },
+    {
+      "start": 16.02,
+      "end": 19.24,
+      "text": " Your strongest people are carrying the shift."
+    },
+    {
+      "start": 19.439999,
+      "end": 20.859999,
+      "text": " Managers are putting out fires."
+    },
+    {
+      "start": 21.56,
+      "end": 25.26,
+      "text": " And somehow you get through the service, but barely."
+    },
+    {
+      "start": 25.9,
+      "end": 27.939999,
+      "text": " Then you start to see structure."
+    },
+    {
+      "start": 28.14,
+      "end": 29.48,
+      "text": " People know their roles."
+    },
+    {
+      "start": 29.48,
+      "end": 37.62,
+      "text": " There are systems. Communication is better, but the managers are still holding a lot of it together."
+    },
+    {
+      "start": 38.02,
+      "end": 45.26,
+      "text": " Then you get to trust. People step in without being asked. They make decisions. They notice"
+    },
+    {
+      "start": 45.26,
+      "end": 51.84,
+      "text": " when someone else is getting buried. Manager is still there, but they don't have to be the answer"
+    },
+    {
+      "start": 51.84,
+      "end": 58.52,
+      "text": " to every fucking question. And then there's my favorite one, flow. The restaurant is absolutely"
+    },
+    {
+      "start": 58.52,
+      "end": 67.1,
+      "text": " slammed. There are millions of things happening at once, but somehow it still feels calm."
+    },
+    {
+      "start": 67.7,
+      "end": 75.94,
+      "text": " And everyone wants to get to that point, but you can't skip what gets you there. You need the"
+    },
+    {
+      "start": 75.94,
+      "end": 83.42,
+      "text": " structure before you get the trust and the trust before a team can really move like that together."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:18.954Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 26
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t16/f2/m84/AQMFBvGdl6PoOb9bVO6j87i90K5vZ6o5XdqGsFTRF72Z8hIBFzdfHJNpgAH801nhGdd8bvXi_U51N67gAwuqbQz0uL8kJz0jfFqV88k.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=wWzl7DbAyvQQ7kNvwFhZDHV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjQ0ODI4NzQ2MjM4MjA5NSwiYXNzZXRfYWdlX2RheXMiOjQwLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6ODgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=428d3570d38d85fb&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC81RkE4QTVGOENFMTA0REVDQkMzQUUzOTdGRDk3QkMwRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzAzRjM3NkM1MEJDRjQxQkI4NkQyMEMwRjk5OURBM0ZDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACae6IaIi63ZCBUCKAJDMywXQFYqn752yLQYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=cQoIYMCxpfTzrbzxiqKYpQ&_nc_ss=7c689&_nc_zt=28&oh=00_AQQ-fKTkal90MW7pbh7g_6cOM8qhyZGu6s09wGNfb43MZg&oe=6AF25771",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:29:53.000Z",
+  "shortCode": "Dd3gRkgJpT2",
+  "postUrl": "https://www.instagram.com/reel/Dd3gRkgJpT2/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "Okay, so your restaurant has all three of these problems. Staff keep leaving, your managers are burnt out, and your guests aren't returning. But you can only focus on one first. Which one are you choosing? Guests not returning? Would you start here? I wouldn't. Obviously, I want to know why guests aren't coming back. but I think there's something I need to understand first. What about staff leaving? This is a massive problem, but I still wouldn't start here, which leaves me with managers burnt out. This is where I'd start because I want to know why they're burnt out. Are they actually managing or are they spending every shift firefighting? Do they have authority to make decisions? Are they constantly covering holes in the schedule? Are they getting any actual support or development? Because if your managers are barely keeping their head above water, your team is going to feel it. And eventually, your guests are going to feel it too. So before I start trying to fix three different problems, I want to know if they're actually three different problems.",
+  "onScreenText": null,
+  "hook3s": "Okay, so your restaurant has all three of these problems.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 88.678432768,
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.42,
+      "text": " Okay, so your restaurant has all three of these problems."
+    },
+    {
+      "start": 5.06,
+      "end": 11.0199995,
+      "text": " Staff keep leaving, your managers are burnt out, and your guests aren't returning."
+    },
+    {
+      "start": 11.0199995,
+      "end": 15.48,
+      "text": " But you can only focus on one first."
+    },
+    {
+      "start": 16.44,
+      "end": 18.24,
+      "text": " Which one are you choosing?"
+    },
+    {
+      "start": 19.52,
+      "end": 20.66,
+      "text": " Guests not returning?"
+    },
+    {
+      "start": 21.14,
+      "end": 22.72,
+      "text": " Would you start here?"
+    },
+    {
+      "start": 23.039999,
+      "end": 23.84,
+      "text": " I wouldn't."
+    },
+    {
+      "start": 24.32,
+      "end": 27.88,
+      "text": " Obviously, I want to know why guests aren't coming back."
+    },
+    {
+      "start": 27.88,
+      "end": 32.879997,
+      "text": " but I think there's something I need to understand first."
+    },
+    {
+      "start": 33.66,
+      "end": 35.68,
+      "text": " What about staff leaving?"
+    },
+    {
+      "start": 35.68,
+      "end": 40.96,
+      "text": " This is a massive problem, but I still wouldn't start here,"
+    },
+    {
+      "start": 41.719997,
+      "end": 45.899998,
+      "text": " which leaves me with managers burnt out."
+    },
+    {
+      "start": 46.18,
+      "end": 52.46,
+      "text": " This is where I'd start because I want to know why they're burnt out."
+    },
+    {
+      "start": 52.46,
+      "end": 58.32,
+      "text": " Are they actually managing or are they spending every shift firefighting?"
+    },
+    {
+      "start": 58.559998,
+      "end": 60.46,
+      "text": " Do they have authority to make decisions?"
+    },
+    {
+      "start": 60.96,
+      "end": 63.98,
+      "text": " Are they constantly covering holes in the schedule?"
+    },
+    {
+      "start": 64.619995,
+      "end": 67.9,
+      "text": " Are they getting any actual support or development?"
+    },
+    {
+      "start": 68.32,
+      "end": 75.84,
+      "text": " Because if your managers are barely keeping their head above water, your team is going to feel it."
+    },
+    {
+      "start": 75.9,
+      "end": 79.26,
+      "text": " And eventually, your guests are going to feel it too."
+    },
+    {
+      "start": 79.26,
+      "end": 88.67999,
+      "text": " So before I start trying to fix three different problems, I want to know if they're actually three different problems."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:19.642Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 27
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-dfw6-1.cdninstagram.com/o1/v/t16/f2/m84/AQMwfZYmfqWNjLVe4SmK4ObhzDni454EGSMM67OKmkggsUk9Su_jDaS75SbRHa651zDyybV9BPAfMB98zVQUC9o4R9yAseWqYY0cfk4.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_ohc=bUFuOjEKJqoQ7kNvwE0FP-a&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA4MjU2NzE1NDY4NTkxNiwiYXNzZXRfYWdlX2RheXMiOjM4LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a65b7f51bcb22404&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9GQUYzN0U0MzJDRUU0RTBCQTdEMjAwODI2QzlBRDg4Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzNGODQ4Q0QzMDVDNTQ4OUU4REE0OTVDQzNBQjQ3NzE1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa435rr2aXsAxUCKAJDMywXQBfdLxqfvncYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=MmesrqS1aUtcZfd3uOIFCQ&_nc_ss=723ba&_nc_zt=28&oh=00_AQRak8VHQwlJnA6-8Rq-TxBimPqzyxCO1EC-s-uJWLtxxg&oe=6AF25C59",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:50:49.000Z",
+  "shortCode": "Dd8mxV3J3w_",
+  "postUrl": "https://www.instagram.com/reel/Dd8mxV3J3w_/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "I watch the managers.\n\nNot just how they talk to the team.\nI watch what happens when the restaurant gets busy.\nWho notices a server getting buried?\n\nWho makes the call when something goes wrong?\nWho does the team look at when they don’t know what to do?\n\nCan managers make decisions without everything working its way back to the owner?\n\nAnd what happens when the strongest manager isn’t there?\nThis is one of my favourite things to observe when I start working with a restaurant group.\n\nBecause before I suggest changing anything, I want to understand how the restaurant actually works when nobody’s explaining it to me.\n\nYou can learn a ridiculous amount by watching who everyone looks at when shit starts going sideways.\nThat usually tells me where I need to look next.\n\nIf you run restaurants, follow along. This is the kind of shit I talk about here.",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 6.01537536,
+  "segments": null,
+  "takenAt": "2026-10-01T09:38:44.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 74,
+  "comments": 19,
+  "plays": 8306,
+  "thumbnailUrl": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-15/832131103_18413567629084549_8560635058639299423_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=Mzk5ODI0MTA4NTY5Mzg1MjczNTE4NDEzNTY3NjI2MDg0NTQ5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=akzFUCTmtCkQ7kNvwESA15A&_nc_oc=AdpY6IRupwuzfQbJ_S7nPrnDKYv8ZdoM9O2gWIO2N1h5xzSFEFdgYIjPWHP1k5i2i_I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_gid=MmesrqS1aUtcZfd3uOIFCQ&_nc_ss=723ba&oh=00_AQT-bEYgWD1kG7PzCqNsc9KyV_2px7pJhikIWcQ6gmwHXg&oe=6AF6464D",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:22.628Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 28
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-sea5-1.cdninstagram.com/o1/v/t16/f2/m84/AQOcb2bqYbXCVzKilxF2I-0oZqmozS0aU_BRWeG11UBXsZjiI7GX-S6Ha0WH_TnnfdKVEPjO2HwBhFNmF_NtCE7nKCZongCXnyDsN3U.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_ohc=u2FK4yLr3VYQ7kNvwGDnpWK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA5MDI3NDQ1NjkyODI1NSwiYXNzZXRfYWdlX2RheXMiOjMxLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f854fe6bb32c76b7&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9GMEI3QzdDM0NBMTQ0MjIzQjUxREREN0QxNkI2RjVGM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0U2RDAxOUMxMzU0NTQ5REI4MDJERUI1NDg5RUM4NDNBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb-_7PbqebvAxUCKAJDMywXQBczMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=Fu4VsXDFBGkSRfuKqpPE4A&_nc_ss=723ba&_nc_zt=28&oh=00_AQRGkbkf0tF5i8lgnJg1whEfqjso0cHKlR0Ol_R2cXLIdw&oe=6AF25F10",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-10T00:02:24.000Z",
+  "shortCode": "DeNLBwJTCXs",
+  "postUrl": "https://www.instagram.com/reel/DeNLBwJTCXs/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "It’s usually the little things you remember most — and the little things that keep you coming back.\n\n1. Somewhere to put the thing you’re awkwardly holding.\n\nA bag, coat, umbrella, flowers, shopping. They notice you trying to solve the problem before you end up putting it on the floor or balancing it on the back of your chair.\n\n2. A minute to actually settle in.\n\nYou’ve just walked in, taken off your coat, moved your bag, pulled out your chair. Great service reads the moment instead of immediately launching into water, specials and “Have you dined with us before?”\n\n3. What you’ll need for the food before you need it.\n\nThe shell bowl with the prawns. Extra napkins with the ribs. A steak knife before the steak. The restaurant knows how its food is eaten. You shouldn’t have to ask.\n\n4. Room for what’s coming next.\n\nDon’t arrive with three dishes and then watch the guests play fucking Tetris with their own table. Great teams make the space before they need it.\n\n5. To repeat something the restaurant already knows.\n\nThe allergy in the booking notes. The anniversary mentioned at the door. The fact that someone needs to leave by eight. Great restaurants make information travel with the guest.\n\n6. Permission for your table to have its own pace.\n\nSome tables want to linger. Some have theatre tickets. Some want another bottle. Some are fucking exhausted and want dessert and the bill. Great service doesn’t force every table through the exact same rhythm.\n\n7. To be rescued from an awkward moment.\n\nYou drop your fork. Spill your drink. Mispronounce something on the menu. Walk towards the wrong door. Don’t make a guest feel stupid for needing help.\n\n👀If this list has you thinking about what might be getting missed in your own restaurant, I have a free restaurant audit you can use. Just comment LOOK and I’ll send it your way.",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 5.829625344,
+  "segments": null,
+  "takenAt": "2026-10-07T20:06:58.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 983,
+  "comments": 101,
+  "plays": 194570,
+  "thumbnailUrl": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/838001528_1089254070700920_969222244578440575_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=NDAwMjkwNDE0MjcyODkzMDc5NjEwOTAyNzY3NjY5MjgwMjQ%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=x8D4tQprUc0Q7kNvwHw5d1q&_nc_oc=AdounBEXi49-1pO9CJFCKwU3a360CbGyKkz1l5nhLt5JBVz8R3NXQjJCXmyTuNUC1lc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=Fu4VsXDFBGkSRfuKqpPE4A&_nc_ss=723ba&oh=00_AQSQsOyfrlDkCXrA-j8-8fMMhTUs4EQyeuaK25wLwIWu5Q&oe=6AF664C1",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:25.952Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 29
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t16/f2/m84/AQMfzYZJYFauO6-NXd1-85z9wjHefwSfu0HrEA1-FYLYIdxykZemVAsDV_OtKg7y_JkRbCpUW20ILhGXdxOUeMjD5MYazC69RbXX3V8.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=bufk53a2bG4Q7kNvwEmpfRA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTUwODkxMTc5MTA2NjA5MywiYXNzZXRfYWdlX2RheXMiOjMwLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NzgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=1a852f5121c9a401&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC81NDYxN0I2NDRBOTY0NTU2ODY1NzZBOEJERTMxMDcxMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzU2RUM2MEU3MjJENzQxRjhCQjc3NTE0QTBGMEU0NzA3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbar-70nJauBRUCKAJDMywXQFOGZmZmZmYYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=JXnr6r_RUUs8JYaNlwvyRg&_nc_ss=7c689&_nc_zt=28&oh=00_AQRgjpvzicOxMLAY7_Nh6R7Y8elYrswf583HTZDVEB6C8w&oe=6AF241E2",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T21:57:54.000Z",
+  "shortCode": "DePuD_szONH",
+  "postUrl": "https://www.instagram.com/reel/DePuD_szONH/",
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": "My clients called our last session restaurant therapy. And honestly, I kind of fucking love that. Now, these are restaurant owners who've been doing this for more than 20 years. They know how to run restaurants. They don't need me telling them how to write a schedule or run a pre-shift. But when you own the business, who do you actually talk to about the stuff you're trying to figure out? Sometimes you need somebody outside of it who understands restaurants well enough that you don't have to explain how the fucking industry works before you get to the actual problem. We talk about their leadership team, decisions they've been sitting on, staff issues that they can't quite get their head around. Sometimes I'm saying, yep, I think you're absolutely right. And other times it's, I actually think you might be the problem here. And I think there's a lot of value in having someone who can do both. Someone with no agenda inside your business who can ask the questions maybe nobody else is asking you. So yeah, apparently part of what I do now is restaurant therapy. And I'm pretty fucking good with that.",
+  "onScreenText": null,
+  "hook3s": "My clients called our last session restaurant therapy.",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 78.13656576,
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.18,
+      "text": " My clients called our last session restaurant therapy."
+    },
+    {
+      "start": 5.98,
+      "end": 9.58,
+      "text": " And honestly, I kind of fucking love that."
+    },
+    {
+      "start": 10.059999,
+      "end": 11.32,
+      "text": " Now, these are restaurant owners"
+    },
+    {
+      "start": 11.32,
+      "end": 14.82,
+      "text": " who've been doing this for more than 20 years."
+    },
+    {
+      "start": 15.0199995,
+      "end": 16.76,
+      "text": " They know how to run restaurants."
+    },
+    {
+      "start": 16.76,
+      "end": 19.08,
+      "text": " They don't need me telling them"
+    },
+    {
+      "start": 19.08,
+      "end": 21.859999,
+      "text": " how to write a schedule or run a pre-shift."
+    },
+    {
+      "start": 22.039999,
+      "end": 23.9,
+      "text": " But when you own the business,"
+    },
+    {
+      "start": 24.42,
+      "end": 26.48,
+      "text": " who do you actually talk to"
+    },
+    {
+      "start": 26.48,
+      "end": 28.84,
+      "text": " about the stuff you're trying to figure out?"
+    },
+    {
+      "start": 28.84,
+      "end": 41.7,
+      "text": " Sometimes you need somebody outside of it who understands restaurants well enough that you don't have to explain how the fucking industry works before you get to the actual problem."
+    },
+    {
+      "start": 42.1,
+      "end": 49.02,
+      "text": " We talk about their leadership team, decisions they've been sitting on, staff issues that they can't quite get their head around."
+    },
+    {
+      "start": 49.16,
+      "end": 52.84,
+      "text": " Sometimes I'm saying, yep, I think you're absolutely right."
+    },
+    {
+      "start": 52.96,
+      "end": 57.92,
+      "text": " And other times it's, I actually think you might be the problem here."
+    },
+    {
+      "start": 57.92,
+      "end": 62.32,
+      "text": " And I think there's a lot of value in having someone who can do both."
+    },
+    {
+      "start": 62.64,
+      "end": 71,
+      "text": " Someone with no agenda inside your business who can ask the questions maybe nobody else is asking you."
+    },
+    {
+      "start": 71.1,
+      "end": 76.06,
+      "text": " So yeah, apparently part of what I do now is restaurant therapy."
+    },
+    {
+      "start": 76.42,
+      "end": 78.1,
+      "text": " And I'm pretty fucking good with that."
+    }
+  ],
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:27.576Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 30
+},
+{
+  "status": "no_speech",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "no speech found in the audio — it appears to be music-only or silent — reels without speech are never sold as transcripts. From 17 November 2026 the words on screen are read by default unless includeOnScreenText is false.",
+  "handle": null,
+  "videoUrl": "https://scontent-dfw5-1.cdninstagram.com/o1/v/t16/f2/m84/AQMS4ejsQE6XhpQdPuC8kfxWdzIh0YcLGjzLat9DwdpjNbaAKpuTf2Hk-XdeT9RXOazmaMTO0NZVV7JZDuvv5bjHoW2c2Qin5Ua8T2Y.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=bUwQ_M7uZUAQ7kNvwHirEv-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjA3ODg3NjEwMjc0NDI1NiwiYXNzZXRfYWdlX2RheXMiOjQzLCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f54647560a723b5&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC85MTQ1MEI0MjRCNjU1NzUyRTM4MEYzMDcxQzYwMzdCMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzlENDE2MjdCMEQ0NDFBMDI0NTY4QkI0MzQ0MzFGNjgwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaA45b6wa6xBxUCKAJDMywXQB7ul41P3zsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=Ia00bjq6xq7iv4wS1UBtTg&_nc_ss=723ba&_nc_zt=28&oh=00_AQSy02rovnR23AqdsxUuZXhVifVFWVspm6zJr7I0T3fLbA&oe=6AF251ED",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T23:06:21.000Z",
+  "shortCode": "DduYUkZzArg",
+  "postUrl": "https://www.instagram.com/reel/DduYUkZzArg/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "If I saw #1 happen in my restaurant, I’d want to talk about it just as much as I’d want to talk about #2.\n\nBecause watching your restaurant isn’t just about finding what needs fixing.\n\nIt’s about noticing what’s already working — and making sure your team knows you noticed.\n\nSomeone goes out of their way to look after a guest? Name it.\n\nSomeone sees a teammate getting buried and steps in without being asked? Name it.\n\nSomeone makes a guest feel genuinely looked after in a way you could never write into a training manual? Name that too.\n\nBecause that’s how great behaviour becomes part of how your restaurant operates — instead of something one really good employee happens to do.\n\nAnd yes, look just as closely at the other side.\n\nWatch the door.\nWatch what happens when it gets busy.\nWatch your guests when they need something.\nListen to how information moves between staff.\nWatch what happens after the bill is paid.\n\nThen bring both sides back to your team:\n\nHere’s what we’re doing really fucking well.\n\nAnd here’s where we can get better.\n\nYour team needs to hear both.",
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": 7.780125184,
+  "segments": null,
+  "takenAt": "2026-09-25T21:03:17.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 161,
+  "comments": 11,
+  "plays": 39862,
+  "thumbnailUrl": "https://scontent-dfw6-2.cdninstagram.com/v/t15.5256-10/819491838_1070981509119308_1758209345215756352_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&ig_cache_key=Mzk5NDIzNjg4NjExNzUxODA0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=Ki-5ZRETwZwQ7kNvwEBmOxN&_nc_oc=AdoZMiZ7ZxZ0BXOtskQvq5xvD3dHZfeyCVrbe2YvUhD-3CcFHS2fW-rvptsLA2TyuV8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw6-2.cdninstagram.com&_nc_gid=Ia00bjq6xq7iv4wS1UBtTg&_nc_ss=723ba&oh=00_AQR0hCvrsNlJy5ohhvVWvZZvb7PJNrW4ISB0RnWAghXgbA&oe=6AF669E3",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:29.430Z",
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 31
+},
+{
+  "status": "transcribed",
+  "charged": true,
+  "retryable": false,
+  "statusReason": null,
+  "handle": null,
+  "videoUrl": "https://scontent-iad3-2.cdninstagram.com/o1/v/t16/f2/m84/AQMvwCTbhEq30RKHZ309u3K6bvVqOb7iEvGc6wHxDDTzy8wSF7PK-vPz5RxNCsKzt1M0_bKd6hCQoc1URGVruKI51n_phj3ix9UyCO4.mp4?_nc_cat=105&_nc_sid=5e9851&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_ohc=OF6T4CxOx8oQ7kNvwHqQrK7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA4OTY1Nzg2MzU3Njc4NCwiYXNzZXRfYWdlX2RheXMiOjU1LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=5859082f63fc6c0e&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC83NTQ4MkZFNUVGOENFMjA3NzY1RTlENUMyQzc2MUQ5OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzkyNDlDRkY1RkMxNUZBNkY4N0E0MDIxQjA2RDUxNEIxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACag85Tet8LvAxUCKAJDMywXQBcQYk3S8aoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZZapAQA&_nc_gid=pioG3yPd8Ucl7Sy8tVB5iw&_nc_ss=723ba&_nc_zt=28&oh=00_AQQpu9QLwd1ucFerasvq8O-1TgVhx7WNRA5DOJgmmN1ZAA&oe=6AF24C7F",
+  "audioUrl": null,
+  "urlExpiresAt": "2026-11-09T22:43:11.000Z",
+  "shortCode": "DdPhrUxyCi5",
+  "postUrl": "https://www.instagram.com/reel/DdPhrUxyCi5/",
+  "ownerUsername": "alexis_guttridge",
+  "caption": "There are tiny things that tell me almost immediately I’m in a restaurant that knows what it’s doing.\n\n1. You’re standing at the door and someone carrying three plates still catches your eye and gives you the “we see you” nod on the way past.\n\n2. A glass breaks and nobody reacts except the two people closest to it. One grabs a broom, the other quietly redirects people around it, and the restaurant keeps moving.\n\n3. A table gets up to leave and someone who never served them still looks up and says goodbye.\n\n4. Four tables get seated almost at once and instead of everyone suddenly moving faster, someone quietly starts helping someone else’s section.\n\n5. Two staff members make eye contact from opposite sides of the room and somehow a problem gets fixed without either of them saying a word.\n\n6. A server approaches your table, sees you’re mid-story and does a tiny lap instead of interrupting you just because they’re ready.\n\n7. Someone notices you looking around for something and starts heading toward you before you’ve even put your hand up.\n\nThat’s the stuff I notice.\n\nNone of it is flashy. Most guests probably couldn’t even tell you it happened.\n\nBut when a restaurant really knows what it’s doing, you don’t spend the night trying to get its attention.\n\nIt already has yours.\n\nWhat’s an oddly specific one you’d add?",
+  "transcript": "Woo!",
+  "onScreenText": null,
+  "hook3s": "Woo!",
+  "hookStartSeconds": 0,
+  "language": "English",
+  "durationSeconds": 5.783187456,
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.4399999,
+      "text": " Woo!"
+    }
+  ],
+  "takenAt": "2026-09-13T21:29:09.000Z",
+  "isPinned": null,
+  "postSource": null,
+  "likes": 6605,
+  "comments": 203,
+  "plays": 820056,
+  "thumbnailUrl": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/808414535_18411159991084549_5177120676312333963_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=Mzk4NTU1MjMwODAyODU4MjA3MzE4NDExMTU5OTg1MDg0NTQ5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=SbgHVIlsMVMQ7kNvwGdm4Zm&_nc_oc=AdoLt5AZoK_Uli_XwVTpYaZEvpINRTeh320QC_lBJslm2l194pINBgY3ry1fBqQ4Y7c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_gid=pioG3yPd8Ucl7Sy8tVB5iw&_nc_ss=723ba&oh=00_AQRmBSDcQbcSsvpc2vqEef4-n4xsiS_zcHsJ5YKDyKwAHw&oe=6AF646C0",
+  "isNew": true,
+  "firstSeenAt": "2026-11-08T13:40:32.147Z",
+  "chargeEvents": {
+    "transcript": 1,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": 32
+},
+{
+  "status": "input_note",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "166 more reels were not transcribed. This run reached the Apify free plan allowance of 25 reel transcripts per account in any 24 hours. Nothing past it was transcribed or charged. It resets at 13:39 UTC on 2026-11-09. Paid Apify plans carry no daily allowance. Bronze, Apify's first paid plan (Starter), has no daily allowance, so a run there is never held by it, at $14.00 per 1,000 reel transcripts.",
+  "handle": null,
+  "videoUrl": null,
+  "audioUrl": null,
+  "urlExpiresAt": null,
+  "shortCode": null,
+  "postUrl": null,
+  "ownerUsername": null,
+  "caption": null,
+  "transcript": null,
+  "onScreenText": null,
+  "hook3s": null,
+  "hookStartSeconds": null,
+  "language": null,
+  "durationSeconds": null,
+  "segments": null,
+  "takenAt": null,
+  "isPinned": null,
+  "postSource": null,
+  "likes": null,
+  "comments": null,
+  "plays": null,
+  "thumbnailUrl": null,
+  "isNew": null,
+  "firstSeenAt": null,
+  "chargeEvents": {
+    "transcript": 0,
+    "surchargeMinutes": 0
+  },
+  "sourceIndex": null,
+  "retryAfter": "2026-11-09T13:39:05.757Z",
+  "reason": "free_plan_allowance",
+  "freePlanReels": {
+    "allowance": 25,
+    "used": 25,
+    "left": 0
+  }
+},
+{
+  "_summary": true,
+  "status": "run_summary",
+  "charged": false,
+  "retryable": false,
+  "statusReason": "Delivered 25 transcripts; 8 uncharged misses (see the rows); 8 reels had no speech — set includeOnScreenText to true to read a silent reel's on-screen text, charged like a transcript (on by default from 17 Nov 2026); 166 more reels stopped at the Apify free plan daily allowance of 25 reel transcripts, which resets at 13:39 UTC on 2026-11-09 - paid Apify plans carry no daily allowance. Priced on the Apify free plan: $15.00 per 1,000 transcripts, against $10.00 from Gold.",
+  "attempted": 33,
+  "delivered": 25,
+  "unchargedMisses": 8,
+  "profilesRetryable": 0,
+  "profileWalls": 0,
+  "profileAttempts": 0,
+  "walledMs": 0,
+  "budgetLeftMs": 7111566,
+  "listingSpentMs": null,
+  "listingStop": null,
+  "listingPatience": null,
+  "verdict": null,
+  "failed": 0,
+  "inputErrors": 0,
+  "skippedBudget": 0,
+  "skippedDeadline": 0,
+  "skippedMaxItems": 0,
+  "skippedAsrOutage": 0,
+  "skippedSeen": 0,
+  "resumedRows": 0,
+  "chargedRows": 25,
+  "chargedEvents": {
+    "reel-transcript": 25,
+    "long-video-surcharge": 0,
+    "image-text": 0
+  },
+  "stoppedBy": "exhausted",
+  "planSource": "tier",
+  "retryAfter": "2026-11-09T13:39:05.757Z",
+  "reason": "free_plan_allowance",
+  "freePlanReels": {
+    "allowance": 25,
+    "used": 25,
+    "left": 0
+  }
+}]
