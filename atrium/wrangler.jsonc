@@ -15,7 +15,7 @@
     {
       "binding": "DB",
       "database_name": "atrium",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "ebce5692-af19-40dc-9e7d-f5e46b73ecdd",
       "migrations_dir": "migrations"
     }
   ],
