@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+# Imported workspace content is private and must never be committed (this repo is public).
+import-data/
+*.local.sql
