@@ -5,6 +5,7 @@ import { HttpError, type HonoEnv } from "./env";
 import { meetings } from "./meetings";
 import { misc } from "./misc";
 import { pages } from "./pages";
+import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
 
 const app = new Hono<HonoEnv>();
@@ -36,6 +37,23 @@ app.route("/api/ai", ai);
 app.route("/api", misc);
 
 app.all("/api/*", (c) => c.json({ error: "Not found." }, 404));
+
+// The front end normally comes from Cloudflare's static-asset store and never reaches this
+// code. When it has been packed into the Worker instead (deploy:embedded), serve it here,
+// answering unknown paths with the app shell so its own routing can take over.
+app.get("*", (c) => {
+  const path = new URL(c.req.url).pathname;
+  const exact = STATIC[path];
+  const file = exact ?? STATIC["/index.html"];
+  if (!file) return c.text("Not found.", 404);
+  return new Response(file.data, {
+    headers: {
+      "Content-Type": file.type,
+      "Cache-Control": exact && path.startsWith("/assets/") ? "public, max-age=31536000, immutable" : "no-cache",
+      "X-Content-Type-Options": "nosniff",
+    },
+  });
+});
 
 app.onError((err, c) => {
   if (err instanceof HttpError) return c.json({ error: err.message }, err.status as 400);

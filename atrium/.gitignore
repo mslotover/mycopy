@@ -5,3 +5,7 @@ dist/
 # Imported workspace content is private and must never be committed (this repo is public).
 import-data/
 *.local.sql
+# Front end packed into the Worker by scripts/embed-assets.mjs
+.embed/
+src/worker/static.gen.ts
+wrangler.embedded.gen.jsonc

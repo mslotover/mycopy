@@ -4,13 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite build && wrangler dev -c wrangler.dev.jsonc",
-    "build": "vite build",
-    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.worker.json",
+    "dev": "npm run build && wrangler dev -c wrangler.dev.jsonc",
+    "build": "vite build && node scripts/embed-assets.mjs --off",
+    "typecheck": "node scripts/embed-assets.mjs --off && tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.worker.json",
     "db:local": "wrangler d1 migrations apply atrium --local -c wrangler.dev.jsonc",
     "db:remote": "wrangler d1 migrations apply atrium --remote",
     "seed:local": "node scripts/seed-demo.mjs | wrangler d1 execute atrium --local --file=/dev/stdin",
-    "deploy": "vite build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:embedded": "vite build && node scripts/embed-assets.mjs && wrangler deploy -c wrangler.embedded.gen.jsonc"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",
