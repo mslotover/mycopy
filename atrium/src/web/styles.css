@@ -29,7 +29,7 @@
   --purple: #8e44c9;
   --purple-soft: rgba(175, 82, 222, 0.13);
   --material: rgba(255, 255, 255, 0.72);
-  --material-thick: rgba(250, 250, 252, 0.86);
+  --material-thick: rgba(250, 250, 252, 0.94);
   --scrim: rgba(0, 0, 0, 0.28);
   --shadow-1: 0 0 0 0.5px var(--hairline), 0 1px 2px rgba(0, 0, 0, 0.04), 0 6px 20px rgba(0, 0, 0, 0.04);
   --shadow-2: 0 0 0 0.5px var(--hairline-strong), 0 4px 14px rgba(0, 0, 0, 0.08), 0 18px 48px rgba(0, 0, 0, 0.12);
@@ -71,7 +71,7 @@
     --purple: #cf8cff;
     --purple-soft: rgba(191, 90, 242, 0.22);
     --material: rgba(40, 40, 43, 0.72);
-    --material-thick: rgba(34, 34, 37, 0.88);
+    --material-thick: rgba(34, 34, 37, 0.94);
     --scrim: rgba(0, 0, 0, 0.5);
     --shadow-1: 0 0 0 0.5px var(--hairline), 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-2: 0 0 0 0.5px var(--hairline-strong), 0 8px 28px rgba(0, 0, 0, 0.5);

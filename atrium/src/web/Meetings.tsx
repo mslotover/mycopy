@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import DOMPurify from "dompurify";
-import { AlertCircle, Check, ChevronRight, Copy, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Trash2, UserPlus, X } from "lucide-react";
+import { AlertCircle, Check, ChevronDown, ChevronRight, Copy, Lock, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Trash2, UserPlus, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { api, ApiError, clock, fmtDuration, invalidate, qc, sse, useMeetings, useTasks, type Knowledge, type MeetingDetail, type MeetingItem, type MeetingListItem, type MeetingStatus, type Participant, type User } from "./api";
@@ -561,6 +561,12 @@ function MeetingHead({ detail, editable }: { detail: MeetingDetail; editable?: b
   const d = new Date(m.started_at);
   const space = m.space_id ? app.spaceById.get(m.space_id) : null;
   const people = detail.participants.map((p) => (p.user_id && app.userById.get(p.user_id)) || { name: p.name || p.email });
+  const moveTo = (space_id: string | null) => {
+    if (space_id === m.space_id) return;
+    api(`/meetings/${m.id}`, { method: "PATCH", body: { space_id } })
+      .then(() => { invalidate("meeting", "meetings"); toast(space_id ? `Shared with ${app.spaceById.get(space_id)?.name ?? "the space"}` : "Now private to the people in it"); })
+      .catch(toastError);
+  };
   return (
     <div style={{ marginBottom: 22 }}>
       {editable
@@ -568,7 +574,18 @@ function MeetingHead({ detail, editable }: { detail: MeetingDetail; editable?: b
         : <h1 className="h-title" style={{ fontSize: 30 }}>{m.title || "Untitled meeting"}</h1>}
       <div className="page-meta" style={{ marginTop: 8 }}>
         <span>{d.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long", year: "numeric" })} · {d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}{m.duration_s ? ` · ${fmtDuration(m.duration_s)}` : ""}</span>
-        {space && <Link to={`/space/${space.id}`} className="chip"><SpaceBadge space={space} size={14} />{space.name}</Link>}
+        {m.organizer_id === app.user.id ? (
+          <Dropdown width={250} trigger={({ onClick }) => (
+            <button className="chip" onClick={onClick} title="Who can see this meeting">
+              {space ? <><SpaceBadge space={space} size={14} />{space.name}</> : <><Lock />Private</>}<ChevronDown />
+            </button>
+          )}>
+            {(close) => (<>
+              <MenuItem icon={<Lock size={15} />} active={!m.space_id} sub="Only the people in the meeting" onClick={() => { moveTo(null); close(); }}>Private</MenuItem>
+              {app.spaces.map((s) => <MenuItem key={s.id} icon={<SpaceBadge space={s} size={16} />} active={m.space_id === s.id} onClick={() => { moveTo(s.id); close(); }}>{s.name}</MenuItem>)}
+            </>)}
+          </Dropdown>
+        ) : space && <Link to={`/space/${space.id}`} className="chip"><SpaceBadge space={space} size={14} />{space.name}</Link>}
         <AvatarStack users={people as (User | { name: string })[]} max={8} />
       </div>
     </div>

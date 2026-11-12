@@ -58,6 +58,46 @@ keys are needed. `node scripts/seed-demo.mjs` adds sample content; sign in as
 People can sign in only if they have been invited; the first owner is created by the import
 or by inserting a row into `users`.
 
+## Bringing a Notion workspace across
+
+The import runs from a Claude Code session that has the Notion connector, because that is
+what can read the workspace. Three small scripts do the rest; everything they produce lands
+in `import-data/`, which git ignores. **Never commit it: it is the workspace's private content.**
+
+1. Read the workspace through the connector: people, teamspaces, every page, each database's
+   rows, meeting notes with transcripts.
+2. `python3 -I scripts/notion-extract.py <session.jsonl> <tool-results-dir> import-data/raw`
+   copies the connector's replies out of the session, word for word.
+3. `python3 -I scripts/notion-files.py <session.jsonl> <tool-results-dir> import-data/files`
+   downloads images, videos and PDFs. Notion's download links last five minutes, so run it
+   straight after asking for them.
+4. `node scripts/notion-import.mjs import-data` writes `atrium-import.local.sql`,
+   `load-files.sh` and `report.md`, which lists what came across and what did not.
+5. Load it:
+
+   ```bash
+   npx wrangler d1 execute atrium --remote --file=import-data/atrium-import.local.sql
+   ```
+
+   ```bash
+   sh import-data/load-files.sh --remote
+   ```
+
+   Use `--local -c wrangler.dev.jsonc` and `--local wrangler.dev.jsonc` to try it on the dev server first.
+
+How things map: teamspaces become spaces; pages keep their place and their links to each
+other; databases become database pages, except task lists (which become tasks) and meeting
+notes and minutes (which become meetings, with summary, notes and transcript). Key decisions
+recorded against minutes become Brain notes.
+
+The importer never widens who can see something. Private pages, pages shared with
+individuals, private meetings and tasks from private lists stay with the person who ran the
+import, who can then share them from inside the app. Notion does not expose who belongs to
+each teamspace, so space membership is worked out from who is given work, runs projects or
+attends meetings there; check it under Settings, Spaces. `import-data/import-config.json`
+(optional) maps a "Business" column value to a space when the names differ, and sets a
+space's emoji and colour.
+
 ## Privacy
 
 Workspace content lives only in the D1 database and R2 bucket. `import-data/` is ignored by

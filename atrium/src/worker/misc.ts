@@ -78,11 +78,26 @@ misc.post("/files", async (c) => {
 
 misc.get("/files/:id", async (c) => {
   if (!/^[0-9A-Za-z]{24}$/.test(c.req.param("id"))) throw notFound();
-  const obj = await c.env.FILES.get(`files/${c.req.param("id")}`);
+  // Range requests let browsers seek within video and resume large downloads.
+  const wantsRange = !!c.req.header("range");
+  const obj = await c.env.FILES.get(`files/${c.req.param("id")}`, wantsRange ? { range: c.req.raw.headers } : undefined);
   if (!obj) throw notFound();
-  return new Response(obj.body, {
-    headers: { "Content-Type": obj.httpMetadata?.contentType ?? "application/octet-stream", "Cache-Control": "private, max-age=31536000, immutable", "X-Content-Type-Options": "nosniff" },
+  const headers = new Headers({
+    "Content-Type": obj.httpMetadata?.contentType ?? "application/octet-stream",
+    "Cache-Control": "private, max-age=31536000, immutable",
+    "X-Content-Type-Options": "nosniff",
+    "Accept-Ranges": "bytes",
   });
+  const r = obj.range as { offset?: number; length?: number; suffix?: number } | undefined;
+  if (wantsRange && r) {
+    const start = r.suffix !== undefined ? Math.max(0, obj.size - r.suffix) : r.offset ?? 0;
+    const length = r.suffix !== undefined ? Math.min(r.suffix, obj.size) : r.length ?? obj.size - start;
+    headers.set("Content-Range", `bytes ${start}-${start + length - 1}/${obj.size}`);
+    headers.set("Content-Length", String(length));
+    return new Response(obj.body, { status: 206, headers });
+  }
+  headers.set("Content-Length", String(obj.size));
+  return new Response(obj.body, { headers });
 });
 
 // ---------- Spaces ----------
