@@ -21,12 +21,16 @@
   ],
   "r2_buckets": [{ "binding": "FILES", "bucket_name": "atrium-files" }],
   "ai": { "binding": "AI" },
+  // 08:00 UTC each day: "due today" reminders.
+  "triggers": { "crons": ["0 8 * * *"] },
   "vars": {
     "APP_NAME": "Atrium",
     "MAIL_FROM": "Atrium <atrium@reports.toklas.co.uk>",
     "CLAUDE_MODEL": "claude-opus-5-5",
-    "WHISPER_MODEL": "@cf/openai/whisper-large-v3-turbo"
+    "WHISPER_MODEL": "@cf/openai/whisper-large-v3-turbo",
+    "VAPID_PUBLIC_KEY": "BAOjknmiLCutJTs-6d3xCAjUMHd_CPCp-5RBccBS217qga8lE8ARxgv4N4R9q7ZdTputXHBIYhFx1W4uzU3ne5E"
   }
   // Secrets (set with `wrangler secret put`): ANTHROPIC_API_KEY, RESEND_API_KEY,
+  // VAPID_PRIVATE_KEY (the private half of VAPID_PUBLIC_KEY, for phone notifications),
   // optional GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET for Google sign-in.
 }

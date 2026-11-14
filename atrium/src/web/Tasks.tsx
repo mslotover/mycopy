@@ -1,10 +1,11 @@
-import { AlertCircle, ChevronRight, Mic, Plus, Trash2 } from "lucide-react";
+import { AlertCircle, Bell, ChevronRight, Mic, Plus, Share, Trash2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { addDays, api, dueLabel, invalidate, qc, todayISO, useTasks, type Task } from "./api";
 import { Toolbar } from "./App";
 import { CommentThread } from "./PageView";
-import { Avatar, AutoText, Empty, PersonPill, Sheet, SpaceBadge, SpaceSelect, Spinner, toastError, useApp } from "./ui";
+import { holdTaskChange, isOffline, pushState, turnOnPush, type PushState } from "./phone";
+import { Avatar, AutoText, Empty, PersonPill, Sheet, SpaceBadge, SpaceSelect, Spinner, toast, toastError, useApp } from "./ui";
 
 /** Applies a change to a task everywhere it is cached, then saves it. */
 export async function patchTask(id: string, patch: Partial<Task>) {
@@ -12,9 +13,43 @@ export async function patchTask(id: string, patch: Partial<Task>) {
   try {
     await api(`/tasks/${id}`, { method: "PATCH", body: patch });
   } catch (e) {
+    if (isOffline(e)) {
+      // No connection: keep the change on this device and send it when there is one.
+      holdTaskChange(id, patch as Record<string, unknown>);
+      toast("Saved on this device. It will sync when you're back online.");
+      return;
+    }
     toastError(e);
   }
   invalidate("tasks");
+}
+
+/**
+ * A one-line prompt at the top of the task list: switch notifications on, or, on an iPhone
+ * in Safari, how to put the app on the Home Screen (where notifications become available).
+ */
+export function PhonePrompt() {
+  const [state, setState] = useState<PushState | null>(null);
+  const [hidden, setHidden] = useState(() => localStorage.getItem("atrium.prompt.hidden") === "1");
+  useEffect(() => { pushState().then(setState).catch(() => setState("unsupported")); }, []);
+  if (hidden || (state !== "off" && state !== "needs-install")) return null;
+  const hide = () => { localStorage.setItem("atrium.prompt.hidden", "1"); setHidden(true); };
+  const on = async () => {
+    try {
+      const next = await turnOnPush();
+      setState(next);
+      if (next === "on") toast("Notifications are on for this device");
+      else toast("Notifications are blocked. Allow them for this app in your device's settings.");
+    } catch (e) { toastError(e); }
+  };
+  return (
+    <div className="banner phone-prompt">
+      {state === "off" ? <Bell /> : <Share />}
+      <span>{state === "off" ? "Get a notification when you're given a task or one is due." : "Use this as an app: tap Share, then Add to Home Screen."}</span>
+      {state === "off" && <button className="btn" onClick={on}>Turn on</button>}
+      <button className="icon-btn" aria-label="Dismiss" onClick={hide}><X /></button>
+    </div>
+  );
 }
 
 export function TaskRow({ task, onOpen, showAssignee, showSpace }: { task: Task; onOpen: (id: string) => void; showAssignee?: boolean; showSpace?: boolean }) {
@@ -121,6 +156,7 @@ export function TasksView() {
               <p className="h-sub">{isLoading ? " " : openCount ? `${openCount} open` : "Nothing open"}</p>
             </div>
           </div>
+          <PhonePrompt />
           <div className="bar">
             <div className="segmented">
               <button className={scope === "mine" ? "on" : ""} onClick={() => setScope("mine")}>Mine</button>

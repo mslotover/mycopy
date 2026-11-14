@@ -58,6 +58,26 @@ keys are needed. `node scripts/seed-demo.mjs` adds sample content; sign in as
 People can sign in only if they have been invited; the first owner is created by the import
 or by inserting a row into `users`.
 
+## On a phone
+
+Atrium installs from the browser; there is nothing in an app store. On an iPhone, open it
+in Safari, tap Share, then "Add to Home Screen". It then opens full-screen on the task list.
+
+- **Signing in.** An app on the Home Screen keeps its own storage, so a sign-in link opened
+  in the browser doesn't sign it in. Every sign-in email therefore carries a six-digit code
+  as well, to type into the app.
+- **Notifications.** Turn them on from the prompt on the task list or under Settings,
+  Profile. They cover being given a task, mentions, meeting summaries, and a morning
+  reminder of what is due that day (a cron trigger, 08:00 UTC). iPhones only offer
+  notifications to web apps that have been added to the Home Screen.
+- **Patchy connections.** A service worker keeps the app opening offline with the task
+  lists as last seen. Ticking a task off without a connection is held on the device and
+  sent when the connection returns.
+
+Notifications use Web Push. Generate a key pair once, put the public half in
+`VAPID_PUBLIC_KEY` (wrangler.jsonc) and the private half in the `VAPID_PRIVATE_KEY`
+secret. `scripts/push-test.mjs` checks the encryption against the example in RFC 8291.
+
 ## Bringing a Notion workspace across
 
 The import runs from a Claude Code session that has the Notion connector, because that is

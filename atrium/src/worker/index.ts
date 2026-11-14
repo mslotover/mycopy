@@ -5,6 +5,7 @@ import { HttpError, type HonoEnv } from "./env";
 import { meetings } from "./meetings";
 import { misc } from "./misc";
 import { pages } from "./pages";
+import { push, remindDueToday } from "./push";
 import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
 
@@ -34,6 +35,7 @@ app.route("/api/pages", pages);
 app.route("/api/tasks", tasks);
 app.route("/api/meetings", meetings);
 app.route("/api/ai", ai);
+app.route("/api/push", push);
 app.route("/api", misc);
 
 app.all("/api/*", (c) => c.json({ error: "Not found." }, 404));
@@ -62,4 +64,10 @@ app.onError((err, c) => {
   return c.json({ error: "Something went wrong on our side. Please try again." }, 500);
 });
 
-export default app;
+export default {
+  fetch: app.fetch,
+  // Runs each morning (see "triggers" in wrangler.jsonc).
+  async scheduled(_event: ScheduledController, env: HonoEnv["Bindings"], ctx: ExecutionContext) {
+    ctx.waitUntil(remindDueToday(env));
+  },
+};

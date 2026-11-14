@@ -51,6 +51,7 @@ auth.post("/request", async (c) => {
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(addr)) throw bad("Enter a valid email address.");
   const user = await first<User>(c.env.DB, "SELECT * FROM users WHERE email = ? AND active = 1", addr);
   let devLink: string | undefined;
+  let devCode: string | undefined;
   if (user) {
     const recent = await first<{ n: number }>(
       c.env.DB,
@@ -61,26 +62,52 @@ auth.post("/request", async (c) => {
       const t = token();
       await run(c.env.DB, "INSERT INTO login_tokens (token_hash, user_id, expires_at) VALUES (?, ?, ?)", await sha256(t), user.id, now() + LINK_MINUTES * 60_000);
       const link = `${c.var.origin}/signin?token=${t}`;
-      if (isDev(c.env)) devLink = link;
+      // A code as well as a link: an app on a phone's home screen can't be signed in by a
+      // link that opens in the browser, but a code can be typed into it.
+      const code = String(crypto.getRandomValues(new Uint32Array(1))[0] % 1_000_000).padStart(6, "0");
+      await run(
+        c.env.DB,
+        `INSERT INTO login_codes (email, code_hash, user_id, expires_at, attempts) VALUES (?, ?, ?, ?, 0)
+         ON CONFLICT (email) DO UPDATE SET code_hash = excluded.code_hash, user_id = excluded.user_id, expires_at = excluded.expires_at, attempts = 0`,
+        addr, await sha256(`${addr}:${code}`), user.id, now() + LINK_MINUTES * 60_000,
+      );
+      if (isDev(c.env)) { devLink = link; devCode = code; }
       await sendMail(
         c.env,
         user.email,
         `Sign in to ${c.env.APP_NAME}`,
         emailLayout(c.env, {
           heading: `Sign in to ${c.env.APP_NAME}`,
-          body: `<p style="margin:0;color:#424245">Hi ${escapeHtml(user.name.split(" ")[0])}, use the button below to sign in. The link works once and expires in ${LINK_MINUTES} minutes.</p>`,
+          body: `<p style="margin:0;color:#424245">Hi ${escapeHtml(user.name.split(" ")[0])}, use the button below to sign in. The link works once and expires in ${LINK_MINUTES} minutes.</p>
+<p style="margin:22px 0 0;color:#424245">Or type this code on the sign-in screen:</p>
+<p style="margin:6px 0 0;font-size:28px;font-weight:700;letter-spacing:.18em;color:#1d1d1f">${code.slice(0, 3)} ${code.slice(3)}</p>`,
           cta: { label: "Sign in", url: link },
           footer: "If you didn't ask for this, you can ignore this email.",
         }),
       );
     }
   }
-  return c.json({ ok: true, devLink });
+  return c.json({ ok: true, devLink, devCode });
 });
 
 // Step 2: the sign-in page posts the token (a POST, so mail scanners that prefetch links can't use it up).
 auth.post("/verify", async (c) => {
-  const { token: t } = await c.req.json<{ token?: string }>();
+  const { token: t, email, code } = await c.req.json<{ token?: string; email?: string; code?: string }>();
+  if (!t && email && code) {
+    const addr = email.trim().toLowerCase();
+    const digits = code.replace(/\D/g, "");
+    const pending = await first<{ code_hash: string; user_id: string; expires_at: number; attempts: number }>(c.env.DB, "SELECT * FROM login_codes WHERE email = ?", addr);
+    if (!pending || pending.expires_at < now() || pending.attempts >= 5) throw bad("That code has expired. Request a new one.");
+    if (digits.length !== 6 || (await sha256(`${addr}:${digits}`)) !== pending.code_hash) {
+      await run(c.env.DB, "UPDATE login_codes SET attempts = attempts + 1 WHERE email = ?", addr);
+      throw bad(pending.attempts >= 4 ? "Too many tries. Request a new code." : "That code isn't right. Check the email and try again.");
+    }
+    const who = await first<{ active: number }>(c.env.DB, "SELECT active FROM users WHERE id = ?", pending.user_id);
+    await run(c.env.DB, "DELETE FROM login_codes WHERE email = ?", addr);
+    if (!who?.active) throw bad("That code has expired. Request a new one.");
+    await startSession(c, pending.user_id);
+    return c.json({ ok: true });
+  }
   if (!t) throw bad("Missing token.");
   const hash = await sha256(t);
   const row = await first<{ user_id: string; expires_at: number; used_at: number | null }>(c.env.DB, "SELECT * FROM login_tokens WHERE token_hash = ?", hash);

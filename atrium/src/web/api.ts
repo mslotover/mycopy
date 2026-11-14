@@ -64,6 +64,8 @@ export async function api<T = any>(path: string, opts: { method?: string; body?:
     credentials: "same-origin",
   });
   if (res.status === 401 && !path.startsWith("/auth/")) {
+    // Signed out: don't leave the last-seen workspace on the device.
+    try { localStorage.removeItem("atrium.kept.v1"); localStorage.removeItem("atrium.waiting.v1"); } catch { /* storage unavailable */ }
     if (!location.pathname.startsWith("/signin")) location.assign("/signin");
     throw new ApiError(401, "Please sign in.");
   }

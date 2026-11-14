@@ -13,6 +13,9 @@ export type Env = {
   RESEND_API_KEY?: string;
   GOOGLE_CLIENT_ID?: string;
   GOOGLE_CLIENT_SECRET?: string;
+  /** Web Push keys: the public half is given to browsers, the private half signs each push. */
+  VAPID_PUBLIC_KEY?: string;
+  VAPID_PRIVATE_KEY?: string;
   /** "1" in local development: emails are recorded but not sent, AI steps are simulated. */
   DEV_MODE?: string;
 };

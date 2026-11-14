@@ -10,6 +10,7 @@ import { Brain } from "./Brain";
 import { Home, Inbox, SpaceView, Trash } from "./Home";
 import { MeetingView, MeetingsView, NewMeetingSheet } from "./Meetings";
 import { PageView } from "./PageView";
+import { forgetDevice } from "./phone";
 import { SearchPalette } from "./Search";
 import { Settings } from "./Settings";
 import { SignIn } from "./SignIn";
@@ -177,7 +178,7 @@ function Sidebar({ open, onNavigate }: { open: boolean; onNavigate: () => void }
     if (chain.length) exp.open(chain);
   }, [activeId, tree]);
 
-  const signOut = async () => { await api("/auth/logout", { body: {} }); location.assign("/signin"); };
+  const signOut = async () => { await api("/auth/logout", { body: {} }); forgetDevice(); location.assign("/signin"); };
   const nav = (to: string, icon: ReactNode, label: string, count?: ReactNode) => (
     <NavLink to={to} end={to === "/"} className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}>{icon}{label}{count}</NavLink>
   );
@@ -383,7 +384,7 @@ function Authed() {
     movePage: setMoving,
   }), []);
 
-  if (error) return <div className="center" style={{ height: "100dvh" }}><div className="empty"><h3>Can't reach the workspace</h3>Check your connection and reload.</div></div>;
+  if (error && !boot) return <div className="center" style={{ height: "100dvh" }}><div className="empty"><h3>Can't reach the workspace</h3>Check your connection and reload.</div></div>;
   if (!boot) return <div style={{ height: "100dvh" }}><Spinner /></div>;
 
   return (

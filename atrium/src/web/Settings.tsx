@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { Plus, UserPlus } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { api, invalidate, relTime, type Role, type Space } from "./api";
 import { Toolbar } from "./App";
-import { Avatar, AvatarStack, Dropdown, EmojiPicker, Sheet, SpaceBadge, toast, toastError, useApp } from "./ui";
+import { pushState, turnOffPush, turnOnPush, type PushState } from "./phone";
+import { Avatar, AvatarStack, Dropdown, EmojiPicker, Sheet, SpaceBadge, Spinner, toast, toastError, useApp } from "./ui";
 
 const COLORS = ["#0071e3", "#34c759", "#ff9500", "#af52de", "#ff2d55", "#5856d6", "#00c7be", "#ff6482", "#a2845e", "#8e8e93"];
 
@@ -41,7 +42,39 @@ function Profile() {
       </div>
       <div className="form-row"><label className="label">Name</label><input className="field" value={name} onChange={(e) => setName(e.target.value)} onBlur={() => name.trim() && name !== app.me.name && save({ name })} /></div>
       <div className="form-row"><label className="label">Colour</label><div className="swatches">{COLORS.map((c) => <button key={c} className={`swatch ${app.me.color.toLowerCase() === c ? "on" : ""}`} style={{ background: c }} aria-label={c} onClick={() => save({ color: c })} />)}</div></div>
-      <p className="muted" style={{ fontSize: 12.5, marginTop: 24 }}>You sign in with a link sent to {app.me.email}. Notifications about mentions, new tasks and meeting summaries go to the same address.</p>
+      <div className="form-row"><label className="label">Notifications on this device</label><DeviceNotifications /></div>
+      <p className="muted" style={{ fontSize: 12.5, marginTop: 24 }}>You sign in with a link or code sent to {app.me.email}. Emails about mentions, new tasks and meeting summaries go to the same address.</p>
+    </div>
+  );
+}
+
+const PUSH_HELP: Record<PushState, string> = {
+  on: "On. You'll be told when you're given a task, mentioned, or have something due today.",
+  off: "Off. Turn them on to hear when you're given a task, mentioned, or have something due today.",
+  blocked: "Blocked. Allow notifications for this app in your device's settings, then come back here.",
+  "needs-install": "On an iPhone, add Atrium to your Home Screen first (Share, then Add to Home Screen) and open it from there.",
+  unsupported: "This browser doesn't support notifications.",
+};
+
+function DeviceNotifications() {
+  const [state, setState] = useState<PushState | null>(null);
+  const [busy, setBusy] = useState(false);
+  useEffect(() => { pushState().then(setState).catch(() => setState("unsupported")); }, []);
+  if (!state) return <Spinner />;
+  const run = async (fn: () => Promise<PushState>) => { setBusy(true); try { setState(await fn()); } catch (e) { toastError(e); } finally { setBusy(false); } };
+  const test = async () => {
+    try {
+      const { delivered } = await api<{ delivered: number }>("/push/test", { body: {} });
+      toast(delivered ? "Sent. It should arrive in a moment." : "Nothing was sent: no device has notifications on.");
+    } catch (e) { toastError(e); }
+  };
+  return (
+    <div>
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+        {state === "off" && <button className="btn primary" disabled={busy} onClick={() => run(turnOnPush)}>Turn on</button>}
+        {state === "on" && <><button className="btn" onClick={test}>Send a test</button><button className="btn quiet" disabled={busy} onClick={() => run(turnOffPush)}>Turn off</button></>}
+      </div>
+      <p className="muted" style={{ fontSize: 12.5, margin: state === "on" || state === "off" ? "8px 0 0" : 0 }}>{PUSH_HELP[state]}</p>
     </div>
   );
 }

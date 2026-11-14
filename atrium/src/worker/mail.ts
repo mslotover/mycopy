@@ -1,4 +1,5 @@
 import { escapeHtml, isDev, now, run, uid, type Env } from "./env";
+import { pushToUser } from "./push";
 
 /**
  * Sends an email through Resend and records it in the outbox. In dev mode, or when no
@@ -47,7 +48,7 @@ ${cta}
 </td></tr></table></body></html>`;
 }
 
-/** Records an in-app notification and, optionally, emails the recipient. */
+/** Records an in-app notification, pushes it to the person's devices and, optionally, emails them. */
 export async function notify(
   env: Env,
   origin: string,
@@ -59,6 +60,7 @@ export async function notify(
     "INSERT INTO notifications (id, user_id, actor_id, type, title, body, url, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
     uid(), n.user_id, n.actor_id ?? null, n.type, n.title, n.body ?? "", n.url, now(),
   );
+  await pushToUser(env, n.user_id, { title: n.title, body: n.body, url: n.url });
   if (n.email) {
     const u = await env.DB.prepare("SELECT email, active FROM users WHERE id = ?").bind(n.user_id).first<{ email: string; active: number }>();
     if (u?.active) {
