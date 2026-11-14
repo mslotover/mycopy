@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toklas — Search and AI Visibility Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17211F;--paper:#F4F3EE;--paper-raised:#FFF;--line:#DEDCD1;--accent:#0B6B5C;--accent-soft:#E4EFEC;--good:#2E7D4F;--good-soft:#E4F0E8;--warn:#B9781F;--warn-soft:#F6EBDA;--critical:#B3392C;--critical-soft:#FBEAE7;--font-display:'Zilla Slab',Georgia,serif;--font-body:'Public Sans',-apple-system,sans-serif;--font-mono:'IBM Plex Mono',Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--ink:#EDEAE2;--paper:#14201C;--paper-raised:#1B2A25;--line:#2C3A34;--accent:#4FBFA5;--accent-soft:#1E332C;--good:#6FCB94;--good-soft:#1D3226;--warn:#E0A559;--warn-soft:#362A16;--critical:#E37B6B;--critical-soft:#3A211C}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.55}
+main{max-width:920px;margin:0 auto;padding:32px 20px 64px}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;text-wrap:balance;margin:0 0 .4em}
+h1{font-size:1.75rem}h2{font-size:1.375rem;margin-top:2em}h3{font-size:1.125rem}
+.meta{font-size:.875rem;opacity:.75;margin-bottom:1.2em}
+.card{background:var(--paper-raised);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+.lede{font-size:1.06rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;opacity:.7}
+td.n{font-family:var(--font-mono);font-variant-numeric:tabular-nums;width:2em}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.critical{background:var(--critical-soft);color:var(--critical)}
+.warn{background:var(--warn-soft);color:var(--warn)}
+.good{background:var(--good-soft);color:var(--good)}
+.copy{position:relative;margin:10px 0 4px}
+.copy pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:.8rem;line-height:1.5;margin:0;white-space:pre-wrap}
+.copy button{position:absolute;top:8px;right:8px;font:600 .75rem var(--font-body);background:var(--accent);color:#fff;border:0;border-radius:6px;padding:5px 11px;cursor:pointer}
+.copy button.done{background:var(--good)}
+.label{font-size:.8rem;font-weight:600;margin-top:14px}
+ul{padding-left:1.2em}li{margin:.25em 0}
+.note{font-size:.88rem;background:var(--warn-soft);border-radius:8px;padding:10px 14px;margin:10px 0}
+</style>
+</head>
+<body><main>
+<h1>Toklas — Search and AI Visibility Audit</h1>
+<div class="meta">Crawled 14 November 2026 · 6 pages + robots.txt, sitemap, llms.txt, 4 menu PDFs · toklaslondon.com (Wix)</div>
+
+<div class="card lede"><strong>In short:</strong> AI tools can reach and read the site, and the FAQ page is unusually good. The biggest problem is a factual one. The site's structured data gives the <em>restaurant's</em> address as <strong>9 Surrey Street</strong>, which is the bakery's address. The visible text says the restaurant is at <strong>1 Surrey Street</strong>. AI tools and Google read that structured data directly. It also leaves out the opening hours, the cuisine and the bakery.</div>
+
+<h2>Already working</h2>
+<div class="card"><ul>
+<li><span class="pill good">good</span> robots.txt allows every AI crawler (GPTBot, ClaudeBot, PerplexityBot, Google-Extended and the rest). The only bot blocked is PetalBot.</li>
+<li><span class="pill good">good</span> Page text loads without JavaScript, so crawlers see the real content.</li>
+<li><span class="pill good">good</span> The sitemap exists, is listed in robots.txt and was updated this week.</li>
+<li><span class="pill good">good</span> The FAQ page answers real customer questions in plain language: hours, location, pre-theatre prices, terrace, vegetarian options, events and the bakery. This is the format AI tools quote most easily.</li>
+<li><span class="pill good">good</span> llms.txt exists, and the site has a Wix MCP endpoint that AI agents can query.</li>
+</ul></div>
+
+<h2>Fix these five, in order</h2>
+<div class="card"><table>
+<tr><th>#</th><th>Finding</th><th>Status</th><th>Impact · effort</th></tr>
+<tr><td class="n">1</td><td>The structured data puts "Toklas Restaurant" at 9 Surrey Street (the bakery's address). The visible site says 1 Surrey Street. Check Google Business Profile for the same mix-up.</td><td><span class="pill critical">critical</span></td><td>High · 15 min</td></tr>
+<tr><td class="n">2</td><td>The structured data is a generic LocalBusiness entry. It has no opening hours, no cuisine and no booking link, and the bakery isn't in it at all.</td><td><span class="pill critical">critical</span></td><td>High · 30 min</td></tr>
+<tr><td class="n">3</td><td>llms.txt is Wix's auto-generated version. It has no addresses, hours or phone numbers, and most of it is technical MCP documentation.</td><td><span class="pill warn">warn</span></td><td>Medium · 20 min</td></tr>
+<tr><td class="n">4</td><td>About, Events, FAQs and Journal all share the same generic meta description, and no page on the site has an H1 heading.</td><td><span class="pill warn">warn</span></td><td>Medium · 30 min</td></tr>
+<tr><td class="n">5</td><td>Two facts contradict each other. The terrace is "around 80 diners" on the homepage and FAQs, but "100 outside" in the Events section. The menus exist only as PDFs, with no menu page in HTML.</td><td><span class="pill warn">warn</span></td><td>Medium · 1 hr</td></tr>
+</table></div>
+
+<h2>The fixes, ready to paste</h2>
+
+<h3>1 + 2 · Structured data (JSON-LD)</h3>
+<p>First, in Wix go to <strong>Settings → Business Info</strong> and set the restaurant address to 1 Surrey Street. That stops Wix generating the wrong address. Then add the block below to the homepage: <strong>SEO (Google) → Advanced SEO → Structured Data Markup</strong>. Everything in it comes from your own site.</p>
+<div class="note">Please confirm two things before pasting: that the restaurant is closed on Sundays (the site lists only Mon–Sat), and that the menu PDF link below is the current food menu. Wix PDF links change when a new menu is uploaded.</div>
+<div class="copy"><button>Copy</button><pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://www.toklaslondon.com/#restaurant",
+      "name": "Toklas",
+      "url": "https://www.toklaslondon.com",
+      "description": "Mediterranean restaurant off the Strand in central London, with an open grill, vegetable-led seasonal menus, a sustainably made wine list and a large planted terrace.",
+      "servesCuisine": "Mediterranean",
+      "telephone": "+44 20 3930 8592",
+      "email": "hello@toklas.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Surrey Street",
+        "addressLocality": "London",
+        "postalCode": "WC2R 2ND",
+        "addressCountry": "GB"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "12:00", "closes": "15:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:30", "closes": "23:00"}
+      ],
+      "acceptsReservations": "https://www.sevenrooms.com/reservations/toklas",
+      "menu": "https://www.toklaslondon.com/_files/ugd/d2abef_66d4329b59944ace834659cfc44d5ee3.pdf",
+      "sameAs": ["https://www.instagram.com/toklas_london/"]
+    },
+    {
+      "@type": "Bakery",
+      "@id": "https://www.toklaslondon.com/toklas-bakery#bakery",
+      "name": "Toklas Bakery",
+      "url": "https://www.toklaslondon.com/toklas-bakery",
+      "description": "Independent bakery off the Strand making naturally leavened sourdough, pastries, cakes and Roman-style sandwiches, with coffee from Assembly roasters.",
+      "telephone": "+44 20 3930 8572",
+      "email": "bakery@toklas.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9 Surrey Street",
+        "addressLocality": "London",
+        "postalCode": "WC2R 2ND",
+        "addressCountry": "GB"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "15:00"}
+      ],
+      "parentOrganization": {"@id": "https://www.toklaslondon.com/#restaurant"}
+    }
+  ]
+}
+&lt;/script&gt;</pre></div>
+
+<h3>3 · llms.txt</h3>
+<p>Wix generates this file automatically. If your Wix plan lets you edit it under SEO settings, replace the summary with the text below and keep Wix's MCP section underneath. If it can't be edited, the structured data above does most of the same job. llms.txt is still a young convention, so treat this as a low-cost extra.</p>
+<div class="copy"><button>Copy</button><pre># Toklas
+
+> Mediterranean restaurant and independent bakery on Surrey Street in
+> central London, between the Strand and the River Thames.
+
+## Toklas Restaurant
+- Address: 1 Surrey Street, London WC2R 2ND
+- Lunch: Monday–Saturday 12pm–3pm (kitchen closes 2.30pm)
+- Dinner: Monday–Saturday 5.30pm–11pm (kitchen closes 10pm)
+- Pre-theatre: every evening 5.30pm–6.30pm, two courses £26, three courses £29
+- Bar: from 5.30pm, Monday–Saturday
+- Phone: 020 3930 8592 · Email: hello@toklas.co.uk
+- Book: https://www.sevenrooms.com/reservations/toklas
+- Seasonal Mediterranean cooking on an open grill, vegetable-led, with
+  vegetarian dishes always available. Sustainably made wines from
+  independent growers. Planted terrace for around 80 diners, with heaters
+  and canopies.
+
+## Toklas Bakery
+- Address: 9 Surrey Street, London WC2R 2ND
+- Hours: Monday–Friday 8am–5pm, Saturday 9am–4pm, Sunday 9am–3pm
+- Phone: 020 3930 8572 · Email: bakery@toklas.co.uk
+- Naturally leavened sourdough, croissants, cardamom and cinnamon buns,
+  seasonal pastries, Roman-style sandwiches from 11am, cake from 1pm.
+  Coffee from Assembly roasters. Takeaway, pre-orders and office catering.
+
+## Private events
+- Up to 150 seated inside, plus the terrace. Weddings, parties, dinners.
+- Email: events@toklas.co.uk
+
+## Nearby
+Walking distance from Temple, Covent Garden and Charing Cross stations,
+Somerset House and the Courtauld Gallery.
+
+## Key pages
+- About: https://www.toklaslondon.com/about
+- FAQs: https://www.toklaslondon.com/toklas-faqs
+- Bakery: https://www.toklaslondon.com/toklas-bakery
+- Events: https://www.toklaslondon.com/events
+- Journal: https://www.toklaslondon.com/journal</pre></div>
+<div class="note">The terrace line says "around 80 diners", which is what the homepage and FAQs say. If 100 is correct, change it here and on those pages. See fix 5.</div>
+
+<h3>4 · Meta descriptions (Wix: each page → SEO basics)</h3>
+<div class="label">About</div>
+<div class="copy"><button>Copy</button><pre>Toklas is a Mediterranean restaurant off the Strand: open-grill cooking, vegetable-led seasonal menus, a planted terrace and its own bakery.</pre></div>
+<div class="label">Events</div>
+<div class="copy"><button>Copy</button><pre>Private events at Toklas, off the Strand: up to 150 seated inside plus a planted terrace. Weddings, parties, dinners and celebrations in central London.</pre></div>
+<div class="label">Toklas FAQs</div>
+<div class="copy"><button>Copy</button><pre>Toklas FAQs: opening hours, location, pre-theatre menu, terrace, vegetarian options, private events and Toklas Bakery on Surrey Street, London WC2.</pre></div>
+<div class="label">Journal</div>
+<div class="copy"><button>Copy</button><pre>Guest chef dinners, winemaker evenings, bakery markets, book launches and talks at Toklas restaurant and Toklas Bakery on Surrey Street, London.</pre></div>
+<div class="label">Toklas Bakery (the current one is about 300 characters, so Google cuts it off)</div>
+<div class="copy"><button>Copy</button><pre>Toklas Bakery, 9 Surrey Street off the Strand: naturally leavened sourdough, pastries and Roman-style sandwiches. Open daily for takeaway and catering.</pre></div>
+<p><strong>H1 headings:</strong> on each page, select the main heading (such as "About Toklas" or "Toklas Restaurant FAQs"), open the text settings and set its tag to <strong>Heading 1</strong>. Use one per page.</p>
+
+<h3>5 · Facts and menus</h3>
+<ul>
+<li><strong>Terrace capacity:</strong> pick one number and use it everywhere. The homepage and FAQs say about 80. The homepage Events section says 100 outside. The Eater quote saying "100-cover" is fine to leave, because it's a quote.</li>
+<li><strong>Menus:</strong> the Today's Menu, Pre-Theatre, Bar and Wine menus are PDFs. AI tools can read PDFs, but less reliably than page text, and dish names are what people search for ("Mediterranean lunch near the Strand"). A simple Menus page with a few signature dishes and price ranges as text would help. You don't need to put the full daily menu on it.</li>
+</ul>
+
+<h2>Off-site: worth checking (I couldn't reach these from here)</h2>
+<div class="card"><ul>
+<li><strong>Google Business Profile</strong> for both the restaurant and the bakery. Check the addresses (1 vs 9 Surrey Street), the hours and the phone numbers, and make sure they match the site exactly.</li>
+<li><strong>SevenRooms, OpenTable, TripAdvisor, The Infatuation, Time Out and Hot Dinners listings.</strong> AI tools cite these heavily for restaurant questions. Look for the same address mix-up.</li>
+<li><strong>Bing Places / Apple Business Connect.</strong> ChatGPT search relies on Bing, and Siri and Apple Maps use Apple's data.</li>
+</ul></div>
+
+<h2>Appendix: lower priority</h2>
+<div class="card"><ul>
+<li>156 of 185 homepage images have no alt text. Most are the press-quote carousel, which repeats in the HTML.</li>
+<li>The sitemap lists /event-testimonials, but that page returns a 404 error. Remove the page from the sitemap or restore it.</li>
+<li>The footer still says © 2025.</li>
+<li>The press quotes appear four times in the homepage HTML, because of the carousel. This is harmless, but it adds page weight (the homepage HTML is about 2.9 MB).</li>
+</ul></div>
+
+<h2>Not yet tested: what AI tools actually say</h2>
+<div class="card">This audit covers what crawlers can read. It doesn't yet cover what ChatGPT, Perplexity, Gemini or Google AI Overviews actually say when someone asks for "Mediterranean restaurant near the Strand" or "best bakery near Covent Garden". That test runs through OpenSEO and uses credits. Answers vary between runs, so a monthly repeat shows the trend better than a single check.</div>
+
+<h2>Recheck</h2>
+<div class="card">Recheck around <strong>14 December 2026</strong>. Search engines and AI tools take at least 30 days to pick up changes, so don't expect to see differences before then.</div>
+</main>
+<script>
+document.querySelectorAll('.copy button').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.nextElementSibling.textContent);b.textContent='Copied';b.classList.add('done');setTimeout(()=>{b.textContent='Copy';b.classList.remove('done')},1500)}catch(e){b.textContent='Select & copy';}}));
+</script>
+</body></html>
