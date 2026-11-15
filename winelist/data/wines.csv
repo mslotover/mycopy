@@ -1,0 +1,376 @@
+id,sort,section,group,subgroup,group_tagline,subgroup_tagline,producer,cuvee,cuvee_line2,cuvee_line3,size,region,country,vintage,abv,grapes,price,low_intervention,on_tap,source_page
+B001,1,Sparkling,France,Champagne,,,Bertrand Delespierre,Enfant de la Montagne Premier Cru Brut,,,,Champagne,France,NV,12,"Pinot Noir, Meunier, Chardonnay",96,,,4
+B002,2,Sparkling,France,Champagne,,,Laherte Frères,Blanc de Blancs Brut Nature,,,,Champagne,France,NV,12.5,Chardonnay,125,,,4
+B003,3,Sparkling,France,Champagne,,,Franck Pascal,Harmonie Blanc des Noir Extra Brut,,,,Champagne,France,2017,12,"Meunier, Pinot Noir",150,,,4
+B004,4,Sparkling,France,Champagne,,,Billecart-Salmon,Brut Sous Bois,,,,Champagne,France,NV,12,"Chardonnay, Pinot Noir, Meunier",175,,,4
+B005,5,Sparkling,France,Champagne,,,Jacques Lassaigne,Le Cotet Blanc de Blancs Extra Brut,,,,Champagne,France,NV,12,Chardonnay,190,,,4
+B006,6,Sparkling,France,Champagne,,,Legrand-Latour,"Yprésien, Brut Nature",,,,Champagne,France,NV,12,"Pinot Noir, Meunier",240,,,4
+B007,7,Sparkling,France,Champagne,,,Thomas Perseval,"La Pucelle, Rosé de Macération",,,,Champagne,France,2020,12.5,Pinot Meunier,245,,,4
+B008,8,Sparkling,France,Champagne,,,Alexandre Lamblot,Les Cochenes Brut Nature,,,,Champagne,France,2020,12,Pinot Noir,250,,,4
+B009,9,Sparkling,France,Champagne,,,Taittinger,Brut Millésimé,,,,Champagne,France,2002,12,"Pinot Noir, Chardonnay",425,,,4
+B010,10,Sparkling,France,Champagne,,,Guillaume Selosse,Largillier Extra Brut,,,,Champagne,France,NV,12,Pinot Noir,565,,,4
+B011,11,Sparkling,France,Crémant and others,,,Jules Desjourneys,Cinétique Pétillant Rosé,,,,Beaujolais,France,2023,12.5,Gamay,65,,,4
+B012,12,Sparkling,France,Crémant and others,,,Fumey-Chantelain,Crémant du Jura,,,,Jura,France,NV,12.5,Chardonnay,80,,,4
+B013,13,Sparkling,France,Crémant and others,,,Domaine du Gringet,"Ayze Mont Blanc, Brut Nature",,,,Savoie,France,2019,12.5,Gringet,90,,,4
+B014,14,Sparkling,England,,,,Candover Brook,Brut,,,,Hampshire,England,NV,12,"Chardonnay, Pinot Noir, Meunier",85,,,5
+B015,15,Sparkling,England,,,,Woodfine,Interconnections II,,,,Buckinghamshire,England,2022,11,"Chardonnay, Pinot Noir",90,Y,,5
+B016,16,Sparkling,England,,,,Charlie Herring,Promised Land,,,,Kent,England,2018,11,Riesling,120,,,5
+B017,17,Sparkling,England,,,,Hundred Hills,Blanc de Blancs,,,,Oxfordshire,England,2020,12,Chardonnay,125,,,5
+B018,18,Sparkling,England,,,,Domaine Hugo,Brut Nature,,,,Wiltshire,England,2021,11,"Chardonnay, Pinot Noir, Meunier, Pinot Gris",140,,,5
+B019,19,Sparkling,Spain and Portugal,,,,Vinícola de Nulles,Adernats Cava de Guarda Brut Nature,,,,Catalonia,Spain,NV,11.5,"Xarel-lo, Parellada, Macabeo",40,,,5
+B020,20,Sparkling,Spain and Portugal,,,,Filipa Pato,3B Blanc de Blancs Brut Nature,,,,Bairrada,Portugal,NV,11.5,"Bical, Cercial, Maria Gomes",60,,,5
+B021,21,Sparkling,Spain and Portugal,,,,Cati Ribot,Bosquet Rosado,,,,Mallorca,Spain,2025,10.5,"Escurçac, Fogoneu",65,Y,,5
+B022,22,Sparkling,Spain and Portugal,,,,Aphros,Phaunus Pét Nat Rosé,,,,Vinho Verde,Portugal,2024,10.5,"Alvarelhão, Vinhão",68,,,5
+B023,23,Sparkling,Spain and Portugal,,,,Recaredo,L’Infinit Rosat Brut Nature,,,,Catalonia,Spain,2020,12,"Xarel-lo Vermell, Garnacha",70,,,5
+B024,24,Sparkling,Spain and Portugal,,,,Raventos i Blanc,De la Finca,,,,Catalonia,Spain,2022,12,"Xarel-lo, Parellada, Macabeo",75,,,5
+B025,25,Sparkling,Spain and Portugal,,,,Sicus,Cru Marí Vermell,,,,Catalonia,Spain,2013,11.5,Xarel-lo Vermell,105,Y,,5
+B026,26,Sparkling,Spain and Portugal,,,,Recaredo,Subtil Brut Nature,,,,Catalonia,Spain,2018,12,Xarel-lo,120,,,5
+B027,27,Sparkling,Spain and Portugal,,,,Pepe Raventós,Mas del Serral,,,,Catalonia,Spain,2010,12,"Xarel-lo, Bastard Negre",275,,,5
+B028,28,Sparkling,Italy,,,,Cantina Bernardi,Prosecco Extra Dry,,,,Veneto,Italy,NV,10.5,Glera,49,,,6
+B029,29,Sparkling,Italy,,,,Camillo Donati,Ribelle Rosato,,,,Emilia-Romagna,Italy,2024,12,Barbera,52,Y,,6
+B030,30,Sparkling,Italy,,,,Longarico,All’Ombra dei Pini Metodo Classico,,,,Sicily,Italy,2022,12.5,Cataratto,80,,,6
+B031,31,Sparkling,Greece,,,,Bosiniakis,Pét-Nat Rosé,,,,Peloponnese,Greece,NV,11,Moschofilero,65,,,6
+B032,32,Sparkling,Central Europe,,,,Strekov1075,Charlotte Pét Nat,,,,Strekov,Slovakia,2023,11,Chardonnay,70,Y,,6
+B033,33,Sparkling,Central Europe,,,,Nikolaihof,Brut Nature,,,,Wachau,Austria,NV,11.5,"Chardonnay, Grüner Veltliner, Zweigelt",120,,,6
+B034,34,Sparkling,Magnum,,,,Thomas Perseval,La Pucelle Brut Nature Magnum,,,,Champagne,France,2016,12.5,"Meunier, Pinot Noir",425,,,6
+B035,35,White,Spain and Portugal,North,,"freshness, altitude, Atlantic influence",Adega de Moncão,Vinho Verde,,,,Vinho Verde,Portugal,2025,12,"Alvarinho, Trajadura",45,,,7
+B036,36,White,Spain and Portugal,North,,"freshness, altitude, Atlantic influence",Filipa Pato,Dínamica,,,,Bairrada,Portugal,2025,12,"Bical, Arinto",65,,,7
+B037,37,White,Spain and Portugal,North,,"freshness, altitude, Atlantic influence",Nanclares y Prieto,Dandelión,,,,Rías Baixas,Spain,2025,13,Albariño,70,,,7
+B038,38,White,Spain and Portugal,North,,"freshness, altitude, Atlantic influence",Verónica Ortega,La Llorona,,,,Bierzo,Spain,2024,13,Godello,90,,,7
+B039,39,White,Spain and Portugal,Central,,"structure, depth, continental climate",Abadía de Aribayos,Verdejo,,,,Castilla y León,Spain,2025,13,Verdejo,38,,Y,7
+B040,40,White,Spain and Portugal,Central,,"structure, depth, continental climate",Señorio de Librares,Rioja Blanco,,,,Rioja,Spain,2025,12,Viura,47,,,7
+B041,41,White,Spain and Portugal,Central,,"structure, depth, continental climate",Vale da Capucha,Arinto Branco,,,,Lisbon,Portugal,2019,14.5,Arinto,78,,,7
+B042,42,White,Spain and Portugal,Central,,"structure, depth, continental climate",Bodegas R. Lopez de Heredia,Gravonia Blanco Crianza,,,,Rioja,Spain,2016,12.5,Viura,85,,,7
+B043,43,White,Spain and Portugal,Central,,"structure, depth, continental climate",Esmeralda García,Michiko,,,,Rueda,Spain,2023,13.5,Verdejo,110,,,7
+B044,44,White,Spain and Portugal,Central,,"structure, depth, continental climate",Bendito Destino,Albillo Mayor,,,,Ribera del Duero,Spain,2022,12.5,Albillo Mayor,140,,,7
+B045,45,White,Spain and Portugal,Central,,"structure, depth, continental climate",Bodegas R. Lopez de Heredia,Viña Tondonia Blanco Reserva,,,,Rioja,Spain,2014,12.5,"Viura, Malvasia",175,,,7
+B046,46,White,Spain and Portugal,Central,,"structure, depth, continental climate",Bodegas R. Lopez de Heredia,Viña Tondonia Blanco Reserva,,,,Rioja,Spain,2005,12.5,"Viura, Malvasia",410,,,7
+B047,47,White,Spain and Portugal,Mediterranean,,"warmth, herbs, generosity",Mario Rovira,Tosca Cerrada,,,,Cadiz,Spain,2024,12,Palomino,46,,Y,8
+B048,48,White,Spain and Portugal,Mediterranean,,"warmth, herbs, generosity",Rafael Cambra,Soplo Blanco,,,,Valencia,Spain,2025,12,"Malvasia, Viura",48,,,8
+B049,49,White,Spain and Portugal,Mediterranean,,"warmth, herbs, generosity",Ramiro Ibañez,UBE El Reventón,,,,Andalucia,Spain,2024,11.5,Palomino,72,,,8
+B050,50,White,Spain and Portugal,Mediterranean,,"warmth, herbs, generosity",L’Enclòs de Peralba,Les Camades,,,,Penedès,Spain,2020,13,Garnacha Blanca,85,Y,,8
+B051,51,White,Spain and Portugal,Islands,,"volcanic, saline, windswept",Cati Ribot,Son Llebre Blanc,,,,Mallorca,Spain,2025,11,"Girò Ros, Malvasía de Banyalbufar, Prensal Blanc",70,,,8
+B052,52,White,Spain and Portugal,Islands,,"volcanic, saline, windswept",Ocampo,Vidueño Blanco,,,,Tenerife,Spain,2023,13,"Malvasia, Marmajuelo, Listán Blanco, Albillo Criollo",82,,,8
+B053,53,White,Spain and Portugal,Islands,,"volcanic, saline, windswept",Bodega Tamerán,Marmajuelo,,,,Gran Canaria,Spain,2024,12.5,Marmajuelo,95,,,8
+B054,54,White,Spain and Portugal,Islands,,"volcanic, saline, windswept",Bodega Todos,Blanco,,,,Gran Canaria,Spain,2024,12.5,"Listán Blanco, Vijariego",115,,,8
+B055,55,White,Spain and Portugal,Islands,,"volcanic, saline, windswept",Jable de Tao,Chupadero,,,,Lanzarote,Spain,2023,11,Listán Blanco,140,,,8
+B056,56,White,Spain and Portugal,Islands,,"volcanic, saline, windswept",Suerte del Marqués,Vidonia VP,,,,Tenerife,Spain,2023,12.5,Listán Blanco,170,,,8
+B057,57,White,France,Loire,,"freshness, tension, river light",Domaine Batard Langelier,Château Thébaud,,,,Loire,France,2019,12,Melon de Bourgogne,65,,,9
+B058,58,White,France,Loire,,"freshness, tension, river light",Domaine de Bellivière,Prémices Jasnières,,,,Loire,France,2023,13,Chenin Blanc,70,,,9
+B059,59,White,France,Loire,,"freshness, tension, river light",Domaine de Cocagne,"Chenin, Quoi de Plus?",Touraine Azay-le-Rideau,,,Loire,France,2024,12,Chenin Blanc,72,Y,,9
+B060,60,White,France,Loire,,"freshness, tension, river light",Gerard Fiou,Sancerre,,,,Loire,France,2023,13,Sauvignon Blanc,75,,,9
+B061,61,White,France,Loire,,"freshness, tension, river light",Domaine Guillerault-Fargette,Sancerre Les Panseillots,,,,Loire,France,2023,13,Sauvignon Blanc,85,,,9
+B062,62,White,France,Loire,,"freshness, tension, river light",Pierre Menard,Pluton,,,,Loire,France,2022,14.5,Chenin Blanc,145,,,9
+B063,63,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Coteaux des Margots,Macôn-Pierreclos La Pie Côl,,,,Burgundy,France,2024,13,Chardonnay,65,,,9
+B064,64,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Goisot,Bourgogne Aligoté,,,,Burgundy,France,2025,12.5,Aligoté,70,,,9
+B065,65,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Goisot,Saint-Bris Exogyra Virgula,,,,Burgundy,France,2023,13,Sauvignon Blanc,72,,,9
+B066,66,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Garnier & Fils,Petit Chablis,,,,Burgundy,France,2023,12.5,Chardonnay,75,,,9
+B067,67,White,France,Burgundy,,"purity, texture, quiet depth",Fanny Sabre,Anatole Blanc,,,,Burgundy,France,2025,12.5,"Chardonnay, Aligoté",78,,,9
+B068,68,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Daniel Barraud,Pouilly-Fuissé Alliance Vieilles Vignes,,,,Burgundy,France,2023,13.5,Chardonnay,80,,,9
+B069,69,White,France,Burgundy,,"purity, texture, quiet depth",Obora,Blanc-O,,,,Beaujolais,France,2024,,Chardonnay,88,,,9
+B070,70,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Duvert,Saint-Verán,,,,Burgundy,France,2024,13,Chardonnay,90,,,10
+B071,71,White,France,Burgundy,,"purity, texture, quiet depth",Aline Beauné,Montagny,,,,Burgundy,France,2023,13,Chardonnay,92,,,10
+B072,72,White,France,Burgundy,,"purity, texture, quiet depth",Jules Desjourneys,Omar VdF,,,,Beaujolais,France,2021,12,Viognier,98,,,10
+B073,73,White,France,Burgundy,,"purity, texture, quiet depth",Emmanuel Giboulot,Bourgogne Blanc,,,,Burgundy,France,2022,12.5,Pinot Beurrot,100,,,10
+B074,74,White,France,Burgundy,,"purity, texture, quiet depth",Jules Desjourneys,Pataphysique Blanc,,,,Beaujolais,France,2022,12,Chardonnay,102,,,10
+B075,75,White,France,Burgundy,,"purity, texture, quiet depth",AMI,Bourgogne Blanc La Tête dans les Nuages,,,,Burgundy,France,2023,12,Chardonnay,105,,,10
+B076,76,White,France,Burgundy,,"purity, texture, quiet depth",Jules Desjourneys,Mâcon-Verzé,,,,Burgundy,France,2021,12,Chardonnay,110,,,10
+B077,77,White,France,Burgundy,,"purity, texture, quiet depth",Yann Durieux,Love and Pif,,,,Burgundy,France,2021,10.5,Aligoté,120,Y,,10
+B078,78,White,France,Burgundy,,"purity, texture, quiet depth",De Moor,Chablis L’Humeur du Temps,,,,Burgundy,France,2023,13,Chardonnay,122,,,10
+B079,79,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Vocoret,Chablis Boucheran,,,,Burgundy,France,2021,12.5,Chardonnay,125,,,10
+B080,80,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Roulot,Bourgogne Aligoté,,,,Burgundy,France,2023,12,Aligoté,128,,,10
+B081,81,White,France,Burgundy,,"purity, texture, quiet depth",Simon Faure,Saint Verán,,,,Burgundy,France,2024,12,Chardonnay,129,,,10
+B082,82,White,France,Burgundy,,"purity, texture, quiet depth",Sylvain Pataille,Bourgogne Aligoté Les Champ Forey,,,,Burgundy,France,2021,12.5,Aligoté,130,,,10
+B083,83,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Hubert et Olivier Lamy,Bourgogne Blanc Les Chataigners,,,,Burgundy,France,2023,13,Chardonnay,132,,,10
+B084,84,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Coffinet-Duvernay,Chassagne-Montrachet,,,,Burgundy,France,2023,13.5,Chardonnay,175,,,10
+B085,85,White,France,Burgundy,,"purity, texture, quiet depth",Jules Desjourneys,Pouilly-Fuissé Vignes de la Côte,,,,Burgundy,France,2021,12,Chardonnay,178,,,11
+B086,86,White,France,Burgundy,,"purity, texture, quiet depth",Maison Valette,Pouilly-Fuissé,,,,Burgundy,France,NV,14.5,Chardonnay,180,,,11
+B087,87,White,France,Burgundy,,"purity, texture, quiet depth",De Moor,Chablis Premier Cru Montmilieu,,,,Burgundy,France,2023,13,Chardonnay,195,,,11
+B088,88,White,France,Burgundy,,"purity, texture, quiet depth",Château de Béru,Chablis Clos Béru Monopole,,,,Burgundy,France,2020,12.5,Chardonnay,220,,,11
+B089,89,White,France,Burgundy,,"purity, texture, quiet depth",Alex Moreau,Mersault Les Clous,,,,Burgundy,France,2023,13,Chardonnay,250,,,11
+B090,90,White,France,Burgundy,,"purity, texture, quiet depth",Guffens-Heynen,Saint-Véran,,,,Burgundy,France,2023,13.5,Chardonnay,255,,,11
+B091,91,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Matrot,Puligny-Montrachet 1er Cru La Garenne,,,,Burgundy,France,2023,13.5,Chardonnay,260,,,11
+B092,92,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Hubert et Olivier Lamy,Chassagne-Montrachet,Le Concis du Champs,,,Burgundy,France,2022,13,Chardonnay,310,,,11
+B093,93,White,France,Burgundy,,"purity, texture, quiet depth",Philippe Pacalet,Meursault,,,,Burgundy,France,2022,13.5,Chardonnay,315,,,11
+B094,94,White,France,Burgundy,,"purity, texture, quiet depth",Domaine Hubert et Olivier Lamy,Saint-Aubin 1er Cru En Remilly,,,,Burgundy,France,2022,13,Chardonnay,320,,,11
+B095,95,White,France,Burgundy,,"purity, texture, quiet depth",Benoit Moreau,Chassagne-Montrachet Les Charrieres,,,,Burgundy,France,2023,13,Chardonnay,350,,,11
+B096,96,White,France,Burgundy,,"purity, texture, quiet depth",Benoit Moreau,Chassagne-Montrachet 1er Cru,Les Champs Gain,,,Burgundy,France,2023,13,Chardonnay,375,,,11
+B097,97,White,France,Rhône,,"sun, spice, generosity",Domaine de Lorient,Saint-Péray,,,,Rhône,France,2023,13,"Roussanne, Marsanne",92,,,11
+B098,98,White,France,Alsace,,"aromatics, texture, precision",Domaine Léon Boesch,Le Coq,,,,Alsace,France,2024,12.5,Pinot Gris,68,,,12
+B099,99,White,France,Alsace,,"aromatics, texture, precision",Domaine Pierre Frick,Chasselas Pur Vin sans sulfite ajouté,,,,Alsace,France,2023,12,Chasselas,85,Y,,12
+B100,100,White,France,Alsace,,"aromatics, texture, precision",Josmeyer,Le Kottabe Riesling,,,,Alsace,France,2023,12.5,Riesling,92,,,12
+B101,101,White,France,Alsace,,"aromatics, texture, precision",Domaine Christian Binner,Schlossberg Grand Cru,,,,Alsace,France,2019,14,Riesling,135,,,12
+B102,102,White,France,Jura & Savoie,,"alpine energy, wild edges",Jean-Luc Mouillard,Bas de la Chaux,,,,Jura,France,2023,13.5,Chardonnay,68,,,12
+B103,103,White,France,Jura & Savoie,,"alpine energy, wild edges",Domaine des Marnes Blanches,En Quatre Vis,,,,Jura,France,2022,13,Savagnin,95,,,12
+B104,104,White,France,Jura & Savoie,,"alpine energy, wild edges",O2Y,L’Embeille,,,,Jura,France,NV,12.9,Savagnin,115,Y,,12
+B105,105,White,France,Jura & Savoie,,"alpine energy, wild edges",Zeroine,Ju Cha,,,,Jura,France,NV,13,Chardonnay,150,Y,,12
+B106,106,White,France,Jura & Savoie,,"alpine energy, wild edges",Tony Bornard,Les Marnes,,,,Jura,France,2018,13.5,Savagnin,165,Y,,12
+B107,107,White,France,Jura & Savoie,,"alpine energy, wild edges",Jean-François Ganevat,La Prairie du Haut,,,,Jura,France,2021,13.5,Savagnin Rosé,168,Y,,12
+B108,108,White,France,Jura & Savoie,,"alpine energy, wild edges",Domaine Labet,Le Montceau,,,,Jura,France,2020,14.1,Chardonnay,170,Y,,12
+B109,109,White,France,Jura & Savoie,,"alpine energy, wild edges",Anne & Jean-François Ganevat,VdF L’eau d’Range,,,,Jura,France,NV,13.5,"Chardonnay, Savagnin",175,,,12
+B110,110,White,France,Jura & Savoie,,"alpine energy, wild edges",François Rousset Martin,Mes 6 Terroirs,,,,Jura,France,2021,13.5,Chardonnay,190,,,12
+B111,111,White,France,Jura & Savoie,,"alpine energy, wild edges",François Rousset Martin,Vigne aux Dames,,,,Jura,France,2022,13.5,Savagnin,195,,,12
+B112,112,White,France,Jura & Savoie,,"alpine energy, wild edges",Domaine Labet,Savagnin en Chalasse Les Insolites,,,,Jura,France,2019,13.5,Savagnin,220,Y,,13
+B113,113,White,France,Jura & Savoie,,"alpine energy, wild edges",Anne & Jean-François Ganevat,Les Varrons Vielles Vignes,,,,Jura,France,2020,12,Chardonnay,230,,,13
+B114,114,White,France,Jura & Savoie,,"alpine energy, wild edges",Jean-François Ganevat,Blanc Survivants,,,,Jura,France,2021,13,Chardonnay,245,,,13
+B115,115,White,France,Jura & Savoie,,"alpine energy, wild edges",François Rousset Martin,Oxy-More,,,,Jura,France,2020,13.5,Chardonnay,248,Y,,13
+B116,116,White,France,Jura & Savoie,,"alpine energy, wild edges",Jean-François Ganevat,Les Grands Teppes Vieilles Vignes,,,,Jura,France,2020,13,Chardonnay,350,,,13
+B117,117,White,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs, sun",Château La Dournie,Dansons sur la Rive,,,,Saint-Chinian,France,2024,12,"Roussanne, Vermentino, Viognier",50,,,13
+B118,118,White,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs, sun",La Mariota,Roc de la Vella,,,,Roussillon,France,2022,12.5,"Macabeu, Roussanne",86,,,13
+B119,119,White,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Château Pesquié,Le Paradou,,,,Provence,France,2025,13,Viognier,45,,,13
+B120,120,White,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Toklas White,Edition I,,,,Provence,France,2025,13,Vermentino,55,,,13
+B121,121,White,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Antoine Arena,Carco,,,,Corsica,France,2022,13,Vermentino,98,,,13
+B122,122,White,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Domaine Comte Abbatucci,Diplomate d’Empire,,,,Corsica,France,2018,13,"Vermentino, Brustiano, Bianco Gentile, Genovese, Rossola Bianca",195,,,13
+B123,123,White,Italy,North,,"elegance, alpine freshness, precision",Monban,Questo non É,,,,Veneto,Italy,2025,11,Glera,65,,,14
+B124,124,White,Italy,North,,"elegance, alpine freshness, precision",Monteforche,Carantina,,,,Veneto,Italy,2024,11,Garganega,70,,,14
+B125,125,White,Italy,North,,"elegance, alpine freshness, precision",Pieropan,Soave Classico Calvarino,,,,Veneto,Italy,2023,12.5,"Garganega, Trebbiano di Soave",75,,,14
+B126,126,White,Italy,North,,"elegance, alpine freshness, precision",Pranzegg,Caroline,,,,Trentino-Alto Adige,Italy,2019,12.5,"Chardonnay, Viognier, Manzoni Bianco",98,,,14
+B127,127,White,Italy,Central,,"balance, tradition, quiet power",Fattoria San Lorenzo,Campo delle Oche 36 Mesi,,,,Marche,Italy,2021,15,Verdicchio,70,,,14
+B128,128,White,Italy,Central,,"balance, tradition, quiet power",Le Coste,Bianco,,,,Lazio,Italy,2022,12.5,Procanico,78,Y,,14
+B129,129,White,Italy,Central,,"balance, tradition, quiet power",Amorotti,Trebbiano d’Abruzzo,,,,Abruzzo,Italy,2023,13,Trebbiano,90,,,14
+B130,130,White,Italy,Central,,"balance, tradition, quiet power",Emidio Pepe,Trebbiano d’Abruzzo,,,,Abruzzo,Italy,2022,12,Trebbiano,200,,,14
+B131,131,White,Italy,Central,,"balance, tradition, quiet power",Emidio Pepe,Pecorino,,,,Abruzzo,Italy,2022,13,Pecorino,250,,,14
+B132,132,White,Italy,Central,,"balance, tradition, quiet power",Emidio Pepe,Trebbiano d’Abruzzo,,,,Abruzzo,Italy,2004,13,Trebbiano,550,,,14
+B133,133,White,Italy,South & Islands,,"sun, depth, volcanic energy",Marchesi di Pianogrillo,Flâneur,,,,Sicily,Italy,2024,12.5,Grillo,56,,,14
+B134,134,White,Italy,South & Islands,,"sun, depth, volcanic energy",Pusole,Bianco,,,,Sardinia,Italy,2024,12.5,Vermentino,63,,,14
+B135,135,White,Italy,South & Islands,,"sun, depth, volcanic energy",COS,Zibibbo in Pithos,,,,Sicily,Italy,2023,12,Zibibbo,75,,,14
+B136,136,White,Italy,South & Islands,,"sun, depth, volcanic energy",Alessandro Viola,Le Mie Origini,,,,Sicily,Italy,2023,11,Catarratto,82,,,15
+B137,137,White,Italy,South & Islands,,"sun, depth, volcanic energy",Tanca Nica,Soki Soki Pantelleria,,,,Sicily,Italy,2024,12.5,Zibibbo,115,,,15
+B138,138,White,Italy,South & Islands,,"sun, depth, volcanic energy",Masseria del Pino,Caravan Petrol,,,,Sicily,Italy,2022,13.5,"Carricante, Minella, Catarratto",125,Y,,15
+B139,139,White,Italy,South & Islands,,"sun, depth, volcanic energy",Albarelli di Giodo,Etna Carricante,,,,Sicily,Italy,2022,13,Carricante,148,,,15
+B140,140,White,Italy,South & Islands,,"sun, depth, volcanic energy",Baracco,Alto Grado Grillo,,,,Sicily,Italy,2016,15,Grillo,160,Y,,15
+B141,141,White,Italy,South & Islands,,"sun, depth, volcanic energy",Gabrio & Giotto Bini,Serragghia Zibibbo,,,,Sicily,Italy,2023,12.5,Zibibbo,190,Y,,15
+B142,142,White,Greece,,"salt, sun, texture",,Mylonas,Cuvée Vouno Late Release,,,,Attica,Greece,2021,12.5,Savatiano,55,,,15
+B143,143,White,Greece,,"salt, sun, texture",,Tetramythos,Roditis Natur,,,,Peloponnese,Greece,2025,13,Roditis,58,Y,,15
+B144,144,White,Greece,,"salt, sun, texture",,Rouvalis,Lagorthi,,,,Peloponnese,Greece,2022,11,Lagorthi,75,,,15
+B145,145,White,Greece,,"salt, sun, texture",,Myrsini,Amos,,,,Paros,Greece,2024,13,Assyrtiko,78,,,15
+B146,146,White,Greece,,"salt, sun, texture",,Rouvalis,Single Vinyard Roditis,,,,Peloponnese,Greece,2024,12,Roditis,80,,,15
+B147,147,White,Greece,,"salt, sun, texture",,Vassaltis,Santorini Assyrtiko,,,,Santorini,Greece,2018,13.5,Assyrtiko,165,,,15
+B148,148,White,Greece,,"salt, sun, texture",,Vassaltis,Plethora,,,,Santorini,Greece,2020,14,Assyrtiko,350,,,15
+B149,149,White,Central Europe,,"purity, acidity, quiet precision",,Sybille Kuntz,Riesling Trocken,,,,Mosel,Germany,2023,12,Riesling,65,,,16
+B150,150,White,Central Europe,,"purity, acidity, quiet precision",,Melsheimer,Riesling Trocken,,,,Mosel,Germany,2023,11.5,Riesling,68,,,16
+B151,151,White,Central Europe,,"purity, acidity, quiet precision",,Zillinger,Neuland,,,,Kamptal,Austria,2024,12,Grüner Veltliner,68,,,16
+B152,152,White,Central Europe,,"purity, acidity, quiet precision",,Weingut Wittmann,Riesling Trocken,,,,Rheinhessen,Germany,2024,11.5,Riesling,70,,,16
+B153,153,White,Central Europe,,"purity, acidity, quiet precision",,Michael Gindl,Flora,,,,Weinviertel,Austria,2024,11.5,"Riesling, Scheurebe, Gelber Muskateller",72,,,16
+B154,154,White,Central Europe,,"purity, acidity, quiet precision",,Bott Frigyes,Furmint,,,,Garam Valley,Slovakia,2023,13,Furmint,75,Y,,16
+B155,155,White,Central Europe,,"purity, acidity, quiet precision",,Maximin Grünhaus,Grünhäuser Riesling Trocken,,,,Mosel,Germany,2023,12,Riesling,80,,,16
+B156,156,White,Central Europe,,"purity, acidity, quiet precision",,Milan Nestarec,Vesper,,,,Moravia,Czechia,2022,13,Grüner Veltliner,85,,,16
+B157,157,White,Central Europe,,"purity, acidity, quiet precision",,Saalwächter,Weissburgunder Alte Reben,,,,Rheinhessen,Germany,2023,12,Weissburgunder,94,,,16
+B158,158,White,Central Europe,,"purity, acidity, quiet precision",,Gut Oggau,Theodora,,,,Burgenland,Austria,2022,11.5,Grüner Veltliner,106,Y,,16
+B159,159,White,Central Europe,,"purity, acidity, quiet precision",,Grabenwerkstatt,Ried Brandstatt,,,,Wachau,Austria,2022,13.5,Grüner Veltliner,140,,,16
+B160,160,White,Central Europe,,"purity, acidity, quiet precision",,Christian Tschida,All the love of the Universe,,,,Burgenland,Austria,2023,11.5,Pinot Blanc,145,Y,,16
+B161,161,White,England,,"precision, chalk, cool climate",,Sugrue,Bonkers Chardonnay V2,,,,West Sussex,England,NV,1,Chardonnay,75,Y,,16
+B162,162,White,England,,"precision, chalk, cool climate",,Walgate,Cuvée M,,,,Sussex,England,2022,11,"Müller-Thurgau, Ortega",92,Y,,16
+B163,163,White,Further Afield,North America,"fresh perspectives, evolving regions",,Leo Steen,The Steen Jurassic Park Vineyard,,,,California,USA,2021,12,Chenin Blanc,93,,,17
+B164,164,White,Further Afield,North America,"fresh perspectives, evolving regions",,Pax Mahle,Lyman Ranch Chenin Blanc,,,,California,USA,2021,12.5,Chenin Blanc,115,,,17
+B165,165,White,Further Afield,North America,"fresh perspectives, evolving regions",,Evening Land,La Source Chardonnay,,,,Oregon,USA,2022,13.2,Chardonnay,150,,,17
+B166,166,White,Further Afield,South America,"fresh perspectives, evolving regions",,Zuccardi,Poligonos Tupungato Semillón,,,,Mendoza,Argentina,2023,13,Semillón,80,,,17
+B167,167,White,Further Afield,South America,"fresh perspectives, evolving regions",,Otronia,45 Rugientes Corte de Blanca,,,,Chubut,Argentina,2021,13,"Chardonnay, Gewürztraminer, Pinot Gris, Riesling",85,,,17
+B168,168,White,Further Afield,South America,"fresh perspectives, evolving regions",,Ventisquero,Tara Chardonnay,,,,Atacama,Chile,2022,13,Chardonnay,91,,,17
+B169,169,White,Further Afield,South America,"fresh perspectives, evolving regions",,Zuccardi,Botánico Gualtallary,,,,Mendoza,Argentina,2021,13,Chardonnay,150,,,17
+B170,170,White,Further Afield,South Africa,"fresh perspectives, evolving regions",,Craven,Yellowbelly,,,,Stellenbosch,South Africa,2024,12,Chenin Blanc,55,,Y,17
+B171,171,White,Further Afield,South Africa,"fresh perspectives, evolving regions",,Vino Ph,Palomino,,,,Swartland,South Africa,2024,12,Palomino,65,,,17
+B172,172,White,Further Afield,South Africa,"fresh perspectives, evolving regions",,Momento,Chenin Blanc Verdelho,,,,Western Cape,South Africa,2022,13,"Chenin Blanc, Verdelho",78,,,17
+B173,173,White,Further Afield,Australia,"fresh perspectives, evolving regions",,S.C. Pannell,Protero Aromatico,,,,Adelaide Hills,Australia,2023,13.5,"Gewürztraminer, Riesling, Sauvignon Blanc",62,,,17
+B174,174,White,Further Afield,New Zealand,"fresh perspectives, evolving regions",,Selection Massale,Sauvignon Blanc,,,,Marlborough,New Zealand,2024,12.5,Sauvignon Blanc,42,,,18
+B175,175,White,Further Afield,New Zealand,"fresh perspectives, evolving regions",,Sato,La Ferme de Sato Schisteaux,,,,Central Otago,New Zealand,2022,14,Chenin Blanc,100,,,18
+B176,176,White,Magnum,,,,De Moor,Bourgogne Aligoté,,,,Burgundy,France,NV,12,Aligoté,150,,,18
+B177,177,White,Magnum,,,,Selvadolce,Pigato Rucantu,,,,Liguria,Italy,2017,14,Pigato,250,,,18
+B178,178,White,Magnum,,,,Domaine Nathalie & Gilles Fèvre,Chablis 1er Cru Vaulorent,,,,Burgundy,France,2010,12.5,Chardonnay,300,,,18
+B179,179,White,Magnum,,,,Domaine Josmeyer,Le Dragon,,,,Alsace,France,2014,12.5,Riesling,350,,,18
+B180,180,White,Magnum,,,,Christian Tschida,All the love of the Universe,,,,Burgenland,Austria,2022,12,Pinot Blanc,415,Y,,18
+B181,181,Skin Contact,White Skins,,,,Les Vins Pirouettes,L’Ecole,,,,Alsace,France,2025,12.1,"Gewürztraminer, Muscat",50,Y,Y,19
+B182,182,Skin Contact,White Skins,,,,Bosco Sant’Agnese,Covante,,,,Campania,Italy,2023,12.5,Coda di Volpe,55,,,19
+B183,183,Skin Contact,White Skins,,,,COS,Ramí Bianco,,,,Sicily,Italy,2023,12,"Grecanico, Inzolia",62,,,19
+B184,184,Skin Contact,White Skins,,,,Alfredo Maestro,Lovamor,,,,Castilla y León,Spain,2023,11.5,Albillo Mayor,65,,,19
+B185,185,Skin Contact,White Skins,,,,Andrej Kristančič,Nando Rebula,,,,Primorska,Slovenia,2022,12.5,Rebula (Ribolla Gialla),65,,,19
+B186,186,Skin Contact,White Skins,,,,Gogo Wine,Ti Sogno Bene,,,,Kakheti,Georgia,2024,12,Rkatsiteli,75,Y,,19
+B187,187,Skin Contact,White Skins,,,,Les Enfant Sauvage,Bouche de Soleil,,,,Roussillon,France,2024,12.5,Muscat,78,,,19
+B188,188,Skin Contact,White Skins,,,,Heinrich,Graue Freyheit,,,,Burgenland,Austria,2021,12.5,"Weissburgunder, Grauer Burgunder, Chardonnay, Neuburger",100,Y,,19
+B189,189,Skin Contact,White Skins,,,,Radikon,Sivi,,,,Friuli,Italy,2021,14.5,Pinot Grigio,110,Y,,19
+B190,190,Skin Contact,White Skins,,,,Château Lafitte,Orange,,,500ml,Jurançon,France,2020,13,Petit Manseng,140,Y,,19
+B191,191,Skin Contact,White Skins,,,,Cascina Lieto,Sensazione,,,,Piedmont,Italy,2022,14,"Moscato, Cortese",145,Y,,19
+B192,192,Rosé,,,,,Famille Chaudière,Le Paradou,,,,Provence,France,2024,12.5,Cinsault,45,,Y,20
+B193,193,Rosé,,,,,Zudugarai,Antxiola Rosado,,,,País Vasco,Spain,2025,11,"Hondarrabi Beltza, Hondarrabi Zuri",45,,,20
+B194,194,Rosé,,,,,Toklas Rosé,Edition I,,,,Provence,France,2024,13,"Grenache, Cinsault",55,,,20
+B195,195,Rosé,,,,,Alessandro Viola,Rosé,,,,Sicily,Italy,2024,13.5,"Nero d’Avola, Nerello Mascalese",58,Y,,20
+B196,196,Rosé,,,,,Can Sumoi,La Rosa,,,,Penedes,Spain,2025,12,"Xarel.lo, Sumoll",65,,,20
+B197,197,Rosé,,,,,Amorotti,Cerasuolo d’Abruzzo,,,,Abruzzo,Italy,2022,14.5,Montepulciano,83,,,20
+B198,198,Rosé,,,,,Gustinella,Jungimmune Rosato,,,,Sicily,Italy,2024,13,"Nero d’Avola, Nerello Mascalese",85,Y,,20
+B199,199,Rosé,,,,,Château Sainte Anne,Bandol,,,,Provence,France,2022,13,"Mourvèdre, Grenache, Cinsault",86,,,20
+B200,200,Rosé,,,,,Gut Oggau,Winifred,,,,Burgenland,Austria,2023,11,"Blaufränkisch, Zweigelt",89,Y,,20
+B201,201,Rosé,,,,,Gabrio & Giotto Bini,Serragghia Fanino,,,,Sicily,Italy,2023,13.5,"Catarratto, Pignatello",190,Y,,20
+B202,202,Red,Spain & Portugal,North,,"freshness, altitude, Atlantic influence",Niepoort,Drink me,,,,Duoro,Portugal,2022,12.5,"Touriga Franca, Touriga Nacional, Tinta Roriz, Tinta Amarela",50,,,21
+B203,203,Red,Spain & Portugal,North,,"freshness, altitude, Atlantic influence",Albamar,Capitán Xurelo,,,,Rías Baixas,Spain,2022,12.5,"Mencía, Caiño, Espadeiro",68,,,21
+B204,204,Red,Spain & Portugal,North,,"freshness, altitude, Atlantic influence",Rodrigo Mendez,O Raio da Vella,,,,Rías Baixas,Spain,2022,12.5,Caiño,85,,,21
+B205,205,Red,Spain & Portugal,North,,"freshness, altitude, Atlantic influence",Filipa Pato,Nossa Calcário,,,,Bairrada,Portugal,2023,12.5,Baga,102,,,21
+B206,206,Red,Spain & Portugal,North,,"freshness, altitude, Atlantic influence",Forjas del Salnés,Goliardo Tintos de Mar,,,,Rías Baixas,Spain,2018,12.5,Caiño,108,,,21
+B207,207,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Vinícola Corellana,Reverte Abrazos,,,,Navarra,Spain,2024,13.5,Garnacha,42,,,21
+B208,208,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Viña Zorzal,Sea of Dreams,,,,Navarra,Spain,2024,13,Garnacha,55,,,21
+B209,209,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Vinícola La Calera,Pico del Castro,,,,Ribera del Duero,Spain,2023,14.5,Tempranillo,60,,,21
+B210,210,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Comando G,La Bruja de Rozas,,,,Sierra de Gredos,Spain,2023,14,Garnacha,70,,,21
+B211,211,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Remelluri,Lindes de Remelluri San Vicente,,,,Rioja,Spain,2021,13.5,"Tempranillo, Graciano, Garnacha",75,,,21
+B212,212,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Vitícola Mentridiana,Las Uvas de la Ira,,,,Sierra de Gredos,Spain,2022,14.5,Garnacha,78,,,21
+B213,213,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Bodegas R. Lopez Heredia,Viña Cubillo Crianza,,,,Rioja,Spain,2018,13.5,"Tempranillo, Garnacha, Graciano, Mazuelo",80,,,21
+B214,214,Red,Spain & Portugal,Central,,"structure, depth, continental climate",El Reventón,La Reina,,,,Sierra de Gredos,Spain,2023,13.5,Garnacha,80,,,21
+B215,215,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Comando G,Navatalgordo,,,,Sierra de Gredos,Spain,2023,14,Garnacha,108,,,22
+B216,216,Red,Spain & Portugal,Central,,"structure, depth, continental climate",El Reventón,La Reina Cru Artesano,,,,Sierra de Gredos,Spain,2023,14.5,Garnacha,120,,,22
+B217,217,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Bodegas R. Lopez Heredia,Viña Tondonia Tinto Reserva,,,,Rioja,Spain,2013,13.5,"Tempranillo, Garnacha, Graciano, Mazuelo",140,,,22
+B218,218,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Contino,Gran Reserva,,,,Rioja,Spain,2014,13.5,"Tempranillo, Graciano, Mazuelo, Garnacha",160,,,22
+B219,219,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Comando G,Las Umbrias,,,,Sierra de Gredos,Spain,2023,14.5,Garnacha,365,,,22
+B220,220,Red,Spain & Portugal,Central,,"structure, depth, continental climate",Lopez de Heredia,Tondonia Tinto Reserva,,,,Rioja,Spain,2004,14.5,Tempranillo,425,,,22
+B221,221,Red,Spain & Portugal,Mediterranean,,"warmth, herbs, generosity",Atance,Bobal,,,,Valencia,Spain,2022,13.5,Bobal,45,,,22
+B222,222,Red,Spain & Portugal,Mediterranean,,"warmth, herbs, generosity",Casa Castillo,Monastrell,,,,Jumilla,Spain,2023,14.5,Monastrell,58,,,22
+B223,223,Red,Spain & Portugal,Mediterranean,,"warmth, herbs, generosity",Can Sumoi,Garnatxa Sumoll,,,,Penedès,Spain,2023,13,"Garnacha, Sumoll",70,,,22
+B224,224,Red,Spain & Portugal,Mediterranean,,"warmth, herbs, generosity",Nin Ortiz,Planetes Clàssic,,,,Priorat,Spain,2022,13.5,"Garnacha, Carignan",110,,,22
+B225,225,Red,Spain & Portugal,Mediterranean,,"warmth, herbs, generosity",Els Jelipins,Vi de Taula,,,,Catalonia,Spain,2020,14,"Sumoll, Garnacha",200,Y,,22
+B226,226,Red,Spain & Portugal,Islands,,"volcanic, saline, windswept",Cati Ribot,Son Llebre Negre,,,,Mallorca,Spain,2024,11.5,"Callet Negrella, Callet Vinater, Escursac, Esperó de Gall, Giró Negre",70,Y,,22
+B227,227,Red,Spain & Portugal,Islands,,"volcanic, saline, windswept",Bodega Todos,Tinto,,,,Gran Canaria,Spain,2022,12.5,Listán Negro,80,,,22
+B228,228,Red,Spain & Portugal,Islands,,"volcanic, saline, windswept",Soca-Rel,Escursac,,,,Mallorca,Spain,2022,12.5,Escurçac,85,,,22
+B229,229,Red,France,Loire,,"freshness, tension, river light",Château Yvonne,Saumur Champigny La Folie,,,,Loire,France,2023,12.5,Cabernet Franc,65,,,23
+B230,230,Red,France,Loire,,"freshness, tension, river light",Florent Thinon,Côte Roannaise Le Rouge,,,,Loire,France,2024,12.5,Gamay Saint-Romain,68,,,23
+B231,231,Red,France,Loire,,"freshness, tension, river light",Emmanuel Haget,Palabres,,,,Loire,France,2024,10.5,Pineau d’Aunis,72,,,23
+B232,232,Red,France,Loire,,"freshness, tension, river light",Domaine de L’Ecu,Mephisto,,,,Loire,France,2020,12.5,Cabernet Franc,110,,,23
+B233,233,Red,France,Loire,,"freshness, tension, river light",Domaine Andrée,Carbone,,,,Loire,France,2019,12.5,Cabernet Franc,120,,,23
+B234,234,Red,France,Loire,,"freshness, tension, river light",Sylvain Dittiere,Les Corniers,,,,Loire,France,2021,11.5,Cabernet Franc,180,,,23
+B235,235,Red,France,Burgundy,,"purity, texture, quiet depth",Château Thivin,Côte de Brouilly Les sept vignes,,,,Beaujolais,France,2024,13,Gamay,70,,,23
+B236,236,Red,France,Burgundy,,"purity, texture, quiet depth",Cypriene Arlaud,Bourgogne OKA,,,,Burgundy,France,2021,12.5,Pinot Noir,74,,,23
+B237,237,Red,France,Burgundy,,"purity, texture, quiet depth",Marcel Lapierre,Morgon,,,,Beaujolais,France,2024,12.5,Gamay,84,,,23
+B238,238,Red,France,Burgundy,,"purity, texture, quiet depth",Sylvain Pataille,Bourgogne Rouge,,,,Burgundy,France,2023,12.5,Pinot Noir,85,,,23
+B239,239,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Chamonard,Fleurie La Madone,,,,Beaujolais,France,2020,13.5,Gamay,89,,,23
+B240,240,Red,France,Burgundy,,"purity, texture, quiet depth",Vin Noé,Amour Vache,,,,Beaujolais,France,2023,12.5,"Gamay, Aligoté",90,Y,,23
+B241,241,Red,France,Burgundy,,"purity, texture, quiet depth",Thierry Mortet,Bourgogne Côte d’Or,,,,Burgundy,France,2023,13.5,Pinot Noir,95,,,23
+B242,242,Red,France,Burgundy,,"purity, texture, quiet depth",Maison Deux Montille,Bourgogne Rouge,,,,Burgundy,France,2017,12.5,Pinot Noir,98,,,23
+B243,243,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Naudin-Ferrand,Haute Cotes de Beaune Orchis Mascula,,,,Burgundy,France,2023,12,Pinot Noir,120,,,24
+B244,244,Red,France,Burgundy,,"purity, texture, quiet depth",AMI,Maranges 1er Cru Les Clos Roussots,,,,Burgundy,France,2023,12,Pinot Noir,130,,,24
+B245,245,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Agnès Paquet,Pommard Les Combres,,,,Burgundy,France,2018,13,Pinot Noir,135,,,24
+B246,246,Red,France,Burgundy,,"purity, texture, quiet depth",Maison Réno,Mercurey,,,,Burgundy,France,2023,12,Pinot Noir,138,,,24
+B247,247,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Naudin-Ferrand,Haute Cotes du Nuits Myosotis Avernsis,,,,Burgundy,France,2023,12,Pinot Noir,140,,,24
+B248,248,Red,France,Burgundy,,"purity, texture, quiet depth",Jules Desjourneys,Moulin á Vent Styx,,,,Beaujolais,France,2020,12.5,Gamay,145,,,24
+B249,249,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Rapet Père et Fils,Beaune 1er Cru Grèves,,,,Burgundy,France,2012,13,Pinot Noir,150,,,24
+B250,250,Red,France,Burgundy,,"purity, texture, quiet depth",Jules Desjourneys,Chénas Le Jugement Dernier,,,,Beaujolais,France,2016,12.5,Gamay,155,,,24
+B251,251,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Stéphane Magnien,Morey-Saint-Denis 1er Cru,Cuvée Aux Petites Noix,,,Burgundy,France,2017,13,Pinot Noir,165,,,24
+B252,252,Red,France,Burgundy,,"purity, texture, quiet depth",Henri Gouges,Nuits-Saint-Georges,Clos de la Fontaine Jacquinot,,,Burgundy,France,2018,13.5,Pinot Noir,175,,,24
+B253,253,Red,France,Burgundy,,"purity, texture, quiet depth",A & Arlaud,Vosne-Romanée,,,,Burgundy,France,2017,13,Pinot Noir,178,,,24
+B254,254,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Joseph Drouhin,Beaune 1er Cru Cras,,,,Burgundy,France,2019,14,Pinot Noir,190,,,24
+B255,255,Red,France,Burgundy,,"purity, texture, quiet depth",Confuron-Cotetidot,Vosne-Romanée,,,,Burgundy,France,2007,12.5,Pinot Noir,220,,,24
+B256,256,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Taupenot-Merme,Morey-Saint-Denis 1er Cru La Riotte,,,,Burgundy,France,2015,13.5,Pinot Noir,250,,,24
+B257,257,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Prieure Roch,VdF,,,,Burgundy,France,2023,13,Pinot Noir,275,,,24
+B258,258,Red,France,Burgundy,,"purity, texture, quiet depth",Philippe Pacalet,Nuits-Saint-Georges,,,,Burgundy,France,2023,13,Pinot Noir,310,,,25
+B259,259,Red,France,Burgundy,,"purity, texture, quiet depth",Benoit Moreau,Chassagne-Montrachet 1er Cru,La Cardeuse,,,Burgundy,France,2023,13,Pinot Noir,325,,,25
+B260,260,Red,France,Burgundy,,"purity, texture, quiet depth",Jean-Marc Roulot,Beaune 1er Cru Les Teurons,,,,Burgundy,France,2023,13,Pinot Noir,340,,,25
+B261,261,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Arlaud Père et Fils,Gevrey-Chambertin 1er Cru,Aux Combottes,,,Burgundy,France,2007,13.5,Pinot Noir,350,,,25
+B262,262,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Prieure Roch,Nuits-Saint-Georges 1er Cru VV,,,,Burgundy,France,2023,13,Pinot Noir,450,,,25
+B263,263,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Robert Chevillon,Nuits-Saint-Georges 1er Cru Les Cailles,,,,Burgundy,France,2012,13.5,Pinot Noir,465,,,25
+B264,264,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Hudelot-Noëllat,Clos de Vougeot Grand Cru,,,,Burgundy,France,2013,14,Pinot Noir,550,,,25
+B265,265,Red,France,Burgundy,,"purity, texture, quiet depth",Domaine Arnoux-Lacheaux,Nuits-Saint-Georges,,,,Burgundy,France,2021,14,Pinot Noir,575,,,25
+B266,266,Red,France,Rhône,,"sun, spice, generosity",Franck Balthazar,Côtes du Rhône,,,,Rhône,France,2024,12.5,Syrah,70,,,25
+B267,267,Red,France,Rhône,,"sun, spice, generosity",Vincent Ruiz,Les Noces Alchimiques,,,,Rhône,France,2023,12.5,Grenache,75,,,25
+B268,268,Red,France,Rhône,,"sun, spice, generosity",Domaine D’Ouréa,Gigondas,,,,Rhône,France,2023,13.5,"Grenache, Syrah, Cinsault",90,,,25
+B269,269,Red,France,Rhône,,"sun, spice, generosity",Gramenon,Côtes du Rhône La Sagasse,,,,Rhône,France,2023,15,Grenache,92,,,25
+B270,270,Red,France,Rhône,,"sun, spice, generosity",Dard & Ribo,Saint Joseph,,,,Rhône,France,2022,12.5,Syrah,120,,,25
+B271,271,Red,France,Rhône,,"sun, spice, generosity",Domaine de Lorient,Cornas,,,,Rhône,France,2022,13,Syrah,140,,,25
+B272,272,Red,France,Bordeaux,,"structure, graphite, restraint",Château Grand-Pey-Lescours,St Emilion Grand Cru,,,,Bordeaux,France,2014,13.5,"Merlot, Cabernet Sauvignon",78,,,26
+B273,273,Red,France,Bordeaux,,"structure, graphite, restraint",Closerie Saint Roc,,,,,Bordeaux,France,2019,13,"Cabernet Franc, Merlot",120,,,26
+B274,274,Red,France,Bordeaux,,"structure, graphite, restraint",Ormiale Mialbec,,,,,Bordeaux,France,2022,12.5,Malbec,125,Y,,26
+B275,275,Red,France,Bordeaux,,"structure, graphite, restraint",Château Le Puy,Emilien,,,,Bordeaux,France,2019,13.5,Merlot,130,,,26
+B276,276,Red,France,Bordeaux,,"structure, graphite, restraint",Clos du Jaugueyron,Margaux,,,,Bordeaux,France,2016,12.5,"Cabernet Sauvignon, Merlot, Cabernet Franc",180,,,26
+B277,277,Red,France,Bordeaux,,"structure, graphite, restraint",Château Les Carmes Haut-Brion,Pessac-Léognan,,,,Bordeaux,France,2014,13,"Cabernet Franc, Merlot, Cabernet Sauvignon",360,,,26
+B278,278,Red,France,Alsace,,"aromatics, texture, dry light",Domaine Valentin Zusslin,Bollenberg,,,,Alsace,France,2019,13.5,Pinot Noir,122,,,26
+B279,279,Red,France,Jura & Savoie,,"alpine energy, wild edges",Kevin Bouillet,Pepin Rouge,,,,Jura,France,2023,12.5,"Ploussard, Trousseau",80,Y,,26
+B280,280,Red,France,Jura & Savoie,,"alpine energy, wild edges",Kevin Bouillet,La Marcette Ploussard,,,,Jura,France,2023,12.5,Ploussard,85,Y,,26
+B281,281,Red,France,Jura & Savoie,,"alpine energy, wild edges",Tony Bornard,Le Ginglet,,,,Jura,France,2018,14.5,Trousseau,90,Y,,26
+B282,282,Red,France,Jura & Savoie,,"alpine energy, wild edges",Zeroine,PiAli,,,,Jura,France,2022,12,"Pinot Noir, Aligoté",95,Y,,26
+B283,283,Red,France,Jura & Savoie,,"alpine energy, wild edges",Zeroine,PiGa,,,,Jura,France,2020,14,"Pinot Noir, Gamay",98,Y,,26
+B284,284,Red,France,Jura & Savoie,,"alpine energy, wild edges",Tony Bornard,Ploussard La Chamade,,,,Jura,France,2022,14.5,Ploussard,115,Y,,26
+B285,285,Red,France,Jura & Savoie,,"alpine energy, wild edges",Anne et Jean-François Ganevat,La Croix des Batailles,,,,Jura,France,2024,12.5,Gamay,135,,,26
+B286,286,Red,France,Jura & Savoie,,"alpine energy, wild edges",Anne et Jean-François Ganevat,Coline des Dames,,,,Jura,France,2023,12.5,Pinot Noir,140,,,27
+B287,287,Red,France,Jura & Savoie,,"alpine energy, wild edges",Domaine Louis Magnin,Arbin Mondeuse Vieilles Vignes,,,,Savoie,France,2003,12.5,Mondeuse,155,,,27
+B288,288,Red,France,Jura & Savoie,,"alpine energy, wild edges",Anne et Jean-François Ganevat,Côtes du Jura Les Chonchons,,,,Jura,France,2023,12.5,Pinot Noir,190,,,27
+B289,289,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",Domaine de la Rouviole,Eclipse de Lune,,,,Languedoc,France,2024,12.5,Cinsault,48,,,27
+B290,290,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",Chamans,Open Now,,,,Languedoc,France,2022,14,"Mourvèdre, Syrah",52,,,27
+B291,291,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",Les Enfants Sauvage,Bouche-Bee,,,,Roussillon,France,2024,13.5,"Carignan, Muscat",75,,,27
+B292,292,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",Domaine Danjou-Banessy,Roboul,,,,Roussillon,France,2021,13.5,"Grenache, Mourvèdre",86,,,27
+B293,293,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",Leon Barral,Faugères,,,,Languedoc,France,2019,13.5,"Carignan, Grenache, Syrah",92,,,27
+B294,294,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",La Mariota,Sudaka,,,,Roussillon,France,2020,13,Carignan,95,,,27
+B295,295,Red,South of France,Languedoc-Roussillon & South West,,"rustic warmth, herbs",Matassa,Rouge,,,,Roussillon,France,2020,11,Carignan,110,Y,,27
+B296,296,Red,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Toklas Red,Edition I,,,,Provence,France,2024,13,"Grenache, Syrah",55,,,27
+B297,297,Red,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Antoine-Marie Arena,Carco,,,,Corsica,France,2021,13.5,Niellucciu,95,,,27
+B298,298,Red,South of France,Provence & Corsica,,"salt, herbs, Mediterranean breeze",Domaine Comte Abbatucci,Valle di Mare,,,,Corsica,France,2019,14.5,Carcajolo Nero,460,,,27
+B299,299,Red,Italy,North,,"alpine freshness, elegance, precision",Meroni,Il Velluto Valpolicella Classico,,,,Veneto,Italy,2024,12.5,"Corvina, Rondinella, Molinara",55,,,28
+B300,300,Red,Italy,North,,"alpine freshness, elegance, precision",Eugenio Bocchino,Nebbiolo,,,,Piedmont,Italy,2021,13.5,Nebbiolo,63,,Y,28
+B301,301,Red,Italy,North,,"alpine freshness, elegance, precision",Dirupi,Olé! Rosso di Valtellina,,,,Lombardy,Italy,2024,12.5,Nebbiolo,68,,,28
+B302,302,Red,Italy,North,,"alpine freshness, elegance, precision",Azienda Agricola Summer Wolff,Gio Gio,,,,Piedmont,Italy,2025,12.5,Freisa,69,,,28
+B303,303,Red,Italy,North,,"alpine freshness, elegance, precision",La Stoppa,Trebbiolo Rosso,,,,Emilia-Romagna,Italy,2023,13.5,"Barbera, Bonarda",70,,,28
+B304,304,Red,Italy,North,,"alpine freshness, elegance, precision",Chiara Condello,Predappio,,,,Emilia-Romagna,Italy,2023,13.5,Sangiovese,72,,,28
+B305,305,Red,Italy,North,,"alpine freshness, elegance, precision",Monte all’Ora,Valpolicella Classico Superiore,Camporenzo,,,Veneto,Italy,2021,13,"Corvina, Corvinone, Rondinella, Molinara, Oseleta",75,,,28
+B306,306,Red,Italy,North,,"alpine freshness, elegance, precision",Lapo Berti,Dogliani,,,,Piedmont,Italy,2023,13,Dolcetto,83,,,28
+B307,307,Red,Italy,North,,"alpine freshness, elegance, precision",G.D. Vajra,Barolo Albe,,,,Piedmont,Italy,2021,14.5,Nebbiolo,115,,,28
+B308,308,Red,Italy,North,,"alpine freshness, elegance, precision",Elvio Cogno,Barbera d’Alba Pre-Phylloxera,,,,Piedmont,Italy,2019,14,Barbera,120,,,28
+B309,309,Red,Italy,North,,"alpine freshness, elegance, precision",Selvadolce,Il Rosso...se,,,,Liguria,Italy,2014,13.5,Rossese,130,,,28
+B310,310,Red,Italy,North,,"alpine freshness, elegance, precision",Diego Conterno,Barolo Le Coste di Monforte d’Alba,,,,Piedmont,Italy,2018,14.5,Nebbiolo,170,,,28
+B311,311,Red,Italy,North,,"alpine freshness, elegance, precision",Guido Rivella,Barbaresco Fausoni,,,,Piedmont,Italy,2015,14,Nebbiolo,190,,,28
+B312,312,Red,Italy,North,,"alpine freshness, elegance, precision",Elvio Cogno,Barolo Ravera,,,,Piedmont,Italy,2012,14.5,Nebbiolo,210,,,28
+B313,313,Red,Italy,North,,"alpine freshness, elegance, precision",Gigi Bianco,Barbaresco Pora,,,,Piedmont,Italy,2009,14.5,Nebbiolo,250,,,28
+B314,314,Red,Italy,Central,,"balance, tradition, quiet power",Podere Sassi,Sassolini Rosso,,,,Lazio,Italy,2021,13,Ciliegiolo,50,Y,,29
+B315,315,Red,Italy,Central,,"balance, tradition, quiet power",Ampeleia,Unlitro,,,1 litre,Tuscany,Italy,2022,12,"Alicante Nero, Carignano, Mourvèdre, Sangiovese, Alicante Bouschet",69,,,29
+B316,316,Red,Italy,Central,,"balance, tradition, quiet power",Fontodi,Chianti Classico,,,,Tuscany,Italy,2022,14.5,Sangiovese,87,,,29
+B317,317,Red,Italy,Central,,"balance, tradition, quiet power",Le Coste,Alea Jacta Est,,,,Lazio,Italy,2019,14,Aleatico,145,Y,,29
+B318,318,Red,Italy,Central,,"balance, tradition, quiet power",Gianni Brunelli,Brunello di Montalcino,,,,Tuscany,Italy,2020,14,Sangiovese,220,,,29
+B319,319,Red,Italy,Central,,"balance, tradition, quiet power",Fonterenza,Brunello di Montalcino,,,,Tuscany,Italy,2016,14,Sangiovese,250,,,29
+B320,320,Red,Italy,Central,,"balance, tradition, quiet power",Castell’in Villa,Chianti Classico Riserva,,,,Tuscany,Italy,2006,14,Sangiovese,290,,,29
+B321,321,Red,Italy,Central,,"balance, tradition, quiet power",Emidio Pepe,Montepulciano d’Abruzzo Branella,,,,Abruzzo,Italy,2021,13.5,Montepulciano,295,,,29
+B322,322,Red,Italy,Central,,"balance, tradition, quiet power",Emidio Pepe,Montepulciano d’Abruzzo Casa Pepe,,,,Abruzzo,Italy,2022,14,Montepulciano,310,,,29
+B323,323,Red,Italy,Central,,"balance, tradition, quiet power",Valentini,Cerasuolo d’Abruzzo,,,,Abruzzo,Italy,2022,14,Montepulciano,350,,,29
+B324,324,Red,Italy,South & Islands,,"sun, depth, volcanic energy",Domus Vini,Primitivo,,,,Puglia,Italy,2023,13.5,Primitivo,38,,Y,29
+B325,325,Red,Italy,South & Islands,,"sun, depth, volcanic energy",Terrazze dell’Etna,Etna Rosso Carusu,,,,Sicily,Italy,2024,14.5,Nerello Mascalese,70,,,29
+B326,326,Red,Italy,South & Islands,,"sun, depth, volcanic energy",Arianna Occhipinti,Il Frappato,,,,Sicily,Italy,2023,13.5,Frappato,110,,,29
+B327,327,Red,Italy,South & Islands,,"sun, depth, volcanic energy",Albarelli di Giodo,Etna Nerello Mascalese,,,,Sicily,Italy,2020,14,Nerello Mascalese,120,,,29
+B328,328,Red,Greece,,"salt, sun, texture",,Bosiniakis,Aspela,,,,Peloponnese,Greece,2024,13,Aspela,75,,,30
+B329,329,Red,Greece,,"salt, sun, texture",,Ktima Zafeirakis,Limniona,,,,Thessaly,Greece,2020,13,Limniona,82,,,30
+B330,330,Red,Greece,,"salt, sun, texture",,Aori,Kotsifali,,,,Crete,Greece,2022,12.5,Kotsifali,85,,,30
+B331,331,Red,Central Europe,,"purity, acidity, quiet precision",,Judith Beck,Blaufränkisch,,,,Burgenland,Austria,2023,12.5,Blaufränkisch,52,,,30
+B332,332,Red,Central Europe,,"purity, acidity, quiet precision",,Claus Preisinger,Kalkstein,,,,Burgenland,Austria,2023,12.5,Blaufränkisch,62,Y,,30
+B333,333,Red,Central Europe,,"purity, acidity, quiet precision",,Christian Tschida,Kapitel I,,,,Burgenland,Austria,2014,12,"Cabernet Franc, Zweigelt",95,Y,,30
+B334,334,Red,Central Europe,,"purity, acidity, quiet precision",,Moric,Blaufränkisch,,,,Burgenland,Austria,2021,13.5,Blaufränkisch,98,,,30
+B335,335,Red,Central Europe,,"purity, acidity, quiet precision",,Claus Preisinger,Erdeluft,,,,Burgenland,Austria,2017,13,Blaufränkisch,105,Y,,30
+B336,336,Red,Central Europe,,"purity, acidity, quiet precision",,Gut Oggau,Family Reunion,,,,Burgenland,Austria,2016,12.5,"Blaufränkisch, Zweigelt",110,Y,,30
+B337,337,Red,Central Europe,,"purity, acidity, quiet precision",,Rosi Schuster,Donnerskirchen,,,,Burgenland,Austria,2014,12,Saint Laurent,140,Y,,30
+B338,338,Red,Central Europe,,"purity, acidity, quiet precision",,Gut Oggau,Joschuari,,,,Burgenland,Austria,2020,12,Blaufränkisch,150,Y,,30
+B339,339,Red,Central Europe,,"purity, acidity, quiet precision",,Shelter Winery,Pinot Noir,,,,Baden,Germany,2021,12.5,Pinot Noir,180,,,30
+B340,340,Red,Central Europe,,"purity, acidity, quiet precision",,Christian Tschida,Domkapitel,,,,Burgenland,Austria,2013,12.5,"Zweigelt, Cabernet Franc",210,Y,,30
+B341,341,Red,Central Europe,,"purity, acidity, quiet precision",,Umathum,Von Stein,,,,Burgenland,Austria,1999,13.5,Saint Laurent,235,,,30
+B342,342,Red,Further Afield,North America,"fresh perspectives, evolving regions",,Sabelli-Frisch,Marina Mission,,,,California,USA,2020,14,País,70,,,31
+B343,343,Red,Further Afield,North America,"fresh perspectives, evolving regions",,Scar of the Sea,Vino de los Ranchos,,,,California,USA,2023,12.5,Pinot Noir,97,,,31
+B344,344,Red,Further Afield,North America,"fresh perspectives, evolving regions",,Evening Land,Seven Springs Vinyard Estate,,,,Oregon,USA,2021,13.1,Pinot Noir,108,,,31
+B345,345,Red,Further Afield,South America,"fresh perspectives, evolving regions",,Altos las Hormigas,Terroir Luján de Cuyo,,,,Mendoza,Argentina,2022,13.9,Malbec,60,,,31
+B346,346,Red,Further Afield,South America,"fresh perspectives, evolving regions",,Cara Sur,Paraje Criolla Chica,,,,Mendoza,Argentina,2022,12.5,Criolla,75,,,31
+B347,347,Red,Further Afield,South America,"fresh perspectives, evolving regions",,Ventisquero,Tara Pinot Noir,,,,Atacama,Chile,2021,13.5,Pinot Noir,92,,,31
+B348,348,Red,Further Afield,South America,"fresh perspectives, evolving regions",,Bodega Chacra,Sin Azufre,,,,Patagonia,Argentina,2022,12,Pinot Noir,105,,,31
+B349,349,Red,Further Afield,South America,"fresh perspectives, evolving regions",,Colomé,El Arenal,,,,Salta,Argentina,2022,14.5,Malbec,120,,,31
+B350,350,Red,Further Afield,South America,"fresh perspectives, evolving regions",,Zuccardi,Alluvional Paraje Altamira,,,,Mendoza,Argentina,2016,14,Malbec,190,,,31
+B351,351,Red,Further Afield,South Africa,"fresh perspectives, evolving regions",,Fledge & Co,Grenache Noir,,,,Western Cape,South Africa,2025,12.5,Grenache,65,,,31
+B352,352,Red,Further Afield,South Africa,"fresh perspectives, evolving regions",,Luddite,Saboteur Red Blend,,,,Western Cape,South Africa,2021,14.5,"Shiraz, Mourvèdre, Garnacha, Cabernet Sauvignon",81,,,31
+B353,353,Red,Further Afield,Australia,"fresh perspectives, evolving regions",,Mighty Isle,Willunga Grenache,,,,McLaren Vale,Australia,2024,13,Grenache,64,,,32
+B354,354,Red,Further Afield,Australia,"fresh perspectives, evolving regions",,Gentle Folk,Sangiovese,,,,Adelaide Hills,Australia,2024,13.5,Sangiovese,75,,,32
+B355,355,Red,Further Afield,Australia,"fresh perspectives, evolving regions",,Luke Lambert,Nebbiolo,,,,Yarra Valley,Australia,2022,14,Nebbiolo,115,,,32
+B356,356,Red,Further Afield,Australia,"fresh perspectives, evolving regions",,Timo Mayer,Doktor,,,,Yarra Valley,Australia,2022,14,Pinot Noir,130,,,32
+B357,357,Red,Further Afield,New Zealand,"fresh perspectives, evolving regions",,Sato,Sur Les Nuages,,,,Central Otago,New Zealand,2022,14,Pinot Noir,115,,,32
+B358,358,Red,Magnum,,,,Christian Tschida,TNT,,,,Burgenland,Austria,2017,12,Blaufränkisch,220,Y,,32
+B359,359,Red,Magnum,,,,Christian Tschida,Hokus Pokus,,,,Burgenland,Austria,2017,12,Cabernet Franc,225,Y,,32
+B360,360,Red,Magnum,,,,Selvadolce,Rosso...se,,,,Liguria,Italy,2014,13.5,Rossese,320,,,32
+B361,361,Red,Magnum,,,,Ormiale,VDF,,,,Bordeaux,France,2019,13.5,"Cabernet Franc, Merlot",330,,,32
+B362,362,Red,Magnum,,,,Anne et Jean-François Ganevat,Côtes du Jura Les Grand Teppes,,,,Jura,France,2022,12.5,Pinot Noir,375,,,32
+B363,363,Red,Magnum,,,,Château Canon,Premier Grand Cru Classé Saint Emilion,,,,Bordeaux,France,2014,14,"Merlot, Cabernet Franc",520,,,32
+B364,364,Sweet & Oxidative,,,,,Elvio Cogno,Moscato d’Asti,,,750ml,Piedmont,Italy,2021,5.5,Moscato,48,,,33
+B365,365,Sweet & Oxidative,,,,,Szóló,Dolce,,,500ml,Tokaj,Hungary,2021,11.5,"Furmint, Hárslevelü",60,,,33
+B366,366,Sweet & Oxidative,,,,,Antolini,Recioto della Valpolicella,,,500ml,Veneto,Italy,2023,13.5,"Corvina, Corvinone, Rondinella",65,,,33
+B367,367,Sweet & Oxidative,,,,,Rouvalis,"Tzivieres, Sundried Kydonitsa",,,375ml,Peloponnese,Greece,2022,13.5,Kydonitsa,83,,,33
+B368,368,Sweet & Oxidative,,,,,La Stoppa,Vino del Volt,,,500ml,Emilia-Romagna,Italy,2024,14.5,Malvasia di Candia Aromatica,95,,,33
+B369,369,Sweet & Oxidative,,,,,Oskar Maurer,Sott,,,500ml,Fruška Gora,Serbia,2022,14,"Furmint, Welschriesling",100,Y,,33
+B370,370,Sweet & Oxidative,,,,,Domaine de la Tournelle,Macvin du Jura,,,750ml,Jura,France,NV,17,Chardonnay,115,Y,,33
+B371,371,Sweet & Oxidative,,,,,Umathum,Trockenbeerenauslese,,,500ml,Burgenland,Austria,2018,9.5,Welschriesling,120,,,33
+B372,372,Sweet & Oxidative,,,,,Domaine de la Pinte,Paradoxe,,,375ml,Jura,France,NV,11.5,Savagnin,140,,,33
+B373,373,Sweet & Oxidative,,,,,Niepoort,Tawny Port 20 year old,,,700ml,Douro,Portugal,NV,20,"Tinta Amarela, Tinta Cão, Tinta Roriz, Touriga Franca, Touriga Nacional, Tinta Francisca, Sousão",190,,,33
+B374,374,Sweet & Oxidative,,,,,Domaine Touraize,Vin Jaune,,,750ml,Jura,France,2018,15,Savagnin,220,,,33
+B375,375,Sweet & Oxidative,,,,,Château d’Yquem,Sauternes,,,375ml,Bordeaux,France,1986,14,"Sémillon, Sauvignon Blanc",450,,,33

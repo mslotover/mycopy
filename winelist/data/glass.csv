@@ -1,0 +1,39 @@
+id,sort,section,producer,cuvee,region,country,vintage,abv,grapes,price_50,price_125,price_375,price_750,low_intervention,on_tap,source_page
+G001,1,Sparkling,Filipa Pato,3B Blanc de Blancs Brut Nature,Bairrada,Portugal,NV,11.5,"Bical, Cercial, Maria Gomes",,10,,60,,,2
+G002,2,Sparkling,Raventos i Blanc,De la Finca,Catalonia,Spain,2022,12,"Xarel-lo, Parellada, Macabeo",,13,,75,,,2
+G003,3,Sparkling,Candover Brook,Brut,Hampshire,England,NV,12,"Chardonnay, Pinot Noir, Meunier",,15,,85,,,2
+G004,4,Sparkling,Bertrand Delespierre,Enfant de la Montagne Premier Cru Brut,Champagne,France,NV,12,"Pinot Noir, Meunier, Chardonnay",,19,,96,,,2
+G005,5,White,Toklas White,Edition I,Provence,France,2024,13,Vermentino,,12,32,55,,,2
+G006,6,White,Abadía de Aribayos,Verdejo,Castilla y León,Spain,2024,13,Verdejo,,8,20,38,,Y,2
+G007,7,White,Mario Rovira,Tosca Cerrada,Cadiz,Spain,2024,13.5,Palomino,,9,22,46,,Y,2
+G008,8,White,Craven,Yellowbelly,Stellenbosch,South Africa,2023,12,Chenin Blanc,,12,28,55,,Y,2
+G009,9,White,Marchesi di Pianogrillo,Flâneur,Sicily,Italy,2024,12.5,Grillo,,12,30,56,,,2
+G010,10,White,Melsheimer,Riesling Trocken,Mosel,Germany,2023,12,Riesling,,13,36,68,,,2
+G011,11,White,Domaine Léon Boesch,Le Coq,Alsace,France,2024,12,Pinot Gris,,13,36,68,,,2
+G012,12,White,Rouvalis,Lagorthi,Peloponnese,Greece,2022,11,Lagorthi,,14,40,70,,,2
+G013,13,White,Sugrue,Bonkers Chardonnay V2,West Sussex,England,NV,13,Chardonnay,,15,45,75,Y,,2
+G014,14,White,Milan Nestarec,Vesper,Moravia,Czechia,2022,11.5,Grüner Veltliner,,16,,85,,,2
+G015,15,White,Verónica Ortega,La Llorona,Bierzo,Spain,2024,13,Godello,,16,,90,,,2
+G016,16,White,Simon Faure,Saint Verán,Burgundy,France,2022,12.5,Chardonnay,,22,,129,,,2
+G017,17,White,Albarelli di Giodo,Etna Bianco,Sicily,Italy,2022,13,Carricante,,25,,148,,,2
+G018,18,Skin Contact,Les Vins Pirouettes,L’Ecole,Alsace,France,2025,12.1,"Gewürztraminer, Muscat",,11,29,50,Y,Y,2
+G019,19,Skin Contact,Alfredo Maestro,Lovamor,Castilla y León,Spain,2023,12.5,Albillo Mayor,,13,35,65,,,2
+G020,20,Rosé,Toklas Rosé,Edition I,Provence,France,2024,13,"Grenache, Cinsault",,12,32,55,,,3
+G021,21,Rosé,Famille Chaudière,Le Paradou,Provence,France,2024,13,Cinsault,,10,28,45,,Y,3
+G022,22,Rosé,Gustinella,Jungimmune Rosato,Sicily,Italy,2024,13,"Nero d’Avola, Nerello Mascalese",,14,,85,,,3
+G023,23,Red,Toklas Red,Edition I,Provence,France,2024,13,"Grenache, Syrah",,12,32,55,,,3
+G024,24,Red,Domus Vini,Primitivo,Puglia,Italy,2023,12,Primitivo,,8,20,38,,Y,3
+G025,25,Red,Chamans,Open Now,Languedoc,France,2023,14,"Mourvèdre, Syrah",,9,27,50,,,3
+G026,26,Red,Judith Beck,Blaufränkisch,Burgenland,Austria,2023,12.5,Blaufränkisch,,10,29,52,,,3
+G027,27,Red,Viña Zorzal,Sea of Dreams,Navarra,Spain,2023,13.5,Garnacha,,10,30,55,,,3
+G028,28,Red,Eugenio Bocchino,Nebbiolo,Piedmont,Italy,2020,13.5,Nebbiolo,,12,33,63,,Y,3
+G029,29,Red,La Stoppa,Trebbiolo Rosso,Emilia-Romagna,Italy,2023,12.5,"Barbera, Bonarda",,13,34,68,,,3
+G030,30,Red,Emmanuel Haget,Palabres,Loire,France,2022,13.5,Pineau d’Aunis,,14,37,72,,,3
+G031,31,Red,Bodega Todos,Tinto,Gran Canaria,Spain,2024,12.5,Listán Negro,,14,,85,,,3
+G032,32,Red,Filipa Pato,Nossa Calcário,Bairrada,Portugal,2023,12.5,Baga,,18,,102,,,3
+G033,33,Red,Maison Réno,Mercurey,Burgundy,France,2023,12.5,Pinot Noir,,25,,138,,,3
+G034,34,Red,Domaine de Lorient,Cornas,Rhône,France,2022,13,Syrah,,27,,140,,,3
+G035,35,Sweet & Oxidative,Elvio Cogno,Moscato d’Asti,Piedmont,Italy,2022,6,Moscato,6,,,,,,3
+G036,36,Sweet & Oxidative,Szóló,Dolce,Tokaj,Hungary,2021,11.5,"Furmint, Hárslevelü",7,,,,,,3
+G037,37,Sweet & Oxidative,Antolini,Recioto della Valpolicella,Veneto,Italy,2022,14,"Corvina, Corvinone, Rondinella",8,,,,,,3
+G038,38,Sweet & Oxidative,Domaine Touraize,Vin Jaune,Jura,France,2018,11.5,Savagnin,18,,,,,,3
