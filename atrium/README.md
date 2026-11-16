@@ -58,6 +58,14 @@ keys are needed. `node scripts/seed-demo.mjs` adds sample content; sign in as
 People can sign in only if they have been invited; the first owner is created by the import
 or by inserting a row into `users`.
 
+## Recording a video call
+
+The recorder listens to the microphone. On a call with headphones, the other people never
+reach it, so the recording screen offers "On a call? Add its audio": the browser asks which
+tab to share, and that tab's sound is mixed with the microphone. It needs a desktop
+Chromium browser (Chrome, Edge, Arc, Brave) and the call running in a browser tab. If
+sharing is stopped, recording carries on with the microphone alone.
+
 ## On a phone
 
 Atrium installs from the browser; there is nothing in an app store. On an iPhone, open it

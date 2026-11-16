@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import DOMPurify from "dompurify";
-import { AlertCircle, Check, ChevronDown, ChevronRight, Copy, Lock, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Trash2, UserPlus, X } from "lucide-react";
+import { AlertCircle, Check, ChevronDown, ChevronRight, Copy, Headphones, Lock, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Trash2, UserPlus, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { api, ApiError, clock, fmtDuration, invalidate, qc, sse, useMeetings, useTasks, type Knowledge, type MeetingDetail, type MeetingItem, type MeetingListItem, type MeetingStatus, type Participant, type User } from "./api";
@@ -174,13 +174,17 @@ export function NewMeetingSheet({ spaceId, onClose }: { spaceId: string | null; 
 
 type RecPhase = "idle" | "recording" | "paused" | "finishing";
 
+/** Whether this browser can share another tab's sound (desktop Chrome, Edge and their relatives). */
+const CAN_SHARE_CALL = typeof navigator !== "undefined" && !!navigator.mediaDevices?.getDisplayMedia && !/Mobi|Android|iPhone|iPad/.test(navigator.userAgent) && /Chrome|Chromium|Edg\//.test(navigator.userAgent);
+
 function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void) {
   const [phase, setPhase] = useState<RecPhase>("idle");
   const [seconds, setSeconds] = useState(0);
   const [levels, setLevels] = useState<number[]>(() => Array(56).fill(0));
   const [pending, setPending] = useState(0);
   const [error, setError] = useState("");
-  const r = useRef({ stream: null as MediaStream | null, rec: null as MediaRecorder | null, idx: firstIdx, active: 0, segStart: 0, last: 0, timer: 0 as any, ctx: null as AudioContext | null, wake: null as any, queue: Promise.resolve(), inflight: 0, mime: "" });
+  const [call, setCall] = useState(false);
+  const r = useRef({ mic: null as MediaStream | null, shared: null as MediaStream | null, analyser: null as AnalyserNode | null, stream: null as MediaStream | null, rec: null as MediaRecorder | null, idx: firstIdx, active: 0, segStart: 0, last: 0, timer: 0 as any, ctx: null as AudioContext | null, wake: null as any, queue: Promise.resolve(), inflight: 0, mime: "" });
 
   const upload = (idx: number, blob: Blob) => {
     const s = r.current;
@@ -221,6 +225,7 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
       setError("Microphone access was blocked. Allow it for this site in your browser's settings.");
       return;
     }
+    s.mic = s.stream;
     s.mime = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4"].find((m) => MediaRecorder.isTypeSupported(m)) ?? "";
     startSegment();
     // Level meter
@@ -229,6 +234,7 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
       const analyser = s.ctx.createAnalyser();
       analyser.fftSize = 256;
       s.ctx.createMediaStreamSource(s.stream).connect(analyser);
+      s.analyser = analyser;
       const data = new Uint8Array(analyser.fftSize);
       (s as any).sample = () => {
         analyser.getByteTimeDomainData(data);
@@ -253,13 +259,76 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
     setPhase("recording");
   };
 
+  /** Swaps what is being recorded, starting a fresh segment so nothing is lost at the join. */
+  const switchTo = (stream: MediaStream) => {
+    const s = r.current;
+    const old = s.rec;
+    const wasPaused = old?.state === "paused";
+    s.stream = stream;
+    startSegment();
+    if (wasPaused) s.rec?.pause();
+    if (old && old.state !== "inactive") old.stop();
+  };
+
+  /**
+   * Adds the sound of a call in another tab to the recording. With headphones on, the other
+   * people never reach the microphone, so the browser is asked to share that tab's audio
+   * and it is mixed with the mic. Must be called from a click.
+   */
+  const addCall = async () => {
+    const s = r.current;
+    if (!s.mic || s.shared) return;
+    setError("");
+    let shared: MediaStream;
+    try {
+      shared = await navigator.mediaDevices.getDisplayMedia({
+        video: { frameRate: 1 }, // the browser insists on video; it is never recorded
+        audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false },
+        systemAudio: "include",
+      } as DisplayMediaStreamOptions);
+    } catch {
+      return; // the picker was cancelled
+    }
+    const audio = shared.getAudioTracks();
+    if (!audio.length) {
+      shared.getTracks().forEach((t) => t.stop());
+      setError("No call audio came through. Choose the tab your call is in, and keep “Also share tab audio” switched on.");
+      return;
+    }
+    try {
+      const ctx = s.ctx ?? (s.ctx = new AudioContext());
+      await ctx.resume();
+      const mix = ctx.createMediaStreamDestination();
+      ctx.createMediaStreamSource(s.mic).connect(mix);
+      const theirs = ctx.createMediaStreamSource(new MediaStream(audio));
+      theirs.connect(mix);
+      if (s.analyser) theirs.connect(s.analyser);
+      s.shared = shared;
+      // If sharing is stopped from the browser's own bar, carry on with the microphone alone.
+      audio[0].addEventListener("ended", () => {
+        if (s.shared !== shared) return;
+        shared.getTracks().forEach((t) => t.stop());
+        s.shared = null;
+        setCall(false);
+        if (s.mic) { switchTo(s.mic); toast("Call audio stopped. Still recording your microphone."); }
+      });
+      switchTo(mix.stream);
+      setCall(true);
+    } catch {
+      shared.getTracks().forEach((t) => t.stop());
+      setError("The call's audio couldn't be added. Your microphone is still recording.");
+    }
+  };
+
   const pause = () => { r.current.rec?.pause(); setPhase("paused"); };
   const resume = () => { r.current.rec?.resume(); setPhase("recording"); };
 
   const release = () => {
     const s = r.current;
     clearInterval(s.timer);
-    s.stream?.getTracks().forEach((t) => t.stop());
+    for (const media of [s.stream, s.mic, s.shared]) media?.getTracks().forEach((t) => t.stop());
+    s.mic = null;
+    s.shared = null;
     s.ctx?.close().catch(() => {});
     s.wake?.release?.().catch(() => {});
     s.stream = null;
@@ -283,7 +352,7 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
     return () => { window.removeEventListener("beforeunload", warn); if (r.current.rec?.state !== "inactive") r.current.rec?.stop(); release(); };
   }, []);
 
-  return { phase, seconds, levels, pending, error, start, pause, resume, finish };
+  return { phase, seconds, levels, pending, error, call, start, addCall, pause, resume, finish };
 }
 
 function Recorder({ detail, onFinished }: { detail: MeetingDetail; onFinished: () => void }) {
@@ -331,8 +400,11 @@ function Recorder({ detail, onFinished }: { detail: MeetingDetail; onFinished: (
           <span style={{ minWidth: 118, textAlign: "left" }} className="muted">{rec.pending > 0 ? "Saving audio…" : rec.seconds >= SEGMENT_SECONDS ? "Audio saved as you go" : ""}</span>
         </div>
       )}
+      {rec.phase !== "finishing" && CAN_SHARE_CALL && (rec.call
+        ? <div className="chip green" style={{ marginTop: 18 }}><Headphones />Recording your microphone and the call</div>
+        : <button className="btn pill" style={{ marginTop: 18 }} onClick={rec.addCall}><Headphones />On a call? Add its audio</button>)}
       {rec.error && <div className="banner warn" style={{ marginTop: 18 }}><AlertCircle />{rec.error}</div>}
-      <p className="rec-hint">Keep this tab open and your screen on. Press the red button when the meeting ends to get the summary.</p>
+      <p className="rec-hint">{CAN_SHARE_CALL && !rec.call ? "On a video call with headphones, only your own voice reaches the microphone. Add the call's audio so everyone is transcribed. " : ""}Keep this tab open and your screen on. Press the red button when the meeting ends to get the summary.</p>
     </div>
   );
 }
