@@ -312,6 +312,51 @@ meetings.delete("/:id/items/:itemId", async (c) => {
 
 // Nothing leaves the organiser's hands until they approve it here. Sending creates the
 // accepted tasks, files the knowledge notes, shares the meeting, and emails participants.
+// After a meeting has been sent, the organiser can still add someone who was missed:
+// they join the meeting's participants and get the summary by email.
+meetings.post("/:id/share", async (c) => {
+  const user = c.var.user;
+  const env = c.env;
+  const m = await requireOrganiser(env, user, c.req.param("id"));
+  if (m.status !== "sent") throw bad("Send the summary first; then you can add more people to it.");
+  const b = await c.req.json<{ user_id?: string | null; name?: string; email?: string }>();
+  const email = (b.email ?? "").trim().toLowerCase();
+  const member = await first<{ id: string; name: string; email: string }>(env.DB, "SELECT id, name, email FROM users WHERE active = 1 AND (id = ? OR email = ?)", b.user_id ?? "", email);
+  const to = member?.email ?? email;
+  const name = member?.name ?? (b.name ?? "").trim().slice(0, 120);
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(to)) throw bad("Add an email address to send the summary to.");
+  const existing = await first<{ id: string }>(env.DB, "SELECT id FROM meeting_participants WHERE meeting_id = ? AND (user_id = ? OR email = ?)", m.id, member?.id ?? "", to);
+  if (!existing) {
+    await run(env.DB, "INSERT INTO meeting_participants (id, meeting_id, user_id, name, email, notify) VALUES (?, ?, ?, ?, ?, 1)", uid(), m.id, member?.id ?? null, name, to);
+  }
+  const [actions, space] = await Promise.all([
+    all<{ title: string; due: string | null; status: string; assignee_id: string | null; assignee: string | null }>(
+      env.DB, "SELECT t.title, t.due, t.status, t.assignee_id, u.name AS assignee FROM tasks t LEFT JOIN users u ON u.id = t.assignee_id WHERE t.meeting_id = ? ORDER BY t.sort, t.created_at", m.id),
+    m.space_id ? first<{ name: string }>(env.DB, "SELECT name FROM spaces WHERE id = ?", m.space_id) : null,
+  ]);
+  const date = new Date(m.started_at).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/London" });
+  const sectionTitle = (t: string) => `<p style="margin:28px 0 8px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#86868b">${t}</p>`;
+  const line = (t: (typeof actions)[number], showOwner: boolean) =>
+    `<tr><td style="padding:7px 10px 7px 0;vertical-align:top;color:#86868b;font-size:15px">${t.status === "done" ? "✓" : "○"}</td><td style="padding:7px 0;font-size:15px;line-height:1.45">${escapeHtml(t.title)}` +
+    `${showOwner && t.assignee ? ` <span style="color:#86868b">· ${escapeHtml(t.assignee)}</span>` : ""}${t.due ? ` <span style="color:#86868b">· due ${new Date(t.due + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}</span>` : ""}</td></tr>`;
+  const own = member ? actions.filter((t) => t.assignee_id === member.id) : [];
+  const others = actions.filter((t) => !own.includes(t));
+  const body =
+    `<p style="margin:0 0 20px;color:#86868b;font-size:14px">${escapeHtml(date)}${space ? ` · ${escapeHtml(space.name)}` : ""} · recorded by ${escapeHtml(user.name)}</p>` +
+    (own.length ? `${sectionTitle("Your actions")}<table role="presentation" cellpadding="0" cellspacing="0">${own.map((t) => line(t, false)).join("")}</table>` : "") +
+    `${sectionTitle("Summary")}<div style="color:#1d1d1f">${m.summary_html}</div>` +
+    (others.length ? `${sectionTitle(own.length ? "Other actions" : "Actions")}<table role="presentation" cellpadding="0" cellspacing="0">${others.map((t) => line(t, true)).join("")}</table>` : "");
+  if (member && member.id !== user.id) {
+    await notify(env, c.var.origin, { user_id: member.id, actor_id: user.id, type: "meeting", title: `Summary of “${m.title || "Meeting"}”`, body: own.length ? `You have ${own.length} action${own.length === 1 ? "" : "s"} from this meeting.` : "", url: `/meetings/${m.id}` });
+  }
+  const emailed = await sendMail(env, to, `${m.title || "Meeting"}: summary and actions`, emailLayout(env, {
+    heading: m.title || "Meeting summary", body,
+    cta: member ? { label: "Open the meeting", url: `${c.var.origin}/meetings/${m.id}` } : undefined,
+    footer: `Sent by ${user.name} via ${env.APP_NAME}`,
+  }));
+  return c.json({ ok: true, emailed, name: name || to });
+});
+
 meetings.post("/:id/send", async (c) => {
   const user = c.var.user;
   const env = c.env;

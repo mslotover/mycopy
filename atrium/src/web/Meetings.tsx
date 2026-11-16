@@ -667,6 +667,7 @@ function MeetingHead({ detail, editable }: { detail: MeetingDetail; editable?: b
 // ---------- A finished meeting ----------
 
 function Sent({ detail }: { detail: MeetingDetail }) {
+  const app = useApp();
   const m = detail.meeting;
   const [openTask, setOpenTask] = useState<string | null>(null);
   const { data: tasks } = useTasks(`meeting:${m.id}`);
@@ -682,6 +683,15 @@ function Sent({ detail }: { detail: MeetingDetail }) {
           <div style={{ marginTop: 30 }}>
             <div className="section-title">Actions</div>
             {tasks.map((t) => <TaskRow key={t.id} task={t} onOpen={setOpenTask} showAssignee />)}
+          </div>
+        )}
+        {m.organizer_id === app.user.id && (
+          <div style={{ marginTop: 30 }}>
+            <div className="section-title">Send the summary to someone else</div>
+            <p className="sec" style={{ margin: "0 0 2px" }}>They are added to this meeting and emailed the summary and actions.</p>
+            <AddParticipant existing={detail.participants} onAdd={(p) => api<{ emailed: boolean; name: string }>(`/meetings/${m.id}/share`, { body: p })
+              .then((r) => { invalidate("meeting", "meetings"); toast(r.emailed ? `Summary sent to ${r.name}` : `${r.name} was added, but the email could not be sent`); })
+              .catch(toastError)} />
           </div>
         )}
         {mine.length > 0 && (
