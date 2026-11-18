@@ -8,7 +8,7 @@ import { api, invalidate, useBoot, useTree, type TreeNode } from "./api";
 import { AskPanel } from "./Ask";
 import { Brain } from "./Brain";
 import { Home, Inbox, SpaceView, Trash } from "./Home";
-import { MeetingView, MeetingsView, NewMeetingSheet } from "./Meetings";
+import { MeetingView, MeetingsView, NewMeetingSheet, RecordingBar, RecordingProvider } from "./Meetings";
 import { PageView } from "./PageView";
 import { forgetDevice } from "./phone";
 import { SearchPalette } from "./Search";
@@ -390,6 +390,7 @@ function Authed() {
   return (
     <AppProvider boot={boot}>
       <ShellCtx.Provider value={shell}>
+       <RecordingProvider>
         <div className="app">
           {sidebar && <div className="side-scrim" onClick={() => setSidebar(false)} />}
           <Sidebar open={sidebar} onNavigate={() => setSidebar(false)} />
@@ -408,6 +409,7 @@ function Authed() {
               <Route path="*" element={<div className="center"><div className="empty"><h3>Nothing here</h3><Link className="btn" to="/">Go home</Link></div></div>} />
             </Routes>
             {ask && <AskPanel initial={ask.q} onClose={() => setAsk(null)} />}
+            <RecordingBar />
           </main>
         </div>
         {search && <SearchPalette onClose={() => setSearch(false)} />}
@@ -415,6 +417,7 @@ function Authed() {
         {template && <TemplateSheet dest={template} onClose={() => setTemplate(null)} />}
         {moving && <MoveSheet pageId={moving} onClose={() => setMoving(null)} />}
         <Overlays />
+       </RecordingProvider>
       </ShellCtx.Provider>
     </AppProvider>
   );

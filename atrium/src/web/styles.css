@@ -548,6 +548,20 @@ table.db input.bare { height: 30px; }
 
 .recorder { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100%; padding: 40px 24px; gap: 6px; }
 .rec-time { font-size: 76px; font-weight: 200; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1; margin-top: 10px; }
+.rec-bar {
+  position: absolute; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 30;
+  display: flex; align-items: center; gap: 4px; padding: 5px 6px 5px 6px; max-width: min(460px, calc(100% - 24px));
+  background: var(--material-thick); backdrop-filter: saturate(180%) blur(30px); -webkit-backdrop-filter: saturate(180%) blur(30px);
+  border-radius: 999px; box-shadow: var(--shadow-2); animation: rec-bar-in 420ms var(--spring) both;
+}
+@keyframes rec-bar-in { from { opacity: 0; transform: translate(-50%, 14px) scale(0.96); } }
+.rec-bar-main { display: flex; align-items: center; gap: 9px; min-width: 0; padding: 4px 10px 4px 8px; border-radius: 999px; text-align: left; }
+.rec-bar-main:hover { background: var(--fill); }
+.rec-bar-time { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 14px; }
+.rec-bar-title { font-size: 13.5px; color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.rec-bar .icon-btn { width: 32px; height: 32px; flex: none; }
+.rec-stop.sm { width: 32px; height: 32px; flex: none; border-width: 2px; }
+.rec-stop.sm i { width: 11px; height: 11px; border-radius: 3px; }
 .rec-state { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--red); text-transform: uppercase; letter-spacing: 0.06em; }
 .rec-state.paused { color: var(--text-3); }
 .rec-state i { width: 9px; height: 9px; border-radius: 50%; background: currentColor; animation: pulse 1.6s ease-in-out infinite; }

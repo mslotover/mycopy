@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import DOMPurify from "dompurify";
 import { AlertCircle, Check, ChevronDown, ChevronRight, Copy, Headphones, Lock, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Trash2, UserPlus, X } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { api, ApiError, clock, fmtDuration, invalidate, qc, sse, useMeetings, useTasks, type Knowledge, type MeetingDetail, type MeetingItem, type MeetingListItem, type MeetingStatus, type Participant, type User } from "./api";
 import { Toolbar, useShell } from "./App";
@@ -137,7 +137,9 @@ export function NewMeetingSheet({ spaceId, onClose }: { spaceId: string | null; 
   const [people, setPeople] = useState<Person[]>([{ user_id: app.me.id, name: app.me.name, email: app.me.email }]);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
+  const recording = useRecording();
   const start = async () => {
+    if (recording.phase !== "idle") { setErr(`“${recording.title || "Another meeting"}” is still recording. Finish it before starting a new one.`); return; }
     setBusy(true);
     setErr("");
     try {
@@ -177,17 +179,24 @@ type RecPhase = "idle" | "recording" | "paused" | "finishing";
 /** Whether this browser can share another tab's sound (desktop Chrome, Edge and their relatives). */
 const CAN_SHARE_CALL = typeof navigator !== "undefined" && !!navigator.mediaDevices?.getDisplayMedia && !/Mobi|Android|iPhone|iPad/.test(navigator.userAgent) && /Chrome|Chromium|Edg\//.test(navigator.userAgent);
 
-function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void) {
+/**
+ * The recorder lives at the top of the app, not on the meeting page, so moving around the
+ * workspace during a meeting doesn't stop it. One recording at a time.
+ */
+function useRecorder(onFinished: (meetingId: string) => void) {
   const [phase, setPhase] = useState<RecPhase>("idle");
+  const [meetingId, setMeetingId] = useState("");
+  const [title, setTitle] = useState("");
   const [seconds, setSeconds] = useState(0);
   const [levels, setLevels] = useState<number[]>(() => Array(56).fill(0));
   const [pending, setPending] = useState(0);
   const [error, setError] = useState("");
   const [call, setCall] = useState(false);
-  const r = useRef({ mic: null as MediaStream | null, shared: null as MediaStream | null, analyser: null as AnalyserNode | null, stream: null as MediaStream | null, rec: null as MediaRecorder | null, idx: firstIdx, active: 0, segStart: 0, last: 0, timer: 0 as any, ctx: null as AudioContext | null, wake: null as any, queue: Promise.resolve(), inflight: 0, mime: "" });
+  const r = useRef({ mic: null as MediaStream | null, shared: null as MediaStream | null, analyser: null as AnalyserNode | null, stream: null as MediaStream | null, rec: null as MediaRecorder | null, meetingId: "", idx: 0, active: 0, segStart: 0, last: 0, timer: 0 as any, ctx: null as AudioContext | null, wake: null as any, queue: Promise.resolve(), inflight: 0, mime: "" });
 
   const upload = (idx: number, blob: Blob) => {
     const s = r.current;
+    const meetingId = s.meetingId;
     s.inflight++;
     setPending(s.inflight);
     s.queue = s.queue.then(async () => {
@@ -216,8 +225,18 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
     s.segStart = s.active;
   };
 
-  const start = async () => {
+  const start = async (id: string, firstIdx: number, name: string) => {
     const s = r.current;
+    if (s.stream) return; // already recording
+    s.meetingId = id;
+    s.idx = firstIdx;
+    s.active = 0;
+    s.segStart = 0;
+    setMeetingId(id);
+    setTitle(name);
+    setSeconds(0);
+    setLevels(Array(56).fill(0));
+    setCall(false);
     setError("");
     try {
       s.stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
@@ -334,8 +353,11 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
     s.stream = null;
   };
 
-  const finish = async (knownSeconds = 0) => {
+  /** Stops and uploads. `id` lets an interrupted recording be finished without restarting it. */
+  const finish = async (knownSeconds = 0, id?: string) => {
     const s = r.current;
+    if (id) { s.meetingId = id; setMeetingId(id); }
+    const meetingId = s.meetingId;
     setPhase("finishing");
     if (s.rec && s.rec.state !== "inactive") {
       await new Promise<void>((res) => { s.rec!.addEventListener("stop", () => res(), { once: true }); s.rec!.stop(); });
@@ -343,7 +365,13 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
     release();
     await new Promise((res) => setTimeout(res, 50));
     await s.queue;
-    try { await api(`/meetings/${meetingId}/finish`, { body: { duration_s: Math.round(s.active) || knownSeconds } }); onFinished(); } catch (e) { toastError(e); setPhase("idle"); }
+    try {
+      await api(`/meetings/${meetingId}/finish`, { body: { duration_s: Math.round(s.active) || knownSeconds } });
+      s.meetingId = "";
+      setMeetingId("");
+      setPhase("idle");
+      onFinished(meetingId);
+    } catch (e) { toastError(e); setPhase("idle"); }
   };
 
   useEffect(() => {
@@ -352,24 +380,76 @@ function useRecorder(meetingId: string, firstIdx: number, onFinished: () => void
     return () => { window.removeEventListener("beforeunload", warn); if (r.current.rec?.state !== "inactive") r.current.rec?.stop(); release(); };
   }, []);
 
-  return { phase, seconds, levels, pending, error, call, start, addCall, pause, resume, finish };
+  return { phase, meetingId, title, seconds, levels, pending, error, call, start, addCall, pause, resume, finish };
 }
 
-function Recorder({ detail, onFinished }: { detail: MeetingDetail; onFinished: () => void }) {
+type Recording = ReturnType<typeof useRecorder>;
+const RecordingCtx = createContext<Recording | null>(null);
+export const useRecording = () => useContext(RecordingCtx)!;
+
+/** Holds the one recorder for the whole app. Put it inside the router, around everything signed in. */
+export function RecordingProvider({ children }: { children: ReactNode }) {
+  const navigate = useNavigate();
+  const rec = useRecorder((id) => {
+    qc.invalidateQueries({ queryKey: ["meeting", id] });
+    invalidate("meetings");
+    navigate(`/meetings/${id}`); // the summary is made from the meeting's page
+  });
+  return <RecordingCtx.Provider value={rec}>{children}</RecordingCtx.Provider>;
+}
+
+/** A small bar that follows you around the app while a meeting records elsewhere. */
+export function RecordingBar() {
+  const rec = useRecording();
+  const loc = useLocation();
+  const navigate = useNavigate();
+  if (rec.phase === "idle" || loc.pathname === `/meetings/${rec.meetingId}`) return null;
+  const paused = rec.phase === "paused";
+  return (
+    <div className="rec-bar" role="status">
+      <button className="rec-bar-main" onClick={() => navigate(`/meetings/${rec.meetingId}`)} title="Back to the recording">
+        <span className={`rec-state ${paused ? "paused" : ""}`}><i /></span>
+        <span className="rec-bar-time">{clock(rec.seconds)}</span>
+        <span className="rec-bar-title">{rec.phase === "finishing" ? "Saving…" : paused ? `Paused · ${rec.title || "Meeting"}` : rec.title || "Recording"}</span>
+      </button>
+      {rec.phase !== "finishing" && (<>
+        <button className="icon-btn" onClick={paused ? rec.resume : rec.pause} aria-label={paused ? "Resume" : "Pause"}>{paused ? <Play /> : <Pause />}</button>
+        <button className="rec-stop sm" onClick={() => rec.finish()} aria-label="Finish recording" title="Finish recording"><i /></button>
+      </>)}
+    </div>
+  );
+}
+
+function Recorder({ detail }: { detail: MeetingDetail }) {
   const loc = useLocation();
   const navigate = useNavigate();
   const m = detail.meeting;
   const saved = detail.segments.length;
-  const rec = useRecorder(m.id, saved ? Math.max(...detail.segments.map((s) => s.idx)) + 1 : 0, onFinished);
+  const nextIdx = saved ? Math.max(...detail.segments.map((s) => s.idx)) + 1 : 0;
+  const recording = useRecording();
+  const mine = recording.meetingId === m.id;
+  const elsewhere = recording.phase !== "idle" && !mine;
+  // This page shows the app-wide recorder when it is recording this meeting.
+  const rec = { ...recording, phase: mine ? recording.phase : ("idle" as RecPhase), error: mine ? recording.error : "", start: () => recording.start(m.id, nextIdx, m.title) };
   const started = useRef(false);
   useEffect(() => {
-    if ((loc.state as any)?.autostart && !started.current) { started.current = true; rec.start(); navigate(loc.pathname, { replace: true, state: null }); }
+    if ((loc.state as any)?.autostart && !started.current) { started.current = true; if (!elsewhere) rec.start(); navigate(loc.pathname, { replace: true, state: null }); }
   }, []);
   const discard = async () => {
     if (!(await confirmDialog({ title: "Discard this recording?", body: "The audio recorded so far will be deleted.", action: "Discard", danger: true }))) return;
     try { await api(`/meetings/${m.id}`, { method: "DELETE" }); invalidate("meetings"); navigate("/meetings"); } catch (e) { toastError(e); }
   };
 
+  if (elsewhere) {
+    return (
+      <div className="recorder">
+        <div style={{ fontSize: 44 }}>🎙️</div>
+        <h2 className="h-title" style={{ marginTop: 8 }}>{m.title || "Untitled meeting"}</h2>
+        <p className="h-sub" style={{ maxWidth: 420 }}>“{recording.title || "Another meeting"}” is recording. Finish it before recording this one.</p>
+        <div className="rec-actions" style={{ marginTop: 24 }}><Link className="btn lg pill" to={`/meetings/${recording.meetingId}`}>Go to the recording</Link></div>
+      </div>
+    );
+  }
   if (rec.phase === "idle") {
     return (
       <div className="recorder">
@@ -379,7 +459,7 @@ function Recorder({ detail, onFinished }: { detail: MeetingDetail; onFinished: (
         {rec.error && <div className="banner warn" style={{ marginTop: 16 }}><AlertCircle />{rec.error}</div>}
         <div className="rec-actions" style={{ marginTop: 24 }}>
           <button className="btn lg pill primary" onClick={rec.start}><Mic />{saved ? "Continue recording" : "Start recording"}</button>
-          {saved > 0 && <button className="btn lg pill" onClick={() => rec.finish(saved * SEGMENT_SECONDS)}>Finish and summarise</button>}
+          {saved > 0 && <button className="btn lg pill" onClick={() => recording.finish(saved * SEGMENT_SECONDS, m.id)}>Finish and summarise</button>}
         </div>
         <button className="btn quiet danger" style={{ marginTop: 18 }} onClick={discard}>Discard</button>
       </div>
@@ -404,7 +484,7 @@ function Recorder({ detail, onFinished }: { detail: MeetingDetail; onFinished: (
         ? <div className="chip green" style={{ marginTop: 18 }}><Headphones />Recording your microphone and the call</div>
         : <button className="btn pill" style={{ marginTop: 18 }} onClick={rec.addCall}><Headphones />On a call? Add its audio</button>)}
       {rec.error && <div className="banner warn" style={{ marginTop: 18 }}><AlertCircle />{rec.error}</div>}
-      <p className="rec-hint">{CAN_SHARE_CALL && !rec.call ? "On a video call with headphones, only your own voice reaches the microphone. Add the call's audio so everyone is transcribed. " : ""}Keep this tab open and your screen on. Press the red button when the meeting ends to get the summary.</p>
+      <p className="rec-hint">{CAN_SHARE_CALL && !rec.call ? "On a video call with headphones, only your own voice reaches the microphone. Add the call's audio so everyone is transcribed. " : ""}You can use the rest of Atrium while this records. Keep this tab open, and press the red button when the meeting ends to get the summary.</p>
     </div>
   );
 }
@@ -730,7 +810,7 @@ export function MeetingView() {
   };
   let body;
   if (!data.isOrganiser || m.status === "sent") body = m.status === "sent" ? <Sent detail={data} /> : <div className="center"><Empty icon="⏳" title="Not ready yet">The organiser is still reviewing this meeting.</Empty></div>;
-  else if (m.status === "recording") body = <Recorder detail={data} onFinished={again} />;
+  else if (m.status === "recording") body = <Recorder detail={data} />;
   else if (m.status === "processing" || m.status === "failed") body = <Processing key={m.status} detail={data} onDone={again} />;
   else body = <Review key={m.status} detail={data} refetch={() => { refetch(); invalidate("meetings"); }} />;
   return (
