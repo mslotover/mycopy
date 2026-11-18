@@ -1,21 +1,23 @@
 ---
 title: "Hospitality Advice: What the Best Operators Recommend"
-subtitle: "Alexis Guttridge and Danny Meyer, summarised for Amanda"
+subtitle: "Alexis Guttridge, Danny Meyer, Will Guidara and Horst Schulze, summarised for Amanda"
 ---
 
 ## At a glance
 
-This document combines two sets of advice. **Part 1** is Alexis Guttridge, a former Boston restaurateur now advising venues in Australia, drawn from her Instagram posts. **Part 2** is Danny Meyer, founder of Union Square Hospitality Group, drawn from his book and talks. Both reach the same conclusion: guests remember how a place made them feel, and that feeling comes from people paying attention.
+This document combines advice from four people. **Part 1** is Alexis Guttridge, a former Boston restaurateur now advising venues in Australia, drawn from her Instagram posts. **Part 2** is Danny Meyer, founder of Union Square Hospitality Group. **Part 3** is Will Guidara, who ran Eleven Madison Park and wrote *Unreasonable Hospitality*. **Part 4** is Horst Schulze, co-founder of the Ritz-Carlton. All four reach the same conclusion: guests remember how a place made them feel, and that feeling comes from people paying attention.
 
 **Where they agree**
 
-- **First impressions:** acknowledge every guest immediately. Alexis calls the greeting "the first course", and Meyer defines hospitality as how the guest feels during the interaction.
-- **People first:** Meyer puts employees ahead of guests. Alexis looks at how staff treat each other before she looks at the guests.
-- **Hire and promote for attitude:** Meyer hires 51% on emotional skills. Alexis hires for people who "genuinely give a shit about people".
-- **Name the behaviours you want:** Meyer says to champion three to five behaviours. Alexis says to replace "give great service" with specific, observable expectations.
+- **First impressions and attention:** acknowledge every guest immediately. Alexis calls the greeting "the first course", Meyer defines hospitality as how the guest feels, and Guidara says "service is black and white; hospitality is color."
+- **People first:** Meyer puts employees ahead of guests. Schulze says staff can only be excellent if leadership is. Guidara says you can't demand excellence without giving people the tools. Alexis watches how staff treat each other before she watches the guests.
+- **Hire for care, teach the skills:** Meyer hires 51% on emotional skills, Guidara hires "Dream Weavers", and Alexis hires people who genuinely give a shit about people. Schulze says to select people, not just hire them.
+- **Name and repeat the standards:** Meyer says champion three to five behaviours. Schulze's daily "message of the day" repeats a standard before every shift. Alexis says to replace "give great service" with specific expectations.
+- **Give staff the power to fix things:** Schulze's $2,000 rule, Guidara's "start with yes" and Alexis's manager decision rights are the same idea.
 - **Managers make or break it:** Meyer says people leave their manager. Alexis says to empower managers to decide without the owner.
-- **Mistakes are an opportunity:** both say what matters is how well you handle them.
-- **Keep standards centred:** Meyer's "salt shaker" and Alexis's pre-shift routine are the same idea, small daily corrections.
+- **Mistakes are an opportunity:** all four say what matters is how well you handle them.
+
+**Where they differ:** Meyer and Schulze give you *systems* (hiring tests, standards, empowerment limits). Guidara gives you *generosity* (a budget for surprising guests). Alexis gives you *observation* (what to notice on the floor).
 
 # Part 1: Alexis Guttridge
 
@@ -226,13 +228,116 @@ Related is the **excellence reflex**: the natural instinct to fix what isn't rig
 From a 2018 interview: strong social media with weak service and food only speeds up failure. What matters is what happens after people walk in. The platforms change (Michelin, Zagat, Google, now social media) but the job is still to **tell your story**, so use the channels you're comfortable with and move when your guests move.
 
 
+# Part 3: Will Guidara
+
+*Based on secondary summaries of his book* Unreasonable Hospitality, *his TED talk and interviews.*
+
+### Who he is
+
+Will Guidara started at Danny Meyer's Union Square Hospitality Group. He later co-ran Eleven Madison Park with chef Daniel Humm and took it to the top of the World's 50 Best list in 2017. His book argues that any business serving people should offer "unreasonable hospitality", meaning giving people more than they expect.
+
+### 1. Hospitality versus service
+
+- "Service is black and white; hospitality is color." Service is delivering the product. Hospitality is how that delivery makes the person feel.
+- "Don't just serve them dinner; serve them memories."
+- "One size fits one." Tailor to the individual, not the average guest.
+- "Hospitality is a dialogue, not a monologue." Listen to the guest and respond.
+- "Hospitality is a selfish pleasure." Giving also feeds the giver, which echoes Meyer's "hospitalitarians".
+- Anyone can choose to be in the hospitality business, whatever their job.
+
+### 2. The 95/5 rule: budget for generosity
+
+- Manage 95% of the business down to the penny, then spend the last 5% "foolishly" on generosity. "If you aren't managing the 95%, you'll never have the money for the 5%."
+- "Generosity is an investment, not an expense."
+- **The hot dog story:** Guidara overheard guests saying they hadn't tried a New York hot dog. He ran out, bought one, and had the chef plate it beautifully. The lesson is to **listen for what isn't being asked for**, then deliver it. The idea came from frontline staff, not the owner.
+- **Systematise your kindness.** One example is looking up a guest in advance so you can personalise their visit.
+
+### 3. Creativity and "yes"
+
+- "Start with the answer 'Yes', and work backward."
+- "Excellence is the accumulation of thousands of details."
+- "No one who ever changed the game did so by being reasonable."
+- Creativity is an active process. At Eleven Madison Park, "Dream Weaver" meetings brainstormed ideas for guests.
+- Slowing the team down now builds a stronger foundation for later speed.
+
+### 4. Culture and hiring
+
+- **Hire "Dream Weavers":** people who take joy in making others happy. Skills can be taught, caring can't.
+- "Culture can't be taught; it has to be caught."
+- **Language creates culture.** Examples are saying "opportunities" for problems and "feedback" for complaints.
+- A daily 30-minute team meeting is described as the best lever for culture change.
+- "The best way to respect and reward the A players on your team is to surround them with other A players."
+- Make sure people who are trying have what they need to succeed.
+
+### 5. Leadership
+
+- **Praise in public, criticise in private.** Praise with emotion, criticise without it, and stick to facts.
+- "Criticize the behavior, not the person." "You were late" is a fact. "You are irresponsible" is an attack.
+- "Manage the person, not the title."
+- "Sometimes the best time to promote people is before they are ready."
+- "Consistency is one of the most important and underrated aspects of being a leader."
+- "You cannot demand excellence from your team if you are not giving them the tools to be excellent", and you must hold them to the standards you set.
+- "Trust is the currency of leadership." Without it you end up verifying everything, which costs speed and money.
+- Earn trust by being human with your team.
+
+### 6. Mistakes and adversity
+
+- "You're going to mess up. When you do, apologize."
+- "Adversity is a terrible thing to waste." Use a crisis to fix systems and bring the team together.
+- Take the work seriously, but not yourself.
+
+# Part 4: Horst Schulze
+
+*Based on interviews and write-ups about his book* Excellence Wins *(Wharton, Corporate Board Member, Chief Executive, Hospitality Net).*
+
+### Who he is
+
+Horst Schulze was a co-founder and long-time president of the Ritz-Carlton hotel company, famous for its service culture. His credo is "We are ladies and gentlemen serving ladies and gentlemen."
+
+### 1. Empower every employee to fix problems
+
+- **The $2,000 rule:** any employee could spend up to $2,000 to resolve a guest's problem and keep them. Staff weren't to send guests to a manager. The response was "Please forgive me, I'll take care of it", and "never lose a guest."
+- **The economics:** by his reasoning, a repeat guest was worth around $200,000 over a lifetime, so spending to keep one was "an economic decision."
+- **In practice:** "Nobody ever spent $2,000, but they bought breakfast or sent a food basket or some cookies." One example: a guest kept awake by street noise got breakfast bought for them. Staff were trained in "proper resolution" before they were trusted with it.
+- Another commentator notes that the budget isn't the point. You need to hire people with good judgment and train them to use it.
+
+### 2. A daily lineup: "message of the day"
+
+- Before every shift, staff heard one of the company's standards (he describes about 20 things that make the company better than competitors). "You couldn't go to work unless you had the message of the day."
+- The same message came back roughly every 20 days. He describes training as "teaching and repeating and sustaining."
+
+### 3. Treat staff as ladies and gentlemen
+
+- The credo means respect for employees, though he says they keep that respect only if they show they deserve it.
+- "Don't come to work to work ever. Come to work to create excellence."
+- Staff were expected to give opinions. One manager reportedly quit rather than listen to employees' views. Schulze says turnover stayed low without paying a premium.
+
+### 4. Select, don't just hire
+
+- "Not just hire people but select people." Recruit by inviting them into a mission: "Join me, don't come to work here."
+- Orientation brings people into the company's thinking and gives them a purpose, not just a job.
+
+### 5. Define quality and chase mistakes
+
+- Excellence is individualisation: delivering what *this* customer wants, "do it my way."
+- "Elegance without warmth is arrogance."
+- **Eliminate mistakes rather than cut costs.** Fixing a mistake permanently saves money and improves the product at once. "Cost-cutting means you take something away from the customer", and "Any fool can do cost-cutting."
+- Keep existing guests first, then win new ones, then get more value from the guests you have.
+
+### 6. Leadership
+
+- Employees can only be excellent if leadership is excellent.
+- Managers must help staff succeed and welcome their opinions. Every employee should know their objective is to bring the guest back.
+
 # Where to start
 
-- **Quick wins, all free:** acknowledge every arrival, run a tighter pre-shift (one lesson, one positive, one thing to watch for), name three to five behaviours you want and praise them when you see them, and assign owners for bathrooms and table clearing.
+- **Quick wins, all free:** acknowledge every arrival, run a tighter pre-shift with one standard repeated (Schulze's "message of the day"), name three to five behaviours you want and praise them when you see them, and assign owners for bathrooms and table clearing.
+- **Empowerment:** decide a spending limit staff can use on the spot to fix a guest problem, and tell them. It will almost never be used in full.
+- **A generosity budget:** after you've got the numbers under control, set aside a small share (Guidara's 5%) for gestures that come from listening to guests.
 - **Hiring:** add an interview question that asks for an example of empathy, and watch candidates in the work environment where you can.
-- **Management:** work out which decisions managers can't make without you, and ask what happens when your best manager isn't there.
+- **Management:** work out which decisions managers can't make without you, and ask what happens when your best manager isn't there. Praise in public and correct in private.
 - **Diagnosis:** before fixing a complaint, trace it backwards. Alexis's free 25-area assessment tool and a quiet guest-eyes visit are good first steps.
-- **Caveats:** Part 1 is based on Instagram captions only, so her video and carousel detail is only partly captured. Part 2 is based on published excerpts and write-ups rather than the full book, so check quotes against *Setting the Table* before using them publicly.
+- **Caveats:** Part 1 is based on Instagram captions only, so her video and carousel detail is only partly captured. Parts 2 to 4 are based on published excerpts, interviews and write-ups rather than the full books, so check quotes against *Setting the Table*, *Unreasonable Hospitality* and *Excellence Wins* before using them publicly. Some of Guidara's and Schulze's quotes come from spoken interviews or secondary summaries.
 
 ### Sources for Part 2
 
@@ -243,3 +348,14 @@ From a 2018 interview: strong social media with weak service and food only speed
 - [Five universal business lessons (California Employment Law Report)](https://www.californiaemploymentlawreport.com/2018/03/five-universal-business-lessons-danny-meyer/)
 - [The salt shaker theory of leadership](https://hellooperator.substack.com/p/the-salt-shaker-theory-of-leadership-5a8ad62563f)
 
+### Sources for Part 3
+
+- [Lessons from Will Guidara (Antoine Buteau)](https://www.antoinebuteau.com/lessons-from-will-guidara/)
+- [Eleven Madison Park: Will Guidara's lessons (Shortform)](https://www.shortform.com/blog/eleven-madison-park-will-guidara/)
+
+### Sources for Part 4
+
+- [Knowledge at Wharton: Horst Schulze on Excellence Wins](https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/horst-schulze-ritz-carlton-book/)
+- [An Empowerment Lesson From the Ritz-Carlton (Hospitality Net)](https://www.hospitalitynet.org/opinion/4102475/an-empowerment-lesson-from-the-ritz-carlton)
+- [Corporate Board Member interview](https://boardmember.com/ritz-carlton-founder-horst-schulze/2/)
+- [Chief Executive interview](https://chiefexecutive.net/ritz-carlton-founder-horst-schulze-gold-standard/2)
