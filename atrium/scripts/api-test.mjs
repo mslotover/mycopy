@@ -1,5 +1,6 @@
-// End-to-end API checks against a local dev server (npm run dev) with a freshly migrated database.
-// Usage: node scripts/api-test.mjs [baseUrl]
+// End-to-end API checks against a local dev server. Set up a fresh local database first:
+//   rm -rf .wrangler/state && npm run db:local && npx wrangler d1 execute atrium --local -c wrangler.dev.jsonc --file=tests/fixture.sql
+// then start the server (npm run dev) and run: node scripts/api-test.mjs [baseUrl]
 const BASE = (process.argv[2] ?? "http://localhost:8787") + "/api";
 let failures = 0;
 const check = (name, cond, extra = "") => {

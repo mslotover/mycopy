@@ -133,13 +133,24 @@ export function QuickAdd({ defaults, placeholder = "New task" }: { defaults: Par
   );
 }
 
+const DAY = 86_400_000;
+/** Open, and either untouched for 60 days or more than 30 days overdue. */
+function isStale(t: Task) {
+  if (t.status === "done") return false;
+  const overdue = t.due ? Date.now() - Date.parse(t.due) > 30 * DAY : false;
+  return overdue || Date.now() - t.updated_at > 60 * DAY;
+}
+
 export function TasksView() {
   const app = useApp();
   const [params, setParams] = useSearchParams();
   const [scope, setScope] = useState<"mine" | "delegated" | "all">("mine");
   const [spaceId, setSpaceId] = useState<string>("");
   const { data, isLoading } = useTasks(scope);
-  const tasks = (data ?? []).filter((t) => !spaceId || t.space_id === spaceId);
+  const [staleOnly, setStaleOnly] = useState(false);
+  const inSpace = (data ?? []).filter((t) => !spaceId || t.space_id === spaceId);
+  const staleCount = inSpace.filter(isStale).length;
+  const tasks = staleOnly ? inSpace.filter(isStale) : inSpace;
   const openId = params.get("open");
   const open = (id: string | null) => setParams(id ? { open: id } : {}, { replace: true });
   const openCount = tasks.filter((t) => t.status !== "done").length;
@@ -164,6 +175,11 @@ export function TasksView() {
               {app.me.role !== "guest" && <button className={scope === "all" ? "on" : ""} onClick={() => setScope("all")}>Everyone</button>}
             </div>
             <span className="grow" />
+            {(staleOnly || staleCount > 0) && (
+              <button className={`chip-btn${staleOnly ? " on" : ""}`} onClick={() => setStaleOnly((v) => !v)} title="Open tasks nobody has touched in two months, or more than a month overdue">
+                {staleOnly ? "Showing stale" : `Stale (${staleCount})`}
+              </button>
+            )}
             {app.spaces.length > 0 && (
               <select className="field" style={{ width: "auto", height: 30, fontSize: 13 }} value={spaceId} onChange={(e) => setSpaceId(e.target.value)} aria-label="Filter by space">
                 <option value="">All spaces</option>
@@ -171,7 +187,8 @@ export function TasksView() {
               </select>
             )}
           </div>
-          {scope !== "delegated" && <QuickAdd defaults={{ space_id: spaceId || null }} placeholder={spaceId ? `New task in ${app.spaceById.get(spaceId)?.name}` : "New task"} />}
+          {staleOnly && <p className="sec" style={{ margin: "4px 0 10px", fontSize: 13.5 }}>Open tasks nobody has touched in two months, or more than a month overdue. Tick off what's done, or open one to update it.</p>}
+          {scope !== "delegated" && !staleOnly && <QuickAdd defaults={{ space_id: spaceId || null }} placeholder={spaceId ? `New task in ${app.spaceById.get(spaceId)?.name}` : "New task"} />}
           {isLoading ? <Spinner /> : tasks.length ? (
             <TaskGroups tasks={tasks} onOpen={open} showAssignee={scope !== "mine"} showSpace={!spaceId} />
           ) : (

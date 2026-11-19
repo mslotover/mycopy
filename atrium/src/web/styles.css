@@ -250,6 +250,9 @@ select.field { appearance: none; padding-right: 28px; background-image: url("dat
 .segmented { display: inline-flex; padding: 2px; background: var(--fill); border-radius: 9px; gap: 1px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
 .segmented button { height: 26px; padding: 0 12px; border-radius: 7px; font-size: 13px; font-weight: 500; color: var(--text-2); white-space: nowrap; transition: color 120ms; }
 .segmented button:hover { color: var(--text); }
+.chip-btn { height: 30px; padding: 0 12px; border-radius: 980px; font-size: 13px; font-weight: 500; color: var(--text-2, inherit); background: var(--fill-2); margin-right: 8px; }
+.chip-btn:hover { background: var(--fill-3); }
+.chip-btn.on { background: var(--accent); color: #fff; }
 .segmented button.on { background: var(--raised); color: var(--text); box-shadow: 0 0 0 0.5px var(--hairline), 0 1px 3px rgba(0, 0, 0, 0.1); }
 
 .avatar { border-radius: 50%; display: inline-grid; place-items: center; color: #fff; font-weight: 600; flex: none; letter-spacing: 0.01em; background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)); }

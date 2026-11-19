@@ -25,11 +25,12 @@
   "vectorize": [{ "binding": "VECTORS", "index_name": "atrium-search" }],
   // Business figures for Ask AI, from the Toklas data connector (needs the ATRIUM_DATA_KEY secret).
   "services": [{ "binding": "DATA", "service": "toklas-data-connector" }],
-  // 08:00 UTC each day: "due today" reminders. Every 5 minutes: embed changed items for search.
-  // 09:00 UTC Mondays: AI spending email.
-  "triggers": { "crons": ["0 8 * * *", "*/5 * * * *", "0 9 * * 1"] },
+  // A single five-minute timer; src/worker/index.ts runs each job at its time of day.
+  // (The Workers free plan allows five timers across the whole account.)
+  "triggers": { "crons": ["*/5 * * * *"] },
   "vars": {
     "APP_NAME": "Atrium",
+    "APP_URL": "https://atrium.tmfgroup.workers.dev",
     "MAIL_FROM": "Atrium <atrium@reports.toklas.co.uk>",
     "CLAUDE_MODEL": "claude-opus-5-5",
     "WHISPER_MODEL": "@cf/openai/whisper-large-v3-turbo",
@@ -39,5 +40,7 @@
   // VAPID_PRIVATE_KEY (the private half of VAPID_PUBLIC_KEY, for phone notifications),
   // ATRIUM_DATA_KEY (same value as ATRIUM_KEY on toklas-data-connector),
   // optional ANTHROPIC_ADMIN_KEY (Console figure in the weekly spending email),
+  // REPORT_TO (who gets the weekly spending email) and BRIEF_RECIPIENTS (comma-separated
+  // emails that get the morning brief) - kept as secrets because this repository is public.
   // optional GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET for Google sign-in.
 }

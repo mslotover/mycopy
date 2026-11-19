@@ -8,6 +8,7 @@ import { all, bad, first, isDev, type Env, type HonoEnv, type User } from "./env
 import { searchWorkspace, visibleMeetingIds } from "./misc";
 import type { TaskRow } from "./tasks";
 import { recordUsage } from "./usage";
+import { callData, hasData } from "./data";
 
 // If Claude declines a request on safety grounds, the API retries it on a fallback model
 // chosen by refusal category rather than failing the meeting or the answer outright.
@@ -236,19 +237,6 @@ const DATA_TOOLS: Anthropic.Tool[] = [
     input_schema: { type: "object", properties: { sql: { type: "string", description: "A single SELECT statement." } }, required: ["sql"] },
   },
 ];
-const hasData = (env: Env, user: User) => !!env.DATA && !!env.ATRIUM_DATA_KEY && user.role !== "guest";
-
-async function callData(env: Env, user: User, path: string, body: unknown) {
-  const res = await env.DATA!.fetch(`https://toklas-data-connector${path}`, {
-    method: "POST",
-    headers: { "content-type": "application/json", "x-atrium-key": env.ATRIUM_DATA_KEY!, "x-atrium-user": user.email },
-    body: JSON.stringify(body),
-  });
-  const text = await res.text();
-  if (res.status === 404 && !text.startsWith("{")) throw new Error("The business data connector isn't accepting Atrium's requests yet.");
-  return { ok: res.ok, text };
-}
-
 async function runTool(env: Env, user: User, name: string, input: unknown): Promise<{ content: string; is_error?: boolean; label: string }> {
   const invalid = (label: string) => ({ content: JSON.stringify({ INVALID_JSON: JSON.stringify(input) }), is_error: true, label });
   if (name === "search_workspace") {
@@ -322,13 +310,13 @@ async function runTool(env: Env, user: User, name: string, input: unknown): Prom
     return { label: "Looked up tasks", content: out.length ? JSON.stringify(out) : "No matching tasks." };
   }
   if (name === "business_data_tables" && hasData(env, user)) {
-    const r = await callData(env, user, "/atrium/tables", {});
+    const r = await callData(env, user.email, "/atrium/tables", {});
     return { label: "Looked at the business data tables", content: r.text, is_error: !r.ok };
   }
   if (name === "business_data_query" && hasData(env, user)) {
     const p = QueryInput.safeParse(input);
     if (!p.success) return invalid("Querying business data");
-    const r = await callData(env, user, "/atrium/query", { sql: p.data.sql });
+    const r = await callData(env, user.email, "/atrium/query", { sql: p.data.sql });
     const content = r.text.length > 80_000 ? r.text.slice(0, 80_000) + "\n[cut off: aggregate further]" : r.text;
     return { label: r.ok ? "Queried the business data" : "Business data query failed", content, is_error: !r.ok };
   }
@@ -368,6 +356,8 @@ ai.post("/ask", async (c) => {
           max_tokens: 16000,
           betas: [FALLBACK_BETA],
           fallbacks: "default",
+          // Caches the conversation so far: each tool round re-reads it at a tenth of the price.
+          cache_control: { type: "ephemeral" },
           system,
           tools: (hasData(env, user) ? [...ASK_TOOLS, ...DATA_TOOLS] : ASK_TOOLS) as Anthropic.Beta.BetaToolUnion[],
           messages,

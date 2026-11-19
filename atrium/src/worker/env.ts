@@ -11,6 +11,12 @@ export type Env = {
   ATRIUM_DATA_KEY?: string;
   ASSETS: Fetcher;
   APP_NAME: string;
+  /** Public address, for links in scheduled emails (e.g. https://atrium.example.workers.dev). */
+  APP_URL?: string;
+  /** Comma-separated emails that get the morning brief (see brief.ts). A secret: the repo is public. */
+  BRIEF_RECIPIENTS?: string;
+  /** Who gets the weekly AI spending email (see usage.ts). A secret: the repo is public. */
+  REPORT_TO?: string;
   MAIL_FROM: string;
   CLAUDE_MODEL: string;
   WHISPER_MODEL: string;

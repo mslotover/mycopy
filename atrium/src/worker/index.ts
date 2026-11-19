@@ -10,9 +10,15 @@ import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
 import { embedDirty } from "./vectors";
 import { weeklyUsageReport } from "./usage";
+import { sendMorningBriefs } from "./brief";
 
-const MORNING = "0 8 * * *";
-const WEEKLY = "0 9 * * 1"; // Monday: AI spending email
+/** Runs and clears queued one-off jobs. */
+async function runFlags(env: HonoEnv["Bindings"]) {
+  const res = await env.DB.prepare("DELETE FROM app_flags WHERE name = 'brief_preview' RETURNING name").all();
+  if (res.results.length) await sendMorningBriefs(env);
+}
+
+
 
 const app = new Hono<HonoEnv>();
 
@@ -71,12 +77,18 @@ app.onError((err, c) => {
 
 export default {
   fetch: app.fetch,
-  // See "triggers" in wrangler.jsonc: due-today reminders each morning, and every few
-  // minutes the embedding of recently changed items for meaning-based search, and on
-  // Monday mornings the AI spending email.
+  // One five-minute timer runs everything (the Workers free plan allows five timers per
+  // account): embedding changed items for search every time, and at set UTC times the
+  // morning brief (07:35, after the data connector's sync), due-today reminders (08:00) and
+  // Monday's AI spending email (09:00). One-off jobs are queued as rows in app_flags.
   async scheduled(event: ScheduledController, env: HonoEnv["Bindings"], ctx: ExecutionContext) {
-    if (event.cron === MORNING) ctx.waitUntil(remindDueToday(env));
-    else if (event.cron === WEEKLY) ctx.waitUntil(weeklyUsageReport(env));
-    else ctx.waitUntil(embedDirty(env).then(() => undefined));
+    const t = new Date(event.scheduledTime);
+    const at = (h: number, m: number) => t.getUTCHours() === h && t.getUTCMinutes() === m;
+    const jobs: Promise<unknown>[] = [embedDirty(env)];
+    if (at(7, 35)) jobs.push(sendMorningBriefs(env));
+    if (at(8, 0)) jobs.push(remindDueToday(env));
+    if (at(9, 0) && t.getUTCDay() === 1) jobs.push(weeklyUsageReport(env));
+    jobs.push(runFlags(env));
+    ctx.waitUntil(Promise.allSettled(jobs));
   },
 };

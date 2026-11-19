@@ -21,7 +21,6 @@ function priceFor(model: string) {
   return key ? PRICES[key] : PRICES["claude-opus-5-5"];
 }
 
-export const REPORT_TO = "matthew@toklas.co.uk";
 export type Feature = "ask" | "meeting_summary";
 const FEATURE_NAMES: Record<string, string> = { ask: "Ask AI", meeting_summary: "Meeting summaries" };
 
@@ -136,5 +135,6 @@ ${consoleLine}
 ${people.length ? `<p style="margin-bottom:0"><strong>By person</strong></p>${table(["Person", "Requests", "Cost"], people.map((r) => [escapeHtml(r.name ?? "Background work"), String(r.n), usd(r.c)]))}` : ""}
 ${features.length ? `<p style="margin-bottom:0"><strong>By feature</strong></p>${table(["Feature", "Requests", "Cost"], features.map((r) => [escapeHtml(FEATURE_NAMES[r.feature] ?? r.feature), String(r.n), usd(r.c)]))}` : ""}
 <p style="color:#86868b;font-size:13px">Atrium's figures are estimates from Anthropic's list prices, in US dollars as the Console bills. You can cap spending in the Console under Settings, Limits.</p>`;
-  await sendMail(env, REPORT_TO, `${env.APP_NAME}: ${usd(w)} spent on AI last week`, emailLayout(env, { heading: "Weekly AI spending", body }));
+  if (!env.REPORT_TO) return;
+  await sendMail(env, env.REPORT_TO, `${env.APP_NAME}: ${usd(w)} spent on AI last week`, emailLayout(env, { heading: "Weekly AI spending", body }));
 }
