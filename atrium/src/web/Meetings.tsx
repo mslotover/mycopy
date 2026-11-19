@@ -819,7 +819,7 @@ export function MeetingView() {
     <>
       <Toolbar crumbs={<><Link className="crumb" to="/meetings">Meetings</Link><span className="crumb-sep">›</span><span className="crumb current">{m.title || "Untitled meeting"}</span></>}>
         <span className={`chip ${STATUS[m.status].cls}`}>{STATUS[m.status].label}</span>
-        {app.aiReady && m.status === "sent" && <button className="icon-btn" aria-label="Ask AI about this meeting" title="Ask AI about this meeting" onClick={() => shell.openAsk(undefined, { kind: "meeting", id: m.id, title: m.title })}><Sparkles /></button>}
+        {app.aiReady && (m.status === "sent" || m.status === "review") && <button className="icon-btn" aria-label="Ask AI about this meeting" title="Ask AI about this meeting" onClick={() => shell.openAsk(undefined, { kind: "meeting", id: m.id, title: m.title })}><Sparkles /></button>}
         {data.isOrganiser && m.status !== "recording" && (
           <Dropdown width={190} placement="bottom-end" trigger={({ onClick }) => <button className="icon-btn" aria-label="More" onClick={onClick}><MoreHorizontal /></button>}>
             {(close) => <MenuItem danger icon={<Trash2 />} onClick={() => { close(); remove(); }}>Delete meeting</MenuItem>}
