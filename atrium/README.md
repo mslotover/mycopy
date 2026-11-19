@@ -18,8 +18,8 @@ and for answering questions about the workspace.
   emails the summary to participants and puts each action on its owner's task list.
 - **Brain** – decisions, facts and know-how distilled from meetings, searchable alongside
   everything else.
-- **Search and Ask AI** – full-text search, and a chat panel that answers from the workspace
-  with links to sources. Both only ever show what the person asking is allowed to see.
+- **Search and Ask AI** – search by keyword and by meaning (so "cold storage" finds the
+  walk-in fridge page), and a chat panel that answers from the workspace with links to sources. Both only ever show what the person asking is allowed to see.
 
 ## Layout
 
@@ -48,7 +48,9 @@ keys are needed. `node scripts/seed-demo.mjs` adds sample content; sign in as
 
 ## Deploy
 
-1. Create the D1 database and R2 bucket, and put the database id in `wrangler.jsonc`.
+1. Create the D1 database and R2 bucket, and put the database id in `wrangler.jsonc`. Create
+   the search index: `wrangler vectorize create atrium-search --dimensions=1024 --metric=cosine`.
+   A five-minute cron embeds new and changed items into it (`src/worker/vectors.ts`).
 2. `npm run db:remote`
 3. Set secrets: `wrangler secret put ANTHROPIC_API_KEY`, `wrangler secret put RESEND_API_KEY`
    (and optionally `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` to turn on Google sign-in;
