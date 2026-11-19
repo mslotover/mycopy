@@ -312,7 +312,8 @@ button.chip:hover { filter: brightness(0.96); }
 .panel {
   position: absolute; top: 0; right: 0; bottom: 0; z-index: 20; width: min(400px, 100%);
   display: flex; flex-direction: column;
-  background: var(--material-thick); backdrop-filter: saturate(180%) blur(30px); -webkit-backdrop-filter: saturate(180%) blur(30px);
+  /* Solid, not translucent: text behind a reading panel competes with the answer. */
+  background: var(--raised);
   box-shadow: -0.5px 0 0 var(--hairline-strong), -18px 0 48px rgba(0, 0, 0, 0.08);
   animation: panel-in 420ms var(--spring) both;
 }

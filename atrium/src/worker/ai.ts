@@ -143,13 +143,39 @@ function mockExtraction(input: SummaryInput): MeetingExtraction {
 
 // ---------- Ask AI ----------
 
-const ASK_SYSTEM = (appName: string, user: User, today: string) => `You answer questions for ${user.name} from the contents of ${appName}, their company's shared workspace: pages and databases, meeting summaries and transcripts, tasks, and knowledge notes distilled from meetings. The workspace covers several businesses, each with its own space.
+const ASK_SYSTEM = (appName: string, user: User, today: string, overview: string) => `You answer questions for ${user.name} from the contents of ${appName}, their company's shared workspace: pages and databases, meeting summaries and transcripts, tasks, and knowledge notes distilled from meetings. The workspace covers several businesses, each with its own space.
 
-Use the tools to find what the workspace actually says before answering; don't answer from general knowledge when the question is about the company. Search with a few different phrasings when the first search comes up thin, and read the full item when a snippet looks relevant but incomplete. The tools only return what ${user.name} is allowed to see.
+Use the tools to find what the workspace actually says before answering; don't answer from general knowledge when the question is about the company. Search finds things by meaning as well as by keyword. Search with a few different phrasings when the first search comes up thin, and read the full item when a snippet looks relevant but incomplete. The tools only return what ${user.name} is allowed to see.
 
-Answer directly and concisely, leading with the answer. Cite what you relied on with Markdown links using the url each tool result gives you, for example [Weekly bakery meeting](/meetings/abc123). If the workspace doesn't contain the answer, say so plainly and mention what you searched for; never fill gaps with invention. If sources disagree, say which is more recent.
+Answer directly and concisely, leading with the answer. Cite what you relied on with Markdown links using the url each tool result gives you, for example [Weekly bakery meeting](/meetings/abc123). If sources disagree, say which is more recent. Never fill gaps with invention.
+
+When the workspace doesn't hold the answer, say so in a sentence, then be useful about it: say briefly what you looked for, point to the closest related material you did find (with links), and if the relevant space has little or nothing in it (see the overview below), say so, since that is usually the reason. Don't tell ${user.name} to rephrase; you have already tried the likely phrasings.
+
+What ${user.name} can see, by space (pages, meetings, open tasks):
+${overview}
 
 Today is ${today}.`;
+
+/** A line per space the user belongs to, with rough content counts, so answers can explain gaps. */
+async function workspaceOverview(env: Env, user: User): Promise<string> {
+  const spaceIds = [...(await memberSpaceIds(env, user))];
+  if (!spaceIds.length) return "- (no spaces)";
+  const marks = spaceIds.map(() => "?").join(",");
+  const rows = await all<{ id: string; name: string; pages: number; tasks: number }>(
+    env.DB,
+    `SELECT s.id, s.name,
+       (SELECT count(*) FROM pages p WHERE p.space_id = s.id AND p.archived = 0 AND p.kind != 'row' AND p.is_template = 0) AS pages,
+       (SELECT count(*) FROM tasks t WHERE t.space_id = s.id AND t.status != 'done') AS tasks
+     FROM spaces s WHERE s.id IN (${marks}) AND s.archived = 0 ORDER BY s.sort, s.name`,
+    ...spaceIds,
+  );
+  // Meetings can be private within a space, so count only the ones this user may open.
+  const visible = await visibleMeetingIds(env, user, new Set(spaceIds));
+  const meetings = await all<{ id: string; space_id: string }>(env.DB, `SELECT id, space_id FROM meetings WHERE space_id IN (${marks})`, ...spaceIds);
+  const perSpace = new Map<string, number>();
+  for (const m of meetings) if (visible.has(m.id)) perSpace.set(m.space_id, (perSpace.get(m.space_id) ?? 0) + 1);
+  return rows.map((r) => `- ${r.name}: ${r.pages} pages, ${perSpace.get(r.id) ?? 0} meetings, ${r.tasks} open tasks`).join("\n");
+}
 
 const SearchInput = z.object({ query: z.string().min(1) });
 const ReadInput = z.object({ kind: z.enum(["page", "meeting", "task", "knowledge"]), id: z.string().min(1) });
@@ -286,6 +312,7 @@ ai.post("/ask", async (c) => {
       return;
     }
     const messages: Anthropic.Beta.BetaMessageParam[] = history.map((m) => ({ role: m.role, content: m.content }));
+    const system = ASK_SYSTEM(env.APP_NAME, user, today, await workspaceOverview(env, user).catch(() => "- (unavailable)"));
     try {
       let jsonRetries = 0;
       for (let turn = 0; turn < 12; turn++) {
@@ -294,7 +321,7 @@ ai.post("/ask", async (c) => {
           max_tokens: 16000,
           betas: [FALLBACK_BETA],
           fallbacks: "default",
-          system: ASK_SYSTEM(env.APP_NAME, user, today),
+          system,
           tools: ASK_TOOLS as Anthropic.Beta.BetaToolUnion[],
           messages,
         });
