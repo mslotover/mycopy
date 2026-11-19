@@ -1,6 +1,6 @@
 // Atrium's service worker: keeps the app opening when the connection drops, and shows
 // notifications sent from the server. It never touches /api requests.
-const CACHE = "atrium-shell-v1";
+const CACHE = "atrium-shell-v2";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.add(new Request("/", { cache: "reload" }))).catch(() => {}).then(() => self.skipWaiting()));

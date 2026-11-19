@@ -50,7 +50,7 @@ export function SignIn() {
   return (
     <div className="auth">
       <div className="auth-card">
-        <div className="brand-mark">{name[0]}</div>
+        <img className="brand-mark" src="/icon.svg" alt="" />
         {state === "verifying" ? (<><h1>Signing you in…</h1><p>One moment.</p></>) : state === "sent" ? (
           <>
             <h1>Check your email</h1>

@@ -187,7 +187,7 @@ function Sidebar({ open, onNavigate }: { open: boolean; onNavigate: () => void }
     <aside className={`sidebar ${open ? "open" : ""}`} onClick={(e) => { if ((e.target as HTMLElement).closest("a")) onNavigate(); }}>
       <div className="side-head">
         <Link to="/" className="brand" style={{ textDecoration: "none", color: "inherit" }}>
-          <span className="brand-mark">{app.appName[0]}</span>
+          <img className="brand-mark" src="/icon.svg" alt="" />
           <span className="brand-name">{app.appName}</span>
         </Link>
         {app.me.role !== "guest" && (
