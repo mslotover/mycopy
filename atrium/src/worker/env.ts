@@ -6,6 +6,9 @@ export type Env = {
   AI: Ai;
   /** Vectorize index for meaning-based search; absent in local development. */
   VECTORS?: Vectorize;
+  /** Service binding to the Toklas data connector (business figures), and the shared key it expects. */
+  DATA?: Fetcher;
+  ATRIUM_DATA_KEY?: string;
   ASSETS: Fetcher;
   APP_NAME: string;
   MAIL_FROM: string;

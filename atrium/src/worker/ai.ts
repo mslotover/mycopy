@@ -143,7 +143,7 @@ function mockExtraction(input: SummaryInput): MeetingExtraction {
 
 // ---------- Ask AI ----------
 
-const ASK_SYSTEM = (appName: string, user: User, today: string, overview: string) => `You answer questions for ${user.name} from the contents of ${appName}, their company's shared workspace: pages and databases, meeting summaries and transcripts, tasks, and knowledge notes distilled from meetings. The workspace covers several businesses, each with its own space.
+const ASK_SYSTEM = (appName: string, user: User, today: string, overview: string, data: boolean) => `You answer questions for ${user.name} from the contents of ${appName}, their company's shared workspace: pages and databases, meeting summaries and transcripts, tasks, and knowledge notes distilled from meetings. The workspace covers several businesses, each with its own space.
 
 Use the tools to find what the workspace actually says before answering; don't answer from general knowledge when the question is about the company. Search finds things by meaning as well as by keyword. Search with a few different phrasings when the first search comes up thin, and read the full item when a snippet looks relevant but incomplete. The tools only return what ${user.name} is allowed to see.
 
@@ -151,7 +151,9 @@ Answer directly and concisely, leading with the answer. Cite what you relied on 
 
 When the workspace doesn't hold the answer, say so in a sentence, then be useful about it: say briefly what you looked for, point to the closest related material you did find (with links), and if the relevant space has little or nothing in it (see the overview below), say so, since that is usually the reason. Don't tell ${user.name} to rephrase; you have already tried the likely phrasings.
 
-What ${user.name} can see, by space (pages, meetings, open tasks):
+${data ? `For figures (sales, covers, spend per head, items sold, labour hours and cost, bookings, bakery wholesale, what suppliers charged, Instagram stories), use the business data tools rather than the workspace: list the tables first, then query them. The data runs to yesterday. Say which dates and sites your figures cover, and show small tables when they help. If a figure isn't available to ${user.name} (wage costs, for example), say so plainly.
+
+` : ""}What ${user.name} can see, by space (pages, meetings, open tasks):
 ${overview}
 
 Today is ${today}.`;
@@ -212,6 +214,36 @@ const ASK_TOOLS: Anthropic.Tool[] = [
     },
   },
 ];
+
+// Business figures from the Toklas data connector (BigQuery: tills, labour, bookings, wholesale,
+// supplier bills, Instagram stories). The connector decides what each person may see.
+const QueryInput = z.object({ sql: z.string().min(1).max(20000) });
+const DATA_TOOLS: Anthropic.Tool[] = [
+  {
+    name: "business_data_tables",
+    description: "List the business data tables (daily till sales, items, payments and till lines; Deputy labour; SevenRooms bookings; Zymo bakery wholesale; Xero supplier bill lines; Instagram stories) and their columns. Call this before writing a business_data_query.",
+    eager_input_streaming: true,
+    input_schema: { type: "object", properties: {} },
+  },
+  {
+    name: "business_data_query",
+    description: "Run one read-only BigQuery standard SQL SELECT over the business data tables, for figures, trends and comparisons. Filter on date and aggregate in SQL; results are capped at 5,000 rows.",
+    eager_input_streaming: true,
+    input_schema: { type: "object", properties: { sql: { type: "string", description: "A single SELECT statement." } }, required: ["sql"] },
+  },
+];
+const hasData = (env: Env, user: User) => !!env.DATA && !!env.ATRIUM_DATA_KEY && user.role !== "guest";
+
+async function callData(env: Env, user: User, path: string, body: unknown) {
+  const res = await env.DATA!.fetch(`https://toklas-data-connector${path}`, {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-atrium-key": env.ATRIUM_DATA_KEY!, "x-atrium-user": user.email },
+    body: JSON.stringify(body),
+  });
+  const text = await res.text();
+  if (res.status === 404 && !text.startsWith("{")) throw new Error("The business data connector isn't accepting Atrium's requests yet.");
+  return { ok: res.ok, text };
+}
 
 async function runTool(env: Env, user: User, name: string, input: unknown): Promise<{ content: string; is_error?: boolean; label: string }> {
   const invalid = (label: string) => ({ content: JSON.stringify({ INVALID_JSON: JSON.stringify(input) }), is_error: true, label });
@@ -285,6 +317,17 @@ async function runTool(env: Env, user: User, name: string, input: unknown): Prom
       .map((t) => ({ id: t.id, title: t.title, status: t.status, assignee: t.assignee_name, due: t.due, space: t.space_name, project: t.project || undefined, url: `/tasks?open=${t.id}` }));
     return { label: "Looked up tasks", content: out.length ? JSON.stringify(out) : "No matching tasks." };
   }
+  if (name === "business_data_tables" && hasData(env, user)) {
+    const r = await callData(env, user, "/atrium/tables", {});
+    return { label: "Looked at the business data tables", content: r.text, is_error: !r.ok };
+  }
+  if (name === "business_data_query" && hasData(env, user)) {
+    const p = QueryInput.safeParse(input);
+    if (!p.success) return invalid("Querying business data");
+    const r = await callData(env, user, "/atrium/query", { sql: p.data.sql });
+    const content = r.text.length > 80_000 ? r.text.slice(0, 80_000) + "\n[cut off: aggregate further]" : r.text;
+    return { label: r.ok ? "Queried the business data" : "Business data query failed", content, is_error: !r.ok };
+  }
   return { content: `Unknown tool ${name}`, is_error: true, label: name };
 }
 
@@ -312,7 +355,7 @@ ai.post("/ask", async (c) => {
       return;
     }
     const messages: Anthropic.Beta.BetaMessageParam[] = history.map((m) => ({ role: m.role, content: m.content }));
-    const system = ASK_SYSTEM(env.APP_NAME, user, today, await workspaceOverview(env, user).catch(() => "- (unavailable)"));
+    const system = ASK_SYSTEM(env.APP_NAME, user, today, await workspaceOverview(env, user).catch(() => "- (unavailable)"), hasData(env, user));
     try {
       let jsonRetries = 0;
       for (let turn = 0; turn < 12; turn++) {
@@ -322,7 +365,7 @@ ai.post("/ask", async (c) => {
           betas: [FALLBACK_BETA],
           fallbacks: "default",
           system,
-          tools: ASK_TOOLS as Anthropic.Beta.BetaToolUnion[],
+          tools: (hasData(env, user) ? [...ASK_TOOLS, ...DATA_TOOLS] : ASK_TOOLS) as Anthropic.Beta.BetaToolUnion[],
           messages,
         });
         s.on("text", (delta) => void send("text", { delta }));

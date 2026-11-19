@@ -23,6 +23,8 @@
   "ai": { "binding": "AI" },
   // Meaning-based search (created with: wrangler vectorize create atrium-search --dimensions=1024 --metric=cosine).
   "vectorize": [{ "binding": "VECTORS", "index_name": "atrium-search" }],
+  // Business figures for Ask AI, from the Toklas data connector (needs the ATRIUM_DATA_KEY secret).
+  "services": [{ "binding": "DATA", "service": "toklas-data-connector" }],
   // 08:00 UTC each day: "due today" reminders. Every 5 minutes: embed changed items for search.
   "triggers": { "crons": ["0 8 * * *", "*/5 * * * *"] },
   "vars": {
@@ -34,5 +36,6 @@
   }
   // Secrets (set with `wrangler secret put`): ANTHROPIC_API_KEY, RESEND_API_KEY,
   // VAPID_PRIVATE_KEY (the private half of VAPID_PUBLIC_KEY, for phone notifications),
+  // ATRIUM_DATA_KEY (same value as ATRIUM_KEY on toklas-data-connector),
   // optional GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET for Google sign-in.
 }
