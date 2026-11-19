@@ -4,11 +4,12 @@ import { Hono } from "hono";
 import { streamSSE } from "hono/streaming";
 import { z } from "zod";
 import { canSeeTask, loadAccess, memberSpaceIds } from "./access";
-import { all, bad, first, isDev, type Env, type HonoEnv, type User } from "./env";
+import { all, bad, first, isDev, parseJSON, type Env, type HonoEnv, type User } from "./env";
 import { searchWorkspace, visibleMeetingIds } from "./misc";
 import type { TaskRow } from "./tasks";
 import { recordUsage } from "./usage";
 import { callData, hasData } from "./data";
+import { ACTION_TOOLS, buildProposal } from "./actions";
 
 // If Claude declines a request on safety grounds, the API retries it on a fallback model
 // chosen by refusal category rather than failing the meeting or the answer outright.
@@ -148,7 +149,7 @@ function mockExtraction(input: SummaryInput): MeetingExtraction {
 
 // ---------- Ask AI ----------
 
-const ASK_SYSTEM = (appName: string, user: User, today: string, overview: string, data: boolean) => `You answer questions for ${user.name} from the contents of ${appName}, their company's shared workspace: pages and databases, meeting summaries and transcripts, tasks, and knowledge notes distilled from meetings. The workspace covers several businesses, each with its own space.
+const ASK_SYSTEM = (appName: string, user: User, today: string, overview: string, data: boolean, actions: boolean, context: string) => `You answer questions for ${user.name} from the contents of ${appName}, their company's shared workspace: pages and databases, meeting summaries and transcripts, tasks, and knowledge notes distilled from meetings. The workspace covers several businesses, each with its own space.
 
 Use the tools to find what the workspace actually says before answering; don't answer from general knowledge when the question is about the company. Search finds things by meaning as well as by keyword. Search with a few different phrasings when the first search comes up thin, and read the full item when a snippet looks relevant but incomplete. The tools only return what ${user.name} is allowed to see.
 
@@ -161,7 +162,9 @@ ${data ? `For figures (sales, covers, spend per head, items sold, labour hours a
 ` : ""}What ${user.name} can see, by space (pages, meetings, open tasks):
 ${overview}
 
-Today is ${today}.`;
+${actions ? `You can also offer to do things: create tasks, write a page, or add a row to a database, with the propose_ tools. Only propose when ${user.name} asks for something to be done, or when it clearly follows from what they asked (for example "turn these notes into tasks"). The tools don't do anything themselves: ${user.name} sees a card with a Confirm button. So after proposing, say in a sentence what you've put forward and that it will happen when they confirm; never say it's done.
+
+` : ""}${context}Today is ${today}.`;
 
 /** A line per space the user belongs to, with rough content counts, so answers can explain gaps. */
 async function workspaceOverview(env: Env, user: User): Promise<string> {
@@ -237,7 +240,14 @@ const DATA_TOOLS: Anthropic.Tool[] = [
     input_schema: { type: "object", properties: { sql: { type: "string", description: "A single SELECT statement." } }, required: ["sql"] },
   },
 ];
-async function runTool(env: Env, user: User, name: string, input: unknown): Promise<{ content: string; is_error?: boolean; label: string }> {
+async function runTool(env: Env, user: User, name: string, input: unknown, emit?: (event: string, data: unknown) => Promise<unknown>): Promise<{ content: string; is_error?: boolean; label: string }> {
+  if (name.startsWith("propose_")) {
+    const r = await buildProposal(env, user, name, input);
+    if (!r) return { content: `Unknown tool ${name}`, is_error: true, label: name };
+    if (!r.ok) return { content: r.error, is_error: true, label: "Preparing a change" };
+    await emit?.("proposal", r.proposal);
+    return { label: `Proposed: ${r.proposal.title}`, content: `Shown to ${user.name} for confirmation: ${r.proposal.title}. ${r.proposal.lines.join("; ")}. Nothing has happened yet; it happens only if they press Confirm.` };
+  }
   const invalid = (label: string) => ({ content: JSON.stringify({ INVALID_JSON: JSON.stringify(input) }), is_error: true, label });
   if (name === "search_workspace") {
     const p = SearchInput.safeParse(input);
@@ -256,14 +266,39 @@ async function runTool(env: Env, user: User, name: string, input: unknown): Prom
     const { kind, id } = p.data;
     if (kind === "page") {
       const access = await loadAccess(env, user);
-      const pg = await first<{ title: string; text: string; props: string | null; kind: string }>(env.DB, "SELECT title, text, props, kind FROM pages WHERE id = ? AND archived = 0", id);
+      const pg = await first<{ title: string; text: string; props: string | null; kind: string; schema: string | null; parent_id: string | null }>(
+        env.DB, "SELECT title, text, props, kind, schema, parent_id FROM pages WHERE id = ? AND archived = 0", id,
+      );
       if (!pg || !access.level(id)) return { content: "Not found or not accessible.", is_error: true, label: "Reading a page" };
       let body = pg.text;
+      // Database rows and their values, with property names instead of internal ids.
+      const schemaOf = async (dbId: string, raw?: string | null) =>
+        parseJSON<{ props: { id: string; name: string; type: string; options?: { id: string; name: string }[] }[] }>(
+          raw ?? (await first<{ schema: string }>(env.DB, "SELECT schema FROM pages WHERE id = ?", dbId))?.schema, { props: [] });
+      const names = new Map((await all<{ id: string; name: string; email: string }>(env.DB, "SELECT id, name, email FROM users")).map((u) => [u.id, `${u.name} <${u.email}>`]));
+      const render = (schema: Awaited<ReturnType<typeof schemaOf>>, raw: string | null) => {
+        const v = parseJSON<Record<string, unknown>>(raw, {});
+        return schema.props
+          .filter((p) => v[p.id] !== undefined && v[p.id] !== null && v[p.id] !== "")
+          .map((p) => {
+            const val = v[p.id];
+            const opt = (x: unknown) => p.options?.find((o) => o.id === x)?.name ?? String(x);
+            const shown = Array.isArray(val) ? val.map((x) => (p.type === "person" ? names.get(String(x)) ?? x : opt(x))).join(", ") : ["select", "status"].includes(p.type) ? opt(val) : String(val);
+            return `${p.name}: ${shown}`;
+          })
+          .join("; ");
+      };
+      let extra: Record<string, unknown> = {};
       if (pg.kind === "database") {
-        const rows = await all<{ id: string; title: string; text: string }>(env.DB, "SELECT id, title, text FROM pages WHERE parent_id = ? AND kind = 'row' AND archived = 0 LIMIT 200", id);
-        body += "\n\nRows:\n" + rows.map((r) => `- ${r.title} (/p/${r.id})${r.text ? `: ${r.text.slice(0, 300)}` : ""}`).join("\n");
+        const schema = await schemaOf(id, pg.schema);
+        const rows = await all<{ id: string; title: string; props: string | null }>(env.DB, "SELECT id, title, props FROM pages WHERE parent_id = ? AND kind = 'row' AND archived = 0 ORDER BY sort LIMIT 300", id);
+        extra = { database_id: id, properties: schema.props.map((p) => ({ name: p.name, type: p.type, ...(p.options?.length ? { options: p.options.map((o) => o.name) } : {}) })) };
+        body += "\n\nRows:\n" + rows.map((r) => `- ${r.title || "Untitled"} (/p/${r.id})${render(schema, r.props) ? ` — ${render(schema, r.props)}` : ""}`).join("\n");
+      } else if (pg.kind === "row" && pg.parent_id) {
+        const values = render(await schemaOf(pg.parent_id), pg.props);
+        if (values) body = `${values}\n\n${body}`;
       }
-      return { label: `Read “${pg.title || "Untitled"}”`, content: JSON.stringify({ title: pg.title, url: `/p/${id}`, content: body.slice(0, 60_000) }) };
+      return { label: `Read “${pg.title || "Untitled"}”`, content: JSON.stringify({ title: pg.title, kind: pg.kind, url: `/p/${id}`, ...extra, content: body.slice(0, 60_000) }) };
     }
     if (kind === "meeting") {
       const visible = await visibleMeetingIds(env, user, await memberSpaceIds(env, user));
@@ -326,9 +361,28 @@ async function runTool(env: Env, user: User, name: string, input: unknown): Prom
 export const ai = new Hono<HonoEnv>();
 
 // Streams an answer as server-sent events: `text` deltas, `step` (a tool was used), `error`, `done`.
+/** Tells Claude what the person has open when they asked "about this page". Checks access first. */
+async function contextLine(env: Env, user: User, ctx?: { kind?: string; id?: string }): Promise<string> {
+  if (!ctx?.id) return "";
+  if (ctx.kind === "page") {
+    const access = await loadAccess(env, user);
+    const pg = await first<{ title: string; kind: string }>(env.DB, "SELECT title, kind FROM pages WHERE id = ? AND archived = 0", ctx.id);
+    if (!pg || !access.level(ctx.id)) return "";
+    const what = pg.kind === "database" ? "database" : pg.kind === "row" ? "database row" : "page";
+    return `${user.name} has the ${what} “${pg.title || "Untitled"}” open (read_item kind "page", id "${ctx.id}"). When they say "this", "here" or "it", they mean it: read it first.\n\n`;
+  }
+  if (ctx.kind === "meeting") {
+    const visible = await visibleMeetingIds(env, user, await memberSpaceIds(env, user));
+    if (!visible.has(ctx.id)) return "";
+    const m = await first<{ title: string }>(env.DB, "SELECT title FROM meetings WHERE id = ?", ctx.id);
+    return `${user.name} has the meeting “${m?.title || "Meeting"}” open (read_item kind "meeting", id "${ctx.id}"). When they say "this", "here" or "it", they mean it: read it first.\n\n`;
+  }
+  return "";
+}
+
 ai.post("/ask", async (c) => {
   const user = c.var.user;
-  const body = await c.req.json<{ messages?: { role: "user" | "assistant"; content: string }[] }>();
+  const body = await c.req.json<{ messages?: { role: "user" | "assistant"; content: string }[]; context?: { kind?: string; id?: string } }>();
   const history = (body.messages ?? []).filter((m) => m.content?.trim()).slice(-20);
   if (!history.length || history[history.length - 1].role !== "user") throw bad("Ask a question first.");
   const env = c.env;
@@ -343,11 +397,21 @@ ai.post("/ask", async (c) => {
         ? `*(Development mode: no AI key set, showing search matches.)*\n\n` + (hits.length ? hits.map((h) => `- [${h.title}](${h.url}) · ${h.where}`).join("\n") : "Nothing matched.")
         : "Ask AI isn't set up yet: the Anthropic API key hasn't been added.";
       await send("text", { delta: text });
+      // Development mode: "task" in the question produces a sample proposal, to exercise Confirm.
+      const q = history[history.length - 1].content;
+      if (isDev(env) && /\btasks?\b/i.test(q)) {
+        const r = await buildProposal(env, user, "propose_tasks", { tasks: [{ title: "Sample task from Ask AI", due: new Date(Date.now() + 2 * 86400_000).toISOString().slice(0, 10) }] });
+        if (r?.ok) await send("proposal", r.proposal);
+      }
       await send("done", {});
       return;
     }
     const messages: Anthropic.Beta.BetaMessageParam[] = history.map((m) => ({ role: m.role, content: m.content }));
-    const system = ASK_SYSTEM(env.APP_NAME, user, today, await workspaceOverview(env, user).catch(() => "- (unavailable)"), hasData(env, user));
+    const canAct = user.role !== "guest";
+    const system = ASK_SYSTEM(
+      env.APP_NAME, user, today, await workspaceOverview(env, user).catch(() => "- (unavailable)"),
+      hasData(env, user), canAct, await contextLine(env, user, body.context),
+    );
     try {
       let jsonRetries = 0;
       for (let turn = 0; turn < 12; turn++) {
@@ -359,7 +423,7 @@ ai.post("/ask", async (c) => {
           // Caches the conversation so far: each tool round re-reads it at a tenth of the price.
           cache_control: { type: "ephemeral" },
           system,
-          tools: (hasData(env, user) ? [...ASK_TOOLS, ...DATA_TOOLS] : ASK_TOOLS) as Anthropic.Beta.BetaToolUnion[],
+          tools: [...ASK_TOOLS, ...(hasData(env, user) ? DATA_TOOLS : []), ...(canAct ? ACTION_TOOLS : [])] as Anthropic.Beta.BetaToolUnion[],
           messages,
         });
         s.on("text", (delta) => void send("text", { delta }));
@@ -391,7 +455,7 @@ ai.post("/ask", async (c) => {
         // Run the turn's tool calls together and return every result in one message.
         const results = await Promise.all(
           calls.map(async (call) => {
-            const r = await runTool(env, user, call.name, call.input).catch((e) => ({ content: `Tool failed: ${String(e)}`, is_error: true, label: call.name }));
+            const r = await runTool(env, user, call.name, call.input, send).catch((e) => ({ content: `Tool failed: ${String(e)}`, is_error: true, label: call.name }));
             await send("step", { label: r.label });
             return { type: "tool_result" as const, tool_use_id: call.id, content: r.content, is_error: r.is_error };
           }),

@@ -325,6 +325,16 @@ button.chip:hover { filter: brightness(0.96); }
 .panel-head h3 { font-size: 15px; font-weight: 600; flex: 1; letter-spacing: -0.01em; }
 .panel-body { flex: 1; overflow: auto; padding: 4px 16px 16px; min-height: 0; }
 .panel-foot { padding: 10px 12px 12px; flex: none; }
+.ask-context { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--text-2); padding: 0 4px 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.proposal { margin-top: 10px; padding: 12px 14px; border-radius: 12px; background: var(--fill); box-shadow: inset 0 0 0 1px var(--hairline-strong); font-size: 14px; }
+.proposal.done { box-shadow: inset 0 0 0 1px rgba(52, 199, 89, 0.5); }
+.proposal.cancelled { opacity: 0.6; }
+.proposal-title { font-weight: 600; margin-bottom: 4px; }
+.proposal ul { margin: 0; padding-left: 18px; }
+.proposal li { margin: 2px 0; }
+.proposal-acts { display: flex; gap: 8px; margin-top: 10px; }
+.proposal-note { margin-top: 8px; font-size: 13px; color: var(--text-2); }
+.proposal-note a { color: var(--accent); }
 
 .toasts { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 90; display: flex; flex-direction: column; gap: 8px; align-items: center; pointer-events: none; }
 .toast { pointer-events: auto; display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 980px; font-size: 13.5px; font-weight: 500; background: rgba(40, 40, 43, 0.92); color: #fff; backdrop-filter: blur(20px); box-shadow: var(--shadow-2); animation: toast-in 380ms var(--spring) both; }

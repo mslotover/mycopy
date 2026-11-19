@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import DOMPurify from "dompurify";
-import { AlertCircle, Check, ChevronDown, ChevronRight, Copy, Headphones, Lock, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Trash2, UserPlus, X } from "lucide-react";
+import { AlertCircle, Check, ChevronDown, ChevronRight, Copy, Headphones, Lock, Mic, MoreHorizontal, Pause, Play, Plus, RotateCw, Send, Sparkles, Trash2, UserPlus, X } from "lucide-react";
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { api, ApiError, clock, fmtDuration, invalidate, qc, sse, useMeetings, useTasks, type Knowledge, type MeetingDetail, type MeetingItem, type MeetingListItem, type MeetingStatus, type Participant, type User } from "./api";
@@ -796,6 +796,8 @@ function Sent({ detail }: { detail: MeetingDetail }) {
 export function MeetingView() {
   const { id = "" } = useParams();
   const navigate = useNavigate();
+  const app = useApp();
+  const shell = useShell();
   const { data, error, isLoading, refetch } = useQuery({ queryKey: ["meeting", id], queryFn: () => api<MeetingDetail>(`/meetings/${id}`), refetchOnWindowFocus: false });
   const again = () => { qc.invalidateQueries({ queryKey: ["meeting", id] }); invalidate("meetings"); };
   if (isLoading) return (<><Toolbar /><Spinner /></>);
@@ -817,6 +819,7 @@ export function MeetingView() {
     <>
       <Toolbar crumbs={<><Link className="crumb" to="/meetings">Meetings</Link><span className="crumb-sep">›</span><span className="crumb current">{m.title || "Untitled meeting"}</span></>}>
         <span className={`chip ${STATUS[m.status].cls}`}>{STATUS[m.status].label}</span>
+        {app.aiReady && m.status === "sent" && <button className="icon-btn" aria-label="Ask AI about this meeting" title="Ask AI about this meeting" onClick={() => shell.openAsk(undefined, { kind: "meeting", id: m.id, title: m.title })}><Sparkles /></button>}
         {data.isOrganiser && m.status !== "recording" && (
           <Dropdown width={190} placement="bottom-end" trigger={({ onClick }) => <button className="icon-btn" aria-label="More" onClick={onClick}><MoreHorizontal /></button>}>
             {(close) => <MenuItem danger icon={<Trash2 />} onClick={() => { close(); remove(); }}>Delete meeting</MenuItem>}

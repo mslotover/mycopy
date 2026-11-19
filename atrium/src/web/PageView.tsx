@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import type { Editor as TEditor } from "@tiptap/react";
-import { ArrowUp, Check, Clock, Copy, ExternalLink, Eye, FolderInput, LayoutTemplate, Link2, Lock, MessageCircle, MoreHorizontal, Smile, Trash2, UserPlus, Users, X } from "lucide-react";
+import { ArrowUp, Check, Clock, Copy, ExternalLink, Eye, FolderInput, LayoutTemplate, Link2, Lock, MessageCircle, MoreHorizontal, Smile, Sparkles, Trash2, UserPlus, Users, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { api, ApiError, invalidate, qc, relTime, type Comment, type PageDetail, type Prop } from "./api";
@@ -73,6 +73,7 @@ export function PageView() {
       </>}>
         <span className="muted" style={{ fontSize: 12.5, marginRight: 4, minWidth: 44, textAlign: "right" }}>{saving === "saving" ? "Saving…" : saving === "saved" ? "Saved" : ""}</span>
         {canEdit && page.kind !== "row" && <ShareButton detail={data} />}
+        {app.aiReady && <button className="icon-btn" aria-label="Ask AI about this page" title="Ask AI about this page" onClick={() => shell.openAsk(undefined, { kind: "page", id, title: shownTitle || page.title })}><Sparkles /></button>}
         <button className={`icon-btn ${comments ? "on" : ""}`} aria-label="Comments" title="Comments" onClick={() => setComments((c) => !c)}><MessageCircle /></button>
         <Dropdown width={220} placement="bottom-end" trigger={({ onClick }) => <button className="icon-btn" aria-label="More" onClick={onClick}><MoreHorizontal /></button>}>
           {(close) => (

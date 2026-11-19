@@ -5,7 +5,7 @@ import {
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, NavLink, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { api, invalidate, useBoot, useTree, type TreeNode } from "./api";
-import { AskPanel } from "./Ask";
+import { AskPanel, type AskContext } from "./Ask";
 import { Brain } from "./Brain";
 import { Home, Inbox, SpaceView, Trash } from "./Home";
 import { MeetingView, MeetingsView, NewMeetingSheet, RecordingBar, RecordingProvider } from "./Meetings";
@@ -21,7 +21,7 @@ import { AppProvider, Avatar, Dropdown, MenuItem, Overlays, PageGlyph, Sheet, Sp
 // ---------- Shell context: things any screen can open ----------
 
 type Shell = {
-  openSearch: () => void; openAsk: (q?: string) => void; openNewMeeting: (spaceId?: string | null) => void;
+  openSearch: () => void; openAsk: (q?: string, context?: AskContext) => void; openNewMeeting: (spaceId?: string | null) => void;
   openSidebar: () => void; pickTemplate: (dest: { space_id?: string | null; parent_id?: string | null }) => void; movePage: (id: string) => void;
 };
 const ShellCtx = createContext<Shell>(null!);
@@ -359,7 +359,7 @@ function Authed() {
   const { data: boot, error } = useBoot();
   const loc = useLocation();
   const [search, setSearch] = useState(false);
-  const [ask, setAsk] = useState<{ q?: string } | null>(null);
+  const [ask, setAsk] = useState<{ q?: string; context?: AskContext; n: number } | null>(null);
   const [meeting, setMeeting] = useState<{ spaceId?: string | null } | null>(null);
   const [sidebar, setSidebar] = useState(false);
   const [template, setTemplate] = useState<{ space_id?: string | null; parent_id?: string | null } | null>(null);
@@ -368,7 +368,7 @@ function Authed() {
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); setSearch((s) => !s); }
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "j") { e.preventDefault(); setAsk((a) => (a ? null : {})); }
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "j") { e.preventDefault(); setAsk((a) => (a ? null : { n: Date.now() })); }
     };
     window.addEventListener("keydown", key);
     return () => window.removeEventListener("keydown", key);
@@ -377,7 +377,7 @@ function Authed() {
 
   const shell = useMemo<Shell>(() => ({
     openSearch: () => setSearch(true),
-    openAsk: (q) => setAsk({ q }),
+    openAsk: (q, context) => setAsk({ q, context, n: Date.now() }),
     openNewMeeting: (spaceId) => setMeeting({ spaceId }),
     openSidebar: () => setSidebar(true),
     pickTemplate: setTemplate,
@@ -408,7 +408,7 @@ function Authed() {
               <Route path="/settings" element={<Settings />} />
               <Route path="*" element={<div className="center"><div className="empty"><h3>Nothing here</h3><Link className="btn" to="/">Go home</Link></div></div>} />
             </Routes>
-            {ask && <AskPanel initial={ask.q} onClose={() => setAsk(null)} />}
+            {ask && <AskPanel key={ask.n} initial={ask.q} context={ask.context} onClose={() => setAsk(null)} />}
             <RecordingBar />
           </main>
         </div>
