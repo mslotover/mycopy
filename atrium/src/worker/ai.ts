@@ -158,9 +158,9 @@ const TasksInput = z.object({ assignee_email: z.string().nullish(), status: z.en
 const ASK_TOOLS: Anthropic.Tool[] = [
   {
     name: "search_workspace",
-    description: "Full-text search across pages, meetings (summaries and transcripts), tasks and knowledge notes. Returns up to 12 matches with a snippet, kind, id and url. Use short keyword queries rather than full sentences.",
+    description: "Search across pages, meetings (summaries and transcripts), tasks and knowledge notes. Matches by meaning as well as by keyword, so a short phrase describing what you are looking for works, as do exact names. Returns up to 12 matches with a snippet, kind, id and url.",
     eager_input_streaming: true,
-    input_schema: { type: "object", properties: { query: { type: "string", description: "Keywords to search for." } }, required: ["query"] },
+    input_schema: { type: "object", properties: { query: { type: "string", description: "What to look for: keywords or a short phrase." } }, required: ["query"] },
   },
   {
     name: "read_item",

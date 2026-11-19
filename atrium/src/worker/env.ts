@@ -4,6 +4,8 @@ export type Env = {
   DB: D1Database;
   FILES: R2Bucket;
   AI: Ai;
+  /** Vectorize index for meaning-based search; absent in local development. */
+  VECTORS?: Vectorize;
   ASSETS: Fetcher;
   APP_NAME: string;
   MAIL_FROM: string;
@@ -129,14 +131,22 @@ export function docMentions(content: unknown): Set<string> {
   return ids;
 }
 
+/** Queues an item for (re-)embedding by the meaning-search job (see vectors.ts). */
+export function markVectorDirty(db: D1Database, kind: string, ref: string) {
+  return db
+    .prepare("INSERT INTO vector_docs (kind, ref, dirty) VALUES (?, ?, 1) ON CONFLICT (kind, ref) DO UPDATE SET dirty = dirty + 1")
+    .bind(kind, ref);
+}
+
 export async function indexDoc(db: D1Database, kind: string, ref: string, title: string, body: string) {
   await db.batch([
     db.prepare("DELETE FROM search WHERE kind = ? AND ref = ?").bind(kind, ref),
     db.prepare("INSERT INTO search (title, body, kind, ref) VALUES (?, ?, ?, ?)").bind(title, body.slice(0, 200_000), kind, ref),
+    markVectorDirty(db, kind, ref),
   ]);
 }
 export async function unindexDoc(db: D1Database, kind: string, ref: string) {
-  await run(db, "DELETE FROM search WHERE kind = ? AND ref = ?", kind, ref);
+  await db.batch([db.prepare("DELETE FROM search WHERE kind = ? AND ref = ?").bind(kind, ref), markVectorDirty(db, kind, ref)]);
 }
 
 export class HttpError extends Error {

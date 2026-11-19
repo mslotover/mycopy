@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { canSeeTask, loadAccess, memberSpaceIds } from "./access";
 import { listDirectory } from "./auth";
+import { semanticSearch } from "./vectors";
 import { all, bad, escapeHtml, first, forbidden, indexDoc, isAdmin, notFound, now, run, uid, unindexDoc, type Env, type HonoEnv, type User } from "./env";
 import { emailLayout, notify, sendMail } from "./mail";
 import type { TaskRow } from "./tasks";
@@ -250,7 +251,23 @@ misc.post("/notifications/read", async (c) => {
 
 export type Hit = { kind: "page" | "task" | "meeting" | "knowledge"; id: string; title: string; snippet: string; url: string; where: string };
 
-/** Full-text search across pages, tasks, meetings and knowledge, limited to what the caller may see. */
+/** Snippet from a chunk of text: around the first query word it contains, else its opening. */
+function chunkSnippet(text: string, terms: string[]): string {
+  const lower = text.toLowerCase();
+  let at = -1;
+  for (const t of terms) {
+    at = lower.indexOf(t.toLowerCase());
+    if (at !== -1) break;
+  }
+  const start = at > 60 ? text.lastIndexOf(" ", at - 60) + 1 : 0;
+  const cut = text.slice(start, start + 220);
+  return (start > 0 ? "…" : "") + cut + (start + 220 < text.length ? "…" : "");
+}
+
+/**
+ * Search across pages, tasks, meetings and knowledge, limited to what the caller may see.
+ * Combines keyword matches with meaning-based matches (vectors.ts), ranked together.
+ */
 export async function searchWorkspace(env: Env, user: User, query: string, limit = 20): Promise<Hit[]> {
   const terms = (query.match(/[\p{L}\p{N}]+/gu) ?? []).slice(0, 12);
   if (!terms.length) return [];
@@ -261,12 +278,27 @@ export async function searchWorkspace(env: Env, user: User, query: string, limit
       "SELECT kind, ref, title, snippet(search, 1, char(1), char(2), '…', 18) AS snip FROM search WHERE search MATCH ? ORDER BY bm25(search, 8.0, 1.0) LIMIT 80",
       match,
     );
-  // Prefer documents containing every term; fall back to any term.
-  let rows = await run1(terms.map((t) => `"${t}"*`).join(" "));
-  if (rows.length < 3 && terms.length > 1) {
-    const seen = new Set(rows.map((r) => r.kind + r.ref));
-    rows = rows.concat((await run1(terms.map((t) => `"${t}"*`).join(" OR "))).filter((r) => !seen.has(r.kind + r.ref)));
-  }
+  const keyword = async () => {
+    // Prefer documents containing every term; fall back to any term.
+    let rows = await run1(terms.map((t) => `"${t}"*`).join(" "));
+    if (rows.length < 3 && terms.length > 1) {
+      const seen = new Set(rows.map((r) => r.kind + r.ref));
+      rows = rows.concat((await run1(terms.map((t) => `"${t}"*`).join(" OR "))).filter((r) => !seen.has(r.kind + r.ref)));
+    }
+    return rows;
+  };
+  const [kwRows, semRows] = await Promise.all([keyword(), semanticSearch(env, query)]);
+
+  // Reciprocal rank fusion: an item near the top of either list ranks well; one in both ranks best.
+  const merged = new Map<string, { kind: Hit["kind"]; ref: string; title: string; snip: string; score: number }>();
+  kwRows.forEach((r, i) => merged.set(r.kind + r.ref, { ...r, score: 1 / (60 + i) }));
+  semRows.forEach((r, i) => {
+    const key = r.kind + r.ref;
+    const had = merged.get(key);
+    if (had) had.score += 1 / (60 + i);
+    else merged.set(key, { kind: r.kind as Hit["kind"], ref: r.ref, title: r.title, snip: chunkSnippet(r.text, terms), score: 1 / (60 + i) });
+  });
+  const rows = [...merged.values()].sort((a, b) => b.score - a.score);
   if (!rows.length) return [];
 
   const access = await loadAccess(env, user);

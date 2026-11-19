@@ -21,8 +21,10 @@
   ],
   "r2_buckets": [{ "binding": "FILES", "bucket_name": "atrium-files" }],
   "ai": { "binding": "AI" },
-  // 08:00 UTC each day: "due today" reminders.
-  "triggers": { "crons": ["0 8 * * *"] },
+  // Meaning-based search (created with: wrangler vectorize create atrium-search --dimensions=1024 --metric=cosine).
+  "vectorize": [{ "binding": "VECTORS", "index_name": "atrium-search" }],
+  // 08:00 UTC each day: "due today" reminders. Every 5 minutes: embed changed items for search.
+  "triggers": { "crons": ["0 8 * * *", "*/5 * * * *"] },
   "vars": {
     "APP_NAME": "Atrium",
     "MAIL_FROM": "Atrium <atrium@reports.toklas.co.uk>",

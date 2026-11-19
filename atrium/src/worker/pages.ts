@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { loadAccess, type Access } from "./access";
-import { all, bad, docMentions, docText, first, forbidden, indexDoc, notFound, now, parseJSON, run, uid, unindexDoc, type Env, type HonoEnv, type User } from "./env";
+import { all, bad, docMentions, docText, first, forbidden, indexDoc, markVectorDirty, notFound, now, parseJSON, run, uid, unindexDoc, type Env, type HonoEnv, type User } from "./env";
 import { notify } from "./mail";
 
 type PageRow = {
@@ -327,6 +327,7 @@ pages.delete("/:id", async (c) => {
     await c.env.DB.batch([
       c.env.DB.prepare(`UPDATE pages SET archived = 1, updated_at = ? WHERE id IN (${marks})`).bind(now(), ...chunk),
       c.env.DB.prepare(`DELETE FROM search WHERE kind = 'page' AND ref IN (${marks})`).bind(...chunk),
+      ...chunk.map((id) => markVectorDirty(c.env.DB, "page", id)),
     ]);
   }
   return c.json({ ok: true });
