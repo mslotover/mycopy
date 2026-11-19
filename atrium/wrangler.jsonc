@@ -26,7 +26,8 @@
   // Business figures for Ask AI, from the Toklas data connector (needs the ATRIUM_DATA_KEY secret).
   "services": [{ "binding": "DATA", "service": "toklas-data-connector" }],
   // 08:00 UTC each day: "due today" reminders. Every 5 minutes: embed changed items for search.
-  "triggers": { "crons": ["0 8 * * *", "*/5 * * * *"] },
+  // 09:00 UTC Mondays: AI spending email.
+  "triggers": { "crons": ["0 8 * * *", "*/5 * * * *", "0 9 * * 1"] },
   "vars": {
     "APP_NAME": "Atrium",
     "MAIL_FROM": "Atrium <atrium@reports.toklas.co.uk>",
@@ -37,5 +38,6 @@
   // Secrets (set with `wrangler secret put`): ANTHROPIC_API_KEY, RESEND_API_KEY,
   // VAPID_PRIVATE_KEY (the private half of VAPID_PUBLIC_KEY, for phone notifications),
   // ATRIUM_DATA_KEY (same value as ATRIUM_KEY on toklas-data-connector),
+  // optional ANTHROPIC_ADMIN_KEY (Console figure in the weekly spending email),
   // optional GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET for Google sign-in.
 }

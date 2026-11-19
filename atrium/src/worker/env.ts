@@ -15,6 +15,8 @@ export type Env = {
   CLAUDE_MODEL: string;
   WHISPER_MODEL: string;
   ANTHROPIC_API_KEY?: string;
+  /** Optional Anthropic Admin API key: adds the Console's own figure to the weekly spending email. */
+  ANTHROPIC_ADMIN_KEY?: string;
   RESEND_API_KEY?: string;
   GOOGLE_CLIENT_ID?: string;
   GOOGLE_CLIENT_SECRET?: string;

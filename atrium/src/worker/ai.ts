@@ -7,6 +7,7 @@ import { canSeeTask, loadAccess, memberSpaceIds } from "./access";
 import { all, bad, first, isDev, type Env, type HonoEnv, type User } from "./env";
 import { searchWorkspace, visibleMeetingIds } from "./misc";
 import type { TaskRow } from "./tasks";
+import { recordUsage } from "./usage";
 
 // If Claude declines a request on safety grounds, the API retries it on a fallback model
 // chosen by refusal category rather than failing the meeting or the answer outright.
@@ -80,6 +81,8 @@ export type SummaryInput = {
   participants: { name: string; email: string }[];
   directory: { name: string; email: string }[];
   openTasks: { id: string; title: string; assignee: string | null }[];
+  /** Who asked for the summary, for the spending report. */
+  userId?: string | null;
 };
 
 export async function summariseMeeting(env: Env, input: SummaryInput): Promise<MeetingExtraction> {
@@ -117,6 +120,7 @@ export async function summariseMeeting(env: Env, input: SummaryInput): Promise<M
     output_config: { effort: "high", format: betaZodOutputFormat(MeetingExtraction) },
     messages: [{ role: "user", content: user }],
   });
+  await recordUsage(env, input.userId ?? null, "meeting_summary", message);
   if (message.stop_reason === "refusal") throw new Error("Claude declined to summarise this recording.");
   if (message.stop_reason === "max_tokens") throw new Error("The summary was cut off because the meeting was too long to summarise in one pass.");
   if (!message.parsed_output) throw new Error("Claude returned a summary in an unexpected format.");
@@ -373,6 +377,7 @@ ai.post("/ask", async (c) => {
         try {
           message = await s.finalMessage();
           jsonRetries = 0;
+          await recordUsage(env, user.id, "ask", message);
         } catch (err) {
           // With eager input streaming a tool input can arrive unparseable; re-issue that turn.
           if (err instanceof Anthropic.APIError || jsonRetries++ >= 2) throw err;

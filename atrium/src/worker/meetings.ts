@@ -230,6 +230,7 @@ meetings.post("/:id/process", async (c) => {
       ]);
       const fresh = await getMeeting(env, m.id);
       const result = await summariseMeeting(env, {
+        userId: user.id,
         title: fresh.title,
         spaceName: space?.name ?? null,
         startedAt: fresh.started_at,

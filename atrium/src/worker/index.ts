@@ -9,8 +9,10 @@ import { push, remindDueToday } from "./push";
 import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
 import { embedDirty } from "./vectors";
+import { weeklyUsageReport } from "./usage";
 
 const MORNING = "0 8 * * *";
+const WEEKLY = "0 9 * * 1"; // Monday: AI spending email
 
 const app = new Hono<HonoEnv>();
 
@@ -70,9 +72,11 @@ app.onError((err, c) => {
 export default {
   fetch: app.fetch,
   // See "triggers" in wrangler.jsonc: due-today reminders each morning, and every few
-  // minutes the embedding of recently changed items for meaning-based search.
+  // minutes the embedding of recently changed items for meaning-based search, and on
+  // Monday mornings the AI spending email.
   async scheduled(event: ScheduledController, env: HonoEnv["Bindings"], ctx: ExecutionContext) {
     if (event.cron === MORNING) ctx.waitUntil(remindDueToday(env));
+    else if (event.cron === WEEKLY) ctx.waitUntil(weeklyUsageReport(env));
     else ctx.waitUntil(embedDirty(env).then(() => undefined));
   },
 };
