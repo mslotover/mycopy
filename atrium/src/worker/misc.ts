@@ -66,6 +66,26 @@ function parseCalendarUrl(input: string): string {
   return u.toString();
 }
 
+/** Reads a calendar, following up to three redirects but only to Google's own hosts. */
+async function fetchCalendar(url: string): Promise<{ status: number; text: string; problem?: string }> {
+  let next = url;
+  for (let hop = 0; hop < 4; hop++) {
+    let res: Response;
+    try { res = await fetch(next, { redirect: "manual", headers: { "user-agent": "Atrium calendar reader", accept: "text/calendar, text/plain, */*" } }); }
+    catch (e) { return { status: 0, text: "", problem: String(e instanceof Error ? e.message : e).slice(0, 80) }; }
+    if (res.status >= 300 && res.status < 400) {
+      const loc = res.headers.get("location");
+      let u: URL | null = null;
+      try { u = loc ? new URL(loc, next) : null; } catch { /* ignore */ }
+      if (!u || u.protocol !== "https:" || !/(^|\.)(google\.com|googleusercontent\.com)$/.test(u.hostname)) return { status: res.status, text: "", problem: "redirected somewhere unexpected" };
+      next = u.toString();
+      continue;
+    }
+    return { status: res.status, text: res.ok ? await res.text() : "" };
+  }
+  return { status: 0, text: "", problem: "too many redirects" };
+}
+
 misc.get("/me/setup", async (c) => {
   const row = await first<{ onboarded_at: number | null; calendar_url: string | null }>(c.env.DB, "SELECT onboarded_at, calendar_url FROM users WHERE id = ?", c.var.user.id);
   return c.json({ onboarded: !!row?.onboarded_at, calendar: !!row?.calendar_url });
@@ -79,9 +99,12 @@ misc.post("/me/onboarded", async (c) => {
 misc.put("/me/calendar", async (c) => {
   const { url } = await c.req.json<{ url?: string }>();
   const clean = parseCalendarUrl(url ?? "");
-  const res = await fetch(clean, { redirect: "error" }).catch(() => null);
-  const text = res?.ok ? await res.text() : "";
-  if (!text.includes("BEGIN:VCALENDAR")) throw bad("Google didn't give us a calendar from that address. Copy it again from Google Calendar, making sure it's the secret address in iCal format.");
+  const got = await fetchCalendar(clean);
+  if (!got.text.includes("BEGIN:VCALENDAR")) {
+    const why = got.status ? `Google answered ${got.status}${got.status === 404 || got.status === 403 ? ", which usually means the address was reset or is for a different calendar" : ""}` : `couldn't reach Google (${got.problem})`;
+    throw bad(`Google didn't give us a calendar from that address (${why}). Copy it again from Google Calendar, making sure it's the secret address in iCal format.`);
+  }
+  const text = got.text;
   await run(c.env.DB, "UPDATE users SET calendar_url = ? WHERE id = ?", clean, c.var.user.id);
   return c.json({ ok: true, events: (text.match(/BEGIN:VEVENT/g) ?? []).length });
 });
