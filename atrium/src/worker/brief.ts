@@ -126,7 +126,7 @@ type TaskRow = { id: string; title: string; due: string | null; space: string | 
 async function tasksSection(env: Env, user: User, today: string, link: (path: string) => string, since: number): Promise<string> {
   const base = `SELECT t.id, t.title, t.due, s.name AS space, m.title AS meeting FROM tasks t
     LEFT JOIN spaces s ON s.id = t.space_id LEFT JOIN meetings m ON m.id = t.meeting_id
-    WHERE t.assignee_id = ? AND t.status != 'done'`;
+    WHERE t.id IN (SELECT task_id FROM task_assignees WHERE user_id = ? AND done_at IS NULL) AND t.status != 'done'`;
   const [overdue, dueToday, fromMeetings] = await Promise.all([
     all<TaskRow>(env.DB, `${base} AND t.due < ? ORDER BY t.due DESC LIMIT 50`, user.id, today),
     all<TaskRow>(env.DB, `${base} AND t.due = ? ORDER BY t.sort LIMIT 30`, user.id, today),

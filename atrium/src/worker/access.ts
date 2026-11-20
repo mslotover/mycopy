@@ -57,10 +57,10 @@ export async function loadAccess(env: Env, user: User): Promise<Access> {
   };
 }
 
-type TaskRow = { assignee_id: string | null; creator_id: string; space_id: string | null };
-/** A task is visible to its assignee and creator, and to members of its space. */
+type TaskRow = { assignee_id: string | null; assignee_ids?: string[]; creator_id: string; space_id: string | null };
+/** A task is visible to its owners and creator, and to members of its space. */
 export function canSeeTask(t: TaskRow, user: User, memberSpaces: Set<string>): boolean {
-  if (t.assignee_id === user.id || t.creator_id === user.id) return true;
+  if (t.assignee_id === user.id || t.creator_id === user.id || t.assignee_ids?.includes(user.id)) return true;
   return !!t.space_id && memberSpaces.has(t.space_id);
 }
 

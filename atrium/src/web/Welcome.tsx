@@ -74,10 +74,12 @@ const STEPS = (calendar: boolean): Step[] => [
       <li>You can also ask about your business's figures (sales, bookings, labour). You'll only see the figures for your own business.</li>
       <li>Ask AI can suggest tasks and pages, but only does them when you press <b>Confirm</b>.</li>
     </ul>) },
-  { title: "On your phone", body: (
+  { title: "On your phone and Mac", body: (
     <ul className="tour-list">
       <li><b>iPhone:</b> open Atrium in Safari, press <b>Share</b>, then <b>Add to Home Screen</b>. Open it from there.</li>
       <li><b>Android:</b> open it in Chrome and choose <b>Install app</b>.</li>
+      <li><b>Mac, Safari:</b> open Atrium, then in the menu bar choose <b>File</b>, then <b>Add to Dock</b>. It gets its own icon and window, like an app.</li>
+      <li><b>Mac, Chrome, Edge or Arc:</b> open Atrium, press the <b>⋮</b> menu, then <b>Save and share</b> (or <b>Cast, save and share</b>), then <b>Install page as app</b>.</li>
       <li>Then turn on notifications under <b>Settings, Profile</b>, to hear about tasks, mentions and what's due today.</li>
     </ul>) },
   { title: "Connect your calendar (optional)", body: (

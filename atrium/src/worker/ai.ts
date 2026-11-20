@@ -4,6 +4,7 @@ import { Hono } from "hono";
 import { streamSSE } from "hono/streaming";
 import { z } from "zod";
 import { canSeeTask, loadAccess, memberSpaceIds } from "./access";
+import { withOwners } from "./tasks";
 import { all, bad, first, isDev, parseJSON, type Env, type HonoEnv, type User } from "./env";
 import { searchWorkspace, visibleMeetingIds } from "./misc";
 import type { TaskRow } from "./tasks";
@@ -316,7 +317,8 @@ async function runTool(env: Env, user: User, name: string, input: unknown, emit?
       };
     }
     if (kind === "task") {
-      const t = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", id);
+      const t0 = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", id);
+      const t = t0 ? (await withOwners(env, [t0]))[0]! : null;
       if (!t || !canSeeTask(t, user, await memberSpaceIds(env, user))) return { content: "Not found or not accessible.", is_error: true, label: "Reading a task" };
       return { label: `Read task “${t.title}”`, content: JSON.stringify({ ...t, url: `/tasks?open=${id}` }) };
     }
@@ -329,19 +331,20 @@ async function runTool(env: Env, user: User, name: string, input: unknown, emit?
     const p = TasksInput.safeParse(input ?? {});
     if (!p.success) return invalid("Listing tasks");
     const spaces = await memberSpaceIds(env, user);
-    const rows = await all<TaskRow & { assignee_email: string | null; assignee_name: string | null; space_name: string | null }>(
-      env.DB,
-      `SELECT t.*, u.email AS assignee_email, u.name AS assignee_name, s.name AS space_name
-         FROM tasks t LEFT JOIN users u ON u.id = t.assignee_id LEFT JOIN spaces s ON s.id = t.space_id`,
-    );
+    const [raw, people] = await Promise.all([
+      all<TaskRow & { space_name: string | null }>(env.DB, `SELECT t.*, s.name AS space_name FROM tasks t LEFT JOIN spaces s ON s.id = t.space_id`),
+      all<{ id: string; name: string; email: string }>(env.DB, "SELECT id, name, email FROM users"),
+    ]);
+    const who = new Map(people.map((u) => [u.id, u]));
+    const rows = await withOwners(env, raw);
     const status = p.data.status ?? "open";
     const out = rows
       .filter((t) => canSeeTask(t, user, spaces))
       .filter((t) => (status === "all" ? true : status === "done" ? t.status === "done" : t.status !== "done"))
-      .filter((t) => !p.data.assignee_email || t.assignee_email?.toLowerCase() === p.data.assignee_email.toLowerCase())
+      .filter((t) => !p.data.assignee_email || (t.assignee_ids ?? []).some((id) => who.get(id)?.email.toLowerCase() === p.data.assignee_email!.toLowerCase()))
       .filter((t) => !p.data.space || (t.space_name ?? "").toLowerCase().includes(p.data.space.toLowerCase()))
       .slice(0, 150)
-      .map((t) => ({ id: t.id, title: t.title, status: t.status, assignee: t.assignee_name, due: t.due, space: t.space_name, project: t.project || undefined, url: `/tasks?open=${t.id}` }));
+      .map((t) => ({ id: t.id, title: t.title, status: t.status, assignee: (t.assignee_ids ?? []).map((id) => who.get(id)?.name).filter(Boolean).join(" and ") || null, due: t.due, space: t.space_name, project: t.project || undefined, url: `/tasks?open=${t.id}` }));
     return { label: "Looked up tasks", content: out.length ? JSON.stringify(out) : "No matching tasks." };
   }
   if (name === "business_data_tables" && hasData(env, user)) {

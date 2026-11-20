@@ -4,7 +4,7 @@ import { listDirectory } from "./auth";
 import { semanticSearch } from "./vectors";
 import { all, bad, escapeHtml, first, forbidden, indexDoc, isAdmin, notFound, now, run, uid, unindexDoc, type Env, type HonoEnv, type User } from "./env";
 import { emailLayout, notify, sendMail } from "./mail";
-import type { TaskRow } from "./tasks";
+import { withOwners, type TaskRow } from "./tasks";
 
 export type MeetingLite = { id: string; title: string; space_id: string | null; organizer_id: string; status: string };
 
@@ -207,10 +207,11 @@ async function canComment(env: Env, user: User, kind: string, id: string): Promi
     return { view: access.level(id) >= 1, ok: access.level(id) >= 2, title: p.title || "Untitled", url: `/p/${id}`, watchers: [p.owner_id, p.created_by] };
   }
   if (kind === "task") {
-    const t = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", id);
-    if (!t) throw notFound();
+    const t0 = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", id);
+    if (!t0) throw notFound();
+    const t = (await withOwners(env, [t0]))[0]!;
     const ok = canSeeTask(t, user, await memberSpaceIds(env, user));
-    return { view: ok, ok, title: t.title, url: `/tasks?open=${id}`, watchers: [t.creator_id, ...(t.assignee_id ? [t.assignee_id] : [])] };
+    return { view: ok, ok, title: t.title, url: `/tasks?open=${id}`, watchers: [t.creator_id, ...(t.assignee_ids ?? [])] };
   }
   if (kind === "meeting") {
     const m = await first<MeetingLite>(env.DB, "SELECT id, title, space_id, organizer_id, status FROM meetings WHERE id = ?", id);
@@ -351,7 +352,8 @@ export async function searchWorkspace(env: Env, user: User, query: string, limit
       if (!access.level(r.ref)) continue;
       out.push({ kind: "page", id: r.ref, title: r.title || "Untitled", snippet: r.snip, url: `/p/${r.ref}`, where: where(access.node(r.ref)?.space_id ?? null) });
     } else if (r.kind === "task") {
-      const t = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", r.ref);
+      const t0 = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", r.ref);
+      const t = t0 ? (await withOwners(env, [t0]))[0]! : null;
       if (!t || !canSeeTask(t, user, spaces)) continue;
       out.push({ kind: "task", id: r.ref, title: r.title, snippet: r.snip, url: `/tasks?open=${r.ref}`, where: where(t.space_id) });
     } else if (r.kind === "meeting") {

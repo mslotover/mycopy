@@ -179,5 +179,29 @@ console.log("welcome and calendar");
   check("a made-up internal address is refused", (await sam.put("/me/calendar", { url: "http://localhost:8787/api/bootstrap" })).status === 400);
 }
 
+console.log("shared tasks");
+{
+  const t = (await owner.post("/tasks", { title: "Send me your numbers", assignee_ids: [ownerId, samId] })).task;
+  check("a task can have two owners", t.assignee_ids?.length === 2 && t.assignee_id === ownerId);
+  const sams = (await sam.get("/tasks?scope=mine")).tasks.find((x) => x.id === t.id);
+  check("the second owner sees it in My tasks", !!sams && sams.assignee_ids.includes(samId));
+  const afterSam = (await sam.patch(`/tasks/${t.id}`, { status: "done" })).task;
+  check("one owner ticking doesn't finish it", afterSam.status !== "done" && afterSam.done_ids.length === 1 && afterSam.done_ids[0] === samId);
+  const samMine = (await sam.get("/tasks?scope=mine")).tasks.find((x) => x.id === t.id);
+  check("it counts as done for the person who ticked", samMine?.my_done === true);
+  const ownerMine = (await owner.get("/tasks?scope=mine")).tasks.find((x) => x.id === t.id);
+  check("and is still open for the other", ownerMine?.my_done === false && ownerMine.status !== "done");
+  const afterOwner = (await owner.patch(`/tasks/${t.id}`, { status: "done" })).task;
+  check("it finishes when every owner has ticked", afterOwner.status === "done" && afterOwner.done_ids.length === 2);
+  const reopened = (await sam.patch(`/tasks/${t.id}`, { status: "todo" })).task;
+  check("unticking reopens it", reopened.status !== "done" && reopened.done_ids.length === 1);
+  const solo = (await owner.post("/tasks", { title: "Solo job" })).task;
+  const soloDone = (await owner.patch(`/tasks/${solo.id}`, { status: "done" })).task;
+  check("a one-owner task works as before", soloDone.status === "done" && soloDone.assignee_ids.length === 1);
+  const dropped = (await owner.patch(`/tasks/${t.id}`, { assignee_ids: [ownerId] })).task;
+  check("removing an owner leaves the rest", dropped.assignee_ids.length === 1 && dropped.assignee_id === ownerId);
+  check("a removed owner no longer sees it", !(await sam.get("/tasks?scope=mine")).tasks.some((x) => x.id === t.id));
+}
+
 console.log(failures ? `\n${failures} check(s) failed` : "\nAll checks passed");
 process.exit(failures ? 1 : 0);

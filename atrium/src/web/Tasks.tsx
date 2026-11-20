@@ -1,15 +1,31 @@
 import { AlertCircle, Bell, ChevronRight, Mic, Plus, Share, Trash2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { addDays, api, dueLabel, invalidate, qc, todayISO, useTasks, type Task } from "./api";
+import { addDays, api, dueLabel, invalidate, qc, todayISO, useTasks, type Boot, type Task, type User } from "./api";
 import { Toolbar } from "./App";
 import { CommentThread } from "./PageView";
 import { holdTaskChange, isOffline, pushState, turnOnPush, type PushState } from "./phone";
-import { Avatar, AutoText, Empty, PersonPill, Sheet, SpaceBadge, SpaceSelect, Spinner, toast, toastError, useApp } from "./ui";
+import { Avatar, AutoText, AvatarStack, Dropdown, Empty, PersonList, Sheet, SpaceBadge, SpaceSelect, Spinner, toast, toastError, useApp } from "./ui";
 
 /** Applies a change to a task everywhere it is cached, then saves it. */
 export async function patchTask(id: string, patch: Partial<Task>) {
-  qc.setQueriesData<Task[]>({ queryKey: ["tasks"] }, (list) => list?.map((t) => (t.id === id ? { ...t, ...patch, completed_at: patch.status ? (patch.status === "done" ? Date.now() : null) : t.completed_at } : t)));
+  const me = qc.getQueryData<Boot>(["boot"])?.user.id;
+  qc.setQueriesData<Task[]>({ queryKey: ["tasks"] }, (list) => list?.map((t) => {
+    if (t.id !== id) return t;
+    const next = { ...t, ...patch };
+    if (patch.status) {
+      // Owners tick their own part; the task as a whole is done when they all have.
+      const mine = me && t.assignee_ids?.includes(me);
+      if (mine && t.assignee_ids!.length > 1) {
+        const done = new Set(t.done_ids ?? []);
+        if (patch.status === "done") done.add(me!); else done.delete(me!);
+        next.done_ids = [...done];
+        next.status = done.size === t.assignee_ids!.length ? "done" : patch.status === "done" ? t.status : patch.status;
+      } else if (mine) next.done_ids = patch.status === "done" ? [me!] : [];
+      next.completed_at = next.status === "done" ? Date.now() : null;
+    }
+    return next;
+  }));
   try {
     await api(`/tasks/${id}`, { method: "PATCH", body: patch });
   } catch (e) {
@@ -52,31 +68,64 @@ export function PhonePrompt() {
   );
 }
 
+/** Done for this person: owners go by their own tick, everyone else by the task as a whole. */
+export const taskDone = (t: Task, meId: string) => (t.assignee_ids?.includes(meId) ? !!t.done_ids?.includes(meId) : t.status === "done");
+
+/** The people a task is given to. Each ticks their own part; it's done when all have. */
+function Owners({ task, onChange }: { task: Task; onChange: (ids: string[]) => void }) {
+  const app = useApp();
+  const ids = task.assignee_ids ?? (task.assignee_id ? [task.assignee_id] : []);
+  const toggle = (id: string | null) => {
+    if (!id) return;
+    onChange(ids.includes(id) ? ids.filter((x) => x !== id) : ids.length < 10 ? [...ids, id] : ids);
+  };
+  return (
+    <div style={{ display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center" }}>
+      {ids.map((id) => {
+        const u = app.userById.get(id);
+        const done = task.done_ids?.includes(id);
+        return (
+          <span key={id} className="chip" title={done ? "Has finished their part" : "Still to do"}>
+            <Avatar user={u} size={18} />{u?.name.split(" ")[0] ?? "Someone"}{ids.length > 1 && done ? " ✓" : ""}
+            <button className="icon-btn sm" onClick={() => toggle(id)} aria-label={`Remove ${u?.name ?? "person"}`} style={{ marginLeft: 2 }}>×</button>
+          </span>
+        );
+      })}
+      <Dropdown width={250} trigger={({ onClick }) => <button className="chip" onClick={onClick}>{ids.length ? "+ Add" : "Assign"}</button>}>
+        {() => <PersonList value={ids} multi onPick={toggle} />}
+      </Dropdown>
+    </div>
+  );
+}
+
 export function TaskRow({ task, onOpen, showAssignee, showSpace }: { task: Task; onOpen: (id: string) => void; showAssignee?: boolean; showSpace?: boolean }) {
   const app = useApp();
-  const due = task.due && task.status !== "done" ? dueLabel(task.due) : null;
+  const done = taskDone(task, app.me.id);
+  const due = task.due && !done ? dueLabel(task.due) : null;
   const space = task.space_id ? app.spaceById.get(task.space_id) : null;
+  const owners = (task.assignee_ids ?? (task.assignee_id ? [task.assignee_id] : [])).map((id) => app.userById.get(id)).filter(Boolean) as User[];
   return (
-    <div className={`task ${task.status === "done" ? "done" : ""}`}>
-      <input type="checkbox" className="check" aria-label={task.status === "done" ? "Mark as not done" : "Mark as done"} checked={task.status === "done"} onChange={(e) => patchTask(task.id, { status: e.target.checked ? "done" : "todo" })} />
+    <div className={`task ${done ? "done" : ""}`}>
+      <input type="checkbox" className="check" aria-label={done ? "Mark as not done" : "Mark as done"} checked={done} onChange={(e) => patchTask(task.id, { status: e.target.checked ? "done" : "todo" })} />
       <div className="t" onClick={() => onOpen(task.id)}>{task.title}</div>
       <div className="meta">
         {task.needs_owner && task.status !== "done" && <span className="chip orange" title="It wasn't clear in the meeting who owns this"><AlertCircle />Check owner</span>}
         {task.status === "doing" && <span className="chip blue">In progress</span>}
         {showSpace && space && <span className="chip" style={{ background: "transparent", padding: 0 }}><SpaceBadge space={space} size={16} /></span>}
         {due && <span className={`due ${due.tone}`}>{due.text}</span>}
-        {showAssignee && (task.assignee_id ? <Avatar user={app.userById.get(task.assignee_id)} size={20} /> : <span className="avatar more" style={{ width: 20, height: 20, fontSize: 10 }}>?</span>)}
+        {owners.length > 1 && <span className="chip" title="Each person ticks their own part">{task.done_ids?.length ?? 0} of {owners.length} done</span>}
+        {showAssignee && (owners.length ? <AvatarStack users={owners} size={20} /> : <span className="avatar more" style={{ width: 20, height: 20, fontSize: 10 }}>?</span>)}
       </div>
     </div>
   );
 }
 
-function group(tasks: Task[]) {
+function group(tasks: Task[], meId: string) {
   const t = todayISO();
   const week = addDays(t, 7);
   const g = { overdue: [] as Task[], today: [] as Task[], week: [] as Task[], later: [] as Task[], none: [] as Task[], done: [] as Task[] };
   for (const x of tasks) {
-    if (x.status === "done") g.done.push(x);
+    if (taskDone(x, meId)) g.done.push(x);
     else if (!x.due) g.none.push(x);
     else if (x.due < t) g.overdue.push(x);
     else if (x.due === t) g.today.push(x);
@@ -88,7 +137,8 @@ function group(tasks: Task[]) {
 
 /** Tasks grouped by when they are due, with completed ones tucked away. */
 export function TaskGroups({ tasks, onOpen, showAssignee, showSpace }: { tasks: Task[]; onOpen: (id: string) => void; showAssignee?: boolean; showSpace?: boolean }) {
-  const g = useMemo(() => group(tasks), [tasks]);
+  const app = useApp();
+  const g = useMemo(() => group(tasks, app.me.id), [tasks]);
   const [showDone, setShowDone] = useState(false);
   const section = (label: string, list: Task[], cls = "") =>
     list.length > 0 && (
@@ -153,7 +203,7 @@ export function TasksView() {
   const tasks = staleOnly ? inSpace.filter(isStale) : inSpace;
   const openId = params.get("open");
   const open = (id: string | null) => setParams(id ? { open: id } : {}, { replace: true });
-  const openCount = tasks.filter((t) => t.status !== "done").length;
+  const openCount = tasks.filter((t) => !taskDone(t, app.me.id)).length;
   useEffect(() => { document.title = `Tasks · ${app.appName}`; return () => { document.title = app.appName; }; }, []);
 
   return (
@@ -220,7 +270,7 @@ export function TaskSheet({ id, onClose }: { id: string; onClose: () => void }) 
   return (
     <Sheet onClose={onClose}>
       <div style={{ display: "flex", gap: 12, alignItems: "flex-start", paddingTop: 10 }}>
-        <input type="checkbox" className="check" style={{ marginTop: 5 }} checked={task.status === "done"} onChange={(e) => patchTask(id, { status: e.target.checked ? "done" : "todo" })} aria-label="Done" />
+        <input type="checkbox" className="check" style={{ marginTop: 5 }} checked={taskDone(task, app.me.id)} onChange={(e) => patchTask(id, { status: e.target.checked ? "done" : "todo" })} aria-label="Done" />
         <AutoText className="page-title" value={title ?? task.title} onChange={setTitle} placeholder="Task name" onEnter={() => commit("title", title)} />
       </div>
       <div onBlur={() => { commit("title", title); commit("notes", notes); commit("project", project); }}>
@@ -234,8 +284,8 @@ export function TaskSheet({ id, onClose }: { id: string; onClose: () => void }) 
               {(["todo", "doing", "done"] as const).map((s) => <button key={s} className={task.status === s ? "on" : ""} onClick={() => patchTask(id, { status: s })}>{s === "todo" ? "To do" : s === "doing" ? "In progress" : "Done"}</button>)}
             </div>
           </div>
-          <div className="k">Assignee</div>
-          <div className="v"><PersonPill id={task.assignee_id} onChange={(v) => patchTask(id, { assignee_id: v })} /></div>
+          <div className="k">Owners</div>
+          <div className="v" style={{ background: "none" }}><Owners task={task} onChange={(ids) => patchTask(id, { assignee_ids: ids })} /></div>
           <div className="k">Due</div>
           <div className="v"><input type="date" className="bare" value={task.due ?? ""} onChange={(e) => patchTask(id, { due: e.target.value || null })} /></div>
           {app.me.role !== "guest" && (<>

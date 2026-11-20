@@ -31,6 +31,8 @@ export type Task = {
   id: string; title: string; notes: string; status: "todo" | "doing" | "done"; assignee_id: string | null; creator_id: string;
   space_id: string | null; project: string; due: string | null; meeting_id: string | null; meeting_title?: string | null;
   needs_owner: boolean; sort: number; completed_at: number | null; source_url: string | null; created_at: number; updated_at: number;
+  /** Everyone who owns the task, and those who have ticked their part off. */
+  assignee_ids?: string[]; done_ids?: string[];
 };
 
 export type MeetingStatus = "recording" | "processing" | "review" | "sent" | "failed";

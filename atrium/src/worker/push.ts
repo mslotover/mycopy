@@ -121,7 +121,7 @@ export async function remindDueToday(env: Env): Promise<number> {
   const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London" }).format(new Date());
   const due = await all<{ id: string; title: string; assignee_id: string }>(
     env.DB,
-    "SELECT id, title, assignee_id FROM tasks WHERE due = ? AND status != 'done' AND assignee_id IS NOT NULL AND (reminded_on IS NULL OR reminded_on != ?) ORDER BY sort",
+    "SELECT t.id, t.title, a.user_id AS assignee_id FROM tasks t JOIN task_assignees a ON a.task_id = t.id WHERE t.due = ? AND t.status != 'done' AND a.done_at IS NULL AND (t.reminded_on IS NULL OR t.reminded_on != ?) ORDER BY t.sort",
     today, today,
   );
   const byPerson = new Map<string, { id: string; title: string }[]>();
@@ -133,6 +133,6 @@ export async function remindDueToday(env: Env): Promise<number> {
     await run(env.DB, "INSERT INTO notifications (id, user_id, actor_id, type, title, body, url, created_at) VALUES (?, ?, NULL, 'due', ?, ?, ?, ?)", uid(), userId, title, body, url, now());
     await pushToUser(env, userId, { title, body, url });
   }
-  if (due.length) await run(env.DB, `UPDATE tasks SET reminded_on = ? WHERE id IN (${due.map(() => "?").join(",")})`, today, ...due.map((t) => t.id));
+  if (due.length) await run(env.DB, `UPDATE tasks SET reminded_on = ? WHERE id IN (${[...new Set(due.map((t) => t.id))].map(() => "?").join(",")})`, today, ...new Set(due.map((t) => t.id)));
   return due.length;
 }

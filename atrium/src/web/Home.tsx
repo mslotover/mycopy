@@ -5,7 +5,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { api, invalidate, relTime, todayISO, useMeetings, useTasks, useTree, type Knowledge, type Notification, type Page } from "./api";
 import { Toolbar, usePageActions, useShell } from "./App";
 import { MeetingRow } from "./Meetings";
-import { QuickAdd, TaskGroups, TaskRow, TaskSheet } from "./Tasks";
+import { QuickAdd, TaskGroups, TaskRow, TaskSheet, taskDone } from "./Tasks";
 import { Avatar, AvatarStack, confirmDialog, Dropdown, Empty, MenuItem, PageGlyph, SpaceBadge, Spinner, toastError, useApp } from "./ui";
 
 // ---------- Home ----------
@@ -22,7 +22,7 @@ export function Home() {
 
   const hour = new Date().getHours();
   const greeting = hour < 5 ? "Good evening" : hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
-  const open = (tasks ?? []).filter((t) => t.status !== "done");
+  const open = (tasks ?? []).filter((t) => !taskDone(t, app.me.id));
   const today = todayISO();
   const focus = [...open].sort((a, b) => (a.due ?? "9999") < (b.due ?? "9999") ? -1 : 1).slice(0, 6);
   const overdue = open.filter((t) => t.due && t.due < today).length;
