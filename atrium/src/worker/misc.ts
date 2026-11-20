@@ -53,6 +53,44 @@ misc.patch("/me", async (c) => {
   return c.json({ ok: true });
 });
 
+// ---------- Welcome tour and calendar ----------
+
+/** Only Google's own secret iCal addresses are accepted, so this can't be pointed at anything else. */
+function parseCalendarUrl(input: string): string {
+  let u: URL;
+  try { u = new URL(input.trim().replace(/^webcal:/i, "https:")); } catch { throw bad("That doesn't look like an address."); }
+  if (u.protocol !== "https:" || u.hostname !== "calendar.google.com" || !/^\/calendar\/ical\/[^/]+\/private-[^/]+\/basic\.ics$/.test(u.pathname)) {
+    throw bad("That isn't a Google Calendar secret iCal address. It should look like https://calendar.google.com/calendar/ical/…/private-…/basic.ics");
+  }
+  u.search = "";
+  return u.toString();
+}
+
+misc.get("/me/setup", async (c) => {
+  const row = await first<{ onboarded_at: number | null; calendar_url: string | null }>(c.env.DB, "SELECT onboarded_at, calendar_url FROM users WHERE id = ?", c.var.user.id);
+  return c.json({ onboarded: !!row?.onboarded_at, calendar: !!row?.calendar_url });
+});
+
+misc.post("/me/onboarded", async (c) => {
+  await run(c.env.DB, "UPDATE users SET onboarded_at = COALESCE(onboarded_at, ?) WHERE id = ?", now(), c.var.user.id);
+  return c.json({ ok: true });
+});
+
+misc.put("/me/calendar", async (c) => {
+  const { url } = await c.req.json<{ url?: string }>();
+  const clean = parseCalendarUrl(url ?? "");
+  const res = await fetch(clean, { redirect: "error" }).catch(() => null);
+  const text = res?.ok ? await res.text() : "";
+  if (!text.includes("BEGIN:VCALENDAR")) throw bad("Google didn't give us a calendar from that address. Copy it again from Google Calendar, making sure it's the secret address in iCal format.");
+  await run(c.env.DB, "UPDATE users SET calendar_url = ? WHERE id = ?", clean, c.var.user.id);
+  return c.json({ ok: true, events: (text.match(/BEGIN:VEVENT/g) ?? []).length });
+});
+
+misc.delete("/me/calendar", async (c) => {
+  await run(c.env.DB, "UPDATE users SET calendar_url = NULL WHERE id = ?", c.var.user.id);
+  return c.json({ ok: true });
+});
+
 misc.get("/recent", async (c) => {
   const access = await loadAccess(c.env, c.var.user);
   const rows = await all<{ id: string; title: string; icon: string; kind: string; space_id: string | null; parent_id: string | null; updated_at: number; updated_by: string }>(

@@ -83,6 +83,13 @@ organisation). Addresses are secrets, not vars, because this repository is publi
 People can sign in only if they have been invited; the first owner is created by the import
 or by inserting a row into `users`.
 
+## Signing in, and the welcome tour
+
+People sign in with Google (the main button once `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` are set) or, for guests, an emailed link. One person can have extra sign-in addresses in the `user_emails` table; add them with SQL, never in code.
+Business figures from the data connector are limited by email domain (see that repo's `businesses.ts`).
+
+The first time someone signs in, a seven-step tour shows what Atrium does and offers to connect their Google Calendar by pasting its secret iCal address. It is replayable from Settings, Profile. The address is stored in `users.calendar_url`, accepted only from `calendar.google.com`, and never sent back to the browser.
+
 ## Recording a video call
 
 The recorder listens to the microphone. On a call with headphones, the other people never

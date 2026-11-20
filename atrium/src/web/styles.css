@@ -756,3 +756,7 @@ table.db input.bare { height: 30px; }
   .app { display: block; }
   .main { margin: 0; box-shadow: none; overflow: visible; }
 }
+
+.tour-list { margin: 0; padding-left: 20px; line-height: 1.6; }
+.tour-list li { margin-bottom: 8px; }
+.sheet-body > p, .sheet-body p { margin: 0 0 10px; }

@@ -3,6 +3,7 @@ import { Plus, UserPlus } from "lucide-react";
 import { useEffect, useState } from "react";
 import { api, invalidate, relTime, type Role, type Space } from "./api";
 import { Toolbar } from "./App";
+import { CalendarConnect, Welcome, useSetup } from "./Welcome";
 import { pushState, turnOffPush, turnOnPush, type PushState } from "./phone";
 import { Avatar, AvatarStack, Dropdown, EmojiPicker, Sheet, SpaceBadge, Spinner, toast, toastError, useApp } from "./ui";
 
@@ -33,6 +34,8 @@ export function Settings() {
 function Profile() {
   const app = useApp();
   const [name, setName] = useState(app.me.name);
+  const { data: setup } = useSetup();
+  const [tour, setTour] = useState(false);
   const save = async (body: { name?: string; color?: string }) => { try { await api("/me", { method: "PATCH", body }); invalidate("boot"); } catch (e) { toastError(e); } };
   return (
     <div>
@@ -43,6 +46,9 @@ function Profile() {
       <div className="form-row"><label className="label">Name</label><input className="field" value={name} onChange={(e) => setName(e.target.value)} onBlur={() => name.trim() && name !== app.me.name && save({ name })} /></div>
       <div className="form-row"><label className="label">Colour</label><div className="swatches">{COLORS.map((c) => <button key={c} className={`swatch ${app.me.color.toLowerCase() === c ? "on" : ""}`} style={{ background: c }} aria-label={c} onClick={() => save({ color: c })} />)}</div></div>
       <div className="form-row"><label className="label">Notifications on this device</label><DeviceNotifications /></div>
+      {app.me.role !== "guest" && <div className="form-row"><label className="label">Calendar</label><CalendarConnect connected={!!setup?.calendar} /></div>}
+      <div className="form-row"><label className="label">Welcome tour</label><button className="btn" onClick={() => setTour(true)}>Replay the tour</button></div>
+      {tour && <Welcome replay onClose={() => setTour(false)} />}
       <p className="muted" style={{ fontSize: 12.5, marginTop: 24 }}>You sign in with a link or code sent to {app.me.email}. Emails about mentions, new tasks and meeting summaries go to the same address.</p>
     </div>
   );

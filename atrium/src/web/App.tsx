@@ -15,6 +15,7 @@ import { SearchPalette } from "./Search";
 import { Settings } from "./Settings";
 import { SignIn } from "./SignIn";
 import { TasksView } from "./Tasks";
+import { Welcome, useSetup } from "./Welcome";
 import { BUILTIN_TEMPLATES } from "./templates";
 import { AppProvider, Avatar, Dropdown, MenuItem, Overlays, PageGlyph, Sheet, SpaceBadge, Spinner, toast, toastError, useApp } from "./ui";
 
@@ -364,6 +365,8 @@ function Authed() {
   const [sidebar, setSidebar] = useState(false);
   const [template, setTemplate] = useState<{ space_id?: string | null; parent_id?: string | null } | null>(null);
   const [moving, setMoving] = useState<string | null>(null);
+  const { data: setup } = useSetup();
+  const [tourDone, setTourDone] = useState(false);
 
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
@@ -416,6 +419,7 @@ function Authed() {
         {meeting && <NewMeetingSheet spaceId={meeting.spaceId ?? null} onClose={() => setMeeting(null)} />}
         {template && <TemplateSheet dest={template} onClose={() => setTemplate(null)} />}
         {moving && <MoveSheet pageId={moving} onClose={() => setMoving(null)} />}
+        {setup && !setup.onboarded && !tourDone && boot.user.role !== "guest" && <Welcome onClose={() => setTourDone(true)} />}
         <Overlays />
        </RecordingProvider>
       </ShellCtx.Provider>

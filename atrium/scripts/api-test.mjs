@@ -170,5 +170,14 @@ console.log("ask");
 const ask = await sam.post("/ai/ask", { messages: [{ role: "user", content: "aprons" }] });
 check("ask streams an answer", ask.text?.includes("event: done") && ask.text.includes("aprons"));
 
+console.log("welcome and calendar");
+{
+  const setup = await sam.get("/me/setup");
+  check("a new person hasn't done the tour", setup.onboarded === false && setup.calendar === false);
+  check("finishing the tour is remembered", ((await sam.post("/me/onboarded")).ok && (await sam.get("/me/setup")).onboarded) === true);
+  check("a non-Google calendar address is refused", (await sam.put("/me/calendar", { url: "https://example.com/x/private-1/basic.ics" })).status === 400);
+  check("a made-up internal address is refused", (await sam.put("/me/calendar", { url: "http://localhost:8787/api/bootstrap" })).status === 400);
+}
+
 console.log(failures ? `\n${failures} check(s) failed` : "\nAll checks passed");
 process.exit(failures ? 1 : 0);
