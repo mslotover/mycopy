@@ -18,7 +18,7 @@ type Participant = { id: string; meeting_id: string; user_id: string | null; nam
 type Segment = { meeting_id: string; idx: number; r2_key: string; mime: string; bytes: number; status: "pending" | "done" | "failed"; text: string };
 type Item = { id: string; meeting_id: string; kind: "task" | "knowledge"; payload: string; accepted: number; sort: number };
 
-export type TaskPayload = { title: string; assignee_id: string | null; owner_name: string | null; due: string | null; context: string; needs_owner: boolean; duplicate_of: string | null };
+export type TaskPayload = { title: string; assignee_id: string | null; /** Everyone who owns it; assignee_id stays as the first. */ assignee_ids?: string[]; owner_name: string | null; due: string | null; context: string; needs_owner: boolean; duplicate_of: string | null };
 export type KnowledgePayload = { kind: string; title: string; body: string };
 
 const MAX_SEGMENT_BYTES = 30 * 1024 * 1024;
@@ -331,8 +331,12 @@ meetings.post("/:id/share", async (c) => {
     await run(env.DB, "INSERT INTO meeting_participants (id, meeting_id, user_id, name, email, notify) VALUES (?, ?, ?, ?, ?, 1)", uid(), m.id, member?.id ?? null, name, to);
   }
   const [actions, space] = await Promise.all([
-    all<{ title: string; due: string | null; status: string; assignee_id: string | null; assignee: string | null }>(
-      env.DB, "SELECT t.title, t.due, t.status, t.assignee_id, u.name AS assignee FROM tasks t LEFT JOIN users u ON u.id = t.assignee_id WHERE t.meeting_id = ? ORDER BY t.sort, t.created_at", m.id),
+    all<{ title: string; due: string | null; status: string; owner_ids: string | null; assignee: string | null }>(
+      env.DB,
+      `SELECT t.title, t.due, t.status,
+         (SELECT group_concat(a.user_id) FROM task_assignees a WHERE a.task_id = t.id) AS owner_ids,
+         (SELECT group_concat(u.name, ', ') FROM task_assignees a JOIN users u ON u.id = a.user_id WHERE a.task_id = t.id) AS assignee
+       FROM tasks t WHERE t.meeting_id = ? ORDER BY t.sort, t.created_at`, m.id),
     m.space_id ? first<{ name: string }>(env.DB, "SELECT name FROM spaces WHERE id = ?", m.space_id) : null,
   ]);
   const date = new Date(m.started_at).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/London" });
@@ -340,7 +344,7 @@ meetings.post("/:id/share", async (c) => {
   const line = (t: (typeof actions)[number], showOwner: boolean) =>
     `<tr><td style="padding:7px 10px 7px 0;vertical-align:top;color:#86868b;font-size:15px">${t.status === "done" ? "✓" : "○"}</td><td style="padding:7px 0;font-size:15px;line-height:1.45">${escapeHtml(t.title)}` +
     `${showOwner && t.assignee ? ` <span style="color:#86868b">· ${escapeHtml(t.assignee)}</span>` : ""}${t.due ? ` <span style="color:#86868b">· due ${new Date(t.due + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}</span>` : ""}</td></tr>`;
-  const own = member ? actions.filter((t) => t.assignee_id === member.id) : [];
+  const own = member ? actions.filter((t) => (t.owner_ids ?? "").split(",").includes(member.id)) : [];
   const others = actions.filter((t) => !own.includes(t));
   const body =
     `<p style="margin:0 0 20px;color:#86868b;font-size:14px">${escapeHtml(date)}${space ? ` · ${escapeHtml(space.name)}` : ""} · recorded by ${escapeHtml(user.name)}</p>` +
@@ -381,18 +385,21 @@ meetings.post("/:id/send", async (c) => {
   ]);
   const userById = new Map(users.map((u) => [u.id, u]));
 
-  const created: { title: string; assignee_id: string | null; owner_name: string | null; due: string | null }[] = [];
+  const created: { title: string; assignee_id: string | null; assignee_ids: string[]; owner_name: string | null; due: string | null }[] = [];
   for (const it of items) {
     if (it.kind === "task") {
       const p = parseJSON<TaskPayload>(it.payload, null as unknown as TaskPayload);
       if (!p?.title?.trim()) continue;
-      const assignee = p.assignee_id && userById.has(p.assignee_id) ? p.assignee_id : user.id;
+      // The list wins when the reviewer has set one; older items only have the single owner.
+      const wanted = [...new Set(p.assignee_ids?.length ? p.assignee_ids : p.assignee_id ? [p.assignee_id] : [])].filter((id) => userById.has(id));
+      const owners = wanted.length ? wanted : [user.id];
+      const assignee = owners[0];
       await createTask(env, {
         title: p.title.trim(),
         notes: [p.context, p.owner_name ? `Owner mentioned in the meeting: ${p.owner_name}` : ""].filter(Boolean).join("\n"),
-        assignee_id: assignee, creator_id: user.id, space_id: meeting.space_id, due: p.due, meeting_id: m.id, needs_owner: p.needs_owner,
+        assignee_ids: owners, creator_id: user.id, space_id: meeting.space_id, due: p.due, meeting_id: m.id, needs_owner: p.needs_owner,
       });
-      created.push({ title: p.title.trim(), assignee_id: assignee, owner_name: p.owner_name, due: p.due });
+      created.push({ title: p.title.trim(), assignee_id: assignee, assignee_ids: owners, owner_name: p.owner_name, due: p.due });
     } else {
       const k = parseJSON<KnowledgePayload>(it.payload, null as unknown as KnowledgePayload);
       if (!k?.title?.trim()) continue;
@@ -407,12 +414,12 @@ meetings.post("/:id/send", async (c) => {
   const date = new Date(meeting.started_at).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/London" });
   const fmtDue = (d: string | null) => (d ? ` <span style="color:#86868b">· due ${new Date(d + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}</span>` : "");
   const line = (t: (typeof created)[number], showOwner: boolean) =>
-    `<tr><td style="padding:7px 10px 7px 0;vertical-align:top;color:#86868b;font-size:15px">○</td><td style="padding:7px 0;font-size:15px;line-height:1.45">${escapeHtml(t.title)}${showOwner ? ` <span style="color:#86868b">· ${escapeHtml(t.owner_name ?? userById.get(t.assignee_id ?? "")?.name ?? "Unassigned")}</span>` : ""}${fmtDue(t.due)}</td></tr>`;
+    `<tr><td style="padding:7px 10px 7px 0;vertical-align:top;color:#86868b;font-size:15px">○</td><td style="padding:7px 0;font-size:15px;line-height:1.45">${escapeHtml(t.title)}${showOwner ? ` <span style="color:#86868b">· ${escapeHtml(t.owner_name ?? (t.assignee_ids.map((id) => userById.get(id)?.name).filter(Boolean).join(", ") || "Unassigned"))}</span>` : ""}${fmtDue(t.due)}</td></tr>`;
   const sectionTitle = (s: string) => `<p style="margin:28px 0 8px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#86868b">${s}</p>`;
   let sent = 0;
   for (const p of participants) {
     if (p.user_id && p.user_id !== user.id) {
-      const mine = created.filter((t) => t.assignee_id === p.user_id).length;
+      const mine = created.filter((t) => t.assignee_ids.includes(p.user_id!)).length;
       await notify(env, origin, {
         user_id: p.user_id, actor_id: user.id, type: "meeting",
         title: `Summary of “${meeting.title || "Meeting"}”`, body: mine ? `You have ${mine} action${mine === 1 ? "" : "s"} from this meeting.` : "", url: `/meetings/${m.id}`,
@@ -420,7 +427,7 @@ meetings.post("/:id/send", async (c) => {
     }
     if (!p.notify || !p.email) continue;
     const own = p.user_id
-      ? created.filter((t) => t.assignee_id === p.user_id && !t.owner_name)
+      ? created.filter((t) => t.assignee_ids.includes(p.user_id!) && !t.owner_name)
       : created.filter((t) => t.owner_name && p.name && t.owner_name.toLowerCase().includes(p.name.split(" ")[0].toLowerCase()));
     const others = created.filter((t) => !own.includes(t));
     const body =

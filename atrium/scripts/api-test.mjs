@@ -134,6 +134,8 @@ check("ready for review with proposed tasks", review.meeting.status === "review"
 check("unclear owner is flagged", review.items.some((i) => i.kind === "task" && i.payload.needs_owner));
 const drop = review.items.find((i) => i.kind === "task" && i.payload.needs_owner);
 await owner.patch(`/meetings/${mid}/items/${drop.id}`, { accepted: false });
+const shared = review.items.find((i) => i.kind === "task" && i.id !== drop.id);
+await owner.patch(`/meetings/${mid}/items/${shared.id}`, { payload: { assignee_ids: [ownerId, samId], assignee_id: ownerId, needs_owner: false, owner_name: null } });
 check("only the organiser can send", (await sam.post(`/meetings/${mid}/send`)).status === 403);
 const sent = await owner.post(`/meetings/${mid}/send`);
 check("send creates only accepted tasks", sent.tasks === 2 && sent.emails === 3, JSON.stringify(sent));
@@ -142,6 +144,13 @@ check("participant sees the sent meeting", (await sam.get(`/meetings/${mid}`)).m
 check("participant does not see the review queue", (await sam.get(`/meetings/${mid}`)).items.length === 0);
 check("meeting tasks land on the owner's list", (await sam.get("/tasks?scope=mine")).tasks.some((t) => t.meeting_id === mid));
 check("knowledge note filed", (await sam.get("/knowledge")).knowledge.some((k) => k.meeting_id === mid));
+{
+  const sharedTask = (await sam.get("/tasks?scope=mine")).tasks.find((t) => t.meeting_id === mid && t.title === shared.payload.title);
+  check("an action point can have two owners", sharedTask?.assignee_ids?.length === 2 && sharedTask.assignee_ids.includes(ownerId) && sharedTask.assignee_ids.includes(samId));
+  const names = [ownerId, samId].map((id) => boot.users.find((u) => u.id === id).name);
+  const mail = (await owner.get("/admin/outbox")).outbox.find((o) => o.to_email === "dana@supplier.example" && o.html.includes(shared.payload.title));
+  check("the summary email names both owners", !!mail && names.every((n) => mail.html.includes(n)));
+}
 const outbox = (await owner.get("/admin/outbox")).outbox;
 check("summary emailed to external participant", outbox.some((o) => o.to_email === "dana@supplier.example"));
 check("outbox is admin-only", (await sam.get("/admin/outbox")).status === 403);

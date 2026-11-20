@@ -8,7 +8,7 @@ import { Toolbar, useShell } from "./App";
 import { Editor } from "./Editor";
 import { CommentThread } from "./PageView";
 import { TaskRow, TaskSheet } from "./Tasks";
-import { Avatar, AvatarStack, confirmDialog, Dropdown, Empty, MenuItem, PersonList, PersonPill, Sheet, SpaceBadge, SpaceSelect, Spinner, toast, toastError, useApp, useDebouncedSave } from "./ui";
+import { Avatar, AvatarStack, confirmDialog, Dropdown, Empty, MenuItem, PersonList, Sheet, SpaceBadge, SpaceSelect, Spinner, toast, toastError, useApp, useDebouncedSave } from "./ui";
 
 const SEGMENT_SECONDS = 90;
 
@@ -620,7 +620,7 @@ function Review({ detail, refetch }: { detail: MeetingDetail; refetch: () => voi
                     <input className="bare" placeholder="What needs doing?" defaultValue={i.payload.title} onBlur={(e) => e.target.value !== i.payload.title && patchItem(i.id, { payload: { title: e.target.value } })} />
                     <textarea className="bare" rows={i.payload.context ? 2 : 1} placeholder="Context" defaultValue={i.payload.context} onBlur={(e) => e.target.value !== i.payload.context && patchItem(i.id, { payload: { context: e.target.value } })} />
                     <div className="ctl">
-                      <PersonPill id={i.payload.assignee_id} allowNone={false} onChange={(v) => patchItem(i.id, { payload: { assignee_id: v, needs_owner: false, owner_name: null } })} />
+                      <ItemOwners ids={i.payload.assignee_ids?.length ? i.payload.assignee_ids : i.payload.assignee_id ? [i.payload.assignee_id] : []} onChange={(ids) => patchItem(i.id, { payload: { assignee_ids: ids, assignee_id: ids[0] ?? null, needs_owner: false, owner_name: null } })} />
                       <label className="chip"><input type="date" className="bare" style={{ width: i.payload.due ? 112 : 92, fontSize: 12 }} value={i.payload.due ?? ""} onChange={(e) => patchItem(i.id, { payload: { due: e.target.value || null } })} aria-label="Due date" /></label>
                       {i.payload.needs_owner && <span className="chip orange" title="Assigned to you until you choose someone"><AlertCircle />{i.payload.owner_name ? `Mentioned: ${i.payload.owner_name}` : "Owner unclear"}</span>}
                       {i.payload.duplicate_of && <span className="chip purple" title="An open task already looks like this one"><Copy />Possible duplicate</span>}
@@ -828,5 +828,31 @@ export function MeetingView() {
       </Toolbar>
       {body}
     </>
+  );
+}
+
+/** Who an action point is for. Each owner ticks off their own part; at least one is needed. */
+function ItemOwners({ ids, onChange }: { ids: string[]; onChange: (ids: string[]) => void }) {
+  const app = useApp();
+  const toggle = (id: string | null) => {
+    if (!id) return;
+    if (ids.includes(id)) { if (ids.length > 1) onChange(ids.filter((x) => x !== id)); }
+    else if (ids.length < 10) onChange([...ids, id]);
+  };
+  return (
+    <span style={{ display: "inline-flex", gap: 6, flexWrap: "wrap", alignItems: "center" }}>
+      {ids.map((id) => {
+        const u = app.userById.get(id);
+        return (
+          <span key={id} className="chip">
+            <Avatar user={u} size={18} />{u?.name.split(" ")[0] ?? "Someone"}
+            {ids.length > 1 && <button className="icon-btn sm" onClick={() => toggle(id)} aria-label={`Remove ${u?.name ?? "person"}`} style={{ marginLeft: 2 }}>×</button>}
+          </span>
+        );
+      })}
+      <Dropdown width={250} trigger={({ onClick }) => <button className="chip" onClick={onClick}>{ids.length ? "+ Add" : "Assign"}</button>}>
+        {() => <PersonList value={ids} multi onPick={toggle} />}
+      </Dropdown>
+    </span>
   );
 }

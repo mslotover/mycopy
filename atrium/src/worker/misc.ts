@@ -505,5 +505,5 @@ misc.patch("/admin/users/:id", async (c) => {
 
 misc.get("/admin/outbox", async (c) => {
   if (!isAdmin(c.var.user)) throw forbidden();
-  return c.json({ outbox: await all(c.env.DB, "SELECT id, to_email, subject, status, error, created_at FROM outbox ORDER BY created_at DESC LIMIT 100") });
+  return c.json({ outbox: await all(c.env.DB, `SELECT id, to_email, subject, status, error, created_at${c.env.DEV_MODE === "1" ? ", html" : ""} FROM outbox ORDER BY created_at DESC LIMIT 100`) });
 });
