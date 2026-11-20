@@ -657,7 +657,7 @@ function Review({ detail, refetch }: { detail: MeetingDetail; refetch: () => voi
                   <input type="checkbox" className="switch" checked={p.notify && !!p.email} disabled={!p.email} onChange={(e) => savePeople(people.map((x) => (x.id === p.id ? { ...x, notify: e.target.checked } : x)))} aria-label={`Email ${p.name}`} />
                 </div>
               ))}
-              <AddParticipant onAdd={(np) => api(`/meetings/${m.id}`, { method: "PATCH", body: { participants: [...people, np] } }).then(refetch).catch(toastError)} existing={people} />
+              <AddParticipant onAdd={(np) => savePeople([...people, { id: crypto.randomUUID(), user_id: np.user_id ?? null, name: np.name, email: np.email, notify: np.notify }])} existing={people} />
             </div>
           </div>
         </div>
