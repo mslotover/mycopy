@@ -64,12 +64,17 @@ export function SignIn() {
         ) : (
           <>
             <h1>Sign in to {name}</h1>
-            <p>Enter your work email and we'll send you a sign-in link.</p>
+            {config?.google ? (
+              <>
+                <p>Sign in with your work Google account.</p>
+                <a className="btn primary" href="/api/auth/google">Continue with Google</a>
+                <div className="or">guests without a work account</div>
+              </>
+            ) : <p>Enter your work email and we'll send you a sign-in link.</p>}
             <form onSubmit={submit}>
-              <input className="field" type="email" required autoFocus placeholder="you@company.com" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-              <button className="btn primary" disabled={state === "busy" || !email}>{state === "busy" ? "Sending…" : "Continue with email"}</button>
+              <input className="field" type="email" required placeholder="you@company.com" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <button className={`btn${config?.google ? "" : " primary"}`} disabled={state === "busy" || !email}>{state === "busy" ? "Sending…" : "Continue with email"}</button>
             </form>
-            {config?.google && (<><div className="or">or</div><a className="btn" href="/api/auth/google">Continue with Google</a></>)}
             {error && <div className="err">{error}</div>}
           </>
         )}
