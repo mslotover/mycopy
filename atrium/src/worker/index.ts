@@ -6,6 +6,7 @@ import { meetings } from "./meetings";
 import { misc } from "./misc";
 import { pages } from "./pages";
 import { prep, sendMeetingPreps } from "./prep";
+import { privacyPage } from "./privacy";
 import { push, remindDueToday } from "./push";
 import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
@@ -56,6 +57,8 @@ app.all("/api/*", (c) => c.json({ error: "Not found." }, 404));
 // The front end normally comes from Cloudflare's static-asset store and never reaches this
 // code. When it has been packed into the Worker instead (deploy:embedded), serve it here,
 // answering unknown paths with the app shell so its own routing can take over.
+app.get("/privacy", (c) => privacyPage(c.env));
+
 app.get("*", (c) => {
   const path = new URL(c.req.url).pathname;
   const exact = STATIC[path];
