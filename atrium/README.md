@@ -19,7 +19,21 @@ and for answering questions about the workspace.
 - **Brain** – decisions, facts and know-how distilled from meetings, searchable alongside
   everything else.
 - **Search and Ask AI** – search by keyword and by meaning (so "cold storage" finds the
-  walk-in fridge page), and a chat panel that answers from the workspace with links to sources. Both only ever show what the person asking is allowed to see.
+  walk-in fridge page), and a chat panel that answers from the workspace with links to
+  sources. Both only ever show what the person asking is allowed to see. The ✨ button on a
+  page or meeting opens Ask AI about that item.
+- **Business figures** – Ask AI can query the group's BigQuery history (tills, labour,
+  bookings, wholesale, supplier bills) through the Toklas data connector, a separate Worker
+  reached by service binding (`DATA`, shared key `ATRIUM_DATA_KEY`). The connector applies
+  its own rules about who sees what. Guests never get these tools.
+- **Changes from Ask AI** – Ask AI can propose tasks, a page or a database row
+  (`src/worker/actions.ts`). The panel shows a card; only on Confirm does the browser call
+  the normal APIs, under the person's own permissions.
+- **Morning brief** – a daily email (`src/worker/brief.ts`) to the addresses in the
+  `BRIEF_RECIPIENTS` secret: yesterday's trading against the same day last week, bookings,
+  wholesale, best sellers, then tasks due, new meeting actions and overdue items.
+- **Spending** – every Claude call is logged with an estimated cost (`ai_usage`), and each
+  Monday a summary by person and feature goes to the `REPORT_TO` secret's address.
 
 ## Layout
 
@@ -28,7 +42,7 @@ and for answering questions about the workspace.
 | `src/worker/` | API (Hono on Workers): auth, pages, tasks, meetings, AI, search |
 | `src/web/` | React single-page app |
 | `migrations/` | D1 schema |
-| `scripts/api-test.mjs` | End-to-end API checks, including access rules |
+| `scripts/api-test.mjs` | End-to-end API checks, including access rules (accounts in `tests/fixture.sql`) |
 | `scripts/seed-demo.mjs` | Fictional sample content for local use |
 | `scripts/notion-import.mjs` | Builds SQL from an exported Notion workspace in `import-data/` |
 
@@ -56,6 +70,15 @@ keys are needed. `node scripts/seed-demo.mjs` adds sample content; sign in as
    (and optionally `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` to turn on Google sign-in;
    the redirect URI is `https://<your-domain>/api/auth/google/callback`).
 4. `npm run deploy`
+
+Scheduled work runs from one five-minute timer (the Workers free plan allows five timers per
+account): search embedding every run, the morning brief at 07:35 UTC, due-today reminders at
+08:00 and the spending email on Mondays at 09:00 (`scheduled` in `src/worker/index.ts`).
+One-off jobs can be queued as rows in `app_flags` (e.g. `brief_preview`).
+
+Optional secrets: `ATRIUM_DATA_KEY` (business figures), `BRIEF_RECIPIENTS`, `REPORT_TO`,
+`ANTHROPIC_ADMIN_KEY` (adds the Console's figure to the spending email; needs a team
+organisation). Addresses are secrets, not vars, because this repository is public.
 
 People can sign in only if they have been invited; the first owner is created by the import
 or by inserting a row into `users`.
