@@ -44,7 +44,6 @@ and for answering questions about the workspace.
 | `migrations/` | D1 schema |
 | `scripts/api-test.mjs` | End-to-end API checks, including access rules (accounts in `tests/fixture.sql`) |
 | `scripts/seed-demo.mjs` | Fictional sample content for local use |
-| `scripts/notion-import.mjs` | Builds SQL from an exported Notion workspace in `import-data/` |
 
 ## Run locally
 
@@ -118,45 +117,12 @@ Notifications use Web Push. Generate a key pair once, put the public half in
 `VAPID_PUBLIC_KEY` (wrangler.jsonc) and the private half in the `VAPID_PRIVATE_KEY`
 secret. `scripts/push-test.mjs` checks the encryption against the example in RFC 8291.
 
-## Bringing a Notion workspace across
+## Where the content came from
 
-The import runs from a Claude Code session that has the Notion connector, because that is
-what can read the workspace. Three small scripts do the rest; everything they produce lands
-in `import-data/`, which git ignores. **Never commit it: it is the workspace's private content.**
-
-1. Read the workspace through the connector: people, teamspaces, every page, each database's
-   rows, meeting notes with transcripts.
-2. `python3 -I scripts/notion-extract.py <session.jsonl> <tool-results-dir> import-data/raw`
-   copies the connector's replies out of the session, word for word.
-3. `python3 -I scripts/notion-files.py <session.jsonl> <tool-results-dir> import-data/files`
-   downloads images, videos and PDFs. Notion's download links last five minutes, so run it
-   straight after asking for them.
-4. `node scripts/notion-import.mjs import-data` writes `atrium-import.local.sql`,
-   `load-files.sh` and `report.md`, which lists what came across and what did not.
-5. Load it:
-
-   ```bash
-   npx wrangler d1 execute atrium --remote --file=import-data/atrium-import.local.sql
-   ```
-
-   ```bash
-   sh import-data/load-files.sh --remote
-   ```
-
-   Use `--local -c wrangler.dev.jsonc` and `--local wrangler.dev.jsonc` to try it on the dev server first.
-
-How things map: teamspaces become spaces; pages keep their place and their links to each
-other; databases become database pages, except task lists (which become tasks) and meeting
-notes and minutes (which become meetings, with summary, notes and transcript). Key decisions
-recorded against minutes become Brain notes.
-
-The importer never widens who can see something. Private pages, pages shared with
-individuals, private meetings and tasks from private lists stay with the person who ran the
-import, who can then share them from inside the app. Notion does not expose who belongs to
-each teamspace, so space membership is worked out from who is given work, runs projects or
-attends meetings there; check it under Settings, Spaces. `import-data/import-config.json`
-(optional) maps a "Business" column value to a space when the names differ, and sets a
-space's emoji and colour.
+The team's Notion workspace was brought across once, in November 2026, and Atrium no longer
+talks to Notion. The one-off import scripts were removed afterwards; they are still in this
+repository's history (the commit before "Remove the Notion import scripts"). Imported pages
+keep a link back to their original, which stops working if the Notion workspace is closed.
 
 ## Privacy
 

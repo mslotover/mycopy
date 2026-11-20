@@ -83,7 +83,7 @@ export function PageView() {
               {page.kind !== "row" && <MenuItem icon={<Copy />} onClick={() => { close(); acts.duplicate(id); }}>Duplicate</MenuItem>}
               {canEdit && page.kind !== "row" && <MenuItem icon={<FolderInput />} onClick={() => { close(); shell.movePage(id); }}>Move to…</MenuItem>}
               {page.kind !== "row" && <MenuItem icon={<LayoutTemplate />} onClick={() => { close(); acts.duplicate(id, true); }}>Save as template</MenuItem>}
-              {page.source_url && <MenuItem icon={<ExternalLink />} onClick={() => { close(); window.open(page.source_url!, "_blank", "noopener"); }}>Open original in Notion</MenuItem>}
+              {page.source_url && <MenuItem icon={<ExternalLink />} onClick={() => { close(); window.open(page.source_url!, "_blank", "noopener"); }}>Open original</MenuItem>}
               {canEdit && (<><div className="menu-sep" /><MenuItem danger icon={<Trash2 />} onClick={() => { close(); acts.remove(id, page.title, () => navigate(page.parent_id ? `/p/${page.parent_id}` : "/")); }}>Delete</MenuItem></>)}
             </>
           )}
