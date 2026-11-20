@@ -45,11 +45,20 @@ auth.get("/config", (c) => c.json({ appName: c.env.APP_NAME, google: googleEnabl
 
 // Step 1: email a one-time sign-in link. Only people already invited can sign in, and the
 // response is the same whether or not the address is known.
+/** The active person who owns this address, as their main email or as one of their extra sign-in addresses. */
+async function userByAddress(db: D1Database, addr: string) {
+  return first<User>(
+    db,
+    "SELECT * FROM users WHERE active = 1 AND (email = ? OR id IN (SELECT user_id FROM user_emails WHERE email = ?))",
+    addr, addr,
+  );
+}
+
 auth.post("/request", async (c) => {
   const { email } = await c.req.json<{ email?: string }>();
   const addr = (email ?? "").trim().toLowerCase();
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(addr)) throw bad("Enter a valid email address.");
-  const user = await first<User>(c.env.DB, "SELECT * FROM users WHERE email = ? AND active = 1", addr);
+  const user = await userByAddress(c.env.DB, addr);
   let devLink: string | undefined;
   let devCode: string | undefined;
   if (user) {
@@ -74,7 +83,7 @@ auth.post("/request", async (c) => {
       if (isDev(c.env)) { devLink = link; devCode = code; }
       await sendMail(
         c.env,
-        user.email,
+        addr,
         `Sign in to ${c.env.APP_NAME}`,
         emailLayout(c.env, {
           heading: `Sign in to ${c.env.APP_NAME}`,
@@ -167,7 +176,7 @@ auth.get("/google/callback", async (c) => {
   if (!infoRes.ok) return fail("Google sign-in failed. Please try again.");
   const info = await infoRes.json<{ email?: string; email_verified?: boolean }>();
   if (!info.email || !info.email_verified) return fail("Your Google account has no verified email.");
-  const user = await first<User>(c.env.DB, "SELECT * FROM users WHERE email = ? AND active = 1", info.email.toLowerCase());
+  const user = await userByAddress(c.env.DB, info.email.toLowerCase());
   if (!user) return fail(`${info.email} hasn't been invited to this workspace.`);
   await startSession(c, user.id);
   return c.redirect("/");

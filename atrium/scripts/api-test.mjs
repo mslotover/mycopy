@@ -38,6 +38,11 @@ const invite = async (email, name, role, space_ids) => (await owner.post("/admin
 
 console.log("auth");
 check("unauthenticated is rejected", (await client().get("/bootstrap")).status === 401);
+{
+  const viaAlias = client();
+  await viaAlias.login("sam.second@example.org");
+  check("a second address signs into the same account", (await viaAlias.get("/bootstrap")).user?.email === "sam@example.com");
+}
 check("unknown email gets no link", !(await client().post("/auth/request", { email: "nobody@example.com" })).devLink);
 check("owner signs in", (await owner.login("owner@example.com")).ok);
 const boot = await owner.get("/bootstrap");

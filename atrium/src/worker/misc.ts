@@ -395,7 +395,7 @@ misc.post("/admin/users", async (c) => {
   if (role !== "guest" && !isAdmin(actor)) throw forbidden("Only workspace admins can add members.");
   if (actor.role === "guest") throw forbidden();
   if (!["admin", "member", "guest"].includes(role)) throw bad("Unknown role.");
-  const existing = await first<User>(c.env.DB, "SELECT * FROM users WHERE email = ?", email);
+  const existing = await first<User>(c.env.DB, "SELECT * FROM users WHERE email = ? OR id IN (SELECT user_id FROM user_emails WHERE email = ?)", email, email);
   if (existing) {
     if (existing.active) return c.json({ id: existing.id, existing: true });
     await run(c.env.DB, "UPDATE users SET active = 1 WHERE id = ?", existing.id);
