@@ -67,7 +67,7 @@ function parseCalendarUrl(input: string): string {
 }
 
 /** Reads a calendar, following up to three redirects but only to Google's own hosts. */
-async function fetchCalendar(url: string): Promise<{ status: number; text: string; problem?: string }> {
+export async function fetchCalendar(url: string): Promise<{ status: number; text: string; problem?: string }> {
   let next = url;
   for (let hop = 0; hop < 4; hop++) {
     let res: Response;

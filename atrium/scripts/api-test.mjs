@@ -203,5 +203,46 @@ console.log("shared tasks");
   check("a removed owner no longer sees it", !(await sam.get("/tasks?scope=mine")).tasks.some((x) => x.id === t.id));
 }
 
+console.log("meeting prep");
+{
+  const stamp = (t) => new Date(t).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const ics = (...events) => ["BEGIN:VCALENDAR", ...events.map((e) => ["BEGIN:VEVENT", ...e, "END:VEVENT"].join("\r\n")), "END:VCALENDAR"].join("\r\n");
+  const nowT = Date.now();
+  await owner.post("/tasks", { title: "Prep test task", assignee_ids: [samId] });
+  const attendee = (email, extra = "") => `ATTENDEE;CN=${email.split("@")[0]}${extra}:mailto:${email}`;
+
+  const soon = ics([`UID:prep-1`, `DTSTART:${stamp(nowT + 15 * 60_000)}`, `SUMMARY:Weekly catch-up`, attendee("sam@example.com"), attendee("sam.second@example.org"), attendee("clare@outside.org")]);
+  const r1 = await owner.post("/prep/test", { ics: soon });
+  check("a meeting with a team member gets a prep note", r1.sent === 1 && !!r1.id);
+  const note = await owner.get(`/prep/${r1.id}`);
+  check("the note names the team member and counts outsiders", note.with?.length === 1 && note.with[0].id === samId && note.outside === 1 && Array.isArray(note.decisions) && Array.isArray(note.tasks));
+  check("the note lists open tasks between them", note.tasks.some((x) => x.title === "Prep test task" && x.owners.includes("Sam")) || note.tasks.some((x) => x.title === "Prep test task"));
+  check("a second run doesn't send it again", (await owner.post("/prep/test", { ics: soon })).sent === 0);
+  check("someone else can't open the note", (await sam.get(`/prep/${r1.id}`)).status === 404);
+  check("the owner sees a notification with a link to it", (await owner.get("/notifications")).notifications?.some((n) => n.url === `/prep/${r1.id}`));
+
+  const alone = ics([`UID:prep-2`, `DTSTART:${stamp(nowT + 15 * 60_000)}`, `SUMMARY:Supplier call`, attendee("clare@outside.org")]);
+  check("a meeting with nobody from the team gets no note", (await owner.post("/prep/test", { ics: alone })).sent === 0);
+  const far = ics([`UID:prep-3`, `DTSTART:${stamp(nowT + 60 * 60_000)}`, `SUMMARY:Later`, attendee("sam@example.com")]);
+  check("a meeting an hour away gets no note yet", (await owner.post("/prep/test", { ics: far })).sent === 0);
+  const declined = ics([`UID:prep-4`, `DTSTART:${stamp(nowT + 15 * 60_000)}`, `SUMMARY:Declined`, attendee("sam@example.com"), attendee("owner@example.com", ";PARTSTAT=DECLINED")]);
+  check("a declined meeting gets no note", (await owner.post("/prep/test", { ics: declined })).sent === 0);
+  const cancelled = ics([`UID:prep-5`, `DTSTART:${stamp(nowT + 15 * 60_000)}`, `STATUS:CANCELLED`, `SUMMARY:Off`, attendee("sam@example.com")]);
+  check("a cancelled meeting gets no note", (await owner.post("/prep/test", { ics: cancelled })).sent === 0);
+  check("all-day events are ignored", (await owner.post("/prep/test", { ics: ics([`UID:prep-6`, `DTSTART;VALUE=DATE:20261123`, `SUMMARY:Holiday`, attendee("sam@example.com")]) })).sent === 0);
+
+  // Repeating: every Monday 10:00 London. Monday 23 Nov 2026 is in GMT; Monday 6 Jul 2026 is in BST.
+  const weekly = (extra = []) => ics([`UID:prep-w`, `DTSTART;TZID=Europe/London:20260105T100000`, `RRULE:FREQ=WEEKLY;BYDAY=MO`, `SUMMARY:Monday meeting`, attendee("sam@example.com"), ...extra]);
+  check("a weekly meeting is found on its day (winter)", (await owner.post("/prep/test", { ics: weekly(), at: Date.UTC(2026, 10, 23, 9, 45) })).sent === 1);
+  check("a weekly meeting is found in summer time", (await owner.post("/prep/test", { ics: weekly(), at: Date.UTC(2026, 6, 6, 8, 45) })).sent === 1);
+  check("a weekly meeting isn't found on another day", (await owner.post("/prep/test", { ics: weekly(), at: Date.UTC(2026, 10, 24, 9, 45) })).sent === 0);
+  const skipped = ics([`UID:prep-x`, `DTSTART;TZID=Europe/London:20260105T100000`, `RRULE:FREQ=WEEKLY;BYDAY=MO`, `EXDATE;TZID=Europe/London:20261130T100000`, `SUMMARY:Monday meeting`, attendee("sam@example.com")]);
+  check("a skipped repeat gets no note", (await owner.post("/prep/test", { ics: skipped, at: Date.UTC(2026, 10, 30, 9, 45) })).sent === 0);
+  const ended = ics([`UID:prep-e`, `DTSTART;TZID=Europe/London:20260105T100000`, `RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20261101T000000Z`, `SUMMARY:Ended`, attendee("sam@example.com")]);
+  check("a repeat that has ended gets no note", (await owner.post("/prep/test", { ics: ended, at: Date.UTC(2026, 10, 23, 9, 45) })).sent === 0);
+  const counted = ics([`UID:prep-c`, `DTSTART;TZID=Europe/London:20261102T100000`, `RRULE:FREQ=WEEKLY;COUNT=2`, `SUMMARY:Twice`, attendee("sam@example.com")]);
+  check("a repeat with a count stops after it", (await owner.post("/prep/test", { ics: counted, at: Date.UTC(2026, 10, 9, 9, 45) })).sent === 1 && (await owner.post("/prep/test", { ics: counted, at: Date.UTC(2026, 10, 16, 9, 45) })).sent === 0);
+}
+
 console.log(failures ? `\n${failures} check(s) failed` : "\nAll checks passed");
 process.exit(failures ? 1 : 0);

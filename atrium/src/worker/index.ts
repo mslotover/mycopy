@@ -5,6 +5,7 @@ import { HttpError, type HonoEnv } from "./env";
 import { meetings } from "./meetings";
 import { misc } from "./misc";
 import { pages } from "./pages";
+import { prep, sendMeetingPreps } from "./prep";
 import { push, remindDueToday } from "./push";
 import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
@@ -47,6 +48,7 @@ app.route("/api/tasks", tasks);
 app.route("/api/meetings", meetings);
 app.route("/api/ai", ai);
 app.route("/api/push", push);
+app.route("/api/prep", prep);
 app.route("/api", misc);
 
 app.all("/api/*", (c) => c.json({ error: "Not found." }, 404));
@@ -80,7 +82,8 @@ export default {
   // One five-minute timer runs everything (the Workers free plan allows five timers per
   // account): embedding changed items for search every time, and at set UTC times the
   // morning brief (07:35, after the data connector's sync), due-today reminders (08:00) and
-  // Monday's AI spending email (09:00). One-off jobs are queued as rows in app_flags.
+  // Monday's AI spending email (09:00). Every time, meeting prep notes go out for meetings
+  // starting in 10 to 20 minutes on people's connected calendars. One-off jobs are queued as rows in app_flags.
   async scheduled(event: ScheduledController, env: HonoEnv["Bindings"], ctx: ExecutionContext) {
     const t = new Date(event.scheduledTime);
     const at = (h: number, m: number) => t.getUTCHours() === h && t.getUTCMinutes() === m;
@@ -88,6 +91,7 @@ export default {
     if (at(7, 35)) jobs.push(sendMorningBriefs(env));
     if (at(8, 0)) jobs.push(remindDueToday(env));
     if (at(9, 0) && t.getUTCDay() === 1) jobs.push(weeklyUsageReport(env));
+    jobs.push(sendMeetingPreps(env));
     jobs.push(runFlags(env));
     ctx.waitUntil(Promise.allSettled(jobs));
   },

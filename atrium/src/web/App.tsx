@@ -10,6 +10,7 @@ import { Brain } from "./Brain";
 import { Home, Inbox, SpaceView, Trash } from "./Home";
 import { MeetingView, MeetingsView, NewMeetingSheet, RecordingBar, RecordingProvider } from "./Meetings";
 import { PageView } from "./PageView";
+import { PrepView } from "./Prep";
 import { forgetDevice } from "./phone";
 import { SearchPalette } from "./Search";
 import { Settings } from "./Settings";
@@ -405,6 +406,7 @@ function Authed() {
               <Route path="/meetings" element={<MeetingsView />} />
               <Route path="/meetings/:id" element={<MeetingView key={loc.pathname} />} />
               <Route path="/brain" element={<Brain />} />
+              <Route path="/prep/:id" element={<PrepView key={loc.pathname} />} />
               <Route path="/space/:id" element={<SpaceView key={loc.pathname} />} />
               <Route path="/p/:id" element={<PageView key={loc.pathname} />} />
               <Route path="/trash" element={<Trash />} />
