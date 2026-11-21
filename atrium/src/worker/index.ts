@@ -8,6 +8,7 @@ import { pages } from "./pages";
 import { prep, sendMeetingPreps } from "./prep";
 import { privacyPage } from "./privacy";
 import { push, remindDueToday } from "./push";
+import { slack } from "./slack";
 import { STATIC } from "./static.gen";
 import { tasks } from "./tasks";
 import { embedDirty } from "./vectors";
@@ -58,6 +59,7 @@ app.all("/api/*", (c) => c.json({ error: "Not found." }, 404));
 // code. When it has been packed into the Worker instead (deploy:embedded), serve it here,
 // answering unknown paths with the app shell so its own routing can take over.
 app.get("/privacy", (c) => privacyPage(c.env));
+app.route("/slack", slack);
 
 app.get("*", (c) => {
   const path = new URL(c.req.url).pathname;

@@ -1,5 +1,6 @@
 import { escapeHtml, isDev, now, run, uid, type Env } from "./env";
 import { pushToUser } from "./push";
+import { slackDirectMessage } from "./slack";
 
 /**
  * Sends an email through Resend and records it in the outbox. In dev mode, or when no
@@ -61,6 +62,8 @@ export async function notify(
     uid(), n.user_id, n.actor_id ?? null, n.type, n.title, n.body ?? "", n.url, now(),
   );
   await pushToUser(env, n.user_id, { title: n.title, body: n.body, url: n.url });
+  // Task assignments also reach people on Slack, when the Slack app is set up.
+  if (n.type === "task") await slackDirectMessage(env, n.user_id, `*${n.title}*${n.body ? `\n${n.body}` : ""}\n<${origin}${n.url}|Open in ${env.APP_NAME}>`);
   if (n.email) {
     const u = await env.DB.prepare("SELECT email, active FROM users WHERE id = ?").bind(n.user_id).first<{ email: string; active: number }>();
     if (u?.active) {

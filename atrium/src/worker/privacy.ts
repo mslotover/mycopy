@@ -17,6 +17,7 @@ export function privacyPage(env: Env): Response {
 <li>The pages, tasks, notes and comments you and your team write.</li>
 <li>Meetings you record: the audio, the written transcript, the summary and the action points. People you list as taking part, including people outside the team, are recorded by name and email address so they can receive the minutes.</li>
 <li>If you choose to connect your Google Calendar, the private calendar address you provide. It is stored securely, never shown back in the app, and used only to read meeting times and invitees so that ${name} can send you a preparation note before a meeting.</li>
+<li>If your team has connected Slack, your Slack member id (found by matching your email address), so ${name} can message you when a task is assigned to you. ${name} does not read your Slack. If you choose "Add to Atrium as a task" on a Slack message, only that one message is saved, as a task.</li>
 <li>If you switch on notifications, the details your device gives ${name} so it can send them.</li>
 </ul>
 <h2>Who processes it</h2>

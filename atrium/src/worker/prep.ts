@@ -122,6 +122,21 @@ export async function sendMeetingPreps(env: Env, at = now()): Promise<number> {
 
 export const prep = new Hono<HonoEnv>();
 
+// The next week of meetings from the person's own calendar, for the Calendar page.
+prep.get("/upcoming", async (c) => {
+  const me = await first<{ calendar_url: string | null }>(c.env.DB, "SELECT calendar_url FROM users WHERE id = ?", c.var.user.id);
+  if (!me?.calendar_url) return c.json({ connected: false, events: [] });
+  const cal = await fetchCalendar(me.calendar_url);
+  if (!cal.text) return c.json({ connected: true, problem: true, events: [] });
+  const t = now();
+  const events = eventsStartingBetween(cal.text, t - 3 * 60 * MIN, t + 7 * 24 * 60 * MIN)
+    .filter((e) => !e.attendees.some((a) => a.status === "DECLINED" && a.email.toLowerCase() === c.var.user.email.toLowerCase()))
+    .sort((a, b) => a.start - b.start)
+    .slice(0, 100)
+    .map((e) => ({ key: `${e.uid}@${e.start}`, title: e.title, start: e.start, people: e.attendees.filter((a) => a.email.toLowerCase() !== c.var.user.email.toLowerCase()).map((a) => a.name || a.email).slice(0, 8) }));
+  return c.json({ connected: true, events });
+});
+
 prep.get("/:id", async (c) => {
   const row = await first<{ id: string; title: string; starts_at: number; body: string }>(c.env.DB, "SELECT id, title, starts_at, body FROM meeting_prep WHERE id = ? AND user_id = ?", c.req.param("id"), c.var.user.id);
   if (!row) throw notFound();

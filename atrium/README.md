@@ -117,6 +117,17 @@ Notifications use Web Push. Generate a key pair once, put the public half in
 `VAPID_PUBLIC_KEY` (wrangler.jsonc) and the private half in the `VAPID_PRIVATE_KEY`
 secret. `scripts/push-test.mjs` checks the encryption against the example in RFC 8291.
 
+## Slack
+
+Optional. A task assigned to someone also reaches them as a Slack message, and a message shortcut,
+"Add to Atrium as a task", turns one chosen Slack message into a task. Atrium never reads Slack on its own.
+
+1. At api.slack.com/apps choose Create New App, From a manifest, and paste `slack-app-manifest.json`.
+2. Install it to the workspace. Copy the Bot User OAuth Token and, from Basic Information, the Signing Secret.
+3. Add both as Worker secrets: `npx wrangler secret put SLACK_BOT_TOKEN` and `npx wrangler secret put SLACK_SIGNING_SECRET`.
+
+People are matched to Slack by email address. Without the secrets, all of this is skipped.
+
 ## Where the content came from
 
 The team's Notion workspace was brought across once, in November 2026, and Atrium no longer

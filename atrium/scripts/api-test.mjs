@@ -124,6 +124,8 @@ check("stranger cannot list a private task's documents", (await sam.get(`/tasks/
 check("empty document rejected", (await owner.upload(`/tasks/${t1.id}/attachments`, new Uint8Array(0), { "Content-Type": "text/plain" })).status === 400);
 check("oversize document rejected", (await owner.upload(`/tasks/${t1.id}/attachments`, new Uint8Array(21 * 1024 * 1024), { "Content-Type": "text/plain" })).status === 400);
 check("a document can be removed", (await sam.del(`/tasks/${t1.id}/attachments/${up.attachment.id}`)).ok && (await sam.get(`/tasks/${t1.id}/attachments`)).attachments.length === 0);
+check("calendar page says so when no calendar is connected", (await sam.get("/prep/upcoming")).connected === false);
+check("Slack requests without a valid signature are refused", (await fetch(BASE.replace(/\/api$/, "") + "/slack/interactions", { method: "POST", body: "payload={}" })).status === 401);
 check("feedback needs some words", (await sam.post("/feedback", { message: "  " })).status === 400);
 check("feedback is accepted", (await sam.post("/feedback", { message: "Please add dark mode", page: "/tasks" })).ok);
 check("empty title rejected", (await owner.post("/tasks", { title: "  " })).status === 400);

@@ -1,5 +1,5 @@
 import {
-  Brain as BrainIcon, CheckCircle2, ChevronRight, Copy, Database, FilePlus, FolderInput, Home as HomeIcon, Inbox as InboxIcon, LayoutTemplate, LogOut,
+  Brain as BrainIcon, CalendarDays, CheckCircle2, ChevronRight, Copy, Database, FilePlus, FolderInput, Home as HomeIcon, Inbox as InboxIcon, LayoutTemplate, LogOut,
   Menu, MessageSquarePlus, Mic, MoreHorizontal, Plus, Search, Settings as SettingsIcon, Sparkles, Trash2,
 } from "lucide-react";
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
@@ -10,6 +10,7 @@ import { Brain } from "./Brain";
 import { Home, Inbox, SpaceView, Trash } from "./Home";
 import { MeetingView, MeetingsView, NewMeetingSheet, RecordingBar, RecordingProvider } from "./Meetings";
 import { PageView } from "./PageView";
+import { CalendarView } from "./Calendar";
 import { PrepView } from "./Prep";
 import { forgetDevice } from "./phone";
 import { SearchPalette } from "./Search";
@@ -209,6 +210,7 @@ function Sidebar({ open, onNavigate }: { open: boolean; onNavigate: () => void }
         {nav("/inbox", <InboxIcon />, "Inbox", app.unread ? <span className="count hot">{app.unread}</span> : null)}
         {nav("/tasks", <CheckCircle2 />, "My tasks")}
         {app.me.role !== "guest" && nav("/meetings", <Mic />, "Meetings")}
+        {app.me.role !== "guest" && nav("/calendar", <CalendarDays />, "Calendar")}
         {app.me.role !== "guest" && nav("/brain", <BrainIcon />, "Brain")}
         <button className="nav-item" onClick={() => { shell.openAsk(); onNavigate(); }}><Sparkles />Ask AI</button>
 
@@ -438,6 +440,7 @@ function Authed() {
               <Route path="/meetings" element={<MeetingsView />} />
               <Route path="/meetings/:id" element={<MeetingView key={loc.pathname} />} />
               <Route path="/brain" element={<Brain />} />
+              <Route path="/calendar" element={<CalendarView />} />
               <Route path="/prep/:id" element={<PrepView key={loc.pathname} />} />
               <Route path="/space/:id" element={<SpaceView key={loc.pathname} />} />
               <Route path="/p/:id" element={<PageView key={loc.pathname} />} />

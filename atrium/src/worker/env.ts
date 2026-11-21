@@ -29,6 +29,9 @@ export type Env = {
   /** Web Push keys: the public half is given to browsers, the private half signs each push. */
   VAPID_PUBLIC_KEY?: string;
   VAPID_PRIVATE_KEY?: string;
+  /** Slack app: sends task messages, and checks requests really come from Slack. Secrets (see slack.ts). */
+  SLACK_BOT_TOKEN?: string;
+  SLACK_SIGNING_SECRET?: string;
   /** "1" in local development: emails are recorded but not sent, AI steps are simulated. */
   DEV_MODE?: string;
 };
