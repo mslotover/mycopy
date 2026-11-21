@@ -5,7 +5,7 @@ import { streamSSE } from "hono/streaming";
 import { z } from "zod";
 import { canSeeTask, loadAccess, memberSpaceIds } from "./access";
 import { withOwners } from "./tasks";
-import { all, bad, first, isDev, parseJSON, type Env, type HonoEnv, type User } from "./env";
+import { all, bad, first, isDev, now, parseJSON, run, type Env, type HonoEnv, type User } from "./env";
 import { searchWorkspace, visibleMeetingIds } from "./misc";
 import type { TaskRow } from "./tasks";
 import { recordUsage } from "./usage";
@@ -362,6 +362,43 @@ async function runTool(env: Env, user: User, name: string, input: unknown, emit?
 }
 
 export const ai = new Hono<HonoEnv>();
+
+// ---------- Saved conversations (only ever your own) ----------
+
+const MAX_CHATS = 50;
+const MAX_CHAT_BYTES = 400_000;
+
+ai.get("/chats", async (c) => {
+  const rows = await all<{ id: string; title: string; updated_at: number }>(c.env.DB, "SELECT id, title, updated_at FROM ask_chats WHERE user_id = ? ORDER BY updated_at DESC LIMIT ?", c.var.user.id, MAX_CHATS);
+  return c.json({ chats: rows });
+});
+
+ai.get("/chats/:id", async (c) => {
+  const row = await first<{ id: string; title: string; body: string }>(c.env.DB, "SELECT id, title, body FROM ask_chats WHERE id = ? AND user_id = ?", c.req.param("id"), c.var.user.id);
+  if (!row) return c.json({ error: "That conversation no longer exists." }, 404);
+  return c.json({ id: row.id, title: row.title, ...(parseJSON<{ messages: unknown[]; pstate: unknown }>(row.body, { messages: [], pstate: {} })) });
+});
+
+ai.put("/chats/:id", async (c) => {
+  const id = c.req.param("id");
+  if (!/^[0-9A-Za-z-]{16,40}$/.test(id)) throw bad("Bad conversation id.");
+  const b = await c.req.json<{ title?: string; messages?: unknown[]; pstate?: unknown }>().catch(() => null);
+  if (!b || !Array.isArray(b.messages) || !b.messages.length) throw bad("Nothing to save.");
+  const body = JSON.stringify({ messages: b.messages, pstate: b.pstate ?? {} });
+  if (body.length > MAX_CHAT_BYTES) throw bad("That conversation is too long to save. Start a new one.");
+  const other = await first<{ user_id: string }>(c.env.DB, "SELECT user_id FROM ask_chats WHERE id = ?", id);
+  if (other && other.user_id !== c.var.user.id) return c.json({ error: "Not allowed." }, 403);
+  const title = String(b.title ?? "").trim().slice(0, 80) || "Conversation";
+  await run(c.env.DB, "INSERT INTO ask_chats (id, user_id, title, body, updated_at) VALUES (?, ?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET title = excluded.title, body = excluded.body, updated_at = excluded.updated_at", id, c.var.user.id, title, body, now());
+  // Keep the newest 50; older ones fall away.
+  await run(c.env.DB, "DELETE FROM ask_chats WHERE user_id = ?1 AND id NOT IN (SELECT id FROM ask_chats WHERE user_id = ?1 ORDER BY updated_at DESC LIMIT ?2)", c.var.user.id, MAX_CHATS);
+  return c.json({ ok: true });
+});
+
+ai.delete("/chats/:id", async (c) => {
+  await run(c.env.DB, "DELETE FROM ask_chats WHERE id = ? AND user_id = ?", c.req.param("id"), c.var.user.id);
+  return c.json({ ok: true });
+});
 
 // Streams an answer as server-sent events: `text` deltas, `step` (a tool was used), `error`, `done`.
 /** Tells Claude what the person has open when they asked "about this page". Checks access first. */

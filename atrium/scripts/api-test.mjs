@@ -139,6 +139,14 @@ check("a key needs a title", (await viaKey(made.key, { title: " " })).status ===
 check("a key cannot read tasks", (await fetch(BASE + "/tasks", { headers: { Authorization: `Bearer ${made.key}` } })).status === 401);
 check("guests cannot make keys", (await guest.post("/me/keys", {})).status === 403);
 check("a key can be removed, and then stops working", (await sam.del(`/me/keys/${made.id}`)).ok && (await viaKey(made.key, { title: "after" })).status === 401);
+const chatId = "chat-test-0123456789abcdef";
+check("a conversation can be saved", (await sam.put(`/ai/chats/${chatId}`, { title: "What is overdue?", messages: [{ role: "user", content: "What is overdue?" }, { role: "assistant", content: "Nothing." }], pstate: {} })).ok);
+check("saved conversations are listed", (await sam.get("/ai/chats")).chats.some((c) => c.id === chatId && c.title === "What is overdue?"));
+check("a saved conversation can be reopened", (await sam.get(`/ai/chats/${chatId}`)).messages?.length === 2);
+check("nobody else can read your conversation", (await owner.get(`/ai/chats/${chatId}`)).status === 404 && !(await owner.get("/ai/chats")).chats.some((c) => c.id === chatId));
+check("nobody else can overwrite it", (await owner.put(`/ai/chats/${chatId}`, { title: "x", messages: [{ role: "user", content: "x" }] })).status === 403);
+check("an empty conversation is not saved", (await sam.put("/ai/chats/chat-test-empty-0123456789", { messages: [] })).status === 400);
+check("a conversation can be deleted", (await sam.del(`/ai/chats/${chatId}`)).ok && (await sam.get(`/ai/chats/${chatId}`)).status === 404);
 check("feedback needs some words", (await sam.post("/feedback", { message: "  " })).status === 400);
 check("feedback is accepted", (await sam.post("/feedback", { message: "Please add dark mode", page: "/tasks" })).ok);
 check("empty title rejected", (await owner.post("/tasks", { title: "  " })).status === 400);

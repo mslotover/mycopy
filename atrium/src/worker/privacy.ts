@@ -19,6 +19,7 @@ export function privacyPage(env: Env): Response {
 <li>If you choose to connect your Google Calendar, the private calendar address you provide. It is stored securely, never shown back in the app, and used only to read meeting times and invitees so that ${name} can send you a preparation note before a meeting.</li>
 <li>If your team has connected Slack, your Slack member id (found by matching your email address), so ${name} can message you when a task is assigned to you. ${name} does not read your Slack. If you choose "Add to Atrium" on a Slack message, only that one message is saved, as a task.</li>
 <li>If you make an access key, a fingerprint of it (never the key itself) and when it was last used. The key can only add tasks to your own list.</li>
+<li>Your Ask AI conversations (your questions and the answers), saved to your account only so you can look back at them. You can delete any of them from the Ask AI panel; the newest 50 are kept.</li>
 <li>If you switch on notifications, the details your device gives ${name} so it can send them.</li>
 </ul>
 <h2>Who processes it</h2>
