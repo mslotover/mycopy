@@ -1,5 +1,5 @@
 // Slack, in two small ways. (1) A task assigned to someone also arrives as a Slack message from the
-// Atrium app. (2) A message shortcut, "Add to Atrium as a task", turns one chosen Slack message into a
+// Atrium app. (2) A message shortcut, "Add to Atrium", turns one chosen Slack message into a
 // task. Atrium never reads Slack on its own: it sees only the single message a person sends it.
 // Needs two secrets: SLACK_BOT_TOKEN and SLACK_SIGNING_SECRET. Without them everything here is skipped.
 import { Hono } from "hono";

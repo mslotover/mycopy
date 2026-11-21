@@ -120,7 +120,7 @@ secret. `scripts/push-test.mjs` checks the encryption against the example in RFC
 ## Slack
 
 Optional. A task assigned to someone also reaches them as a Slack message, and a message shortcut,
-"Add to Atrium as a task", turns one chosen Slack message into a task. Atrium never reads Slack on its own.
+"Add to Atrium", turns one chosen Slack message into a task. Atrium never reads Slack on its own.
 
 1. At api.slack.com/apps choose Create New App, From a manifest, and paste `slack-app-manifest.json`.
 2. Install it to the workspace. Copy the Bot User OAuth Token and, from Basic Information, the Signing Secret.
