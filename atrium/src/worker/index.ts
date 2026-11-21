@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { ai } from "./ai";
 import { auth, userFromRequest } from "./auth";
 import { HttpError, type HonoEnv } from "./env";
+import { inbound, keys } from "./keys";
 import { meetings } from "./meetings";
 import { misc } from "./misc";
 import { pages } from "./pages";
@@ -38,13 +39,15 @@ app.use("/api/*", async (c, next) => {
 app.route("/api/auth", auth);
 
 app.use("/api/*", async (c, next) => {
-  if (c.req.path.startsWith("/api/auth/")) return next();
+  if (c.req.path.startsWith("/api/auth/") || c.req.path.startsWith("/api/inbound/")) return next();
   const user = await userFromRequest(c);
   if (!user) return c.json({ error: "Please sign in." }, 401);
   c.set("user", user);
   await next();
 });
 
+app.route("/api/inbound", inbound);
+app.route("/api/me/keys", keys);
 app.route("/api/pages", pages);
 app.route("/api/tasks", tasks);
 app.route("/api/meetings", meetings);

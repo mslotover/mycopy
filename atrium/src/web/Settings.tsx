@@ -47,9 +47,48 @@ function Profile() {
       <div className="form-row"><label className="label">Colour</label><div className="swatches">{COLORS.map((c) => <button key={c} className={`swatch ${app.me.color.toLowerCase() === c ? "on" : ""}`} style={{ background: c }} aria-label={c} onClick={() => save({ color: c })} />)}</div></div>
       <div className="form-row"><label className="label">Notifications on this device</label><DeviceNotifications /></div>
       {app.me.role !== "guest" && <div className="form-row"><label className="label">Calendar</label><CalendarConnect connected={!!setup?.calendar} /></div>}
+      {app.me.role !== "guest" && <div className="form-row"><label className="label">Access keys</label><AccessKeys /></div>}
       <div className="form-row"><label className="label">Welcome tour</label><button className="btn" onClick={() => setTour(true)}>Replay the tour</button></div>
       {tour && <Welcome replay onClose={() => setTour(false)} />}
       <p className="muted" style={{ fontSize: 12.5, marginTop: 24 }}>You sign in with a link or code sent to {app.me.email}. Emails about mentions, new tasks and meeting summaries go to the same address.</p>
+    </div>
+  );
+}
+
+type AccessKey = { id: string; label: string; hint: string; created_at: number; last_used_at: number | null };
+
+/** Add-only keys: let your own automation (e.g. a scheduled Claude task) add tasks to your list, and nothing else. */
+function AccessKeys() {
+  const { data, refetch } = useQuery({ queryKey: ["access-keys"], queryFn: () => api<{ keys: AccessKey[] }>("/me/keys").then((r) => r.keys) });
+  const [label, setLabel] = useState("");
+  const [fresh, setFresh] = useState<string | null>(null);
+  const make = async () => {
+    try { const r = await api<{ key: string }>("/me/keys", { body: { label } }); setFresh(r.key); setLabel(""); refetch(); } catch (e) { toastError(e); }
+  };
+  const remove = async (k: AccessKey) => { try { await api(`/me/keys/${k.id}`, { method: "DELETE" }); refetch(); } catch (e) { toastError(e); } };
+  return (
+    <div>
+      <p className="muted" style={{ fontSize: 12.5, marginTop: 0 }}>A key lets your own automation, such as a scheduled Claude task, add tasks to your list. It can't read or change anything else. Keep it private, like a password.</p>
+      {fresh && (
+        <div className="banner" style={{ margin: "8px 0", display: "block" }}>
+          <div style={{ fontWeight: 600, marginBottom: 6 }}>Copy your key now. It won't be shown again.</div>
+          <code style={{ display: "block", wordBreak: "break-all", userSelect: "all", fontSize: 12.5 }}>{fresh}</code>
+          <div style={{ marginTop: 8, display: "flex", gap: 8 }}>
+            <button className="btn" onClick={() => { navigator.clipboard?.writeText(fresh).then(() => toast("Copied.")).catch(() => toast("Select the key and copy it.", { error: true })); }}>Copy</button>
+            <button className="btn quiet" onClick={() => setFresh(null)}>I've saved it</button>
+          </div>
+        </div>
+      )}
+      {data?.map((k) => (
+        <div key={k.id} style={{ display: "flex", alignItems: "center", gap: 10, padding: "5px 0" }}>
+          <span style={{ flex: 1, minWidth: 0 }}>{k.label} <span className="muted">· ends …{k.hint} · {k.last_used_at ? `used ${relTime(k.last_used_at)}` : "never used"}</span></span>
+          <button className="btn quiet danger" onClick={() => remove(k)}>Remove</button>
+        </div>
+      ))}
+      <div style={{ display: "flex", gap: 8, marginTop: 8 }}>
+        <input className="field" placeholder="What is it for? e.g. Email to tasks" value={label} onChange={(e) => setLabel(e.target.value)} />
+        <button className="btn" onClick={make}>Make a key</button>
+      </div>
     </div>
   );
 }

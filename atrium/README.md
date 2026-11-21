@@ -128,6 +128,18 @@ Optional. A task assigned to someone also reaches them as a Slack message, and a
 
 People are matched to Slack by email address. Without the secrets, all of this is skipped.
 
+## Access keys (add-only)
+
+In Settings, Profile, a person can make a key that lets their own automation add tasks to their list,
+for example a scheduled Claude task that reads their inbox. A key can do one thing, and nothing else:
+
+    POST /api/inbound/tasks
+    Authorization: Bearer atk_…
+    {"title": "Reply to the supplier", "notes": "optional", "due": "2026-12-01", "source_url": "link or id of the email"}
+
+`source_url` stops the same email or message becoming a task twice. A key is limited to 100 tasks a day.
+Only a hash of each key is stored, so a lost key can't be looked up: remove it and make another.
+
 ## Where the content came from
 
 The team's Notion workspace was brought across once, in November 2026, and Atrium no longer
