@@ -6,7 +6,7 @@
       { "name": "Add to Atrium", "type": "message", "callback_id": "add_task", "description": "Make a task from this message" }
     ]
   },
-  "oauth_config": { "scopes": { "bot": ["chat:write", "users:read", "users:read.email"] } },
+  "oauth_config": { "scopes": { "bot": ["chat:write", "commands", "users:read", "users:read.email"] } },
   "settings": {
     "interactivity": { "is_enabled": true, "request_url": "https://atrium.tmfgroup.workers.dev/slack/interactions" },
     "org_deploy_enabled": false,
