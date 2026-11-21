@@ -162,6 +162,26 @@ misc.get("/files/:id", async (c) => {
   return new Response(obj.body, { headers });
 });
 
+// ---------- Feedback ----------
+
+misc.post("/feedback", async (c) => {
+  const user = c.var.user;
+  const b = await c.req.json<{ message?: string; page?: string }>();
+  const message = (b.message ?? "").trim().slice(0, 4000);
+  if (!message) throw bad("Write your idea or problem first.");
+  const page = String(b.page ?? "").slice(0, 200);
+  await run(c.env.DB, "INSERT INTO feedback (id, user_id, message, page, created_at) VALUES (?, ?, ?, ?, ?)", uid(), user.id, message, page, now());
+  // Tell the owners, in the app and by email, so it doesn't sit unseen.
+  const owners = await all<{ id: string }>(c.env.DB, "SELECT id FROM users WHERE role = 'owner' AND active = 1");
+  for (const o of owners) {
+    await notify(c.env, c.var.origin, {
+      user_id: o.id, actor_id: user.id, type: "feedback",
+      title: `${user.name} sent feedback`, body: message.slice(0, 600) + (page ? `\n\n(from ${page})` : ""), url: "/", email: true,
+    });
+  }
+  return c.json({ ok: true });
+});
+
 // ---------- Spaces ----------
 
 misc.post("/spaces", async (c) => {

@@ -10,10 +10,10 @@ const check = (name, cond, extra = "") => {
 
 function client() {
   let cookie = "";
-  const call = async (method, path, body, raw) => {
+  const call = async (method, path, body, raw, extra = {}) => {
     const res = await fetch(BASE + path, {
       method,
-      headers: { ...(body && !raw ? { "Content-Type": "application/json" } : raw ? { "Content-Type": "audio/webm" } : {}), ...(cookie ? { Cookie: cookie } : {}) },
+      headers: { ...(body && !raw ? { "Content-Type": "application/json" } : raw ? { "Content-Type": "audio/webm" } : {}), ...extra, ...(cookie ? { Cookie: cookie } : {}) },
       body: raw ? body : body ? JSON.stringify(body) : undefined,
     });
     const set = res.headers.get("set-cookie");
@@ -25,6 +25,8 @@ function client() {
   return {
     get: (p) => call("GET", p), post: (p, b) => call("POST", p, b ?? {}), patch: (p, b) => call("PATCH", p, b),
     put: (p, b) => call("PUT", p, b), del: (p) => call("DELETE", p), raw: (p, bytes) => call("PUT", p, bytes, true),
+    upload: (p, bytes, headers) => call("POST", p, bytes, true, headers),
+    download: async (p) => { const r = await fetch(BASE + p, { headers: { Cookie: cookie } }); return { status: r.status, text: await r.text(), disposition: r.headers.get("content-disposition") }; },
     async login(email) {
       const r = await call("POST", "/auth/request", { email });
       const token = r.devLink?.split("token=")[1];
@@ -112,6 +114,18 @@ check("stranger cannot edit a private task", (await sam.patch(`/tasks/${t2.id}`,
 check("guest cannot see space tasks", (await guest.get("/tasks?scope=all")).tasks.length === 0);
 check("assignee can tick it off", (await sam.patch(`/tasks/${t1.id}`, { status: "done" })).task.status === "done");
 check("creator hears it is done", (await owner.get("/notifications")).notifications.some((n) => n.type === "task_done"));
+const attDoc = new TextEncoder().encode("hello document");
+const up = await owner.upload(`/tasks/${t1.id}/attachments`, attDoc, { "Content-Type": "text/html", "X-File-Name": encodeURIComponent("Menu ✓ v2.html") });
+check("a document can be attached to a task", up.status === 200 && up.attachment?.name === "Menu ✓ v2.html" && up.attachment.size === attDoc.length);
+check("attached documents are listed", (await sam.get(`/tasks/${t1.id}/attachments`)).attachments?.length === 1);
+const dl = await sam.download(`/tasks/${t1.id}/attachments/${up.attachment.id}`);
+check("a person who can see the task can download it, as a download", dl.status === 200 && dl.text === "hello document" && dl.disposition?.startsWith("attachment"));
+check("stranger cannot list a private task's documents", (await sam.get(`/tasks/${t2.id}/attachments`)).status === 403);
+check("empty document rejected", (await owner.upload(`/tasks/${t1.id}/attachments`, new Uint8Array(0), { "Content-Type": "text/plain" })).status === 400);
+check("oversize document rejected", (await owner.upload(`/tasks/${t1.id}/attachments`, new Uint8Array(21 * 1024 * 1024), { "Content-Type": "text/plain" })).status === 400);
+check("a document can be removed", (await sam.del(`/tasks/${t1.id}/attachments/${up.attachment.id}`)).ok && (await sam.get(`/tasks/${t1.id}/attachments`)).attachments.length === 0);
+check("feedback needs some words", (await sam.post("/feedback", { message: "  " })).status === 400);
+check("feedback is accepted", (await sam.post("/feedback", { message: "Please add dark mode", page: "/tasks" })).ok);
 check("empty title rejected", (await owner.post("/tasks", { title: "  " })).status === 400);
 
 console.log("comments");

@@ -1,5 +1,6 @@
-import { AlertCircle, Bell, ChevronRight, Mic, Plus, Share, Trash2, X } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { AlertCircle, Bell, ChevronRight, Mic, Paperclip, Plus, Share, Trash2, X } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { addDays, api, dueLabel, invalidate, qc, todayISO, useTasks, type Boot, type Task, type User } from "./api";
 import { Toolbar } from "./App";
@@ -253,6 +254,48 @@ export function TasksView() {
   );
 }
 
+type TaskFile = { id: string; name: string; size: number; created_by: string };
+const fileSize = (n: number) => (n < 1024 * 1024 ? `${Math.max(1, Math.round(n / 1024))} KB` : `${(n / 1024 / 1024).toFixed(1)} MB`);
+
+/** Documents attached to a task: add, download, remove. */
+function TaskFiles({ taskId }: { taskId: string }) {
+  const { data, refetch } = useQuery({ queryKey: ["task-files", taskId], queryFn: () => api<{ attachments: TaskFile[] }>(`/tasks/${taskId}/attachments`).then((r) => r.attachments) });
+  const input = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
+  const add = async (files: FileList | null) => {
+    if (!files?.length) return;
+    setBusy(true);
+    try {
+      for (const f of Array.from(files)) {
+        if (f.size > 20 * 1024 * 1024) { toast(`${f.name} is over 20 MB.`, { error: true }); continue; }
+        await api(`/tasks/${taskId}/attachments`, { raw: f, headers: { "X-File-Name": encodeURIComponent(f.name) } });
+      }
+    } catch (e) { toastError(e); }
+    setBusy(false);
+    if (input.current) input.current.value = "";
+    refetch();
+  };
+  const remove = async (f: TaskFile) => { try { await api(`/tasks/${taskId}/attachments/${f.id}`, { method: "DELETE" }); refetch(); } catch (e) { toastError(e); } };
+  return (
+    <>
+      <div className="section-title" style={{ marginTop: 20, display: "flex", alignItems: "center" }}>
+        <span style={{ flex: 1 }}>Documents</span>
+        <button className="btn quiet" onClick={() => input.current?.click()} disabled={busy}><Paperclip />{busy ? "Adding…" : "Add a document"}</button>
+        <input ref={input} type="file" multiple hidden onChange={(e) => add(e.target.files)} />
+      </div>
+      {data?.map((f) => (
+        <div key={f.id} style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 0" }}>
+          <Paperclip style={{ width: 15, height: 15, flexShrink: 0 }} />
+          <a href={`/api/tasks/${taskId}/attachments/${f.id}`} style={{ flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{f.name}</a>
+          <span className="muted" style={{ fontSize: 12.5 }}>{fileSize(f.size)}</span>
+          <button className="icon-btn" onClick={() => remove(f)} aria-label={`Remove ${f.name}`}><X /></button>
+        </div>
+      ))}
+      {data && !data.length && <div className="muted" style={{ fontSize: 13 }}>No documents yet.</div>}
+    </>
+  );
+}
+
 export function TaskSheet({ id, onClose }: { id: string; onClose: () => void }) {
   const app = useApp();
   // The task may be in any cached list; fall back to the full list.
@@ -301,6 +344,7 @@ export function TaskSheet({ id, onClose }: { id: string; onClose: () => void }) 
         </div>
         <textarea className="field" placeholder="Notes" value={notes ?? task.notes} onChange={(e) => setNotes(e.target.value)} rows={3} />
       </div>
+      <TaskFiles taskId={id} />
       <div className="section-title" style={{ marginTop: 20 }}>Comments</div>
       <CommentThread kind="task" id={id} compact />
       <div style={{ display: "flex", alignItems: "center", margin: "18px 0 14px" }}>

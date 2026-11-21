@@ -58,10 +58,10 @@ export class ApiError extends Error {
   }
 }
 
-export async function api<T = any>(path: string, opts: { method?: string; body?: unknown; raw?: Blob } = {}): Promise<T> {
+export async function api<T = any>(path: string, opts: { method?: string; body?: unknown; raw?: Blob; headers?: Record<string, string> } = {}): Promise<T> {
   const res = await fetch("/api" + path, {
     method: opts.method ?? (opts.body !== undefined || opts.raw ? "POST" : "GET"),
-    headers: opts.raw ? { "Content-Type": opts.raw.type || "audio/webm" } : opts.body !== undefined ? { "Content-Type": "application/json" } : undefined,
+    headers: opts.raw ? { "Content-Type": opts.raw.type || "audio/webm", ...opts.headers } : opts.body !== undefined ? { "Content-Type": "application/json" } : undefined,
     body: opts.raw ?? (opts.body !== undefined ? JSON.stringify(opts.body) : undefined),
     credentials: "same-origin",
   });

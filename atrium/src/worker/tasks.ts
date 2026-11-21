@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { canSeeTask, memberSpaceIds } from "./access";
-import { all, bad, first, forbidden, indexDoc, notFound, now, run, uid, unindexDoc, type Env, type HonoEnv } from "./env";
+import { all, bad, first, forbidden, indexDoc, notFound, now, run, uid, unindexDoc, type Env, type HonoEnv, type User } from "./env";
 import { notify } from "./mail";
 
 export type TaskRow = {
@@ -203,8 +203,79 @@ tasks.delete("/:id", async (c) => {
   if (!task) return c.json({ ok: true });
   const [owned] = await withOwners(c.env, [task]);
   if (!canSeeTask(owned!, user, await memberSpaceIds(c.env, user))) throw forbidden();
+  const files = await all<{ id: string }>(c.env.DB, "SELECT id FROM task_attachments WHERE task_id = ?", task.id);
+  if (files.length) await c.env.FILES.delete(files.map((f) => `attachments/${f.id}`));
   await run(c.env.DB, "DELETE FROM tasks WHERE id = ?", task.id);
   await run(c.env.DB, "DELETE FROM comments WHERE target_kind = 'task' AND target_id = ?", task.id);
   await unindexDoc(c.env.DB, "task", task.id);
+  return c.json({ ok: true });
+});
+
+// ---------- Attached documents ----------
+
+const MAX_ATTACHMENT = 20 * 1024 * 1024;
+const MAX_ATTACHMENTS = 20;
+type Attachment = { id: string; task_id: string; name: string; type: string; size: number; created_by: string; created_at: number };
+
+/** Loads a task and checks the person may see it (the same rule as editing it). */
+async function visibleTask(env: Env, user: User, id: string) {
+  const row = await first<TaskRow>(env.DB, "SELECT * FROM tasks WHERE id = ?", id);
+  if (!row) throw notFound("That task no longer exists.");
+  const [task] = await withOwners(env, [row]);
+  if (!canSeeTask(task!, user, await memberSpaceIds(env, user))) throw forbidden();
+  return task!;
+}
+
+const LIST_ATTACHMENTS = "SELECT id, task_id, name, type, size, created_by, created_at FROM task_attachments WHERE task_id = ? ORDER BY created_at";
+
+tasks.get("/:id/attachments", async (c) => {
+  const task = await visibleTask(c.env, c.var.user, c.req.param("id"));
+  return c.json({ attachments: await all<Attachment>(c.env.DB, LIST_ATTACHMENTS, task.id) });
+});
+
+tasks.post("/:id/attachments", async (c) => {
+  const task = await visibleTask(c.env, c.var.user, c.req.param("id"));
+  let name = "";
+  try { name = decodeURIComponent(c.req.header("x-file-name") ?? ""); } catch { /* keep empty */ }
+  name = name.replace(/[\u0000-\u001f\u007f/\\]/g, "").trim().slice(0, 200) || "Document";
+  const type = (c.req.header("content-type") ?? "").split(";")[0]!.trim().slice(0, 100) || "application/octet-stream";
+  const count = await first<{ n: number }>(c.env.DB, "SELECT COUNT(*) AS n FROM task_attachments WHERE task_id = ?", task.id);
+  if ((count?.n ?? 0) >= MAX_ATTACHMENTS) throw bad(`A task can have up to ${MAX_ATTACHMENTS} documents.`);
+  const buf = await c.req.arrayBuffer();
+  if (!buf.byteLength) throw bad("That file is empty.");
+  if (buf.byteLength > MAX_ATTACHMENT) throw bad("Documents can be up to 20 MB.");
+  const id = uid(24);
+  await c.env.FILES.put(`attachments/${id}`, buf, { httpMetadata: { contentType: type } });
+  await run(c.env.DB, "INSERT INTO task_attachments (id, task_id, name, type, size, created_by, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)", id, task.id, name, type, buf.byteLength, c.var.user.id, now());
+  await run(c.env.DB, "UPDATE tasks SET updated_at = ? WHERE id = ?", now(), task.id);
+  return c.json({ attachment: { id, task_id: task.id, name, type, size: buf.byteLength, created_by: c.var.user.id, created_at: now() } });
+});
+
+tasks.get("/:id/attachments/:aid", async (c) => {
+  const task = await visibleTask(c.env, c.var.user, c.req.param("id"));
+  const a = await first<Attachment>(c.env.DB, "SELECT * FROM task_attachments WHERE id = ? AND task_id = ?", c.req.param("aid"), task.id);
+  if (!a) throw notFound("That document no longer exists.");
+  const obj = await c.env.FILES.get(`attachments/${a.id}`);
+  if (!obj) throw notFound("That document no longer exists.");
+  // Always a download, never shown in the page, so an uploaded web page can't run in Atrium.
+  const ascii = a.name.replace(/[^\x20-\x7e]/g, "_").replace(/["\\]/g, "_");
+  return new Response(obj.body, {
+    headers: {
+      "Content-Type": a.type,
+      "Content-Length": String(obj.size),
+      "Content-Disposition": `attachment; filename="${ascii}"; filename*=UTF-8''${encodeURIComponent(a.name)}`,
+      "X-Content-Type-Options": "nosniff",
+      "Cache-Control": "private, no-store",
+    },
+  });
+});
+
+tasks.delete("/:id/attachments/:aid", async (c) => {
+  const task = await visibleTask(c.env, c.var.user, c.req.param("id"));
+  const a = await first<Attachment>(c.env.DB, "SELECT * FROM task_attachments WHERE id = ? AND task_id = ?", c.req.param("aid"), task.id);
+  if (a) {
+    await c.env.FILES.delete(`attachments/${a.id}`);
+    await run(c.env.DB, "DELETE FROM task_attachments WHERE id = ?", a.id);
+  }
   return c.json({ ok: true });
 });

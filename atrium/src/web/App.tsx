@@ -1,6 +1,6 @@
 import {
   Brain as BrainIcon, CheckCircle2, ChevronRight, Copy, Database, FilePlus, FolderInput, Home as HomeIcon, Inbox as InboxIcon, LayoutTemplate, LogOut,
-  Menu, Mic, MoreHorizontal, Plus, Search, Settings as SettingsIcon, Sparkles, Trash2,
+  Menu, MessageSquarePlus, Mic, MoreHorizontal, Plus, Search, Settings as SettingsIcon, Sparkles, Trash2,
 } from "lucide-react";
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, NavLink, Route, Routes, useLocation, useNavigate } from "react-router-dom";
@@ -250,6 +250,7 @@ function Sidebar({ open, onNavigate }: { open: boolean; onNavigate: () => void }
         )}
 
         <div style={{ height: 14 }} />
+        <FeedbackButton />
         {nav("/trash", <Trash2 />, "Trash")}
         {nav("/settings", <SettingsIcon />, "Settings")}
       </div>
@@ -272,6 +273,37 @@ function Sidebar({ open, onNavigate }: { open: boolean; onNavigate: () => void }
 }
 
 // ---------- Template and move sheets ----------
+
+/** "Send feedback" in the sidebar: a note to the owners about a problem or an idea. */
+function FeedbackButton() {
+  const loc = useLocation();
+  const [open, setOpen] = useState(false);
+  const [text, setText] = useState("");
+  const [busy, setBusy] = useState(false);
+  const send = async () => {
+    if (!text.trim()) return;
+    setBusy(true);
+    try {
+      await api("/feedback", { body: { message: text, page: loc.pathname } });
+      toast("Thanks, your note has been sent.");
+      setText("");
+      setOpen(false);
+    } catch (e) { toastError(e); }
+    setBusy(false);
+  };
+  return (
+    <>
+      <button className="nav-item" onClick={() => setOpen(true)}><MessageSquarePlus />Send feedback</button>
+      {open && (
+        <Sheet title="Send feedback" onClose={() => setOpen(false)}
+          footer={<><button className="btn" onClick={() => setOpen(false)}>Cancel</button><button className="btn primary" disabled={busy || !text.trim()} onClick={send}>Send</button></>}>
+          <p className="muted" style={{ marginTop: 0 }}>Tell us about something that's broken, confusing, or missing. It goes straight to the owners.</p>
+          <textarea className="field" autoFocus rows={6} placeholder="What would make Atrium better?" value={text} onChange={(e) => setText(e.target.value)} />
+        </Sheet>
+      )}
+    </>
+  );
+}
 
 function TemplateSheet({ dest, onClose }: { dest: { space_id?: string | null; parent_id?: string | null }; onClose: () => void }) {
   const acts = usePageActions();
