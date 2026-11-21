@@ -78,18 +78,22 @@ async function replyPrivately(url: string, text: string) {
   try { await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ response_type: "ephemeral", text }), signal: AbortSignal.timeout(4000) }); } catch { /* nothing more to do */ }
 }
 
+/** The Atrium account for a Slack person, matched by email address. */
+async function atriumUserFor(env: Env, slackUserId: string): Promise<{ id: string } | null> {
+  const info = await slackApi(env, "users.info", { user: slackUserId }, true);
+  const email = String(info.user?.profile?.email ?? "").toLowerCase();
+  if (!email) return null;
+  return first<{ id: string }>(
+    env.DB,
+    `SELECT id FROM users WHERE active = 1 AND LOWER(email) = ?1
+     UNION SELECT u.id FROM user_emails e JOIN users u ON u.id = e.user_id WHERE u.active = 1 AND LOWER(e.email) = ?1`,
+    email,
+  );
+}
+
 async function addTaskFromMessage(env: Env, origin: string, p: MessageAction) {
   try {
-    const info = await slackApi(env, "users.info", { user: p.user.id }, true);
-    const email = String(info.user?.profile?.email ?? "").toLowerCase();
-    const person = email
-      ? await first<{ id: string }>(
-          env.DB,
-          `SELECT id FROM users WHERE active = 1 AND LOWER(email) = ?1
-           UNION SELECT u.id FROM user_emails e JOIN users u ON u.id = e.user_id WHERE u.active = 1 AND LOWER(e.email) = ?1`,
-          email,
-        )
-      : null;
+    const person = await atriumUserFor(env, p.user.id);
     if (!person) return replyPrivately(p.response_url, "I couldn't match your Slack email to an Atrium account, so no task was made. Ask the person who invited you to check your email address in Atrium.");
     const text = plainSlackText(p.message.text ?? "").trim();
     if (!text) return replyPrivately(p.response_url, "That message has no text to turn into a task.");
@@ -114,6 +118,73 @@ slack.post("/interactions", async (c) => {
   if (payload.type === "message_action" && payload.callback_id === "add_task") {
     // Slack wants an answer within three seconds, so reply now and finish in the background.
     c.executionCtx.waitUntil(addTaskFromMessage(c.env, c.env.APP_URL ?? new URL(c.req.url).origin, payload));
+  }
+  return c.body(null, 200);
+});
+
+// ---------- Reacting with the Atrium emoji ----------
+// A reaction only says where it happened, so Atrium reads that one message back. That works only in
+// channels the Atrium app has been added to; elsewhere the person is told to use the shortcut instead.
+
+/** Reacting with any of these emoji makes a task from the message. */
+export const TASK_EMOJI = ["atrium"];
+
+type ReactionEvent = { type: string; user: string; reaction: string; item: { type: string; channel: string; ts: string } };
+
+async function findMessage(env: Env, channel: string, ts: string): Promise<{ text: string } | null> {
+  const h = await slackApi(env, "conversations.history", { channel, latest: ts, inclusive: "true", limit: "1" }, true);
+  if (!h.ok) throw new Error(String(h.error ?? "history failed"));
+  const hit = (h.messages ?? []).find((m: { ts: string }) => m.ts === ts);
+  if (hit) return hit;
+  // A reply inside a thread isn't in the channel history; ask for the thread instead.
+  const r = await slackApi(env, "conversations.replies", { channel, ts, latest: ts, inclusive: "true", limit: "10" }, true);
+  return r.ok ? (r.messages ?? []).find((m: { ts: string }) => m.ts === ts) ?? null : null;
+}
+
+async function tellReactor(env: Env, ev: ReactionEvent, userId: string, text: string) {
+  const r = await slackApi(env, "chat.postEphemeral", { channel: ev.item.channel, user: ev.user, text }, true);
+  if (!r.ok) await slackDirectMessage(env, userId, text);
+}
+
+async function addTaskFromReaction(env: Env, origin: string, ev: ReactionEvent) {
+  try {
+    const person = await atriumUserFor(env, ev.user);
+    if (!person) {
+      const r = await slackApi(env, "chat.postMessage", { channel: ev.user, text: "I couldn't match your Slack email to an Atrium account, so no task was made. Ask the person who invited you to check your email address in Atrium." });
+      if (!r.ok) console.error("slack reply failed", r.error);
+      return;
+    }
+    let msg: { text: string } | null = null;
+    try { msg = await findMessage(env, ev.item.channel, ev.item.ts); } catch (e) {
+      return tellReactor(env, ev, person.id, "I can't read that message because Atrium isn't in that channel. Add it by typing /invite @Atrium there, or use the \"Add to Atrium\" message shortcut instead.");
+    }
+    const text = plainSlackText(msg?.text ?? "").trim();
+    if (!text) return tellReactor(env, ev, person.id, "That message has no text to turn into a task.");
+    const link = await slackApi(env, "chat.getPermalink", { channel: ev.item.channel, message_ts: ev.item.ts }, true);
+    const source = link.ok && link.permalink ? String(link.permalink) : `slack:${ev.item.channel}:${ev.item.ts}`;
+    // Reacting twice, or Slack sending the event again, must not make a second task.
+    const dup = await first<{ id: string }>(env.DB, "SELECT id FROM tasks WHERE creator_id = ? AND source_url = ?", person.id, source);
+    if (dup) return tellReactor(env, ev, person.id, `Already in Atrium: ${origin}/tasks?open=${dup.id}`);
+    const title = (text.split("\n")[0] ?? text).slice(0, 120);
+    const task = await createTask(env, { title, notes: text.length > title.length ? text : "", assignee_id: person.id, creator_id: person.id });
+    await run(env.DB, "UPDATE tasks SET source_url = ? WHERE id = ?", source, task.id);
+    return tellReactor(env, ev, person.id, `Added to Atrium: ${origin}/tasks?open=${task.id}`);
+  } catch (e) {
+    console.error("slack reaction failed", String(e).slice(0, 200));
+  }
+}
+
+slack.post("/events", async (c) => {
+  const raw = await c.req.text();
+  if (!(await validSignature(c.env, raw, c.req.header("x-slack-request-timestamp"), c.req.header("x-slack-signature")))) return c.text("Not allowed.", 401);
+  let body: { type: string; challenge?: string; event?: ReactionEvent };
+  try { body = JSON.parse(raw); } catch { return c.text("Bad request.", 400); }
+  // Slack checks the address once when the app is set up.
+  if (body.type === "url_verification") return c.json({ challenge: body.challenge });
+  const ev = body.event;
+  // A retry means Slack didn't hear our first answer; the first one is already being handled.
+  if (body.type === "event_callback" && ev?.type === "reaction_added" && ev.item?.type === "message" && TASK_EMOJI.includes(ev.reaction) && !c.req.header("x-slack-retry-num")) {
+    c.executionCtx.waitUntil(addTaskFromReaction(c.env, c.env.APP_URL ?? new URL(c.req.url).origin, ev));
   }
   return c.body(null, 200);
 });

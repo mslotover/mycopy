@@ -1,16 +1,48 @@
 {
-  "display_information": { "name": "Atrium", "description": "Task messages from Atrium and an Add to Atrium shortcut" },
+  "display_information": {
+    "name": "Atrium",
+    "description": "Task messages from Atrium and an Add to Atrium shortcut"
+  },
   "features": {
-    "bot_user": { "display_name": "Atrium", "always_online": false },
+    "bot_user": {
+      "display_name": "Atrium",
+      "always_online": false
+    },
     "shortcuts": [
-      { "name": "Add to Atrium", "type": "message", "callback_id": "add_task", "description": "Make a task from this message" }
+      {
+        "name": "Add to Atrium",
+        "type": "message",
+        "callback_id": "add_task",
+        "description": "Make a task from this message"
+      }
     ]
   },
-  "oauth_config": { "scopes": { "bot": ["chat:write", "commands", "users:read", "users:read.email"] } },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "chat:write",
+        "commands",
+        "users:read",
+        "users:read.email",
+        "reactions:read",
+        "channels:history",
+        "groups:history"
+      ]
+    }
+  },
   "settings": {
-    "interactivity": { "is_enabled": true, "request_url": "https://atrium.tmfgroup.workers.dev/slack/interactions" },
+    "interactivity": {
+      "is_enabled": true,
+      "request_url": "https://atrium.tmfgroup.workers.dev/slack/interactions"
+    },
     "org_deploy_enabled": false,
     "socket_mode_enabled": false,
-    "token_rotation_enabled": false
+    "token_rotation_enabled": false,
+    "event_subscriptions": {
+      "request_url": "https://atrium.tmfgroup.workers.dev/slack/events",
+      "bot_events": [
+        "reaction_added"
+      ]
+    }
   }
 }

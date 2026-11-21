@@ -126,6 +126,11 @@ Optional. A task assigned to someone also reaches them as a Slack message, and a
 2. Install it to the workspace. Copy the Bot User OAuth Token and, from Basic Information, the Signing Secret.
 3. Add both as Worker secrets: `npx wrangler secret put SLACK_BOT_TOKEN` and `npx wrangler secret put SLACK_SIGNING_SECRET`.
 
+Reacting to a message with the `:atrium:` emoji does the same (upload an emoji named `atrium` in Slack, for example
+`public/icon-512.png`). Slack only lets the app read messages in channels it has been added to, so type
+`/invite @Atrium` in each channel where the reaction should work; elsewhere the person is pointed to the shortcut.
+The reaction needs the Events subscription in the manifest, and the app must be reinstalled after the manifest changes.
+
 People are matched to Slack by email address. Without the secrets, all of this is skipped.
 
 ## Access keys (add-only)
